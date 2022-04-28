@@ -1,21 +1,22 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
-#--  Project file C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\scratchproject.prs
+#--  Project file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\scratchproject.prs
 
 #project files
-add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter.v"
+add_file -verilog -vlog_std v2001 "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v"
 
 
 #implementation: "impl1"
-impl -add "C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1" -type fpga
+impl -add "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1" -type fpga
 
 #
 #implementation attributes
 
-set_option -vlog_std sysv
+set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/}
-set_option -include_path {C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter}
+set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/}
+set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter}
 
 #device options
 set_option -technology LATTICE-XP2
@@ -73,8 +74,8 @@ set_option -vhdl2008 1
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/Counter_impl1.edi"
+project -result_file "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.edi"
 
 #set log file 
-set_option log_file "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/Counter_impl1.srf" 
+set_option log_file "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.srf" 
 impl -active "impl1"

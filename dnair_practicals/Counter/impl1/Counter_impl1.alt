@@ -1,6 +1,6 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Wed Apr 27 14:28:50 2022 *
+NOTE DATE CREATED: Thu Apr 28 17:09:24 2022 *
 NOTE DESIGN NAME: counter *
 NOTE DEVICE NAME: LFXP2-5E-5TQFP144 *
 NOTE PIN ASSIGNMENTS *
@@ -13,5 +13,6 @@ NOTE PINS opLED[4] : 40 : out *
 NOTE PINS opLED[3] : 43 : out *
 NOTE PINS opLED[2] : 44 : out *
 NOTE PINS opLED[1] : 45 : out *
+NOTE PINS ipReset : 48 : in *
 NOTE CONFIGURATION MODE: NONE *
 NOTE COMPRESSION: off *

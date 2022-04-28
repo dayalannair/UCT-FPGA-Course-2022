@@ -33,37 +33,32 @@ Implementation : impl1
 Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
 @N|Running in 64-bit mode
-@N: CG1349 :	| Running Verilog Compiler in System Verilog mode
-
-@N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
-
 @I::"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v" (library work)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v" (library work)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\counter.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" (library work)
 Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+Options changed - recompiling
 Selecting top level module counter
-@N: CG364 :"C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\counter.v":1:7:1:13|Synthesizing module counter in library work.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v":1:7:1:13|Synthesizing module counter in library work.
 Running optimization stage 1 on counter .......
 Running optimization stage 2 on counter .......
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
-@L: C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synwork\layer0.rt.csv
+@L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 92MB peak: 93MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 27 14:28:22 2022
+# Thu Apr 28 17:08:49 2022
 
 ###########################################################]
 ###########################################################[
@@ -90,21 +85,21 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 27 14:28:22 2022
+# Thu Apr 28 17:08:49 2022
 
 ###########################################################]
 
 For a summary of runtime and memory usage for all design units, please see file:
 ==========================================================
-@L: C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synwork\Counter_impl1_comp.rt.csv
+@L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.rt.csv
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 29MB peak: 29MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Apr 27 14:28:22 2022
+# Thu Apr 28 17:08:49 2022
 
 ###########################################################]

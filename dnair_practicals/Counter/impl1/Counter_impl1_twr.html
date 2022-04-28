@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Par_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2</big></U></B>
-Wed Apr 27 14:28:46 2022
+Thu Apr 28 17:09:20 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -32,7 +32,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 <A name="ptwr_set_ri"></A><B><U><big>Report Information</big></U></B>
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o Counter_impl1.twr -gui -msgset C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/promote.xml Counter_impl1.ncd Counter_impl1.prf 
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o Counter_impl1.twr -gui -msgset C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/promote.xml Counter_impl1.ncd Counter_impl1.prf 
 Design file:     counter_impl1.ncd
 Preference file: counter_impl1.prf
 Device,speed:    LFXP2-5E,5
@@ -41,9 +41,8 @@ Report level:    verbose report, limited to 10 items per preference
 
 <A name="ptwr_set_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<FONT COLOR=red><LI><A href='#par_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "ipClk_c" 381.825000 MHz (202 errors)</FONT></A></LI>
-</FONT>            496 items scored, 202 timing errors detected.
-Warning: 277.546MHz is the maximum frequency for this preference.
+<LI><A href='#par_twr_pref_0_0' Target='right'>FREQUENCY NET "ipClk_c" 243.191000 MHz (0 errors)</A></LI>            496 items scored, 0 timing errors detected.
+Report:  277.546MHz is the maximum frequency for this preference.
 
 Report Type:     based on TRACE automatically generated preferences
 BLOCK ASYNCPATHS
@@ -53,12 +52,12 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "ipClk_c" 381.825000 MHz ;
-            496 items scored, 202 timing errors detected.
+<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
+            496 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 0.984ns
+Passed: The following path meets requirements by 0.509ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -69,10 +68,10 @@ Error: The following path exceeds requirements by 0.984ns
 
  Constraint Details:
 
-      3.510ns physical path delay SLICE_15 to SLICE_1 exceeds
-      2.619ns delay constraint less
+      3.510ns physical path delay SLICE_15 to SLICE_1 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.984ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.509ns
 
  Physical Path Details:
 
@@ -82,35 +81,35 @@ Error: The following path exceeds requirements by 0.984ns
 REG_DEL     ---     0.383     R25C9B.CLK to      R25C9B.Q0 SLICE_15 (from ipClk_c)
 ROUTE         1     0.891      R25C9B.Q0 to      R25C9B.B0 count[1]
 C0TOFCO_DE  ---     0.790      R25C9B.B0 to     R25C9B.FCO SLICE_15
-ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI count_cry[2]
+ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI un2_count_cry_2
 FCITOFCO_D  ---     0.081     R25C9C.FCI to     R25C9C.FCO SLICE_14
-ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI count_cry[4]
+ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI un2_count_cry_4
 FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOFCO_D  ---     0.081    R25C13C.FCI to    R25C13C.FCO SLICE_2
-ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI count_cry[28]
+ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI un2_count_cry_28
 FCITOF1_DE  ---     0.393    R25C14A.FCI to     R25C14A.F1 SLICE_1
-ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 count_s[30] (to ipClk_c)
+ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 un2_count_cry_29_0_S1 (to ipClk_c)
                   --------
                     3.510   (74.6% logic, 25.4% route), 16 logic levels.
 
@@ -131,7 +130,7 @@ ROUTE        16     1.233       21.PADDI to    R25C14A.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.903ns
+Passed: The following path meets requirements by 0.590ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -142,10 +141,10 @@ Error: The following path exceeds requirements by 0.903ns
 
  Constraint Details:
 
-      3.429ns physical path delay SLICE_15 to SLICE_2 exceeds
-      2.619ns delay constraint less
+      3.429ns physical path delay SLICE_15 to SLICE_2 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.903ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.590ns
 
  Physical Path Details:
 
@@ -155,33 +154,33 @@ Error: The following path exceeds requirements by 0.903ns
 REG_DEL     ---     0.383     R25C9B.CLK to      R25C9B.Q0 SLICE_15 (from ipClk_c)
 ROUTE         1     0.891      R25C9B.Q0 to      R25C9B.B0 count[1]
 C0TOFCO_DE  ---     0.790      R25C9B.B0 to     R25C9B.FCO SLICE_15
-ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI count_cry[2]
+ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI un2_count_cry_2
 FCITOFCO_D  ---     0.081     R25C9C.FCI to     R25C9C.FCO SLICE_14
-ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI count_cry[4]
+ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI un2_count_cry_4
 FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOF1_DE  ---     0.393    R25C13C.FCI to     R25C13C.F1 SLICE_2
-ROUTE         1     0.000     R25C13C.F1 to    R25C13C.DI1 count_s[28] (to ipClk_c)
+ROUTE         1     0.000     R25C13C.F1 to    R25C13C.DI1 un2_count_cry_27_0_S1 (to ipClk_c)
                   --------
                     3.429   (74.0% logic, 26.0% route), 15 logic levels.
 
@@ -202,7 +201,7 @@ ROUTE        16     1.233       21.PADDI to    R25C13C.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.896ns
+Passed: The following path meets requirements by 0.597ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -213,10 +212,10 @@ Error: The following path exceeds requirements by 0.896ns
 
  Constraint Details:
 
-      3.422ns physical path delay SLICE_15 to SLICE_1 exceeds
-      2.619ns delay constraint less
+      3.422ns physical path delay SLICE_15 to SLICE_1 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.896ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.597ns
 
  Physical Path Details:
 
@@ -226,35 +225,35 @@ Error: The following path exceeds requirements by 0.896ns
 REG_DEL     ---     0.383     R25C9B.CLK to      R25C9B.Q0 SLICE_15 (from ipClk_c)
 ROUTE         1     0.891      R25C9B.Q0 to      R25C9B.B0 count[1]
 C0TOFCO_DE  ---     0.790      R25C9B.B0 to     R25C9B.FCO SLICE_15
-ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI count_cry[2]
+ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI un2_count_cry_2
 FCITOFCO_D  ---     0.081     R25C9C.FCI to     R25C9C.FCO SLICE_14
-ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI count_cry[4]
+ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI un2_count_cry_4
 FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOFCO_D  ---     0.081    R25C13C.FCI to    R25C13C.FCO SLICE_2
-ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI count_cry[28]
+ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI un2_count_cry_28
 FCITOF0_DE  ---     0.305    R25C14A.FCI to     R25C14A.F0 SLICE_1
-ROUTE         1     0.000     R25C14A.F0 to    R25C14A.DI0 count_s[29] (to ipClk_c)
+ROUTE         1     0.000     R25C14A.F0 to    R25C14A.DI0 un2_count_cry_29_0_S0 (to ipClk_c)
                   --------
                     3.422   (74.0% logic, 26.0% route), 16 logic levels.
 
@@ -275,7 +274,7 @@ ROUTE        16     1.233       21.PADDI to    R25C14A.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.822ns
+Passed: The following path meets requirements by 0.671ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -286,10 +285,10 @@ Error: The following path exceeds requirements by 0.822ns
 
  Constraint Details:
 
-      3.348ns physical path delay SLICE_13 to SLICE_1 exceeds
-      2.619ns delay constraint less
+      3.348ns physical path delay SLICE_13 to SLICE_1 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.822ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.671ns
 
  Physical Path Details:
 
@@ -299,31 +298,31 @@ Error: The following path exceeds requirements by 0.822ns
 REG_DEL     ---     0.383    R25C10A.CLK to     R25C10A.Q0 SLICE_13 (from ipClk_c)
 ROUTE         1     0.891     R25C10A.Q0 to     R25C10A.B0 count[5]
 C0TOFCO_DE  ---     0.790     R25C10A.B0 to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOFCO_D  ---     0.081    R25C13C.FCI to    R25C13C.FCO SLICE_2
-ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI count_cry[28]
+ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI un2_count_cry_28
 FCITOF1_DE  ---     0.393    R25C14A.FCI to     R25C14A.F1 SLICE_1
-ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 count_s[30] (to ipClk_c)
+ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 un2_count_cry_29_0_S1 (to ipClk_c)
                   --------
                     3.348   (73.4% logic, 26.6% route), 14 logic levels.
 
@@ -344,7 +343,7 @@ ROUTE        16     1.233       21.PADDI to    R25C14A.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.822ns
+Passed: The following path meets requirements by 0.671ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -355,10 +354,10 @@ Error: The following path exceeds requirements by 0.822ns
 
  Constraint Details:
 
-      3.348ns physical path delay SLICE_15 to SLICE_3 exceeds
-      2.619ns delay constraint less
+      3.348ns physical path delay SLICE_15 to SLICE_3 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.822ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.671ns
 
  Physical Path Details:
 
@@ -368,31 +367,31 @@ Error: The following path exceeds requirements by 0.822ns
 REG_DEL     ---     0.383     R25C9B.CLK to      R25C9B.Q0 SLICE_15 (from ipClk_c)
 ROUTE         1     0.891      R25C9B.Q0 to      R25C9B.B0 count[1]
 C0TOFCO_DE  ---     0.790      R25C9B.B0 to     R25C9B.FCO SLICE_15
-ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI count_cry[2]
+ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI un2_count_cry_2
 FCITOFCO_D  ---     0.081     R25C9C.FCI to     R25C9C.FCO SLICE_14
-ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI count_cry[4]
+ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI un2_count_cry_4
 FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOF1_DE  ---     0.393    R25C13B.FCI to     R25C13B.F1 SLICE_3
-ROUTE         1     0.000     R25C13B.F1 to    R25C13B.DI1 count_s[26] (to ipClk_c)
+ROUTE         1     0.000     R25C13B.F1 to    R25C13B.DI1 un2_count_cry_25_0_S1 (to ipClk_c)
                   --------
                     3.348   (73.4% logic, 26.6% route), 14 logic levels.
 
@@ -413,7 +412,7 @@ ROUTE        16     1.233       21.PADDI to    R25C13B.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.815ns
+Passed: The following path meets requirements by 0.678ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -424,10 +423,10 @@ Error: The following path exceeds requirements by 0.815ns
 
  Constraint Details:
 
-      3.341ns physical path delay SLICE_15 to SLICE_2 exceeds
-      2.619ns delay constraint less
+      3.341ns physical path delay SLICE_15 to SLICE_2 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.815ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.678ns
 
  Physical Path Details:
 
@@ -437,33 +436,33 @@ Error: The following path exceeds requirements by 0.815ns
 REG_DEL     ---     0.383     R25C9B.CLK to      R25C9B.Q0 SLICE_15 (from ipClk_c)
 ROUTE         1     0.891      R25C9B.Q0 to      R25C9B.B0 count[1]
 C0TOFCO_DE  ---     0.790      R25C9B.B0 to     R25C9B.FCO SLICE_15
-ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI count_cry[2]
+ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI un2_count_cry_2
 FCITOFCO_D  ---     0.081     R25C9C.FCI to     R25C9C.FCO SLICE_14
-ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI count_cry[4]
+ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI un2_count_cry_4
 FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOF0_DE  ---     0.305    R25C13C.FCI to     R25C13C.F0 SLICE_2
-ROUTE         1     0.000     R25C13C.F0 to    R25C13C.DI0 count_s[27] (to ipClk_c)
+ROUTE         1     0.000     R25C13C.F0 to    R25C13C.DI0 un2_count_cry_27_0_S0 (to ipClk_c)
                   --------
                     3.341   (73.3% logic, 26.7% route), 15 logic levels.
 
@@ -484,7 +483,82 @@ ROUTE        16     1.233       21.PADDI to    R25C13C.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.802ns
+Passed: The following path meets requirements by 0.684ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[0]  (from ipClk_c +)
+   Destination:    FF         Data in        count[30]  (to ipClk_c +)
+
+   Delay:               3.335ns  (71.5% logic, 28.5% route), 17 logic levels.
+
+ Constraint Details:
+
+      3.335ns physical path delay SLICE_16 to SLICE_1 meets
+      4.112ns delay constraint less
+      0.000ns skew and
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.684ns
+
+ Physical Path Details:
+
+      Data path SLICE_16 to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383     R24C9C.CLK to      R24C9C.Q0 SLICE_16 (from ipClk_c)
+ROUTE         2     0.950      R24C9C.Q0 to      R25C9A.A1 count[0]
+C1TOFCO_DE  ---     0.475      R25C9A.A1 to     R25C9A.FCO SLICE_0
+ROUTE         1     0.000     R25C9A.FCO to     R25C9B.FCI un2_count_cry_0
+FCITOFCO_D  ---     0.081     R25C9B.FCI to     R25C9B.FCO SLICE_15
+ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI un2_count_cry_2
+FCITOFCO_D  ---     0.081     R25C9C.FCI to     R25C9C.FCO SLICE_14
+ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI un2_count_cry_4
+FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
+FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
+FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
+FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
+FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
+FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
+FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
+FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
+FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
+FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
+FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
+FCITOFCO_D  ---     0.081    R25C13C.FCI to    R25C13C.FCO SLICE_2
+ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI un2_count_cry_28
+FCITOF1_DE  ---     0.393    R25C14A.FCI to     R25C14A.F1 SLICE_1
+ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 un2_count_cry_29_0_S1 (to ipClk_c)
+                  --------
+                    3.335   (71.5% logic, 28.5% route), 17 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path ipClk to SLICE_16:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     1.233       21.PADDI to     R24C9C.CLK ipClk_c
+                  --------
+                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path ipClk to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        16     1.233       21.PADDI to    R25C14A.CLK ipClk_c
+                  --------
+                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.691ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -495,10 +569,10 @@ Error: The following path exceeds requirements by 0.802ns
 
  Constraint Details:
 
-      3.328ns physical path delay SLICE_14 to SLICE_1 exceeds
-      2.619ns delay constraint less
+      3.328ns physical path delay SLICE_14 to SLICE_1 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.802ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.691ns
 
  Physical Path Details:
 
@@ -508,33 +582,33 @@ Error: The following path exceeds requirements by 0.802ns
 REG_DEL     ---     0.383     R25C9C.CLK to      R25C9C.Q0 SLICE_14 (from ipClk_c)
 ROUTE         1     0.790      R25C9C.Q0 to      R25C9C.A0 count[3]
 C0TOFCO_DE  ---     0.790      R25C9C.A0 to     R25C9C.FCO SLICE_14
-ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI count_cry[4]
+ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI un2_count_cry_4
 FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOFCO_D  ---     0.081    R25C13C.FCI to    R25C13C.FCO SLICE_2
-ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI count_cry[28]
+ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI un2_count_cry_28
 FCITOF1_DE  ---     0.393    R25C14A.FCI to     R25C14A.F1 SLICE_1
-ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 count_s[30] (to ipClk_c)
+ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 un2_count_cry_29_0_S1 (to ipClk_c)
                   --------
                     3.328   (76.3% logic, 23.7% route), 15 logic levels.
 
@@ -555,7 +629,7 @@ ROUTE        16     1.233       21.PADDI to    R25C14A.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.741ns
+Passed: The following path meets requirements by 0.752ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -566,10 +640,10 @@ Error: The following path exceeds requirements by 0.741ns
 
  Constraint Details:
 
-      3.267ns physical path delay SLICE_12 to SLICE_1 exceeds
-      2.619ns delay constraint less
+      3.267ns physical path delay SLICE_12 to SLICE_1 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.741ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.752ns
 
  Physical Path Details:
 
@@ -579,29 +653,29 @@ Error: The following path exceeds requirements by 0.741ns
 REG_DEL     ---     0.383    R25C10B.CLK to     R25C10B.Q0 SLICE_12 (from ipClk_c)
 ROUTE         1     0.891     R25C10B.Q0 to     R25C10B.B0 count[7]
 C0TOFCO_DE  ---     0.790     R25C10B.B0 to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOFCO_D  ---     0.081    R25C13C.FCI to    R25C13C.FCO SLICE_2
-ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI count_cry[28]
+ROUTE         1     0.000    R25C13C.FCO to    R25C14A.FCI un2_count_cry_28
 FCITOF1_DE  ---     0.393    R25C14A.FCI to     R25C14A.F1 SLICE_1
-ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 count_s[30] (to ipClk_c)
+ROUTE         1     0.000     R25C14A.F1 to    R25C14A.DI1 un2_count_cry_29_0_S1 (to ipClk_c)
                   --------
                     3.267   (72.7% logic, 27.3% route), 13 logic levels.
 
@@ -622,7 +696,7 @@ ROUTE        16     1.233       21.PADDI to    R25C14A.CLK ipClk_c
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Error: The following path exceeds requirements by 0.741ns
+Passed: The following path meets requirements by 0.752ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
@@ -633,10 +707,10 @@ Error: The following path exceeds requirements by 0.741ns
 
  Constraint Details:
 
-      3.267ns physical path delay SLICE_13 to SLICE_2 exceeds
-      2.619ns delay constraint less
+      3.267ns physical path delay SLICE_13 to SLICE_2 meets
+      4.112ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.741ns
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.752ns
 
  Physical Path Details:
 
@@ -646,29 +720,29 @@ Error: The following path exceeds requirements by 0.741ns
 REG_DEL     ---     0.383    R25C10A.CLK to     R25C10A.Q0 SLICE_13 (from ipClk_c)
 ROUTE         1     0.891     R25C10A.Q0 to     R25C10A.B0 count[5]
 C0TOFCO_DE  ---     0.790     R25C10A.B0 to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
+ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI un2_count_cry_6
 FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
+ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI un2_count_cry_8
 FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
+ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI un2_count_cry_10
 FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
+ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI un2_count_cry_12
 FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
+ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI un2_count_cry_14
 FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
+ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI un2_count_cry_16
 FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
+ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI un2_count_cry_18
 FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
+ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI un2_count_cry_20
 FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
+ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI un2_count_cry_22
 FCITOFCO_D  ---     0.081    R25C13A.FCI to    R25C13A.FCO SLICE_4
-ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI count_cry[24]
+ROUTE         1     0.000    R25C13A.FCO to    R25C13B.FCI un2_count_cry_24
 FCITOFCO_D  ---     0.081    R25C13B.FCI to    R25C13B.FCO SLICE_3
-ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI count_cry[26]
+ROUTE         1     0.000    R25C13B.FCO to    R25C13C.FCI un2_count_cry_26
 FCITOF1_DE  ---     0.393    R25C13C.FCI to     R25C13C.F1 SLICE_2
-ROUTE         1     0.000     R25C13C.F1 to    R25C13C.DI1 count_s[28] (to ipClk_c)
+ROUTE         1     0.000     R25C13C.F1 to    R25C13C.DI1 un2_count_cry_27_0_S1 (to ipClk_c)
                   --------
                     3.267   (72.7% logic, 27.3% route), 13 logic levels.
 
@@ -688,74 +762,7 @@ ROUTE        16     1.233       21.PADDI to    R25C13C.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-
-Error: The following path exceeds requirements by 0.741ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              count[1]  (from ipClk_c +)
-   Destination:    FF         Data in        count[24]  (to ipClk_c +)
-
-   Delay:               3.267ns  (72.7% logic, 27.3% route), 13 logic levels.
-
- Constraint Details:
-
-      3.267ns physical path delay SLICE_15 to SLICE_4 exceeds
-      2.619ns delay constraint less
-      0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 2.526ns) by 0.741ns
-
- Physical Path Details:
-
-      Data path SLICE_15 to SLICE_4:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383     R25C9B.CLK to      R25C9B.Q0 SLICE_15 (from ipClk_c)
-ROUTE         1     0.891      R25C9B.Q0 to      R25C9B.B0 count[1]
-C0TOFCO_DE  ---     0.790      R25C9B.B0 to     R25C9B.FCO SLICE_15
-ROUTE         1     0.000     R25C9B.FCO to     R25C9C.FCI count_cry[2]
-FCITOFCO_D  ---     0.081     R25C9C.FCI to     R25C9C.FCO SLICE_14
-ROUTE         1     0.000     R25C9C.FCO to    R25C10A.FCI count_cry[4]
-FCITOFCO_D  ---     0.081    R25C10A.FCI to    R25C10A.FCO SLICE_13
-ROUTE         1     0.000    R25C10A.FCO to    R25C10B.FCI count_cry[6]
-FCITOFCO_D  ---     0.081    R25C10B.FCI to    R25C10B.FCO SLICE_12
-ROUTE         1     0.000    R25C10B.FCO to    R25C10C.FCI count_cry[8]
-FCITOFCO_D  ---     0.081    R25C10C.FCI to    R25C10C.FCO SLICE_11
-ROUTE         1     0.000    R25C10C.FCO to    R25C11A.FCI count_cry[10]
-FCITOFCO_D  ---     0.081    R25C11A.FCI to    R25C11A.FCO SLICE_10
-ROUTE         1     0.000    R25C11A.FCO to    R25C11B.FCI count_cry[12]
-FCITOFCO_D  ---     0.081    R25C11B.FCI to    R25C11B.FCO SLICE_9
-ROUTE         1     0.000    R25C11B.FCO to    R25C11C.FCI count_cry[14]
-FCITOFCO_D  ---     0.081    R25C11C.FCI to    R25C11C.FCO SLICE_8
-ROUTE         1     0.000    R25C11C.FCO to    R25C12A.FCI count_cry[16]
-FCITOFCO_D  ---     0.081    R25C12A.FCI to    R25C12A.FCO SLICE_7
-ROUTE         1     0.000    R25C12A.FCO to    R25C12B.FCI count_cry[18]
-FCITOFCO_D  ---     0.081    R25C12B.FCI to    R25C12B.FCO SLICE_6
-ROUTE         1     0.000    R25C12B.FCO to    R25C12C.FCI count_cry[20]
-FCITOFCO_D  ---     0.081    R25C12C.FCI to    R25C12C.FCO SLICE_5
-ROUTE         1     0.000    R25C12C.FCO to    R25C13A.FCI count_cry[22]
-FCITOF1_DE  ---     0.393    R25C13A.FCI to     R25C13A.F1 SLICE_4
-ROUTE         1     0.000     R25C13A.F1 to    R25C13A.DI1 count_s[24] (to ipClk_c)
-                  --------
-                    3.267   (72.7% logic, 27.3% route), 13 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path ipClk to SLICE_15:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        16     1.233       21.PADDI to     R25C9B.CLK ipClk_c
-                  --------
-                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path ipClk to SLICE_4:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        16     1.233       21.PADDI to    R25C13A.CLK ipClk_c
-                  --------
-                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
-
-Warning: 277.546MHz is the maximum frequency for this preference.
+Report:  277.546MHz is the maximum frequency for this preference.
 
 <A name="ptwr_set_rs"></A><B><U><big>Report Summary</big></U></B>
 --------------
@@ -763,50 +770,13 @@ Warning: 277.546MHz is the maximum frequency for this preference.
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "ipClk_c" 381.825000 MHz  |             |             |
-;                                       |  381.825 MHz|  277.546 MHz|  16 *
+FREQUENCY NET "ipClk_c" 243.191000 MHz  |             |             |
+;                                       |  243.191 MHz|  277.546 MHz|  16  
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-1 preference(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[14]">count_cry[14]</a>                           |       1|     154|     76.24%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[16]">count_cry[16]</a>                           |       1|     152|     75.25%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[12]">count_cry[12]</a>                           |       1|     149|     73.76%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[18]">count_cry[18]</a>                           |       1|     148|     73.27%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[10]">count_cry[10]</a>                           |       1|     139|     68.81%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[20]">count_cry[20]</a>                           |       1|     138|     68.32%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[8]">count_cry[8]</a>                            |       1|     126|     62.38%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[22]">count_cry[22]</a>                           |       1|     119|     58.91%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[6]">count_cry[6]</a>                            |       1|     104|     51.49%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[24]">count_cry[24]</a>                           |       1|      97|     48.02%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[4]">count_cry[4]</a>                            |       1|      77|     38.12%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[26]">count_cry[26]</a>                           |       1|      69|     34.16%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[2]">count_cry[2]</a>                            |       1|      49|     24.26%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count_cry[28]">count_cry[28]</a>                           |       1|      37|     18.32%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count[1]">count[1]</a>                                |       1|      25|     12.38%
-                                        |        |        |
-<a href="bali://?app=PHYSICAL_VIEW&amp;sig=LocateNet&amp;args=count[5]">count[5]</a>                                |       1|      21|     10.40%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 <A name="ptwr_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
@@ -815,20 +785,20 @@ Critical Nets                           |   Loads|  Errors| % of total
 Found 1 clocks:
 
 Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 16
-   Covered under: FREQUENCY NET "ipClk_c" 381.825000 MHz ;
+   Covered under: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
 
 
 <A name="ptwr_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
 ---------------
 
-Timing errors: 202  Score: 60064
-Cumulative negative slack: 60064
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 496 paths, 1 nets, and 124 connections (93.94% coverage)
+Constraints cover 496 paths, 1 nets, and 125 connections (83.89% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Par_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2</big></U></B>
-Wed Apr 27 14:28:46 2022
+Thu Apr 28 17:09:21 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -838,7 +808,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 <A name="ptwr_hold_ri"></A><B><U><big>Report Information</big></U></B>
 ------------------
-Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o Counter_impl1.twr -gui -msgset C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/promote.xml Counter_impl1.ncd Counter_impl1.prf 
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o Counter_impl1.twr -gui -msgset C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/promote.xml Counter_impl1.ncd Counter_impl1.prf 
 Design file:     counter_impl1.ncd
 Preference file: counter_impl1.prf
 Device,speed:    LFXP2-5E,m
@@ -847,7 +817,7 @@ Report level:    verbose report, limited to 10 items per preference
 
 <A name="ptwr_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
 
-<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "ipClk_c" 381.825000 MHz (0 errors)</A></LI>            496 items scored, 0 timing errors detected.
+<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "ipClk_c" 243.191000 MHz (0 errors)</A></LI>            496 items scored, 0 timing errors detected.
 
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
@@ -856,52 +826,52 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "ipClk_c" 381.825000 MHz ;
+<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
             496 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed: The following path meets requirements by 0.328ns
+Passed: The following path meets requirements by 0.235ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              count[0]  (from ipClk_c +)
    Destination:    FF         Data in        count[0]  (to ipClk_c +)
 
-   Delay:               0.329ns  (54.4% logic, 45.6% route), 2 logic levels.
+   Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
 
  Constraint Details:
 
-      0.329ns physical path delay SLICE_0 to SLICE_0 meets
+      0.236ns physical path delay SLICE_16 to SLICE_16 meets
       0.001ns DIN_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.001ns) by 0.328ns
+      0.000ns skew requirement (totaling 0.001ns) by 0.235ns
 
  Physical Path Details:
 
-      Data path SLICE_0 to SLICE_0:
+      Data path SLICE_16 to SLICE_16:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120     R25C9A.CLK to      R25C9A.Q1 SLICE_0 (from ipClk_c)
-ROUTE         1     0.150      R25C9A.Q1 to      R25C9A.B1 count[0]
-CTOF_DEL    ---     0.059      R25C9A.B1 to      R25C9A.F1 SLICE_0
-ROUTE         1     0.000      R25C9A.F1 to     R25C9A.DI1 count_s[0] (to ipClk_c)
+REG_DEL     ---     0.120     R24C9C.CLK to      R24C9C.Q0 SLICE_16 (from ipClk_c)
+ROUTE         2     0.057      R24C9C.Q0 to      R24C9C.D0 count[0]
+CTOF_DEL    ---     0.059      R24C9C.D0 to      R24C9C.F0 SLICE_16
+ROUTE         1     0.000      R24C9C.F0 to     R24C9C.DI0 count_i[0] (to ipClk_c)
                   --------
-                    0.329   (54.4% logic, 45.6% route), 2 logic levels.
+                    0.236   (75.8% logic, 24.2% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to SLICE_0:
+      Source Clock Path ipClk to SLICE_16:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        16     0.300       21.PADDI to     R25C9A.CLK ipClk_c
+ROUTE        16     0.300       21.PADDI to     R24C9C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to SLICE_0:
+      Destination Clock Path ipClk to SLICE_16:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        16     0.300       21.PADDI to     R25C9A.CLK ipClk_c
+ROUTE        16     0.300       21.PADDI to     R24C9C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -930,7 +900,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120    R25C11A.CLK to     R25C11A.Q1 SLICE_10 (from ipClk_c)
 ROUTE         1     0.150     R25C11A.Q1 to     R25C11A.B1 count[12]
 CTOF_DEL    ---     0.059     R25C11A.B1 to     R25C11A.F1 SLICE_10
-ROUTE         1     0.000     R25C11A.F1 to    R25C11A.DI1 count_s[12] (to ipClk_c)
+ROUTE         1     0.000     R25C11A.F1 to    R25C11A.DI1 un2_count_cry_11_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -975,7 +945,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120    R25C10C.CLK to     R25C10C.Q1 SLICE_11 (from ipClk_c)
 ROUTE         1     0.150     R25C10C.Q1 to     R25C10C.B1 count[10]
 CTOF_DEL    ---     0.059     R25C10C.B1 to     R25C10C.F1 SLICE_11
-ROUTE         1     0.000     R25C10C.F1 to    R25C10C.DI1 count_s[10] (to ipClk_c)
+ROUTE         1     0.000     R25C10C.F1 to    R25C10C.DI1 un2_count_cry_9_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1020,7 +990,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120    R25C10B.CLK to     R25C10B.Q1 SLICE_12 (from ipClk_c)
 ROUTE         1     0.150     R25C10B.Q1 to     R25C10B.B1 count[8]
 CTOF_DEL    ---     0.059     R25C10B.B1 to     R25C10B.F1 SLICE_12
-ROUTE         1     0.000     R25C10B.F1 to    R25C10B.DI1 count_s[8] (to ipClk_c)
+ROUTE         1     0.000     R25C10B.F1 to    R25C10B.DI1 un2_count_cry_7_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1065,7 +1035,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120    R25C10A.CLK to     R25C10A.Q1 SLICE_13 (from ipClk_c)
 ROUTE         1     0.150     R25C10A.Q1 to     R25C10A.B1 count[6]
 CTOF_DEL    ---     0.059     R25C10A.B1 to     R25C10A.F1 SLICE_13
-ROUTE         1     0.000     R25C10A.F1 to    R25C10A.DI1 count_s[6] (to ipClk_c)
+ROUTE         1     0.000     R25C10A.F1 to    R25C10A.DI1 un2_count_cry_5_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1110,7 +1080,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120     R25C9C.CLK to      R25C9C.Q1 SLICE_14 (from ipClk_c)
 ROUTE         1     0.150      R25C9C.Q1 to      R25C9C.B1 count[4]
 CTOF_DEL    ---     0.059      R25C9C.B1 to      R25C9C.F1 SLICE_14
-ROUTE         1     0.000      R25C9C.F1 to     R25C9C.DI1 count_s[4] (to ipClk_c)
+ROUTE         1     0.000      R25C9C.F1 to     R25C9C.DI1 un2_count_cry_3_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1155,7 +1125,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120     R25C9B.CLK to      R25C9B.Q1 SLICE_15 (from ipClk_c)
 ROUTE         1     0.150      R25C9B.Q1 to      R25C9B.B1 count[2]
 CTOF_DEL    ---     0.059      R25C9B.B1 to      R25C9B.F1 SLICE_15
-ROUTE         1     0.000      R25C9B.F1 to     R25C9B.DI1 count_s[2] (to ipClk_c)
+ROUTE         1     0.000      R25C9B.F1 to     R25C9B.DI1 un2_count_cry_1_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1200,7 +1170,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120    R25C12C.CLK to     R25C12C.Q1 SLICE_5 (from ipClk_c)
 ROUTE         1     0.150     R25C12C.Q1 to     R25C12C.B1 count[22]
 CTOF_DEL    ---     0.059     R25C12C.B1 to     R25C12C.F1 SLICE_5
-ROUTE         1     0.000     R25C12C.F1 to    R25C12C.DI1 count_s[22] (to ipClk_c)
+ROUTE         1     0.000     R25C12C.F1 to    R25C12C.DI1 un2_count_cry_21_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1245,7 +1215,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120    R25C12B.CLK to     R25C12B.Q1 SLICE_6 (from ipClk_c)
 ROUTE         1     0.150     R25C12B.Q1 to     R25C12B.B1 count[20]
 CTOF_DEL    ---     0.059     R25C12B.B1 to     R25C12B.F1 SLICE_6
-ROUTE         1     0.000     R25C12B.F1 to    R25C12B.DI1 count_s[20] (to ipClk_c)
+ROUTE         1     0.000     R25C12B.F1 to    R25C12B.DI1 un2_count_cry_19_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1290,7 +1260,7 @@ Passed: The following path meets requirements by 0.328ns
 REG_DEL     ---     0.120    R25C12A.CLK to     R25C12A.Q1 SLICE_7 (from ipClk_c)
 ROUTE         1     0.150     R25C12A.Q1 to     R25C12A.B1 count[18]
 CTOF_DEL    ---     0.059     R25C12A.B1 to     R25C12A.F1 SLICE_7
-ROUTE         1     0.000     R25C12A.F1 to    R25C12A.DI1 count_s[18] (to ipClk_c)
+ROUTE         1     0.000     R25C12A.F1 to    R25C12A.DI1 un2_count_cry_17_0_S1 (to ipClk_c)
                   --------
                     0.329   (54.4% logic, 45.6% route), 2 logic levels.
 
@@ -1316,8 +1286,8 @@ ROUTE        16     0.300       21.PADDI to    R25C12A.CLK ipClk_c
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "ipClk_c" 381.825000 MHz  |             |             |
-;                                       |     0.000 ns|     0.328 ns|   2  
+FREQUENCY NET "ipClk_c" 243.191000 MHz  |             |             |
+;                                       |     0.000 ns|     0.235 ns|   2  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -1331,7 +1301,7 @@ All preferences were met.
 Found 1 clocks:
 
 Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 16
-   Covered under: FREQUENCY NET "ipClk_c" 381.825000 MHz ;
+   Covered under: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
 
 
 <A name="ptwr_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
@@ -1340,16 +1310,16 @@ Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 16
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 496 paths, 1 nets, and 124 connections (93.94% coverage)
+Constraints cover 496 paths, 1 nets, and 125 connections (83.89% coverage)
 
 
 
 <A name="ptwr_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
 ---------------
 
-Timing errors: 202 (setup), 0 (hold)
-Score: 60064 (setup), 0 (hold)
-Cumulative negative slack: 60064 (60064+0)
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

@@ -13,7 +13,7 @@ Hostname: DAYALAN1
 
 Implementation : impl1
 
-# Written on Wed Apr 27 14:28:25 2022
+# Written on Thu Apr 28 17:08:53 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -46,6 +46,7 @@ counter|ipClk     counter|ipClk     |     5.000            |     No paths       
 Unconstrained Start/End Points
 ******************************
 
+p:ipReset
 p:opLED[0]
 p:opLED[1]
 p:opLED[2]

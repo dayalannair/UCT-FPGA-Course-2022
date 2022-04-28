@@ -19,9 +19,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/Counter_impl1.jed</File>
-			<FileTime>04/27/22 14:28:50</FileTime>
-			<JedecChecksum>0x583B</JedecChecksum>
+			<File>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.jed</File>
+			<FileTime>04/28/22 17:09:24</FileTime>
+			<JedecChecksum>0x5C80</JedecChecksum>
 			<Operation>SRAM Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

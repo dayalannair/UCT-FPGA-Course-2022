@@ -11,24 +11,24 @@ cModel Technology
 dC:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation
 vUART
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1651140770
+!s110 1651157544
 !i10b 1
-!s100 Y0j=AALgSlklB@6So1VHX3
+!s100 PW4hgH_9PG<<[LVbHhIaA2
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I06HWT4bmz88MdcK;;klok3
+I9@`;AcKY2>Gkj3H8Uf@g82
 S1
 Z2 dC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Simulation
-w1651140767
+w1651157540
 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v
 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v
-!i122 9
-L0 19 81
+!i122 24
+L0 19 150
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 OT;L;2020.3;71
 r1
 !s85 0
 31
-!s108 1651140770.000000
+!s108 1651157544.000000
 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v|
 !s101 -O0

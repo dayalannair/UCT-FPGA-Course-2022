@@ -3,13 +3,14 @@ Part: lfxp2_5e-5
 
 Register bits: 31 of 4752 (1%)
 PIC Latch:       0
-I/O cells:       9
+I/O cells:       10
 
 Details:
 CCU2B:          16
-FD1S3AX:        31
+FD1S3IX:        31
 GSR:            1
-IB:             1
+IB:             2
+INV:            1
 OB:             8
 PUR:            1
 VHI:            1

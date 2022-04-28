@@ -5,14 +5,14 @@ The file contains the area information from mapper to be displayed as part of th
 *******************************************************************************************-->
 <report_table display_priority="1" name="Area Summary">
 <report_link name="Detailed report">
-<data>C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synlog\report\Counter_impl1_fpga_mapper_resourceusage.rpt</data>
+<data>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\report\Counter_impl1_fpga_mapper_resourceusage.rpt</data>
 <title>Resource Usage</title>
 </report_link>
 <parameter tooltip="Total Register bits used" name="Register bits">
 <data>31</data>
 </parameter>
 <parameter tooltip="Total I/O cells used" name="I/O cells">
-<data>9</data>
+<data>10</data>
 </parameter>
 <parameter tcl_name="v_ram" tooltip="Total Block RAMs used" name="Block RAMs">
 <data>0</data>

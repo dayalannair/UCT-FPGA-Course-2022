@@ -1,0 +1,602 @@
+
+Loading design for application trce from file counter_impl1_map.ncd.
+Design name: counter
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFXP2-5E
+Package:     TQFP144
+Performance: 5
+Loading device for application trce from file 'mg5a26x29.nph' in environment: C:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 11.5.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Thu Apr 28 17:09:03 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -c -u 0 -gt -mapchkpnt 0 -sethld -o Counter_impl1.tw1 -gui -msgset C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/promote.xml Counter_impl1_map.ncd Counter_impl1.prf 
+Design file:     counter_impl1_map.ncd
+Preference file: counter_impl1.prf
+Device,speed:    LFXP2-5E,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
+            496 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.537ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[0]  (from ipClk_c +)
+   Destination:    FF         Data in        count[30]  (to ipClk_c +)
+
+   Delay:               3.482ns  (68.5% logic, 31.5% route), 17 logic levels.
+
+ Constraint Details:
+
+      3.482ns physical path delay SLICE_16 to SLICE_1 meets
+      4.112ns delay constraint less
+      0.093ns DIN_SET requirement (totaling 4.019ns) by 0.537ns
+
+ Physical Path Details:
+
+      Data path SLICE_16 to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383   SLICE_16.CLK to    SLICE_16.Q0 SLICE_16 (from ipClk_c)
+ROUTE         2   e 1.081    SLICE_16.Q0 to     SLICE_0.A1 count[0]
+C1TOFCO_DE  ---     0.475     SLICE_0.A1 to    SLICE_0.FCO SLICE_0
+ROUTE         1   e 0.001    SLICE_0.FCO to   SLICE_15.FCI un2_count_cry_0
+FCITOFCO_D  ---     0.081   SLICE_15.FCI to   SLICE_15.FCO SLICE_15
+ROUTE         1   e 0.001   SLICE_15.FCO to   SLICE_14.FCI un2_count_cry_2
+FCITOFCO_D  ---     0.081   SLICE_14.FCI to   SLICE_14.FCO SLICE_14
+ROUTE         1   e 0.001   SLICE_14.FCO to   SLICE_13.FCI un2_count_cry_4
+FCITOFCO_D  ---     0.081   SLICE_13.FCI to   SLICE_13.FCO SLICE_13
+ROUTE         1   e 0.001   SLICE_13.FCO to   SLICE_12.FCI un2_count_cry_6
+FCITOFCO_D  ---     0.081   SLICE_12.FCI to   SLICE_12.FCO SLICE_12
+ROUTE         1   e 0.001   SLICE_12.FCO to   SLICE_11.FCI un2_count_cry_8
+FCITOFCO_D  ---     0.081   SLICE_11.FCI to   SLICE_11.FCO SLICE_11
+ROUTE         1   e 0.001   SLICE_11.FCO to   SLICE_10.FCI un2_count_cry_10
+FCITOFCO_D  ---     0.081   SLICE_10.FCI to   SLICE_10.FCO SLICE_10
+ROUTE         1   e 0.001   SLICE_10.FCO to    SLICE_9.FCI un2_count_cry_12
+FCITOFCO_D  ---     0.081    SLICE_9.FCI to    SLICE_9.FCO SLICE_9
+ROUTE         1   e 0.001    SLICE_9.FCO to    SLICE_8.FCI un2_count_cry_14
+FCITOFCO_D  ---     0.081    SLICE_8.FCI to    SLICE_8.FCO SLICE_8
+ROUTE         1   e 0.001    SLICE_8.FCO to    SLICE_7.FCI un2_count_cry_16
+FCITOFCO_D  ---     0.081    SLICE_7.FCI to    SLICE_7.FCO SLICE_7
+ROUTE         1   e 0.001    SLICE_7.FCO to    SLICE_6.FCI un2_count_cry_18
+FCITOFCO_D  ---     0.081    SLICE_6.FCI to    SLICE_6.FCO SLICE_6
+ROUTE         1   e 0.001    SLICE_6.FCO to    SLICE_5.FCI un2_count_cry_20
+FCITOFCO_D  ---     0.081    SLICE_5.FCI to    SLICE_5.FCO SLICE_5
+ROUTE         1   e 0.001    SLICE_5.FCO to    SLICE_4.FCI un2_count_cry_22
+FCITOFCO_D  ---     0.081    SLICE_4.FCI to    SLICE_4.FCO SLICE_4
+ROUTE         1   e 0.001    SLICE_4.FCO to    SLICE_3.FCI un2_count_cry_24
+FCITOFCO_D  ---     0.081    SLICE_3.FCI to    SLICE_3.FCO SLICE_3
+ROUTE         1   e 0.001    SLICE_3.FCO to    SLICE_2.FCI un2_count_cry_26
+FCITOFCO_D  ---     0.081    SLICE_2.FCI to    SLICE_2.FCO SLICE_2
+ROUTE         1   e 0.001    SLICE_2.FCO to    SLICE_1.FCI un2_count_cry_28
+FCITOF1_DE  ---     0.393    SLICE_1.FCI to     SLICE_1.F1 SLICE_1
+ROUTE         1   e 0.001     SLICE_1.F1 to    SLICE_1.DI1 un2_count_cry_29_0_S1 (to ipClk_c)
+                  --------
+                    3.482   (68.5% logic, 31.5% route), 17 logic levels.
+
+Report:  279.720MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: Unconstrained: CLOCK_DOMAIN
+            0 unconstrained paths found
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: Unconstrained: INPUT_SETUP
+            16 unconstrained paths found
+--------------------------------------------------------------------------------
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_1 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_1.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_10 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to   SLICE_10.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_11 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to   SLICE_11.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_12 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to   SLICE_12.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_13 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to   SLICE_13.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_14 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to   SLICE_14.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_15 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to   SLICE_15.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_16 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to   SLICE_16.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_2 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_2.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_3 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_3.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_4 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_4.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_5 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_5.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_6 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_6.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_7 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_7.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_8 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_8.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+Unconstrained Preference:
+   INPUT_SETUP PORT "ipReset" CLKPORT "ipClk" 
+
+Report:    2.574ns delay ipReset to SLICE_9 (2.130ns delay and 0.444ns setup)
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     1.049    ipReset.PAD to  ipReset.PADDI ipReset
+ROUTE        16   e 1.081  ipReset.PADDI to    SLICE_9.LSR ipReset_c (to ipClk_c)
+                  --------
+                    2.130   (49.2% logic, 50.8% route), 1 logic levels.
+
+
+================================================================================
+Preference: Unconstrained: CLOCK_TO_OUT
+            8 unconstrained paths found
+--------------------------------------------------------------------------------
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[6]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_1 to opLED[6]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_1.CLK to     SLICE_1.Q0 SLICE_1 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_1.Q0 to       38.PADDO opLED_c[6]
+DOPAD_DEL   ---     1.207       38.PADDO to         38.PAD opLED[6]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[7]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_1 to opLED[7]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_1.CLK to     SLICE_1.Q1 SLICE_1 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_1.Q1 to       37.PADDO opLED_c[7]
+DOPAD_DEL   ---     1.207       37.PADDO to         37.PAD opLED[7]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[4]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_2 to opLED[4]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_2.CLK to     SLICE_2.Q0 SLICE_2 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_2.Q0 to       40.PADDO opLED_c[4]
+DOPAD_DEL   ---     1.207       40.PADDO to         40.PAD opLED[4]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[5]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_2 to opLED[5]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_2.CLK to     SLICE_2.Q1 SLICE_2 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_2.Q1 to       39.PADDO opLED_c[5]
+DOPAD_DEL   ---     1.207       39.PADDO to         39.PAD opLED[5]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[2]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_3 to opLED[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_3.CLK to     SLICE_3.Q0 SLICE_3 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_3.Q0 to       44.PADDO opLED_c[2]
+DOPAD_DEL   ---     1.207       44.PADDO to         44.PAD opLED[2]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[3]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_3 to opLED[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_3.CLK to     SLICE_3.Q1 SLICE_3 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_3.Q1 to       43.PADDO opLED_c[3]
+DOPAD_DEL   ---     1.207       43.PADDO to         43.PAD opLED[3]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[0]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_4 to opLED[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_4.CLK to     SLICE_4.Q0 SLICE_4 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_4.Q0 to       46.PADDO opLED_c[0]
+DOPAD_DEL   ---     1.207       46.PADDO to         46.PAD opLED[0]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+Unconstrained Preference:
+   CLOCK_TO_OUT PORT "opLED[1]" CLKPORT "ipClk" 
+
+Report:    2.671ns delay SLICE_4 to opLED[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    SLICE_4.CLK to     SLICE_4.Q1 SLICE_4 (from ipClk_c)
+ROUTE         2   e 1.081     SLICE_4.Q1 to       45.PADDO opLED_c[1]
+DOPAD_DEL   ---     1.207       45.PADDO to         45.PAD opLED[1]
+                  --------
+                    2.671   (59.5% logic, 40.5% route), 2 logic levels.
+
+
+================================================================================
+Preference: Unconstrained: MAXDELAY
+            0 unconstrained paths found
+--------------------------------------------------------------------------------
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "ipClk_c" 243.191000 MHz  |             |             |
+;                                       |  243.191 MHz|  279.720 MHz|  17  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 16
+   Covered under: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
+
+
+--------------------------------------------------------------------------------
+                Connections not covered by the preferences
+--------------------------------------------------------------------------------
+
+     Delay                        Element                 Net
+
+  e 1.081ns           SLICE_4.Q0 to       opLED[0].PADDO opLED_c[0]
+  e 1.081ns        ipReset.PADDI to          SLICE_1.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_2.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_3.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_4.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_5.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_6.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_7.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_8.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to          SLICE_9.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to         SLICE_10.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to         SLICE_11.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to         SLICE_12.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to         SLICE_13.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to         SLICE_14.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to         SLICE_15.LSR ipReset_c
+  e 1.081ns        ipReset.PADDI to         SLICE_16.LSR ipReset_c
+  e 1.081ns           SLICE_1.Q1 to       opLED[7].PADDO opLED_c[7]
+  e 1.081ns           SLICE_4.Q1 to       opLED[1].PADDO opLED_c[1]
+  e 1.081ns           SLICE_3.Q0 to       opLED[2].PADDO opLED_c[2]
+  e 1.081ns           SLICE_3.Q1 to       opLED[3].PADDO opLED_c[3]
+  e 1.081ns           SLICE_2.Q0 to       opLED[4].PADDO opLED_c[4]
+  e 1.081ns           SLICE_2.Q1 to       opLED[5].PADDO opLED_c[5]
+  e 1.081ns           SLICE_1.Q0 to       opLED[6].PADDO opLED_c[6]
+
+--------------------------------------------------------------------------------
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 496 paths, 1 nets, and 125 connections (83.89% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Thu Apr 28 17:09:03 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -c -u 0 -gt -mapchkpnt 0 -sethld -o Counter_impl1.tw1 -gui -msgset C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/promote.xml Counter_impl1_map.ncd Counter_impl1.prf 
+Design file:     counter_impl1_map.ncd
+Preference file: counter_impl1.prf
+Device,speed:    LFXP2-5E,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
+            496 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.282ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              count[29]  (from ipClk_c +)
+   Destination:    FF         Data in        count[29]  (to ipClk_c +)
+
+   Delay:               0.283ns  (63.3% logic, 36.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.283ns physical path delay SLICE_1 to SLICE_1 meets
+      0.001ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling 0.001ns) by 0.282ns
+
+ Physical Path Details:
+
+      Data path SLICE_1 to SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.120    SLICE_1.CLK to     SLICE_1.Q0 SLICE_1 (from ipClk_c)
+ROUTE         2   e 0.103     SLICE_1.Q0 to     SLICE_1.A0 opLED_c[6]
+CTOF_DEL    ---     0.059     SLICE_1.A0 to     SLICE_1.F0 SLICE_1
+ROUTE         1   e 0.001     SLICE_1.F0 to    SLICE_1.DI0 un2_count_cry_29_0_S0 (to ipClk_c)
+                  --------
+                    0.283   (63.3% logic, 36.7% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "ipClk_c" 243.191000 MHz  |             |             |
+;                                       |     0.000 ns|     0.282 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 16
+   Covered under: FREQUENCY NET "ipClk_c" 243.191000 MHz ;
+
+
+--------------------------------------------------------------------------------
+                Connections not covered by the preferences
+--------------------------------------------------------------------------------
+
+     Delay                        Element                 Net
+
+  e 0.450ns           SLICE_4.Q0 to       opLED[0].PADDO opLED_c[0]
+  e 0.450ns        ipReset.PADDI to          SLICE_1.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_2.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_3.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_4.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_5.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_6.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_7.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_8.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to          SLICE_9.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to         SLICE_10.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to         SLICE_11.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to         SLICE_12.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to         SLICE_13.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to         SLICE_14.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to         SLICE_15.LSR ipReset_c
+  e 0.450ns        ipReset.PADDI to         SLICE_16.LSR ipReset_c
+  e 0.450ns           SLICE_1.Q1 to       opLED[7].PADDO opLED_c[7]
+  e 0.450ns           SLICE_4.Q1 to       opLED[1].PADDO opLED_c[1]
+  e 0.450ns           SLICE_3.Q0 to       opLED[2].PADDO opLED_c[2]
+  e 0.450ns           SLICE_3.Q1 to       opLED[3].PADDO opLED_c[3]
+  e 0.450ns           SLICE_2.Q0 to       opLED[4].PADDO opLED_c[4]
+  e 0.450ns           SLICE_2.Q1 to       opLED[5].PADDO opLED_c[5]
+  e 0.450ns           SLICE_1.Q0 to       opLED[6].PADDO opLED_c[6]
+
+--------------------------------------------------------------------------------
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 496 paths, 1 nets, and 125 connections (83.89% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

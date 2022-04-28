@@ -5,7 +5,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 *******************************************************************************************-->
 <report_table display_priority="2" name="Timing Summary">
 <report_link name="Detailed report">
-<data>C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synlog\Counter_impl1_fpga_mapper.srr</data>
+<data>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\Counter_impl1_fpga_mapper.srr</data>
 <title>START OF TIMING REPORT</title>
 </report_link>
 <row>
@@ -17,7 +17,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>counter|ipClk</data>
 <data>200.0 MHz</data>
-<data>204.7 MHz</data>
-<data>0.115</data>
+<data>201.2 MHz</data>
+<data>0.030</data>
 </row>
 </report_table>

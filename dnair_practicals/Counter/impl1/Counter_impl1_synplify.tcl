@@ -12,7 +12,7 @@ set_option -symbolic_fsm_compiler true
 set_option -resource_sharing true
 
 #use verilog 2001 standard option
-set_option -vlog_std sysv
+set_option -vlog_std v2001
 
 #map options
 set_option -frequency 200
@@ -45,14 +45,15 @@ set_option -vhdl2008 1
 set_option -seqshift_no_replicate 0
 
 #-- add_file options
-set_option -include_path {C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter}
-add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter.v}
+set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter}
+add_file -verilog -vlog_std v2001 {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v}
+add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v}
 
 #-- top module name
 set_option -top_module counter
 
 #-- set result format/file last
-project -result_file {C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/Counter_impl1.edi}
+project -result_file {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.edi}
 
 #-- error message log file
 project -log_file {Counter_impl1.srf}

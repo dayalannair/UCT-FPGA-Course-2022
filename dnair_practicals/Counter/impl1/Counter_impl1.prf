@@ -1,5 +1,5 @@
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Wed Apr 27 14:28:32 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Thu Apr 28 17:09:01 2022
 
 SYSCONFIG DONE_OD=ON DONE_EX=OFF CONFIG_SECURE=OFF WAKE_UP=21 WAKE_ON_LOCK=OFF INBUF=ON MASTER_SPI_PORT=DISABLE SLAVE_SPI_PORT=DISABLE MY_ASSP=OFF ONE_TIME_PROGRAM=OFF ;
 LOCATE COMP "opLED[0]" SITE "46" ;
@@ -18,5 +18,5 @@ COMMERCIAL ;
 
 // No timing preferences found. TRCE invokes auto-generation of timing preferences
 // Section Autogen
-FREQUENCY NET "ipClk_c" 381.825 MHz ;
+FREQUENCY NET "ipClk_c" 243.191 MHz ;
 // End Section Autogen

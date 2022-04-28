@@ -14,17 +14,23 @@ Hostname: DAYALAN1
 Implementation : impl1
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 0
+Modified Files: 3
 FID:  path (prevtimestamp, timestamp)
+7        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (N/A, 2022-04-28 16:52:20)
+8        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v (N/A, 2022-04-27 15:47:38)
+0        C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\counter.v (2022-04-27 14:07:33, N/A)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 0
+Modules that may have changed as a result of file changes: 2
 MID:  lib.cell.view
+1        work.UART.verilog may have changed because the following files changed:
+                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (N/A, 2022-04-28 16:52:20) <-- (module definition)
+0        work.counter.verilog may have changed because the following files changed:
+                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v (N/A, 2022-04-27 15:47:38) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 7
+Unmodified files: 6
 FID:  path (timestamp)
-0        C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\counter.v (2022-04-27 14:07:33)
 1        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
 2        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
 3        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)
@@ -33,6 +39,5 @@ FID:  path (timestamp)
 6        C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 10:23:10)
 
 *******************************************************************
-Unchanged modules: 1
+Unchanged modules: 0
 MID:  lib.cell.view
-0        work.counter.verilog

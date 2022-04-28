@@ -1,11 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
-#--  Project file C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\run_options.txt
-#--  Written on Wed Apr 27 14:28:21 2022
+#--  Project file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\run_options.txt
+#--  Written on Thu Apr 28 17:08:48 2022
 
 
 #project files
-add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter.v"
+add_file -verilog -vlog_std v2001 "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v"
 
 
 #implementation: "impl1"
@@ -14,9 +15,9 @@ impl -add impl1 -type fpga
 #
 #implementation attributes
 
-set_option -vlog_std sysv
+set_option -vlog_std v2001
 set_option -project_relative_includes 1
-set_option -include_path {C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter}
+set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter}
 
 #device options
 set_option -technology LATTICE-XP2
@@ -77,5 +78,5 @@ set_option -write_apr_constraint 1
 project -result_file "./Counter_impl1.edi"
 
 #set log file 
-set_option log_file "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/Counter_impl1.srf" 
+set_option log_file "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.srf" 
 impl -active "impl1"

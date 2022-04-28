@@ -4,11 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Apr 27 14:28:33 2022
+Thu Apr 28 17:09:04 2022
 
 C:/lscc/diamond/3.12/ispfpga\bin\nt64\par -f Counter_impl1.p2t
 Counter_impl1_map.ncd Counter_impl1.dir Counter_impl1.prf -gui -msgset
-C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/promote.xml
+C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/promote.xml
 
 
 Preference file: Counter_impl1.prf.
@@ -16,11 +16,11 @@ Preference file: Counter_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -            -            -            -            12           Completed
+5_1   *      0            0.509        0            0.235        0            15           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 12 secs 
+Total (real) run time for 1-seed: 15 secs 
 
 par done!
 

@@ -3,16 +3,17 @@ Report for cell counter.verilog
 
 Register bits: 31 of 4752 (1%)
 PIC Latch:       0
-I/O cells:       9
+I/O cells:       10
                                           Cell usage:
                                cell       count    Res Usage(%)
                               CCU2B       16       100.0
-                            FD1S3AX       31       100.0
+                            FD1S3IX       31       100.0
                                 GSR        1       100.0
-                                 IB        1       100.0
+                                 IB        2       100.0
+                                INV        1       100.0
                                  OB        8       100.0
                                 PUR        1       100.0
                                 VHI        1       100.0
                                 VLO        1       100.0
                             
-                         TOTAL            60           
+                         TOTAL            62           
