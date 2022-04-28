@@ -12,7 +12,7 @@ set_option -symbolic_fsm_compiler true
 set_option -resource_sharing true
 
 #use verilog 2001 standard option
-set_option -vlog_std v2001
+set_option -vlog_std sysv
 
 #map options
 set_option -frequency 200
@@ -46,8 +46,9 @@ set_option -seqshift_no_replicate 0
 
 #-- add_file options
 set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter}
-add_file -verilog -vlog_std v2001 {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v}
+add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v}
 add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v}
+add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/top.v}
 
 #-- top module name
 set_option -top_module counter

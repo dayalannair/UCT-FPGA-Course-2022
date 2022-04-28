@@ -6,30 +6,16 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT529 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\counter.v&quot;:10:0:10:5|Found inferred clock counter|ipClk which controls 31 sequential elements including count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance.</Dynamic>
-            <Navigation>MT529</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\counter.v</Navigation>
-            <Navigation>10</Navigation>
+            <ID>2019990</ID>
+            <Severity>Error</Severity>
+            <Dynamic>CG376 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v&quot;:8:0:8:3|Expecting variable name</Dynamic>
+            <Navigation>CG376</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v</Navigation>
+            <Navigation>8</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>10</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Found inferred clock counter|ipClk which controls 31 sequential elements including count[30:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved.</Dynamic>
-            <Navigation>FX474</Navigation>
-            <Navigation>User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. </Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT420 |Found inferred clock counter|ipClk with period 5.00ns. Please declare a user-defined clock on port ipClk.</Dynamic>
-            <Navigation>MT420</Navigation>
-            <Navigation>Found inferred clock counter|ipClk with period 5.00ns. Please declare a user-defined clock on port ipClk.</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>3</Navigation>
+            <Navigation>Expecting variable name</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

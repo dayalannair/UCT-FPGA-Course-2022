@@ -3,8 +3,9 @@
 #--  Project file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\scratchproject.prs
 
 #project files
-add_file -verilog -vlog_std v2001 "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v"
 add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/top.v"
 
 
 #implementation: "impl1"
@@ -13,7 +14,7 @@ impl -add "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\C
 #
 #implementation attributes
 
-set_option -vlog_std v2001
+set_option -vlog_std sysv
 set_option -project_relative_includes 1
 set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/}
 set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter}
