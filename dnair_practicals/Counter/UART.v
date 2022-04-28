@@ -29,83 +29,71 @@ module UART(
   output reg [7:0]opRxData, // data being received is valid
   output reg      opRxValid  // holds received data 
 );
-reg [2:0] state;
-localparam off = 3'b000;
-localparam tx = 3'b001;
-localparam rx = 3'b010;
+
+reg rst;
+reg [2:0] cnt;
+reg []
+typedef enum {
+	off,
+	on
+	} STATE;
+
+STATE rx_state;
+STATE tx_state;
 
 // TODO: Put the receiver here
 always @(posedge ipClk) begin
+	rst <= ipReset;
 	
-	
-	if (ipReset) begin
+	if (rst) begin
 		opRxValid <= 1'b0;
 		opTxBusy <= 1'b0;
-		state <= off;
-		end
+		rx_state <= off;
+		tx_state <= off;
+	end
 		
 	else begin
-		case(state)
+		case(tx_state)
 			off: begin
-				if (!ipTxSend) begin
-					state = tx;
+				cnt <= 3'd7;
+				opTxBusy <= 1'b0;
+				if (ipTxSend) tx_state <= on;
+				end
+				
+			on: begin 
+				opTxBusy <= 1'b1;
+				if (cnt == 0) begin
+					tx_state <= off;
+					opTx <= ipTxData[cnt];
 					end
+				else begin 
+					cnt <= cnt - 1'b1;
+					opTx <= ipTxData[cnt];
+					end
+				end
+		endcase
+
+		case(rx_state)
+			
+			off: begin
+				cnt <= 3'd7;
+				opRxValid <= 1'b0;
+				if (ipRx) rx_state <= on;
+				end
 	
-				if (!ipRx) begin
-					state = rx;
+			on: begin
+				if (cnt == 0) begin
+					opRxData[cnt] <= ipRx;
+					opRxValid <= 1'b1;
+					rx_state <= off;
+					end
+				else begin 
+					cnt <= cnt - 1'b1;
+					opRxData[cnt] <= ipRx;
 					end
 				end
-				
-			tx: begin 
-				// transmission
-				opTxBusy = 1'b1;
-				// send data
-				opTx = ipTxData;
-				// revert to off state
-				state = off;
-				end
-				
-			rx: begin
-				// data is valid
-				opRxValid = 1'b1;
-				// receive data
-				opRxData = ipRx;
-				
-				//return to off state
-				state = off;
-				
-				end
-				
-			
-					
-			
-			
-		
-	/*
-	if (ipTxSend) begin
-		// transmission in progress
-		opTxBusy = 1'b1;
-		//send data
-		opTx = ipTxData;
-		//transmission over
-		opTxBusy = 1'b0;
+		endcase
 	end
-	
-	if (ipRx) begin
-		// received data is valid
-		opRxValid = 1'b1;
-		
-		// Receive data
-		opRxData = ipRx;
-		
-		// received data no longer valid
-		opRxValid = 1'b0;
-		
-	end*/
-	
 end
 
-//------------------------------------------------------------------------------
-
 endmodule
-//------------------------------------------------------------------------------

@@ -15,6 +15,44 @@ prj_project save
 
 
 
+<A name="pn220427171824"></A><B><U><big>pn220427171824</big></U></B>
+#Start recording tcl command: 4/27/2022 14:04:21
+#Project Location: C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter; Project name: Counter
+prj_project open "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/Counter.ldf"
+prj_src add "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter.v"
+prj_strgy set_value -strategy Strategy1 syn_vhdl2008=True
+prj_strgy set_value -strategy Strategy1 maptrce_check_unconstrained_connections=True maptrce_check_unconstrained_paths=True
+prj_run Export -impl impl1 -task Bitgen
+prj_run Export -impl impl1 -task Bitgen -forceAll
+prj_run Export -impl impl1 -task Bitgen -forceAll
+pgr_project save "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+prj_src add -exclude "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+prj_src enable "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+pgr_program set -cable 
+pgr_program set -cable 
+pgr_project save "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+pgr_program set -cable 
+pgr_program set -cable 
+pgr_project save "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/impl1/impl1.xcf"
+pgr_program run
+prj_src add "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter.fdc"
+prj_src add "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter_TB.v"
+prj_src remove "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter_TB.v"
+prj_src add "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/UART.v"
+prj_src add "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/UART_TB.v"
+prj_src exclude "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/UART_TB.v"
+prj_src exclude "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Counter/counter.v"
+pgr_project close
+#Stop recording: 4/27/2022 17:18:24
+
+
+
 <BR>
 <BR>
 <BR>
