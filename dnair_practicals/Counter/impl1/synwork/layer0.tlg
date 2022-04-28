@@ -1,0 +1,9 @@
+Selecting top level module counter
+@N: CG364 :"C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\counter.v":1:7:1:13|Synthesizing module counter in library work.
+Running optimization stage 1 on counter .......
+Running optimization stage 2 on counter .......
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synwork\layer0.rt.csv
+

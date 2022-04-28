@@ -1,0 +1,79 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.12\synpbase\bin64\mbin\synbatch.exe
+Install:     C:\lscc\diamond\3.12\synpbase
+Hostname:    DAYALAN1
+Date:        Wed Apr 27 14:24:56 2022
+Version:     Q-2020.03L-SP1
+
+Arguments:   -product synplify_pro -batch Counter_impl1_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+Copied C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srr to C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\backup\Counter_impl1.srr
+log file: "C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srr"
+Running: impl1 in foreground
+
+Running proj_1|impl1
+
+Running Flow: compile (Compile) on proj_1|impl1
+# Wed Apr 27 14:24:56 2022
+
+Running Flow: compile_flow (Compile Process) on proj_1|impl1
+# Wed Apr 27 14:24:56 2022
+
+Running: compiler (Compile Input) on proj_1|impl1
+# Wed Apr 27 14:24:56 2022
+Copied C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synwork\Counter_impl1_comp.srs to C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srs
+
+compiler completed
+# Wed Apr 27 14:24:58 2022
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Running: multi_srs_gen (Multi-srs Generator) on proj_1|impl1
+# Wed Apr 27 14:24:58 2022
+
+multi_srs_gen completed
+# Wed Apr 27 14:24:58 2022
+
+Return Code: 0
+Run Time:00h:00m:00s
+Copied C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synwork\Counter_impl1_mult.srs to C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srs
+Copied C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srr to C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srf
+Complete: Compile Process on proj_1|impl1
+
+Running: premap (Premap) on proj_1|impl1
+# Wed Apr 27 14:24:58 2022
+
+premap completed with warnings
+# Wed Apr 27 14:25:01 2022
+
+Return Code: 1
+Run Time:00h:00m:03s
+Complete: Compile on proj_1|impl1
+
+Running Flow: map (Map) on proj_1|impl1
+# Wed Apr 27 14:25:01 2022
+
+Running: fpga_mapper (Map & Optimize) on proj_1|impl1
+# Wed Apr 27 14:25:01 2022
+Copied C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\synwork\Counter_impl1_m.srm to C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srm
+
+fpga_mapper completed with warnings
+# Wed Apr 27 14:25:05 2022
+
+Return Code: 1
+Run Time:00h:00m:04s
+Complete: Map on proj_1|impl1
+Copied C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srr to C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\Counter_impl1.srf
+Complete: Logic Synthesis on proj_1|impl1
+TCL script complete: "Counter_impl1_synplify.tcl"
+exit status=0
+exit status=0
+Save changes for project:
+C:\Users\Dayalan Nair\OneDrive - University of Cape Town\LATTICE\Counter\impl1\proj_1.prj
+batch mode default:no

@@ -1,0 +1,17 @@
+module counter(
+	input ipClk,
+	output [7:0]opLED
+);
+
+
+reg [30:0] count = 0;
+
+always @(posedge ipClk) count++;
+
+assign opLED = count[30:23];
+	
+endmodule
+	
+	
+	
+	
