@@ -1,5 +1,0 @@
-#Start recording tcl command: 4/27/2022 14:01:07
-#Project Location: C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE; Project name: Counter
-prj_project new -name "Counter" -impl "impl1" -dev LFXP2-5E-5TN144C -synthesis "synplify"
-prj_project save
-#Stop recording: 4/27/2022 14:03:22

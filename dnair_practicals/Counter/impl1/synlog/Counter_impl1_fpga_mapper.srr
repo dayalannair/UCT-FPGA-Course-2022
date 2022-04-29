@@ -1,4 +1,4 @@
-# Thu Apr 28 17:08:53 2022
+# Fri Apr 29 17:40:08 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -29,87 +29,120 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 136MB peak: 138MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 167MB peak: 167MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 170MB peak: 170MB)
-
-@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
-
-Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 172MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 180MB peak: 180MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 181MB peak: 181MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 173MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 182MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 173MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 184MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 173MB peak: 173MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 184MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 173MB peak: 173MB)
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 184MB peak: 184MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 195MB peak: 195MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		     0.70ns		   1 /        31
-   2		0h:00m:02s		     0.70ns		   1 /        31
+   1		0h:00m:03s		    -2.48ns		 554 /       455
+   2		0h:00m:03s		    -2.48ns		 548 /       455
+   3		0h:00m:03s		    -1.95ns		 549 /       455
+   4		0h:00m:03s		    -1.95ns		 550 /       455
+   5		0h:00m:03s		    -2.11ns		 550 /       455
+   6		0h:00m:03s		    -1.95ns		 550 /       455
+   7		0h:00m:03s		    -2.03ns		 550 /       455
+Timing driven replication report
+Added 4 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 173MB peak: 174MB)
+   8		0h:00m:04s		    -2.53ns		 586 /       459
+   9		0h:00m:04s		    -2.26ns		 589 /       459
+  10		0h:00m:04s		    -3.07ns		 590 /       459
+  11		0h:00m:04s		    -2.61ns		 590 /       459
+  12		0h:00m:04s		    -2.86ns		 590 /       459
+Added 8 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+Added 1 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+  13		0h:00m:04s		    -1.80ns		 592 /       468
+  14		0h:00m:04s		    -1.64ns		 593 /       468
+  15		0h:00m:04s		    -1.48ns		 593 /       468
+  16		0h:00m:04s		    -1.35ns		 593 /       468
+  17		0h:00m:05s		    -1.36ns		 593 /       468
+  18		0h:00m:05s		    -1.36ns		 597 /       468
+  19		0h:00m:05s		    -1.55ns		 596 /       468
+  20		0h:00m:05s		    -1.36ns		 597 /       468
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 194MB peak: 196MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":527:4:527:9|Boundary register UART_Inst.opTx.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 174MB peak: 174MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 196MB peak: 196MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 139MB peak: 174MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 158MB peak: 197MB)
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 174MB peak: 174MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 197MB peak: 197MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 179MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 202MB peak: 202MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 180MB)
+Start final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 197MB peak: 202MB)
 
-@W: MT420 |Found inferred clock counter|ipClk with period 5.00ns. Please declare a user-defined clock on port ipClk.
+@W: MT246 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":91:15:91:31|Blackbox jtagconn16 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v":1192:8:1192:20|Blackbox pmi_ram_dp_Z2 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@W: MT246 :"c:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v":2162:8:2162:13|Blackbox pmi_ram_dp_Z4 is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
+@N: MT615 |Found clock ipClk with period 20.00ns 
+@W: MT420 |Found inferred clock reveal_coretop|jtck_inferred_clock[0] with period 5.00ns. Please declare a user-defined clock on net top_reveal_coretop_instance.jtck[0].
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Thu Apr 28 17:08:57 2022
+# Timing report written on Fri Apr 29 17:40:16 2022
 #
 
 
-Top view:               counter
-Requested Frequency:    200.0 MHz
+Top view:               top
+Requested Frequency:    50.0 MHz
 Wire load mode:         top
 Paths requested:        5
-Constraint File(s):    
+Constraint File(s):    C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.fdc
+                       
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
@@ -120,13 +153,15 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 0.030
+Worst slack in design: -2.453
 
-                   Requested     Estimated     Requested     Estimated               Clock        Clock              
-Starting Clock     Frequency     Frequency     Period        Period        Slack     Type         Group              
----------------------------------------------------------------------------------------------------------------------
-counter|ipClk      200.0 MHz     201.2 MHz     5.000         4.970         0.030     inferred     Inferred_clkgroup_0
-=====================================================================================================================
+                                          Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock                            Frequency     Frequency     Period        Period        Slack      Type         Group              
+---------------------------------------------------------------------------------------------------------------------------------------------
+ipClk                                     50.0 MHz      116.2 MHz     20.000        8.604         11.396     declared     default_clkgroup   
+reveal_coretop|jtck_inferred_clock[0]     200.0 MHz     134.2 MHz     5.000         7.453         -2.453     inferred     Inferred_clkgroup_0
+System                                    200.0 MHz     232.8 MHz     5.000         4.295         0.705      system       system_clkgroup    
+=============================================================================================================================================
 
 
 
@@ -135,12 +170,20 @@ counter|ipClk      200.0 MHz     201.2 MHz     5.000         4.970         0.030
 Clock Relationships
 *******************
 
-Clocks                        |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
---------------------------------------------------------------------------------------------------------------------
-Starting       Ending         |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
---------------------------------------------------------------------------------------------------------------------
-counter|ipClk  counter|ipClk  |  5.000       0.030  |  No paths    -      |  No paths    -      |  No paths    -    
-====================================================================================================================
+Clocks                                                                        |    rise  to  rise    |    fall  to  fall    |    rise  to  fall    |    fall  to  rise  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                               Ending                                 |  constraint  slack   |  constraint  slack   |  constraint  slack   |  constraint  slack 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                                 System                                 |  5.000       0.705   |  No paths    -       |  No paths    -       |  No paths    -     
+System                                 ipClk                                  |  20.000      17.751  |  No paths    -       |  No paths    -       |  No paths    -     
+System                                 reveal_coretop|jtck_inferred_clock[0]  |  No paths    -       |  No paths    -       |  5.000       -1.055  |  No paths    -     
+ipClk                                  System                                 |  20.000      15.526  |  No paths    -       |  No paths    -       |  No paths    -     
+ipClk                                  ipClk                                  |  20.000      11.396  |  No paths    -       |  No paths    -       |  No paths    -     
+ipClk                                  reveal_coretop|jtck_inferred_clock[0]  |  No paths    -       |  No paths    -       |  Diff grp    -       |  No paths    -     
+reveal_coretop|jtck_inferred_clock[0]  System                                 |  No paths    -       |  No paths    -       |  No paths    -       |  5.000       -0.574
+reveal_coretop|jtck_inferred_clock[0]  ipClk                                  |  No paths    -       |  No paths    -       |  No paths    -       |  Diff grp    -     
+reveal_coretop|jtck_inferred_clock[0]  reveal_coretop|jtck_inferred_clock[0]  |  No paths    -       |  5.000       -2.453  |  No paths    -       |  No paths    -     
+========================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -154,7 +197,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: counter|ipClk
+Detailed Report for Clock: ipClk
 ====================================
 
 
@@ -162,41 +205,140 @@ Detailed Report for Clock: counter|ipClk
 Starting Points with Worst Slack
 ********************************
 
-             Starting                                           Arrival          
-Instance     Reference         Type        Pin     Net          Time        Slack
-             Clock                                                               
----------------------------------------------------------------------------------
-count[0]     counter|ipClk     FD1S3IX     Q       count[0]     1.091       0.030
-count[1]     counter|ipClk     FD1S3IX     Q       count[1]     1.006       0.203
-count[2]     counter|ipClk     FD1S3IX     Q       count[2]     1.006       0.203
-count[3]     counter|ipClk     FD1S3IX     Q       count[3]     1.006       0.291
-count[4]     counter|ipClk     FD1S3IX     Q       count[4]     1.006       0.291
-count[5]     counter|ipClk     FD1S3IX     Q       count[5]     1.006       0.379
-count[6]     counter|ipClk     FD1S3IX     Q       count[6]     1.006       0.379
-count[7]     counter|ipClk     FD1S3IX     Q       count[7]     1.006       0.467
-count[8]     counter|ipClk     FD1S3IX     Q       count[8]     1.006       0.467
-count[9]     counter|ipClk     FD1S3IX     Q       count[9]     1.006       0.555
-=================================================================================
+                          Starting                                          Arrival           
+Instance                  Reference     Type        Pin     Net             Time        Slack 
+                          Clock                                                               
+----------------------------------------------------------------------------------------------
+UART_Inst.clk_cnt[0]      ipClk         FD1S3JX     Q       clk_cnt[0]      1.213       11.396
+UART_Inst.clk_cnt[1]      ipClk         FD1S3IX     Q       clk_cnt[1]      1.166       11.443
+UART_Inst.clk_cnt[2]      ipClk         FD1S3IX     Q       clk_cnt[2]      1.166       11.443
+UART_Inst.clk_cnt[3]      ipClk         FD1S3IX     Q       clk_cnt[3]      1.166       11.443
+UART_Inst.clk_cnt[4]      ipClk         FD1S3JX     Q       clk_cnt[4]      1.166       11.443
+UART_Inst.clk_cnt[5]      ipClk         FD1S3JX     Q       clk_cnt[5]      1.166       11.443
+UART_Inst.clk_cnt[8]      ipClk         FD1S3JX     Q       clk_cnt[8]      1.166       11.443
+UART_Inst.clk_cnt[9]      ipClk         FD1S3IX     Q       clk_cnt[9]      1.166       11.443
+UART_Inst.clk_cnt2[0]     ipClk         FD1S3JX     Q       clk_cnt2[0]     1.213       11.690
+UART_Inst.clk_cnt2[1]     ipClk         FD1S3JX     Q       clk_cnt2[1]     1.166       11.737
+==============================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-              Starting                                                        Required          
-Instance      Reference         Type        Pin     Net                       Time         Slack
-              Clock                                                                             
-------------------------------------------------------------------------------------------------
-count[29]     counter|ipClk     FD1S3IX     D       un2_count_cry_29_0_S0     5.057        0.030
-count[30]     counter|ipClk     FD1S3IX     D       un2_count_cry_29_0_S1     5.057        0.030
-count[27]     counter|ipClk     FD1S3IX     D       un2_count_cry_27_0_S0     5.057        0.118
-count[28]     counter|ipClk     FD1S3IX     D       un2_count_cry_27_0_S1     5.057        0.118
-count[25]     counter|ipClk     FD1S3IX     D       un2_count_cry_25_0_S0     5.057        0.206
-count[26]     counter|ipClk     FD1S3IX     D       un2_count_cry_25_0_S1     5.057        0.206
-count[23]     counter|ipClk     FD1S3IX     D       un2_count_cry_23_0_S0     5.057        0.294
-count[24]     counter|ipClk     FD1S3IX     D       un2_count_cry_23_0_S1     5.057        0.294
-count[21]     counter|ipClk     FD1S3IX     D       un2_count_cry_21_0_S0     5.057        0.382
-count[22]     counter|ipClk     FD1S3IX     D       un2_count_cry_21_0_S1     5.057        0.382
-================================================================================================
+                          Starting                                                      Required           
+Instance                  Reference     Type        Pin     Net                         Time         Slack 
+                          Clock                                                                            
+-----------------------------------------------------------------------------------------------------------
+UART_Inst.tx_cnt[3]       ipClk         FD1S3JX     PD      un1_tx_cnt_7_s_3_0_S0       19.640       11.396
+UART_Inst.clk_cnt2[9]     ipClk         FD1S3JX     D       clk_cnt2_9[9]               20.057       11.690
+UART_Inst.clk_cnt2[7]     ipClk         FD1S3JX     D       clk_cnt2_9[7]               20.057       11.778
+UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     D       clk_cnt2_9[8]               20.057       11.778
+UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     D       clk_cnt2_9[5]               20.057       11.866
+UART_Inst.clk_cnt2[6]     ipClk         FD1S3IX     D       clk_cnt2_9[6]               20.057       11.866
+UART_Inst.tx_cnt[1]       ipClk         FD1S3IX     D       un1_tx_cnt_7_cry_1_0_S0     20.057       11.901
+UART_Inst.tx_cnt[2]       ipClk         FD1S3IX     D       un1_tx_cnt_7_cry_1_0_S1     20.057       11.901
+UART_Inst.clk_cnt2[3]     ipClk         FD1S3JX     D       clk_cnt2_9[3]               20.057       11.954
+UART_Inst.clk_cnt2[4]     ipClk         FD1S3IX     D       clk_cnt2_9[4]               20.057       11.954
+===========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      20.000
+    - Setup time:                            0.360
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         19.640
+
+    - Propagation time:                      8.244
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 11.396
+
+    Number of logic level(s):                7
+    Starting point:                          UART_Inst.clk_cnt[0] / Q
+    Ending point:                            UART_Inst.tx_cnt[3] / PD
+    The start point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
+    The end   point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
+
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+UART_Inst.clk_cnt[0]                FD1S3JX      Q        Out     1.213     1.213 r     -         
+clk_cnt[0]                          Net          -        -       -         -           4         
+UART_Inst.un1_tx_state_3_0_o2_6     ORCALUT4     D        In      0.000     1.213 r     -         
+UART_Inst.un1_tx_state_3_0_o2_6     ORCALUT4     Z        Out     0.883     2.097 r     -         
+un1_tx_state_3_0_o2_6               Net          -        -       -         -           1         
+UART_Inst.un1_tx_state_3_0_o2       ORCALUT4     B        In      0.000     2.097 r     -         
+UART_Inst.un1_tx_state_3_0_o2       ORCALUT4     Z        Out     1.175     3.271 r     -         
+un1_tx_state_3_0_o2                 Net          -        -       -         -           8         
+UART_Inst.un1_rst_7_0_i_o2          ORCALUT4     A        In      0.000     3.271 r     -         
+UART_Inst.un1_rst_7_0_i_o2          ORCALUT4     Z        Out     1.090     4.362 r     -         
+N_61                                Net          -        -       -         -           4         
+UART_Inst.un1_rst_7_0_i_a4          ORCALUT4     A        In      0.000     4.362 r     -         
+UART_Inst.un1_rst_7_0_i_a4          ORCALUT4     Z        Out     1.090     5.452 r     -         
+N_99                                Net          -        -       -         -           4         
+UART_Inst.un1_tx_cnt_7_cry_0_0      CCU2B        B1       In      0.000     5.452 r     -         
+UART_Inst.un1_tx_cnt_7_cry_0_0      CCU2B        COUT     Out     1.243     6.695 r     -         
+un1_tx_cnt_7_cry_0                  Net          -        -       -         -           1         
+UART_Inst.un1_tx_cnt_7_cry_1_0      CCU2B        CIN      In      0.000     6.695 r     -         
+UART_Inst.un1_tx_cnt_7_cry_1_0      CCU2B        COUT     Out     0.088     6.783 r     -         
+un1_tx_cnt_7_cry_2                  Net          -        -       -         -           1         
+UART_Inst.un1_tx_cnt_7_s_3_0        CCU2B        CIN      In      0.000     6.783 r     -         
+UART_Inst.un1_tx_cnt_7_s_3_0        CCU2B        S0       Out     1.461     8.244 r     -         
+un1_tx_cnt_7_s_3_0_S0               Net          -        -       -         -           1         
+UART_Inst.tx_cnt[3]                 FD1S3JX      PD       In      0.000     8.244 r     -         
+==================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: reveal_coretop|jtck_inferred_clock[0]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                             Starting                                                                             Arrival           
+Instance                                                                     Reference                                 Type        Pin     Net                    Time        Slack 
+                                                                             Clock                                                                                                  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[28]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       shift_reg_fast[28]     1.260       -2.453
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[29]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       shift_reg_fast[29]     1.260       -2.453
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[26]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[10]               1.166       -2.359
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[27]          reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       addr[11]               1.166       -2.359
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.bit_cnt[0]             reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       bit_cnt[0]             1.091       -2.306
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.bit_cnt[1]             reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       bit_cnt[1]             1.091       -2.306
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.bit_cnt[2]             reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       bit_cnt[2]             1.091       -2.306
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.bit_cnt[3]             reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       bit_cnt[3]             1.091       -2.306
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[16]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       shift_reg_fast[16]     1.091       -2.284
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[17]     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     Q       shift_reg_fast[17]     1.091       -2.284
+====================================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                      Starting                                                                                Required           
+Instance                                                              Reference                                 Type        Pin     Net                       Time         Slack 
+                                                                      Clock                                                                                                      
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc     reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     D       parity_calc_5             4.264        -2.453
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.tm_crc[0]       reveal_coretop|jtck_inferred_clock[0]     FD1P3BX     D       tm_crc_7[0]               4.264        -1.512
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[0]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[1]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[2]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[3]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[4]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[5]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[6]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.trace_dout[7]         reveal_coretop|jtck_inferred_clock[0]     FD1P3DX     SP      trace_dout_1_sqmuxa_i     4.640        -1.240
+=================================================================================================================================================================================
 
 
 
@@ -206,111 +348,554 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      5.000
-    - Setup time:                            -0.057
+    - Setup time:                            0.736
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         5.057
+    = Required time:                         4.264
 
-    - Propagation time:                      5.027
+    - Propagation time:                      6.717
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     0.030
+    = Slack (critical) :                     -2.453
 
-    Number of logic level(s):                16
-    Starting point:                          count[0] / Q
-    Ending point:                            count[30] / D
-    The start point is clocked by            counter|ipClk [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
-    The end   point is clocked by            counter|ipClk [rising] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    Number of logic level(s):                7
+    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[28] / Q
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
 
-Instance / Net                        Pin      Pin               Arrival     No. of    
-Name                      Type        Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------
-count[0]                  FD1S3IX     Q        Out     1.091     1.091 r     -         
-count[0]                  Net         -        -       -         -           2         
-un2_count_cry_0_0         CCU2B       A1       In      0.000     1.091 r     -         
-un2_count_cry_0_0         CCU2B       COUT     Out     1.243     2.334 r     -         
-un2_count_cry_0           Net         -        -       -         -           1         
-un2_count_cry_1_0         CCU2B       CIN      In      0.000     2.334 r     -         
-un2_count_cry_1_0         CCU2B       COUT     Out     0.088     2.422 r     -         
-un2_count_cry_2           Net         -        -       -         -           1         
-un2_count_cry_3_0         CCU2B       CIN      In      0.000     2.422 r     -         
-un2_count_cry_3_0         CCU2B       COUT     Out     0.088     2.510 r     -         
-un2_count_cry_4           Net         -        -       -         -           1         
-un2_count_cry_5_0         CCU2B       CIN      In      0.000     2.510 r     -         
-un2_count_cry_5_0         CCU2B       COUT     Out     0.088     2.598 r     -         
-un2_count_cry_6           Net         -        -       -         -           1         
-un2_count_cry_7_0         CCU2B       CIN      In      0.000     2.598 r     -         
-un2_count_cry_7_0         CCU2B       COUT     Out     0.088     2.686 r     -         
-un2_count_cry_8           Net         -        -       -         -           1         
-un2_count_cry_9_0         CCU2B       CIN      In      0.000     2.686 r     -         
-un2_count_cry_9_0         CCU2B       COUT     Out     0.088     2.774 r     -         
-un2_count_cry_10          Net         -        -       -         -           1         
-un2_count_cry_11_0        CCU2B       CIN      In      0.000     2.774 r     -         
-un2_count_cry_11_0        CCU2B       COUT     Out     0.088     2.862 r     -         
-un2_count_cry_12          Net         -        -       -         -           1         
-un2_count_cry_13_0        CCU2B       CIN      In      0.000     2.862 r     -         
-un2_count_cry_13_0        CCU2B       COUT     Out     0.088     2.950 r     -         
-un2_count_cry_14          Net         -        -       -         -           1         
-un2_count_cry_15_0        CCU2B       CIN      In      0.000     2.950 r     -         
-un2_count_cry_15_0        CCU2B       COUT     Out     0.088     3.038 r     -         
-un2_count_cry_16          Net         -        -       -         -           1         
-un2_count_cry_17_0        CCU2B       CIN      In      0.000     3.038 r     -         
-un2_count_cry_17_0        CCU2B       COUT     Out     0.088     3.126 r     -         
-un2_count_cry_18          Net         -        -       -         -           1         
-un2_count_cry_19_0        CCU2B       CIN      In      0.000     3.126 r     -         
-un2_count_cry_19_0        CCU2B       COUT     Out     0.088     3.214 r     -         
-un2_count_cry_20          Net         -        -       -         -           1         
-un2_count_cry_21_0        CCU2B       CIN      In      0.000     3.214 r     -         
-un2_count_cry_21_0        CCU2B       COUT     Out     0.088     3.302 r     -         
-un2_count_cry_22          Net         -        -       -         -           1         
-un2_count_cry_23_0        CCU2B       CIN      In      0.000     3.302 r     -         
-un2_count_cry_23_0        CCU2B       COUT     Out     0.088     3.390 r     -         
-un2_count_cry_24          Net         -        -       -         -           1         
-un2_count_cry_25_0        CCU2B       CIN      In      0.000     3.390 r     -         
-un2_count_cry_25_0        CCU2B       COUT     Out     0.088     3.478 r     -         
-un2_count_cry_26          Net         -        -       -         -           1         
-un2_count_cry_27_0        CCU2B       CIN      In      0.000     3.478 r     -         
-un2_count_cry_27_0        CCU2B       COUT     Out     0.088     3.566 r     -         
-un2_count_cry_28          Net         -        -       -         -           1         
-un2_count_cry_29_0        CCU2B       CIN      In      0.000     3.566 r     -         
-un2_count_cry_29_0        CCU2B       S1       Out     1.461     5.027 r     -         
-un2_count_cry_29_0_S1     Net         -        -       -         -           1         
-count[30]                 FD1S3IX     D        In      0.000     5.027 r     -         
-=======================================================================================
+Instance / Net                                                                              Pin      Pin               Arrival     No. of    
+Name                                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[28]       FD1P3DX      Q        Out     1.260     1.260 r     -         
+shift_reg_fast[28]                                                             Net          -        -       -         -           6         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1     ORCALUT4     D        In      0.000     1.260 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1     ORCALUT4     Z        Out     0.883     2.144 r     -         
+un5_jtdo_first_bit_1                                                           Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit       ORCALUT4     C        In      0.000     2.144 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit       ORCALUT4     Z        Out     1.236     3.380 r     -         
+un5_jtdo_first_bit_sn                                                          Net          -        -       -         -           18        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33       ORCALUT4     D        In      0.000     3.380 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33       ORCALUT4     Z        Out     0.883     4.263 r     -         
+parity_calc_RNO_33                                                             Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24       ORCALUT4     A        In      0.000     4.263 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24       ORCALUT4     Z        Out     0.883     5.146 f     -         
+N_6                                                                            Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9        ORCALUT4     D        In      0.000     5.146 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9        ORCALUT4     Z        Out     0.883     6.030 r     -         
+parity_calc_RNO_9                                                              Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2        PFUMX        ALUT     In      0.000     6.030 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2        PFUMX        Z        Out     0.142     6.172 r     -         
+parity_calc_RNO_2                                                              Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO          ORCALUT4     C        In      0.000     6.172 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO          ORCALUT4     Z        Out     0.545     6.717 f     -         
+parity_calc_5                                                                  Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc              FD1P3DX      D        In      0.000     6.717 f     -         
+=============================================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      6.717
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.453
+
+    Number of logic level(s):                7
+    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[29] / Q
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[29]         FD1P3DX      Q        Out     1.260     1.260 r     -         
+shift_reg_fast[29]                                                               Net          -        -       -         -           6         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1_0     ORCALUT4     D        In      0.000     1.260 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1_0     ORCALUT4     Z        Out     0.883     2.144 r     -         
+un5_jtdo_first_bit_1_0                                                           Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit         ORCALUT4     D        In      0.000     2.144 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit         ORCALUT4     Z        Out     1.236     3.380 r     -         
+un5_jtdo_first_bit_sn                                                            Net          -        -       -         -           18        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33         ORCALUT4     D        In      0.000     3.380 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33         ORCALUT4     Z        Out     0.883     4.263 r     -         
+parity_calc_RNO_33                                                               Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24         ORCALUT4     A        In      0.000     4.263 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24         ORCALUT4     Z        Out     0.883     5.146 f     -         
+N_6                                                                              Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9          ORCALUT4     D        In      0.000     5.146 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9          ORCALUT4     Z        Out     0.883     6.030 r     -         
+parity_calc_RNO_9                                                                Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2          PFUMX        ALUT     In      0.000     6.030 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2          PFUMX        Z        Out     0.142     6.172 r     -         
+parity_calc_RNO_2                                                                Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO            ORCALUT4     C        In      0.000     6.172 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO            ORCALUT4     Z        Out     0.545     6.717 f     -         
+parity_calc_5                                                                    Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                FD1P3DX      D        In      0.000     6.717 f     -         
+===============================================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      6.623
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.359
+
+    Number of logic level(s):                7
+    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[26] / Q
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[26]              FD1P3DX      Q        Out     1.166     1.166 r     -         
+addr[10]                                                                         Net          -        -       -         -           3         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1_0     ORCALUT4     A        In      0.000     1.166 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1_0     ORCALUT4     Z        Out     0.883     2.050 f     -         
+un5_jtdo_first_bit_1_0                                                           Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit         ORCALUT4     D        In      0.000     2.050 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit         ORCALUT4     Z        Out     1.236     3.285 f     -         
+un5_jtdo_first_bit_sn                                                            Net          -        -       -         -           18        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33         ORCALUT4     D        In      0.000     3.285 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33         ORCALUT4     Z        Out     0.883     4.169 r     -         
+parity_calc_RNO_33                                                               Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24         ORCALUT4     A        In      0.000     4.169 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24         ORCALUT4     Z        Out     0.883     5.052 f     -         
+N_6                                                                              Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9          ORCALUT4     D        In      0.000     5.052 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9          ORCALUT4     Z        Out     0.883     5.936 r     -         
+parity_calc_RNO_9                                                                Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2          PFUMX        ALUT     In      0.000     5.936 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2          PFUMX        Z        Out     0.142     6.078 r     -         
+parity_calc_RNO_2                                                                Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO            ORCALUT4     C        In      0.000     6.078 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO            ORCALUT4     Z        Out     0.545     6.623 f     -         
+parity_calc_5                                                                    Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                FD1P3DX      D        In      0.000     6.623 f     -         
+===============================================================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      6.623
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.359
+
+    Number of logic level(s):                7
+    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[27] / Q
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                Pin      Pin               Arrival     No. of    
+Name                                                                             Type         Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[27]              FD1P3DX      Q        Out     1.166     1.166 r     -         
+addr[11]                                                                         Net          -        -       -         -           3         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1_0     ORCALUT4     B        In      0.000     1.166 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1_0     ORCALUT4     Z        Out     0.883     2.050 f     -         
+un5_jtdo_first_bit_1_0                                                           Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit         ORCALUT4     D        In      0.000     2.050 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit         ORCALUT4     Z        Out     1.236     3.285 f     -         
+un5_jtdo_first_bit_sn                                                            Net          -        -       -         -           18        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33         ORCALUT4     D        In      0.000     3.285 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_33         ORCALUT4     Z        Out     0.883     4.169 r     -         
+parity_calc_RNO_33                                                               Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24         ORCALUT4     A        In      0.000     4.169 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_24         ORCALUT4     Z        Out     0.883     5.052 f     -         
+N_6                                                                              Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9          ORCALUT4     D        In      0.000     5.052 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_9          ORCALUT4     Z        Out     0.883     5.936 r     -         
+parity_calc_RNO_9                                                                Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2          PFUMX        ALUT     In      0.000     5.936 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_2          PFUMX        Z        Out     0.142     6.078 r     -         
+parity_calc_RNO_2                                                                Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO            ORCALUT4     C        In      0.000     6.078 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO            ORCALUT4     Z        Out     0.545     6.623 f     -         
+parity_calc_5                                                                    Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                FD1P3DX      D        In      0.000     6.623 f     -         
+===============================================================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      6.575
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.311
+
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[28] / Q
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                              Pin      Pin               Arrival     No. of    
+Name                                                                           Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg_fast[28]       FD1P3DX      Q        Out     1.260     1.260 r     -         
+shift_reg_fast[28]                                                             Net          -        -       -         -           6         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1     ORCALUT4     D        In      0.000     1.260 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit_1     ORCALUT4     Z        Out     0.883     2.144 r     -         
+un5_jtdo_first_bit_1                                                           Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit       ORCALUT4     C        In      0.000     2.144 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.un5_jtdo_first_bit       ORCALUT4     Z        Out     1.236     3.380 r     -         
+un5_jtdo_first_bit_sn                                                          Net          -        -       -         -           18        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_21       ORCALUT4     D        In      0.000     3.380 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_21       ORCALUT4     Z        Out     0.883     4.263 r     -         
+m64_i_a3_0_1_1                                                                 Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_8        ORCALUT4     B        In      0.000     4.263 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_8        ORCALUT4     Z        Out     0.883     5.146 r     -         
+m64_i_a3_0_1                                                                   Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_1        ORCALUT4     B        In      0.000     5.146 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_1        ORCALUT4     Z        Out     0.883     6.030 r     -         
+parity_calc_RNO_1                                                              Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO          ORCALUT4     B        In      0.000     6.030 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO          ORCALUT4     Z        Out     0.545     6.575 r     -         
+parity_calc_5                                                                  Net          -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc              FD1P3DX      D        In      0.000     6.575 r     -         
+=============================================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                    Starting                                                            Arrival           
+Instance                                                            Reference     Type              Pin           Net                   Time        Slack 
+                                                                    Clock                                                                                 
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                       System        jtagconn16        jce2          jce2[0]               0.000       -1.055
+top_reveal_coretop_instance.jtagconn16_inst_0                       System        jtagconn16        jshift        jshift[0]             0.000       -1.055
+top_reveal_coretop_instance.jtagconn16_inst_0                       System        jtagconn16        ip_enable     ip_enable[0]          0.000       -0.999
+top_reveal_coretop_instance.jtagconn16_inst_0                       System        jtagconn16        jtdi          jtdi[0]               0.000       2.836 
+top_reveal_coretop_instance.jtagconn16_inst_0                       System        jtagconn16        jrstn         jrstn[0]              0.000       3.672 
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.tr_mem     System        pmi_ram_dp_Z4     Q[0]          trace_dout_int[0]     0.000       4.889 
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.tr_mem     System        pmi_ram_dp_Z4     Q[1]          trace_dout_int[1]     0.000       4.889 
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.tr_mem     System        pmi_ram_dp_Z4     Q[2]          trace_dout_int[2]     0.000       4.889 
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.tr_mem     System        pmi_ram_dp_Z4     Q[3]          trace_dout_int[3]     0.000       4.889 
+top_reveal_coretop_instance.top_la0_inst_0.tm_u.genblk4\.tr_mem     System        pmi_ram_dp_Z4     Q[4]          trace_dout_int[4]     0.000       4.889 
+==========================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                       Starting                                            Required           
+Instance                                                               Reference     Type        Pin     Net               Time         Slack 
+                                                                       Clock                                                                  
+----------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc      System        FD1P3DX     D       parity_calc_5     4.264        -1.055
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[0]     System        FD1P3DX     D       N_1113_i          4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[1]     System        FD1P3DX     D       N_1112_i          4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[2]     System        FD1P3DX     D       N_1111_i          4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[3]     System        FD1P3DX     D       N_1139_i          4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[4]     System        FD1P3DX     D       N_1138_i          4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[5]     System        FD1P3DX     D       N_1137_i          4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[7]     System        FD1P3DX     D       N_1136_i          4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[8]     System        FD1P3DX     D       N_14_i            4.264        0.415 
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.shift_reg[9]     System        FD1P3DX     D       N_12_i            4.264        0.415 
+==============================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      5.319
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.055
+
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.jtagconn16_inst_0 / jce2
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                   Pin      Pin               Arrival     No. of    
+Name                                                                              Type           Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                                     jtagconn16     jce2     Out     0.000     0.000 r     -         
+jce2[0]                                                                           Net            -        -       -         -           21        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       A        In      0.000     0.000 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       Z        Out     0.968     0.968 r     -         
+jce2_RNICMUK                                                                      Net            -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       A        In      0.000     0.968 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       Z        Out     1.156     2.124 r     -         
+g1_1_1                                                                            Net            -        -       -         -           7         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_16          ORCALUT4       B        In      0.000     2.124 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_16          ORCALUT4       Z        Out     0.883     3.007 f     -         
+parity_calc_RNO_16                                                                Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_4           ORCALUT4       D        In      0.000     3.007 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_4           ORCALUT4       Z        Out     0.883     3.891 f     -         
+g0_1                                                                              Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       A        In      0.000     3.891 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       Z        Out     0.883     4.774 r     -         
+parity_calc_RNO_0                                                                 Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       A        In      0.000     4.774 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       Z        Out     0.545     5.319 f     -         
+parity_calc_5                                                                     Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                 FD1P3DX        D        In      0.000     5.319 f     -         
+==================================================================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      5.319
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.055
+
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.jtagconn16_inst_0 / jshift
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                   Pin        Pin               Arrival     No. of    
+Name                                                                              Type           Name       Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                                     jtagconn16     jshift     Out     0.000     0.000 r     -         
+jshift[0]                                                                         Net            -          -       -         -           40        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       B          In      0.000     0.000 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       Z          Out     0.968     0.968 r     -         
+jce2_RNICMUK                                                                      Net            -          -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       A          In      0.000     0.968 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       Z          Out     1.156     2.124 r     -         
+g1_1_1                                                                            Net            -          -       -         -           7         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_16          ORCALUT4       B          In      0.000     2.124 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_16          ORCALUT4       Z          Out     0.883     3.007 f     -         
+parity_calc_RNO_16                                                                Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_4           ORCALUT4       D          In      0.000     3.007 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_4           ORCALUT4       Z          Out     0.883     3.891 f     -         
+g0_1                                                                              Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       A          In      0.000     3.891 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       Z          Out     0.883     4.774 r     -         
+parity_calc_RNO_0                                                                 Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       A          In      0.000     4.774 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       Z          Out     0.545     5.319 f     -         
+parity_calc_5                                                                     Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                 FD1P3DX        D          In      0.000     5.319 f     -         
+====================================================================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      5.319
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.055
+
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.jtagconn16_inst_0 / jce2
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                   Pin      Pin               Arrival     No. of    
+Name                                                                              Type           Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                                     jtagconn16     jce2     Out     0.000     0.000 r     -         
+jce2[0]                                                                           Net            -        -       -         -           21        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       A        In      0.000     0.000 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       Z        Out     0.968     0.968 r     -         
+jce2_RNICMUK                                                                      Net            -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       A        In      0.000     0.968 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       Z        Out     1.156     2.124 r     -         
+g1_1_1                                                                            Net            -        -       -         -           7         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_17          ORCALUT4       B        In      0.000     2.124 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_17          ORCALUT4       Z        Out     0.883     3.007 f     -         
+parity_calc_RNO_17                                                                Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_5           ORCALUT4       C        In      0.000     3.007 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_5           ORCALUT4       Z        Out     0.883     3.891 r     -         
+parity_calc_RNO_5                                                                 Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       B        In      0.000     3.891 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       Z        Out     0.883     4.774 r     -         
+parity_calc_RNO_0                                                                 Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       A        In      0.000     4.774 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       Z        Out     0.545     5.319 f     -         
+parity_calc_5                                                                     Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                 FD1P3DX        D        In      0.000     5.319 f     -         
+==================================================================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      5.319
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.055
+
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.jtagconn16_inst_0 / jce2
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                   Pin      Pin               Arrival     No. of    
+Name                                                                              Type           Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                                     jtagconn16     jce2     Out     0.000     0.000 r     -         
+jce2[0]                                                                           Net            -        -       -         -           21        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       A        In      0.000     0.000 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       Z        Out     0.968     0.968 r     -         
+jce2_RNICMUK                                                                      Net            -        -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       A        In      0.000     0.968 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       Z        Out     1.156     2.124 r     -         
+g1_1_1                                                                            Net            -        -       -         -           7         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_20          ORCALUT4       A        In      0.000     2.124 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_20          ORCALUT4       Z        Out     0.883     3.007 f     -         
+g2_0_0_0                                                                          Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_8           ORCALUT4       A        In      0.000     3.007 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_8           ORCALUT4       Z        Out     0.883     3.891 f     -         
+m64_i_a3_0_1                                                                      Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_1           ORCALUT4       B        In      0.000     3.891 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_1           ORCALUT4       Z        Out     0.883     4.774 f     -         
+parity_calc_RNO_1                                                                 Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       B        In      0.000     4.774 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       Z        Out     0.545     5.319 f     -         
+parity_calc_5                                                                     Net            -        -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                 FD1P3DX        D        In      0.000     5.319 f     -         
+==================================================================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      5.000
+    - Setup time:                            0.736
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4.264
+
+    - Propagation time:                      5.319
+    - Clock delay at starting point:         0.000 (ideal)
+    - Estimated clock delay at start point:  -0.000
+    = Slack (non-critical) :                 -1.055
+
+    Number of logic level(s):                6
+    Starting point:                          top_reveal_coretop_instance.jtagconn16_inst_0 / jshift
+    Ending point:                            top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc / D
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            reveal_coretop|jtck_inferred_clock[0] [falling] (rise=0.000 fall=2.500 period=5.000) on pin CK
+
+Instance / Net                                                                                   Pin        Pin               Arrival     No. of    
+Name                                                                              Type           Name       Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------------------------------------------
+top_reveal_coretop_instance.jtagconn16_inst_0                                     jtagconn16     jshift     Out     0.000     0.000 r     -         
+jshift[0]                                                                         Net            -          -       -         -           40        
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       B          In      0.000     0.000 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jce2_RNICMUK                ORCALUT4       Z          Out     0.968     0.968 r     -         
+jce2_RNICMUK                                                                      Net            -          -       -         -           2         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       A          In      0.000     0.968 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.jshift_d1_fast_RNIQCP01     ORCALUT4       Z          Out     1.156     2.124 r     -         
+g1_1_1                                                                            Net            -          -       -         -           7         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_17          ORCALUT4       B          In      0.000     2.124 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_17          ORCALUT4       Z          Out     0.883     3.007 f     -         
+parity_calc_RNO_17                                                                Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_5           ORCALUT4       C          In      0.000     3.007 f     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_5           ORCALUT4       Z          Out     0.883     3.891 r     -         
+parity_calc_RNO_5                                                                 Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       B          In      0.000     3.891 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO_0           ORCALUT4       Z          Out     0.883     4.774 r     -         
+parity_calc_RNO_0                                                                 Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       A          In      0.000     4.774 r     -         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc_RNO             ORCALUT4       Z          Out     0.545     5.319 f     -         
+parity_calc_5                                                                     Net            -          -       -         -           1         
+top_reveal_coretop_instance.top_la0_inst_0.jtag_int_u.parity_calc                 FD1P3DX        D          In      0.000     5.319 f     -         
+====================================================================================================================================================
 
 
 
 ##### END OF TIMING REPORT #####]
 
 Timing exceptions that could not be applied
+@W: MT447 :"c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc":8:0:8:0|Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design 
+@W: MT447 :"c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc":9:0:9:0|Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
+None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 179MB peak: 180MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 198MB peak: 202MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 179MB peak: 180MB)
+Finished timing report (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 198MB peak: 202MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfxp2_5e-5
 
-Register bits: 31 of 4752 (1%)
+Register bits: 468 of 4752 (10%)
 PIC Latch:       0
-I/O cells:       10
+I/O cells:       12
 
 
 Details:
-CCU2B:          16
-FD1S3IX:        31
+CCU2B:          47
+FD1P3AX:        35
+FD1P3BX:        33
+FD1P3DX:        280
+FD1P3IX:        2
+FD1S3AX:        5
+FD1S3BX:        1
+FD1S3DX:        74
+FD1S3IX:        22
+FD1S3JX:        14
 GSR:            1
-IB:             2
-INV:            1
-OB:             8
+IB:             3
+IFS1P3DX:       1
+INV:            14
+L6MUX21:        1
+OB:             9
+OFS1P3JX:       1
+ORCALUT4:       577
+PFUMX:          10
 PUR:            1
-VHI:            1
-VLO:            1
+VHI:            10
+VLO:            11
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 64MB peak: 180MB)
+At Mapper Exit (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 73MB peak: 202MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Thu Apr 28 17:08:58 2022
+Process took 0h:00m:08s realtime, 0h:00m:07s cputime
+# Fri Apr 29 17:40:16 2022
 
 ###########################################################]

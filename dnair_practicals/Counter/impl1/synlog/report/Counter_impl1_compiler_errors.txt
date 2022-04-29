@@ -1,2 +1,0 @@
-@E: CG376 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v":8:0:8:3|Expecting variable name
-

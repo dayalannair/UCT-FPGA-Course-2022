@@ -15,9 +15,21 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <data tcl_name="slack">Slack</data>
 </row>
 <row>
-<data>counter|ipClk</data>
+<data>ipClk</data>
+<data>50.0 MHz</data>
+<data>116.2 MHz</data>
+<data>11.396</data>
+</row>
+<row>
+<data>reveal_coretop|jtck_inferred_clock[0]</data>
 <data>200.0 MHz</data>
-<data>201.2 MHz</data>
-<data>0.030</data>
+<data>134.2 MHz</data>
+<data>-2.453</data>
+</row>
+<row>
+<data>System</data>
+<data>200.0 MHz</data>
+<data>232.8 MHz</data>
+<data>0.705</data>
 </row>
 </report_table>

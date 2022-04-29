@@ -32,7 +32,8 @@ module UART(
 
 reg rst;
 reg rx;
-reg [2:0] cnt;
+reg [3:0] rx_cnt;
+reg [3:0] tx_cnt;
 reg [9:0] clk_cnt;
 reg [9:0] clk_cnt2;
 reg [7:0] txData;
@@ -62,7 +63,7 @@ always @(posedge ipClk) begin
 	else begin
 		case(tx_state)
 			off: begin
-					cnt <= 3'd7;
+					tx_cnt <= 4'd8;
 					clk_cnt <= 10'd433;
 					opTxBusy <= 1'b0;
 					opTx <= 1'b1; // hold output bit high while off
@@ -78,31 +79,38 @@ always @(posedge ipClk) begin
 						clk_cnt <= clk_cnt - 1'b1;
 					end
 					else begin
-						clk_cnt <= 10'd433;
+						//clk_cnt <= 10'd433;
 						tx_state <= on;
 					end
 				end
 			on: begin 
 					// if bit held for clk_cnt and no more bits to send
-					if ((clk_cnt == 0) && (cnt == 0)) begin
+					// if count starts at 8, bit 0 corresp to cnt = 1
+
+					if ((clk_cnt == 0) && (tx_cnt == 0)) begin
 						clk_cnt <= 10'd433;
+						opTx <= 1'b1;
 						tx_state <= stop;
+
 					end
+					// else if  ((clk_cnt == 0) && (tx_cnt == 1)) begin
+
+					// end
 					//if bit held for clk_cnt time and counter not = 0, move to next bit
-					else if ((clk_cnt == 0) && (cnt != 0)) begin
-						cnt <= cnt - 1'b1; // move to next bit
+					else if ((clk_cnt == 0) && (tx_cnt != 0)) begin
+						tx_cnt <= tx_cnt - 1'b1; // move to next bit
 						opTx <= txData[0]; 
 						txData <= txData>>1; // put next bit on line (next cycle)
 						clk_cnt <= 10'd433; // reset hold time
 					end
 					// if bit not held for clk_cnt and cnt > 0, keep holding bit on the line
 					else begin
-						opTx <= txData[0];
+						// opTx <= txData[0];
 						clk_cnt <= clk_cnt - 1'b1;
 					end
 				end
 			stop: begin
-					if (clk_cnt == 0) tx_state = off;
+					if (clk_cnt == 0) tx_state <= off;
 					else begin
 						opTx <= 1'b1;
 						clk_cnt <= clk_cnt - 1'b1;
@@ -116,34 +124,30 @@ always @(posedge ipClk) begin
 		case(rx_state)
 			
 			off: begin
-					clk_cnt2 <= 10'd433;
-					cnt <= 3'd7;
+					clk_cnt2 <= 10'd651;
+					rx_cnt <= 4'd8;
 					opRxValid <= 1'b0; 
 					if (rx == 0) rx_state <= start; // change state if ipRx goes low
 				end
 
 			start: begin
 						// if ipRx does not remain low for required time, revert to off state
-						if 		((rx != 0) && (clk_cnt2 != 0)) rx_state = off;
+						if 		((rx != 0) && (clk_cnt2 != 0)) rx_state <= off;
 						// if ipRx still zero after required time, turn on
-						else if ((rx == 0) && (clk_cnt2 == 0)) begin
-							rx_state = on;
-							clk_cnt2 <= 10'd433;
-						end
-
-						// else decrement counter
+						else if ((rx == 0) && (clk_cnt2 == 0)) rx_state <= on;
+						// else decrement counter 
 						else 	clk_cnt2 <= clk_cnt2 - 1'b1;
 					end
 	
 			on: begin
 				// if bit held for clk_cnt and no more bits to send
-					if ((clk_cnt2 == 0) && (cnt == 0)) begin
+					if ((clk_cnt2 == 0) && (rx_cnt == 0)) begin
 						clk_cnt2 <= 10'd433;
 						rx_state <= stop;
 					end
 					//if bit held for clk_cnt time and counter not = 0, move to next bit
-					else if ((clk_cnt2 == 0) && (cnt != 0)) begin
-						cnt <= cnt - 1'b1; // move to next bit
+					else if ((clk_cnt2 == 0) && (rx_cnt != 0)) begin
+						rx_cnt <= rx_cnt - 1'b1; // move to next bit
 						opRxData <= {rx, opRxData[7:1]}; 
 						clk_cnt2 <= 10'd433; // reset hold time
 					end
@@ -151,14 +155,15 @@ always @(posedge ipClk) begin
 					else clk_cnt2 <= clk_cnt2 - 1'b1;
 				end
 			stop: begin
-					if ((rx == 1) && (clk_cnt2 != 0)) begin
-						clk_cnt2 <= clk_cnt2 - 1'b1;
-						opRxValid = 1'b1;
-					end
-					else if (rx != 1) rx_state <= off;
-					else if (clk_cnt2 == 0) rx_state <= off;
-				end
+					if ((rx == 1) && (clk_cnt2 != 0)) clk_cnt2 <= clk_cnt2 - 1'b1;
 
+					else if ((rx == 1) && (clk_cnt2 == 0)) begin
+						opRxValid <= 1'b1;
+						rx_state <= off;
+					end
+					// if protocol broken, return to off
+					else rx_state <= off;
+				end
 
 			default: rx_state <= off;
 		endcase

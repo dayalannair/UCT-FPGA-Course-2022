@@ -22,8 +22,9 @@ set_option -disable_io_insertion false
 set_option -retiming false; set_option -pipe true
 set_option -force_gsr false
 set_option -compiler_compatible 0
-set_option -dup false
+set_option -dup 1
 
+add_file -constraint {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.fdc}
 set_option -default_enum_encoding default
 
 #simulation options
@@ -46,12 +47,17 @@ set_option -seqshift_no_replicate 0
 
 #-- add_file options
 set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter}
-add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v}
-add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v}
-add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/top.v}
+add_file -verilog {C:/lscc/diamond/3.12/cae_library/synthesis/verilog/pmi_def.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/ertl/ertl.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/rvl_j2w_module.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/rvl_j2w_module/wb2sci.v}
+add_file -verilog {C:/lscc/diamond/3.12/module/reveal/src/ertl/JTAG_SOFT.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v}
+add_file -verilog -vlog_std v2001 {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/reveal_workspace/tmpreveal/top_la0_gen.v}
+add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/reveal_workspace/tmpreveal/top_rvl.v} 
 
 #-- top module name
-set_option -top_module counter
+set_option -top_module top
 
 #-- set result format/file last
 project -result_file {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.edi}

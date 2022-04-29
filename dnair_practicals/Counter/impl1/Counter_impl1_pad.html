@@ -14,14 +14,15 @@ Performance Grade:      5
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.42
 
-Thu Apr 28 17:09:17 2022
+Fri Apr 29 17:40:38 2022
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-------------------------------+
 | Port Name | Pin/Bank | Buffer Type  | Site  | Properties                    |
 +-----------+----------+--------------+-------+-------------------------------+
 | ipClk     | 21/7     | LVCMOS33_IN  | PL12A | SLEW:FAST PULL:UP             |
-| ipReset   | 48/5     | LVCMOS25_IN  | PB14B | SLEW:FAST PULL:UP             |
+| ipUART_Rx | 110/1    | LVCMOS33_IN  | PT28A | SLEW:FAST PULL:UP             |
+| ipnReset  | 19/7     | LVCMOS33_IN  | PL11A | SLEW:FAST PULL:UP             |
 | opLED[0]  | 46/5     | LVCMOS33_OUT | PB14A | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[1]  | 45/5     | LVCMOS33_OUT | PB15A | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[2]  | 44/5     | LVCMOS33_OUT | PB13A | DRIVE:12mA SLEW:FAST PULL:UP  |
@@ -30,12 +31,14 @@ Pinout by Port Name:
 | opLED[5]  | 39/5     | LVCMOS33_OUT | PB8B  | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[6]  | 38/5     | LVCMOS33_OUT | PB7A  | DRIVE:12mA SLEW:FAST PULL:UP  |
 | opLED[7]  | 37/5     | LVCMOS33_OUT | PB8A  | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opUART_Tx | 109/1    | LVCMOS33_OUT | PT28B | DRIVE:12mA SLEW:FAST PULL:UP  |
 +-----------+----------+--------------+-------+-------------------------------+
 
 Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
+| 1    | 3.3V  |
 | 5    | 3.3V  |
 | 7    |       |
 +------+-------+
@@ -65,7 +68,7 @@ Vccio by Bank:
 | 16/7     |     unused, PULL:UP |            |              | PL10A | CCLK/LDQ9            |
 | 17/7     |     unused, PULL:UP |            |              | PL9B  | LDQ9                 |
 | 18/7     |     unused, PULL:UP |            |              | PL10B | SO/LDQ9              |
-| 19/7     |     unused, PULL:UP |            |              | PL11A | SI/LDQ9              |
+| 19/7     | ipnReset            | LOCATED    | LVCMOS33_IN  | PL11A | SI/LDQ9              |
 | 20/7     |     unused, PULL:UP |            |              | PL11B | INITN/LDQ9           |
 | 21/7     | ipClk               | LOCATED    | LVCMOS33_IN  | PL12A | PCLKT7_0/LDQ9        |
 | 22/7     |     unused, PULL:UP |            |              | PL12B | PCLKC7_0/LDQ9        |
@@ -86,7 +89,7 @@ Vccio by Bank:
 | 45/5     | opLED[1]            | LOCATED    | LVCMOS33_OUT | PB15A | BDQS15               |
 | 46/5     | opLED[0]            | LOCATED    | LVCMOS33_OUT | PB14A | BDQ15                |
 | 47/5     |     unused, PULL:UP |            |              | PB15B | BDQ15                |
-| 48/5     | ipReset             |            | LVCMOS25_IN  | PB14B | BDQ15                |
+| 48/5     |     unused, PULL:UP |            |              | PB14B | BDQ15                |
 | 50/5     |     unused, PULL:UP |            |              | PB16A | BDQ15                |
 | 52/5     |     unused, PULL:UP |            |              | PB16B | BDQ15                |
 | 53/5     |     unused, PULL:UP |            |              | PB17A | BDQ15                |
@@ -125,8 +128,8 @@ Vccio by Bank:
 | 104/2    |     unused, PULL:UP |            |              | PR5A  | RDQ9                 |
 | 107/2    |     unused, PULL:UP |            |              | PR2B  | VREF2_2              |
 | 108/2    |     unused, PULL:UP |            |              | PR2A  | VREF1_2              |
-| 109/1    |     unused, PULL:UP |            |              | PT28B | VREF2_1/TDQ24        |
-| 110/1    |     unused, PULL:UP |            |              | PT28A | VREF1_1/TDQ24        |
+| 109/1    | opUART_Tx           | LOCATED    | LVCMOS33_OUT | PT28B | VREF2_1/TDQ24        |
+| 110/1    | ipUART_Rx           | LOCATED    | LVCMOS33_IN  | PT28A | VREF1_1/TDQ24        |
 | 113/1    |     unused, PULL:UP |            |              | PT21B | TDQ24                |
 | 114/1    |     unused, PULL:UP |            |              | PT20B | PCLKC1_0/TDQ24       |
 | 115/1    |     unused, PULL:UP |            |              | PT21A | TDQ24                |
@@ -258,7 +261,8 @@ List of All Pins' Locate Preferences Based on Final Placement After PAR
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
 LOCATE  COMP  "ipClk"  SITE  "21";
-LOCATE  COMP  "ipReset"  SITE  "48";
+LOCATE  COMP  "ipUART_Rx"  SITE  "110";
+LOCATE  COMP  "ipnReset"  SITE  "19";
 LOCATE  COMP  "opLED[0]"  SITE  "46";
 LOCATE  COMP  "opLED[1]"  SITE  "45";
 LOCATE  COMP  "opLED[2]"  SITE  "44";
@@ -267,6 +271,7 @@ LOCATE  COMP  "opLED[4]"  SITE  "40";
 LOCATE  COMP  "opLED[5]"  SITE  "39";
 LOCATE  COMP  "opLED[6]"  SITE  "38";
 LOCATE  COMP  "opLED[7]"  SITE  "37";
+LOCATE  COMP  "opUART_Tx"  SITE  "109";
 
 
 
@@ -278,7 +283,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Thu Apr 28 17:09:17 2022
+Fri Apr 29 17:40:38 2022
 
 
 

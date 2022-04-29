@@ -43,17 +43,129 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v" (library work)
-@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" (library work)
-@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v" (library work)
-@E: CG376 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v":8:0:8:3|Expecting variable name
-1 syntax errors
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 28 17:27:09 2022
+@I::"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.12\module\reveal\src\ertl\ertl.v" (library work)
+@I::"C:\lscc\diamond\3.12\module\reveal\src\rvl_j2w_module\rvl_j2w_module.v" (library work)
+@I::"C:\lscc\diamond\3.12\module\reveal\src\rvl_j2w_module\wb2sci.v" (library work)
+@I::"C:\lscc\diamond\3.12\module\reveal\src\ertl\JTAG_SOFT.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_trig_gen.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_gen.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v" (library work)
+Verilog syntax check successful!
+File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_trig_gen.v changed - recompiling
+File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_gen.v changed - recompiling
+File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v changed - recompiling
+Selecting top level module top
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":476:7:476:17|Synthesizing module UART_uniq_1 in library work.
+Running optimization stage 1 on UART_uniq_1 .......
+@N: CG364 :"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v":1269:7:1269:9|Synthesizing module VHI in library work.
+Running optimization stage 1 on VHI .......
+Running optimization stage 1 on rvl_jtag_int_47s_1s_0s_0s_6s_47s_47s .......
+Running optimization stage 1 on rvl_decode_1s_1s .......
+Running optimization stage 1 on rvl_tu_1s_0s_0s_0s_1s .......
+Running optimization stage 1 on pmi_ram_dp_Z2 .......
+Running optimization stage 1 on rvl_te_Z1 .......
+Running optimization stage 1 on rvl_tcnt_1s_3s_1_0s .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_trig_gen.v":11:7:11:18|Synthesizing module top_la0_trig in library work.
+Running optimization stage 1 on top_la0_trig .......
+Running optimization stage 1 on pmi_ram_dp_Z4 .......
+Running optimization stage 1 on rvl_tm_Z3 .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_gen.v":12:7:12:13|Synthesizing module top_la0 in library work.
+Running optimization stage 1 on top_la0 .......
+@N: CG364 :"C:\lscc\diamond\3.12\cae_library\synthesis\verilog\pmi_def.v":1162:7:1162:16|Synthesizing module jtagconn16 in library work.
+Running optimization stage 1 on jtagconn16 .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":2:7:2:20|Synthesizing module reveal_coretop in library work.
+@W: CG360 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":16:29:16:39|Removing wire trigger_out, as there is no assignment to it.
+Running optimization stage 1 on reveal_coretop .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":312:7:312:9|Synthesizing module top in library work.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":316:21:316:25|Object opLED is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on top .......
+@W: CL169 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":401:4:401:9|Pruning unused register rst. Make sure that there are no unused intermediate registers.
+Running optimization stage 2 on top .......
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":316:21:316:25|*Unassigned bits of opLED[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+Running optimization stage 2 on reveal_coretop .......
+Running optimization stage 2 on jtagconn16 .......
+Running optimization stage 2 on top_la0 .......
+@N: CL159 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_gen.v":52:7:52:13|Input reset_n is unused.
+@N: CL159 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_la0_gen.v":64:7:64:16|Input trigger_en is unused.
+Running optimization stage 2 on pmi_ram_dp_Z4 .......
+Running optimization stage 2 on rvl_tm_Z3 .......
+Running optimization stage 2 on top_la0_trig .......
+Running optimization stage 2 on rvl_tcnt_1s_3s_1_0s .......
+Running optimization stage 2 on pmi_ram_dp_Z2 .......
+Running optimization stage 2 on rvl_te_Z1 .......
+Running optimization stage 2 on rvl_tu_1s_0s_0s_0s_1s .......
+Running optimization stage 2 on rvl_decode_1s_1s .......
+Running optimization stage 2 on rvl_jtag_int_47s_1s_0s_0s_6s_47s_47s .......
+Running optimization stage 2 on VHI .......
+Running optimization stage 2 on UART_uniq_1 .......
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":527:4:527:9|Trying to extract state machine for register rx_state.
+Extracted state machine for register rx_state
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\reveal_workspace\tmpreveal\top_rvl.v":527:4:527:9|Trying to extract state machine for register tx_state.
+Extracted state machine for register tx_state
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.rt.csv
+
+
+At c_ver Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 106MB peak: 117MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+
+Process completed successfully.
+# Fri Apr 29 17:40:03 2022
 
 ###########################################################]
-@END
+###########################################################[
+
+Copyright (C) 1994-2020 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: Q-2020.03L-SP1
+Install: C:\lscc\diamond\3.12\synpbase
+OS: Windows 6.2
+
+Hostname: DAYALAN1
+
+Implementation : impl1
+Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
+
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 93MB peak: 93MB)
+
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Apr 28 17:27:09 2022
+
+Process completed successfully.
+# Fri Apr 29 17:40:03 2022
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 23MB peak: 23MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+
+Process completed successfully.
+# Fri Apr 29 17:40:03 2022
 
 ###########################################################]
