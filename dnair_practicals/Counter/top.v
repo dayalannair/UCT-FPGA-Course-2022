@@ -1,36 +1,49 @@
-reg  [7:0]UART_TxData;
-reg       UART_TxSend;
-wire      UART_TxBusy;
 
-wire [7:0]UART_RxData;
-wire      UART_RxValid;
+module top;
 
-UART UART_Inst(
-  .ipClk    ( ipClk   ),
-  .ipReset  (~ipnReset),
+  // local registers and wires
+  reg ipClk;
+  reg ipnReset;
+  reg opUART_Tx;
+  reg ipUART_Rx;
 
-  .ipTxData (  UART_TxData),
-  .ipTxSend (  UART_TxSend),
-  .opTxBusy (  UART_TxBusy),
-  .opTx     (opUART_Tx    ),
 
-  .ipRx     (ipUART_Rx     ),
-  .opRxData (  UART_RxData ),
-  .opRxValid(  UART_RxValid)
-);
+  reg  [7:0]UART_TxData;
+  reg       UART_TxSend;
+  wire      UART_TxBusy;
 
-always @(posedge ipClk) begin
-  if(~UART_TxSend && ~UART_TxBusy) begin
-    case(UART_RxData) inside
-      8'h0D    : UART_TxData <= 8'h0A; // Change enter to linefeed
-      "0"      : UART_TxData <= 8'h0D; // Change 0 to carriage return
-      ["A":"Z"]: UART_TxData <= UART_RxData ^ 8'h20;
-      ["a":"z"]: UART_TxData <= UART_RxData ^ 8'h20;
-      default  : UART_TxData <= UART_RxData;
-    endcase
-    UART_TxSend <= UART_RxValid;
+  wire [7:0]UART_RxData;
+  wire      UART_RxValid;
 
-  end else if(UART_TxSend && UART_TxBusy) begin
-    UART_TxSend <= 0;
+  // connect wires/registers from top module to UART module
+  UART UART_Inst(
+    .ipClk    ( ipClk   ),
+    .ipReset  (~ipnReset),
+
+    .ipTxData (  UART_TxData),
+    .ipTxSend (  UART_TxSend),
+    .opTxBusy (  UART_TxBusy),
+    .opTx     (opUART_Tx    ),
+
+    .ipRx     (ipUART_Rx     ),
+    .opRxData (  UART_RxData ),
+    .opRxValid(  UART_RxValid)
+  );
+
+  always @(posedge ipClk) begin
+    if(~UART_TxSend && ~UART_TxBusy) begin
+      // Echo received data back to transmitter
+      case(UART_RxData) inside
+        8'h0D    : UART_TxData <= 8'h0A; // Change enter to linefeed
+        "0"      : UART_TxData <= 8'h0D; // Change 0 to carriage return
+        ["A":"Z"]: UART_TxData <= UART_RxData ^ 8'h20;
+        ["a":"z"]: UART_TxData <= UART_RxData ^ 8'h20;
+        default  : UART_TxData <= UART_RxData;
+      endcase
+      UART_TxSend <= UART_RxValid;
+
+    end else if(UART_TxSend && UART_TxBusy) begin
+      UART_TxSend <= 0;
+    end
   end
-end
+endmodule
