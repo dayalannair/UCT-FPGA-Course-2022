@@ -1,24 +1,24 @@
 
-fsm_encoding {1352745272} sequential
+fsm_encoding {7510511} sequential
 
-fsm_state_encoding {1352745272} off {00}
+fsm_state_encoding {7510511} off {00}
 
-fsm_state_encoding {1352745272} on {01}
+fsm_state_encoding {7510511} on {01}
 
-fsm_state_encoding {1352745272} start {10}
+fsm_state_encoding {7510511} start {10}
 
-fsm_state_encoding {1352745272} stop {11}
+fsm_state_encoding {7510511} stop {11}
 
-fsm_registers {1352745272} {tx_state[1]}  {tx_state[0]} 
+fsm_registers {7510511} {rx_state[1]}  {rx_state[0]} 
 
-fsm_encoding {1352745271} sequential
+fsm_encoding {7510512} sequential
 
-fsm_state_encoding {1352745271} off {00}
+fsm_state_encoding {7510512} off {00}
 
-fsm_state_encoding {1352745271} on {01}
+fsm_state_encoding {7510512} on {01}
 
-fsm_state_encoding {1352745271} start {10}
+fsm_state_encoding {7510512} start {10}
 
-fsm_state_encoding {1352745271} stop {11}
+fsm_state_encoding {7510512} stop {11}
 
-fsm_registers {1352745271} {rx_state[1]}  {rx_state[0]} 
+fsm_registers {7510512} {tx_state[1]}  {tx_state[0]} 

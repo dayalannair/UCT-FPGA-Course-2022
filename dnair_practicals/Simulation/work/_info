@@ -37,24 +37,24 @@ Z5 o-work work -O0
 Z6 tSvlog 1 CvgOpt 0
 vUART
 R0
-!s110 1651240010
+!s110 1651297075
 !i10b 1
-!s100 g4JG<_U0A=5V@9e;f4AZE3
+!s100 [dRNV`=6GkUiTeMZn65NZ1
 R1
-IkkSH7[Ad@EJzWYX_j2hWK2
+IcCaIAjEieGTA:HjLXEP9W2
 S1
 R2
-w1651239663
+w1651297070
 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v
 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v
-!i122 44
+!i122 55
 L0 19 155
 R3
 R4
 r1
 !s85 0
 31
-!s108 1651240010.000000
+!s108 1651297075.000000
 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v|
 !s101 -O0
@@ -64,24 +64,24 @@ R6
 n@u@a@r@t
 vUART_TB
 R0
-!s110 1651229755
+!s110 1651295905
 !i10b 1
-!s100 bLi:mVOJd275WABTKX0i82
+!s100 ZkNFRUa31M;]o;En`KajR1
 R1
-I0eAmZY`9imAI]O7]@bnUb3
+Ie1DNzeU>ogL5f?LG]VCIW2
 S1
 R2
-w1651068099
+w1651295899
 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_TB.v
 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_TB.v
-!i122 26
+!i122 46
 L0 2 110
 R3
 R4
 r1
 !s85 0
 31
-!s108 1651229755.000000
+!s108 1651295905.000000
 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_TB.v|
 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_TB.v|
 !s101 -O0

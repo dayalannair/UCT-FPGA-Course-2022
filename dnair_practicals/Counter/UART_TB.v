@@ -75,8 +75,8 @@ initial begin
   while(1) begin
     #($urandom_range(5000, 50000));
 
-    RxData = $urandom_range(0, 255);
-
+    //RxData = $urandom_range(0, 255);
+    RxData = 8'b10010001;
     ipRx = 0;
     #8681;
     for(RxBit = 0; RxBit < 8; RxBit++) begin

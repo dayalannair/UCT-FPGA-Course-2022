@@ -124,19 +124,19 @@ always @(posedge ipClk) begin
 		case(rx_state)
 			
 			off: begin
-					clk_cnt2 <= 10'd651;
+					clk_cnt2 <= 10'd600;
 					rx_cnt <= 4'd8;
 					opRxValid <= 1'b0; 
 					if (rx == 0) rx_state <= start; // change state if ipRx goes low
 				end
 
 			start: begin
-						// if ipRx does not remain low for required time, revert to off state
-						if 		((rx != 0) && (clk_cnt2 != 0)) rx_state <= off;
 						// if ipRx still zero after required time, turn on
-						else if ((rx == 0) && (clk_cnt2 == 0)) rx_state <= on;
+						if ((rx == 0) && (clk_cnt2 == 10'd219)) rx_state <= on;
 						// else decrement counter 
-						else 	clk_cnt2 <= clk_cnt2 - 1'b1;
+						else if ((rx == 0) && (clk_cnt2 != 0)) clk_cnt2 <= clk_cnt2 - 1'b1;
+						// if ipRx does not remain low for required time, revert to off state
+						else if ((rx != 0) && (clk_cnt2 != 0)) rx_state <= off;
 					end
 	
 			on: begin
@@ -162,7 +162,7 @@ always @(posedge ipClk) begin
 						rx_state <= off;
 					end
 					// if protocol broken, return to off
-					else rx_state <= off;
+					//else rx_state <= off;
 				end
 
 			default: rx_state <= off;

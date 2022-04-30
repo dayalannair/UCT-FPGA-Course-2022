@@ -1,11 +1,11 @@
-<Project ModBy="Inserter" SigType="0" Name="C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/rvl_ins1.rvl" Date="2022-04-29">
+<Project ModBy="Inserter" SigType="0" Name="C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/rvl_ins1.rvl" Date="2022-04-30">
     <IP Version="1_6_042617"/>
     <Design DesignEntry="Schematic/Verilog HDL" Synthesis="synplify" DeviceFamily="LatticeXP2" DesignName="Counter"/>
-    <Core InsertDataset="0" Insert="1" Reveal_sig="423303672" Name="top_LA0" ID="0">
+    <Core InsertDataset="0" Insert="1" Reveal_sig="423393393" Name="top_LA0" ID="0">
         <Setting>
             <Clock SampleClk="ipClk" SampleEnable="1" EnableClk="UART_Inst/tx_cnt" EnableClk_Pri="1"/>
-            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="32"/>
-            <Capture Mode="0" MinSamplesPerTrig="8"/>
+            <TraceBuffer Implementation="0" BitTimeStamp="0" hasTimeStamp="0" IncTrigSig="0" BufferDepth="2048"/>
+            <Capture Mode="0" MinSamplesPerTrig="16"/>
             <Event CntEnable="0" MaxEventCnt="8"/>
             <TrigOut Polarity="0" MinPulseWidth="0" TrigOutNetType="1" EnableTrigOut="0" TrigOutNet="reveal_debug_top_LA0_net"/>
             <DistRAM Disable="0"/>

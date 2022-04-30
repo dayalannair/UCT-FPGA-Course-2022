@@ -2,7 +2,10 @@
 <BaliProject version="3.2" title="Counter" device="LFXP2-5E-5TN144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="System Verilog" def_top="top" top="top"/>
+        <Options VerilogStandard="System Verilog" top="top"/>
+        <Source name="Structures.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="counter.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
@@ -11,6 +14,12 @@
         </Source>
         <Source name="top.v" type="Verilog" type_short="Verilog">
             <Options top_module="top"/>
+        </Source>
+        <Source name="Registers.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="UART_Packets.v" type="Verilog" type_short="Verilog">
+            <Options/>
         </Source>
         <Source name="counter.fdc" type="Synplify Design Constraints File" type_short="SDC">
             <Options/>
@@ -24,7 +33,7 @@
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
-        <Source name="rvl_ins1.rvl" type="Reveal" type_short="Reveal">
+        <Source name="rvl_ins1.rvl" type="Reveal" type_short="Reveal" excluded="TRUE">
             <Options/>
         </Source>
     </Implementation>

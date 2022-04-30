@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>9</data>
+<data>10</data>
 <report_link name="more">
 <data>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\report\Counter_impl1_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>6</data>
+<data>5</data>
 <report_link name="more">
 <data>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\report\Counter_impl1_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:07s</data>
+<data>0h:00m:03s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:08s</data>
+<data>0h:00m:03s</data>
 </info>
 <info name="Peak Memory">
-<data>202MB</data>
+<data>182MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1651246816</data>
+<data type="timestamp">1651297122</data>
 </info>
 </job_info>
 </job_run_status>
