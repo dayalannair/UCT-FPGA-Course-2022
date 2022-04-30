@@ -53,7 +53,8 @@ reg rx_valid;
 //------------------------------------------------------------------------------
 typedef enum {
 	idle,
-  on
+	metadata,
+  data
 	} STATE;
 
 STATE rx_state;
@@ -99,12 +100,12 @@ always @(posedge ipClk) begin
                 tx_pos_cnt <= 4'd5;
                 if (ipTxStream.Valid) begin
                   n_bytes = ipTxStream.Length;
-                  tx_state <= on;
+                  tx_state <= metadata;
                   tx_metadata <= sync;
                 end
               end
 //------------------------------------------------------------------------------
-        on: begin
+        metadata: begin
           UART_TxSend <= 1'b0;
 
           if (~UART_TxBusy) begin
@@ -133,17 +134,24 @@ always @(posedge ipClk) begin
                     end
 
               data: begin
-                      if (tx_len != 0) begin
+                      if ((~UART_TxBusy) && (tx_len != 0)) begin
                         UART_TxData <= ipTxStream.Data;
                         tx_len <= tx_len -1'b1;
                       end
-                      else tx_state <= idle;
+                      else if (tx_len == 0) tx_state <= off;
                 end
               default:;
 
             endcase
             end
         end
+
+//------------------------------------------------------------------------------
+          // for N > 1 payload
+          data: begin
+              
+          end
+
           default:;
   endcase
 end
@@ -158,11 +166,11 @@ always @(posedge ipClk) begin
             opRxStream.SoP <= UART_RxData;
             if (UART_RxValid && (UART_RxData == 8'h55)) begin
               rx_metadata <= dest;
-              rx_state <= on;
+              state <= metadata;
             end
           end
 //------------------------------------------------------------------------------
-    on: begin
+    metadata: begin
       //wait for next valid byte after sync
       // receive next valid bits 
       if (UART_RxValid) begin
@@ -177,21 +185,39 @@ always @(posedge ipClk) begin
                     end
               lgth: begin
                       opRxStream.Length <= UART_RxData;
-                      rx_len <= UART_RxData;
                       rx_metadata <= data;
                     end
-              data: begin
-                      if (tx_len != 0) begin
-                        opRxStream.Data <= UART_RxData;
-                        tx_len <= tx_len -1'b1;
-                      end
-                      else rx_state <= idle;
+              dat1: begin
+                      opRxStream.Data <= UART_RxData;
+                      rx_state <= data;
                     end
               default:;
           endcase
       end
     end
 //------------------------------------------------------------------------------
+      data: begin
+      end
+
+//------------------------------------------------------------------------------
       default:;
 end
 endmodule
+    
+
+
+
+
+
+
+
+
+
+end
+
+
+
+//------------------------------------------------------------------------------
+
+endmodule
+//------------------------------------------------------------------------------
