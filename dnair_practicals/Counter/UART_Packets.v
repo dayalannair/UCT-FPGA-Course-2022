@@ -20,14 +20,15 @@ module UART_Packets(
   input              ipClk,
   input              ipReset,
 
-  // packet to be sent over UART
+  // packet to be sent over UART received from registers
   input  UART_PACKET ipTxStream,
+
   output             opTxReady,
   output             opTx,     // connected to output of UART module
 
   input              ipRx,
 
-  // Received packet from UART
+  // Received packet from UART sent out to control/registers
   output UART_PACKET opRxStream
 );
 
@@ -67,11 +68,11 @@ typedef enum{
   src,
   dest,
   lgth,
-  dat1
+  data
 } METADATA
 
-METADATA rx_metadata;
-METADATA tx_metadata;
+METADATA rx_packet;
+METADATA tx_packet;
 //------------------------------------------------------------------------------
 //                            UART Module
 //------------------------------------------------------------------------------
@@ -100,7 +101,7 @@ always @(posedge ipClk) begin
                 if (ipTxStream.Valid) begin
                   n_bytes = ipTxStream.Length;
                   tx_state <= on;
-                  tx_metadata <= sync;
+                  tx_packet <= sync;
                 end
               end
 //------------------------------------------------------------------------------
@@ -108,21 +109,21 @@ always @(posedge ipClk) begin
           UART_TxSend <= 1'b0;
 
           if (~UART_TxBusy) begin
-            case(tx_metadata)
+            case(tx_packet)
               sync: begin
                       UART_TxData <= ipTxStream.SoP;
                       UART_TxSend <= 1'b1;
-                      tx_metadata <= dest;
+                      tx_packet <= dest;
                     end
               dest: begin
                       UART_TxData <= ipTxStream.Destination;
                       UART_TxSend <= 1'b1;
-                      tx_metadata <= src;
+                      tx_packet <= src;
                     end
               src: begin
                       UART_TxData <= ipTxStream.Source;
                       UART_TxSend <= 1'b1;
-                      tx_metadata <= lgth;
+                      tx_packet <= lgth;
                     end
 
               lgth: begin
@@ -137,7 +138,10 @@ always @(posedge ipClk) begin
                         UART_TxData <= ipTxStream.Data;
                         tx_len <= tx_len -1'b1;
                       end
-                      else tx_state <= idle;
+                      else begin
+                        // UART_TxData <= valid
+                        tx_state <= idle;
+                      end
                 end
               default:;
 
@@ -157,7 +161,7 @@ always @(posedge ipClk) begin
     idle: begin
             opRxStream.SoP <= UART_RxData;
             if (UART_RxValid && (UART_RxData == 8'h55)) begin
-              rx_metadata <= dest;
+              rx_packet <= dest;
               rx_state <= on;
             end
           end
@@ -166,19 +170,19 @@ always @(posedge ipClk) begin
       //wait for next valid byte after sync
       // receive next valid bits 
       if (UART_RxValid) begin
-          case (rx_metadata)
+          case (rx_packet)
               dest: begin
                       opRxStream.Destination <= UART_RxData;
-                      rx_metadata <= src;
+                      rx_packet <= src;
                     end
               src: begin
                       opRxStream.Source <= UART_RxData;
-                      rx_metadata <= lgth;
+                      rx_packet <= lgth;
                     end
               lgth: begin
                       opRxStream.Length <= UART_RxData;
                       rx_len <= UART_RxData;
-                      rx_metadata <= data;
+                      rx_packet <= data;
                     end
               data: begin
                       if (tx_len != 0) begin
