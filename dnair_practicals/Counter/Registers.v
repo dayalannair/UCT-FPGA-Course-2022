@@ -10,7 +10,7 @@ module Registers(
   input               ipClk,
   input               ipReset,
 
-  input  RD_REGISTERS ipRdRegisters,
+  input  RD_REGISTERS ipRdRegisters, 
   output WR_REGISTERS opWrRegisters,
 
   input         [ 7:0]ipAddress,

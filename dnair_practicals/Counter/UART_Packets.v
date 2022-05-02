@@ -23,7 +23,7 @@ module UART_Packets(
   // packet to be sent over UART received from registers
   input  UART_PACKET ipTxStream,
 
-  output             opTxReady,
+  output             opTxReady, 
   output             opTx,     // connected to output of UART module
 
   input              ipRx,
@@ -52,6 +52,7 @@ reg rx_valid;
 reg UART_TxSend;
 reg UART_TxBusy;
 reg[7:0] UART_TxData;
+reg[7:0] data_cache;
 //------------------------------------------------------------------------------
 //                            TX/RX state machine
 //------------------------------------------------------------------------------
@@ -67,10 +68,8 @@ STATE tx_state;
 //                            Metadata state machine
 //------------------------------------------------------------------------------
 typedef enum{
-  sync,
   src,
   dest,
-  lgth,
   data
 } METADATA;
 
@@ -96,28 +95,33 @@ UART UART_Inst(
 //------------------------------------------------------------------------------
 //                            TX Stream Packetiser
 //------------------------------------------------------------------------------
+// Convert packets to stream
+
 always @(posedge ipClk) begin
 
   case(tx_state) 
         idle: begin
+                opTxReady <= 1'b1;
                 tx_pos_cnt <= 4'd5;
-                if (ipTxStream.Valid) begin
+                if (ipTxStream.SoP && ipTxStream.Valid) begin
+                  // not ready to receive another packet
+                  opTxReady <= 1'b0;
+                  // get num bytes
                   n_bytes = ipTxStream.Length;
+                  UART_TxData <= 8'h55;
+                  UART_TxSend <= 1'b1;
+                  UART_TxData <= ipTxStream.Data;
                   tx_state <= on;
-                  tx_packet <= sync;
+                  tx_packet <= dest;
                 end
               end
 //------------------------------------------------------------------------------
         on: begin
           UART_TxSend <= 1'b0;
 
-          if (~UART_TxBusy) begin
+          if (~UART_TxBusy && ipTxStream.Valid) begin
+
             case(tx_packet)
-              sync: begin
-                      UART_TxData <= ipTxStream.SoP;
-                      UART_TxSend <= 1'b1;
-                      tx_packet <= dest;
-                    end
               dest: begin
                       UART_TxData <= ipTxStream.Destination;
                       UART_TxSend <= 1'b1;
@@ -126,20 +130,14 @@ always @(posedge ipClk) begin
               src: begin
                       UART_TxData <= ipTxStream.Source;
                       UART_TxSend <= 1'b1;
-                      tx_packet <= lgth;
-                    end
-
-              lgth: begin
-                      UART_TxData <= ipTxStream.Length;
-                      tx_len <= ipTxStream.Length;
-                      UART_TxSend <= 1'b1;
-                      tx_state <= data; // change outer state
+                      tx_packet <= data;
                     end
 
               data: begin
                       if (tx_len != 0) begin
                         UART_TxData <= ipTxStream.Data;
-                        tx_len <= tx_len -1'b1;
+                        opTxReady <= 1'b1;
+                        n_bytes <= n_bytes - 1'b1;
                       end
                       else begin
                         // UART_TxData <= valid
@@ -150,6 +148,7 @@ always @(posedge ipClk) begin
 
             endcase
             end
+            else if (UART_TxBusy) opTxReady <= 1'b0;
         end
           default:;
   endcase
@@ -157,6 +156,7 @@ end
 //------------------------------------------------------------------------------
 //                            RX Stream Packetiser
 //------------------------------------------------------------------------------
+// Convert stream to packets
 always @(posedge ipClk) begin
 
   case(rx_state)
