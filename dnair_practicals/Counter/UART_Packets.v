@@ -32,7 +32,6 @@ module UART_Packets(
   output UART_PACKET opRxStream
 );
 
-reg [7:0] sync = 8'h55;
 reg [7:0] n_bytes; // num bytes
 reg rst;
 reg rx = ipRx;
@@ -49,6 +48,10 @@ reg rx_eop;
 reg [7:0] rx_data;
 reg rx_valid;
 
+// Capture outputs from UART module
+reg UART_TxSend;
+reg UART_TxBusy;
+reg[7:0] UART_TxData;
 //------------------------------------------------------------------------------
 //                            TX/RX state machine
 //------------------------------------------------------------------------------
@@ -69,7 +72,7 @@ typedef enum{
   dest,
   lgth,
   data
-} METADATA
+} METADATA;
 
 METADATA rx_packet;
 METADATA tx_packet;
@@ -151,7 +154,6 @@ always @(posedge ipClk) begin
           default:;
   endcase
 end
-end
 //------------------------------------------------------------------------------
 //                            RX Stream Packetiser
 //------------------------------------------------------------------------------
@@ -196,6 +198,7 @@ always @(posedge ipClk) begin
       end
     end
 //------------------------------------------------------------------------------
-      default:;
+    default:;
+  endcase
 end
 endmodule

@@ -2,6 +2,7 @@
 @N|Running in 64-bit mode
 @N: CG1349 :	| Running Verilog Compiler in System Verilog mode
 @N: CG1350 :	| Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit in library work.
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":19:7:19:10|Synthesizing module UART in library work.
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v":2:7:2:9|Synthesizing module top in library work.
 @N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":51:0:51:5|Register bit clk_cnt[9] is always 0.

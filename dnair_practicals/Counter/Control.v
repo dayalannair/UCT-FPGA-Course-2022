@@ -21,11 +21,11 @@ module Control(
 
    // THESE CAN BE INTERNALLY CONNECTED?
     // // address of register to read/write
-    // output[ 7:0] opAddress,
+    output[ 7:0] opAddress,
     // // data to write to register
-    // output[31:0] opWrData,
+    output[31:0] opWrData,
     // // enable write to register
-    // output opWrEnable,
+    output opWrEnable,
     // // data to read from register
     // output reg[31:0] opRdData
 );
@@ -40,8 +40,8 @@ typedef enum {
   on
 	} STATE;
 
-STATE rx_state;
-STATE tx_state;
+STATE read;
+STATE write;
 
 reg[7:0] ipAddress,
 reg[31:0] ipWrData,
@@ -82,54 +82,46 @@ always @(posedge clk) begin
     if (ipPkt.Valid) begin
         // if read register, turn on transmit state
         // state change only when received packet valid
-        if (ipPkt.Destination == 8'h00) tx_state <= on;
-        else if (ipPkt.Destination == 8'h01) rx_state <= on;
+        if (ipPkt.Destination == 8'h00) write <= on;
+        else if (ipPkt.Destination == 8'h01) read <= on;
         else begin
-            tx_state <= idle;
-            rx_state <= idle;
+            write <= idle;
+            read <= idle;
         end
     end
 
-    case(rx_state)
+    case(read)
         idle: begin
             one_clk <= 0;
+            opWrEnable <= 0;
+            opPkt.Valid <= 0;
         end
         on: begin
-            // double check
-            ipAddress <= ipPkt.Destination;
-            ipWrEnable <= 0;
+            // address to read is the data received - one byte
+            opAddress <= ipPkt.Data;
+            // wait one clk cycle to read
             one_clk <= one_clk + 1'b1;
-            // one clk will change next xlk cycle
-            if (one_clk == 1) opRdRegisters.Data <= 
+            if (one_clk) begin
+                opPkt.Data <= registers.opData;
+                opPkt.Destination <= ipPkt.Source;
+                opPkt.Length <= 4'h0004; // double check
+                opPkt.Valid <= 1'b1;
+                read <= idle;
+            end
         end
     endcase
 
-    case (tx_state)
+    case (write)
         idle: begin
+            opAddress <= 8'hFF;
+            opWrEnable <= 1'b0;
         end
         on: begin
+                opAddress <= 8'h02;
+                opWrEnable <= 1'b1; // need to wait a clk cycle?
+                opWrData <= ipPkt.Data;
+                write <= idle;
         end
     endcase
-
-
-
-        // case(tx_state)
-        //         idle: begin
-        //             // if dest is write read register
-        //             if (ipRxStream.Destination == 8'h00) tx_state <= on;
-                
-
-        //             end
-
-        //         on: begin
-        //             opTxStream <= opRdData;
-        //             opTxStream
-        //             opTxStream
-        //             opTxStream
-        //             opTxStream
-        //         end
-
-
-
-
 end
+endmodule

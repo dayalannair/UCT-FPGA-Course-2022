@@ -14,19 +14,20 @@ Hostname: DAYALAN1
 Implementation : impl1
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 1
+Modified Files: 3
 FID:  path (prevtimestamp, timestamp)
-0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-04-30 07:31:39, 2022-04-30 07:37:50)
+17       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v (N/A, 2022-04-30 07:57:20)
+18       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v (N/A, 2022-04-30 07:55:46)
+19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (N/A, 2022-05-02 07:49:14)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 1
+Modules that may have changed as a result of file changes: 0
 MID:  lib.cell.view
-0        work.UART.verilog may have changed because the following files changed:
-                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-04-30 07:31:39, 2022-04-30 07:37:50) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 8
+Unmodified files: 9
 FID:  path (timestamp)
+0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-04-30 07:37:50)
 1        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v (2022-04-27 15:47:38)
 2        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v (2022-04-29 16:39:48)
 3        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
@@ -37,7 +38,5 @@ FID:  path (timestamp)
 8        C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v (2020-10-29 10:23:10)
 
 *******************************************************************
-Unchanged modules: 2
+Unchanged modules: 0
 MID:  lib.cell.view
-1        work.counter.verilog
-2        work.top.verilog

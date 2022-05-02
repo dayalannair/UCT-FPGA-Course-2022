@@ -17,7 +17,7 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   5
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  04/30/22  07:38:44
+Mapped on:  05/02/22  07:49:34
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  04/30/22  07:38:44
+Design:  top                                           Date:  05/02/22  07:49:34
 
 Design Summary (cont)
 ---------------------
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  top                                           Date:  04/30/22  07:38:44
+Design:  top                                           Date:  05/02/22  07:49:34
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -198,7 +198,7 @@ Signal UART_Inst/un1_tx_cnt_6_cry_1_0_COUT undriven or does not drive anything -
 
 
 
-Design:  top                                           Date:  04/30/22  07:38:44
+Design:  top                                           Date:  05/02/22  07:49:34
 
 Removed logic (cont)
 --------------------

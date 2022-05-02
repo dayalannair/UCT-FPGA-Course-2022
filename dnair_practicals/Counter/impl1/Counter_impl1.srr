@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DAYALAN1
 
-# Sat Apr 30 07:38:34 2022
+# Mon May  2 07:49:21 2022
 
 #Implementation: impl1
 
@@ -52,11 +52,15 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v" (library work)
 Verilog syntax check successful!
-File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v changed - recompiling
+Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdep@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit in library work.
 Selecting top level module top
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":19:7:19:10|Synthesizing module UART in library work.
 Running optimization stage 1 on UART .......
@@ -64,7 +68,7 @@ Running optimization stage 1 on UART .......
 @W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v":7:17:7:21|Object opLED is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on top .......
 @W: CL169 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v":39:2:39:7|Pruning unused register rst. Make sure that there are no unused intermediate registers.
-Running optimization stage 2 on top .......
+Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdepRunning optimization stage 2 on top .......
 @A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v":7:17:7:21|*Unassigned bits of opLED[7:0] are referenced and tied to 0 -- simulation mismatch possible.
 Running optimization stage 2 on UART .......
 @N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":51:0:51:5|Register bit clk_cnt[9] is always 0.
@@ -89,12 +93,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 96MB peak: 97MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 96MB peak: 97MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:35 2022
+# Mon May  2 07:49:22 2022
 
 ###########################################################]
 ###########################################################[
@@ -121,7 +125,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:35 2022
+# Mon May  2 07:49:22 2022
 
 ###########################################################]
 
@@ -131,12 +135,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:35 2022
+# Mon May  2 07:49:22 2022
 
 ###########################################################]
 ###########################################################[
@@ -164,10 +168,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:36 2022
+# Mon May  2 07:49:24 2022
 
 ###########################################################]
-# Sat Apr 30 07:38:37 2022
+# Mon May  2 07:49:24 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -196,7 +200,7 @@ See clock summary report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dna
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
 
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
@@ -222,10 +226,10 @@ original code -> new code
    00000000000000000000000000000011 -> 11
 @N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|There are no possible illegal states for state machine tx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
 Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
@@ -293,17 +297,17 @@ Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Tim
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 174MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 92MB peak: 174MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sat Apr 30 07:38:39 2022
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Mon May  2 07:49:26 2022
 
 ###########################################################]
-# Sat Apr 30 07:38:39 2022
+# Mon May  2 07:49:27 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -341,21 +345,21 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
 
 @N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found counter in view:work.UART(verilog) instance clk_cnt[8:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
@@ -373,24 +377,24 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elaps
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    11.83ns		  76 /        61
+   1		0h:00m:02s		    11.83ns		  76 /        61
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 176MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Boundary register UART_Inst.opTx.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 141MB peak: 176MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 176MB)
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
@@ -400,16 +404,16 @@ Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 182MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 182MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 182MB)
 
 @N: MT615 |Found clock ipClk with period 20.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sat Apr 30 07:38:42 2022
+# Timing report written on Mon May  2 07:49:30 2022
 #
 
 
@@ -609,9 +613,9 @@ VHI:            2
 VLO:            2
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 65MB peak: 182MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 65MB peak: 182MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Sat Apr 30 07:38:42 2022
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Mon May  2 07:49:31 2022
 
 ###########################################################]

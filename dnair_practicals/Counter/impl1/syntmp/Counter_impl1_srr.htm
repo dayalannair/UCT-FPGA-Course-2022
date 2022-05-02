@@ -1,11 +1,11 @@
 <html><body><samp><pre>
-<!@TC:1651297114>
+<!@TC:1651470561>
 #Build: Synplify Pro (R) Q-2020.03L-SP1, Build 182R, Oct 29 2020
 #install: C:\lscc\diamond\3.12\synpbase
 #OS: Windows 8 6.2
 #Hostname: DAYALAN1
 
-# Sat Apr 30 07:38:34 2022
+# Mon May  2 07:49:21 2022
 
 #Implementation: impl1
 
@@ -25,7 +25,7 @@ Hostname: DAYALAN1
 Implementation : impl1
 <a name=compilerReport1></a>Synopsys HDL Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @</a>
 
-@N: : <!@TM:1651297115> | Running in 64-bit mode 
+@N: : <!@TM:1651470562> | Running in 64-bit mode 
 ###########################################################[
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -43,10 +43,10 @@ Hostname: DAYALAN1
 Implementation : impl1
 <a name=compilerReport2></a>Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @</a>
 
-@N: : <!@TM:1651297115> | Running in 64-bit mode 
-@N:<a href="@N:CG1349:@XP_HELP">CG1349</a> : <!@TM:1651297115> | Running Verilog Compiler in System Verilog mode 
+@N: : <!@TM:1651470562> | Running in 64-bit mode 
+@N:<a href="@N:CG1349:@XP_HELP">CG1349</a> : <!@TM:1651470562> | Running Verilog Compiler in System Verilog mode 
 
-@N:<a href="@N:CG1350:@XP_HELP">CG1350</a> : <!@TM:1651297115> | Running Verilog Compiler in Multiple File Compilation Unit mode 
+@N:<a href="@N:CG1350:@XP_HELP">CG1350</a> : <!@TM:1651470562> | Running Verilog Compiler in Multiple File Compilation Unit mode 
 
 @I::"C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v" (library work)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v" (library work)
@@ -54,31 +54,35 @@ Implementation : impl1
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v" (library work)
 Verilog syntax check successful!
-File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v changed - recompiling
+Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdep@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v:6:0:6:6:@N:CG364:@XP_MSG">Registers.v(6)</a><!@TM:1651470562> | Synthesizing module work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit in library work.
 Selecting top level module top
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:19:7:19:11:@N:CG364:@XP_MSG">UART.v(19)</a><!@TM:1651297115> | Synthesizing module UART in library work.
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:19:7:19:11:@N:CG364:@XP_MSG">UART.v(19)</a><!@TM:1651470562> | Synthesizing module UART in library work.
 Running optimization stage 1 on UART .......
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:2:7:2:10:@N:CG364:@XP_MSG">top.v(2)</a><!@TM:1651297115> | Synthesizing module top in library work.
-<font color=#A52A2A>@W:<a href="@W:CG133:@XP_HELP">CG133</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:7:17:7:22:@W:CG133:@XP_MSG">top.v(7)</a><!@TM:1651297115> | Object opLED is declared but not assigned. Either assign a value or remove the declaration.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:2:7:2:10:@N:CG364:@XP_MSG">top.v(2)</a><!@TM:1651470562> | Synthesizing module top in library work.
+<font color=#A52A2A>@W:<a href="@W:CG133:@XP_HELP">CG133</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:7:17:7:22:@W:CG133:@XP_MSG">top.v(7)</a><!@TM:1651470562> | Object opLED is declared but not assigned. Either assign a value or remove the declaration.</font>
 Running optimization stage 1 on top .......
-<font color=#A52A2A>@W:<a href="@W:CL169:@XP_HELP">CL169</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:39:2:39:8:@W:CL169:@XP_MSG">top.v(39)</a><!@TM:1651297115> | Pruning unused register rst. Make sure that there are no unused intermediate registers.</font>
-Running optimization stage 2 on top .......
-@A:<a href="@A:CL153:@XP_HELP">CL153</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:7:17:7:22:@A:CL153:@XP_MSG">top.v(7)</a><!@TM:1651297115> | *Unassigned bits of opLED[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+<font color=#A52A2A>@W:<a href="@W:CL169:@XP_HELP">CL169</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:39:2:39:8:@W:CL169:@XP_MSG">top.v(39)</a><!@TM:1651470562> | Pruning unused register rst. Make sure that there are no unused intermediate registers.</font>
+Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdepRunning optimization stage 2 on top .......
+@A:<a href="@A:CL153:@XP_HELP">CL153</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v:7:17:7:22:@A:CL153:@XP_MSG">top.v(7)</a><!@TM:1651470562> | *Unassigned bits of opLED[7:0] are referenced and tied to 0 -- simulation mismatch possible.
 Running optimization stage 2 on UART .......
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@N:CL189:@XP_MSG">UART.v(51)</a><!@TM:1651297115> | Register bit clk_cnt[9] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@W:CL260:@XP_MSG">UART.v(51)</a><!@TM:1651297115> | Pruning register bit 9 of clk_cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
-@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@N:CL201:@XP_MSG">UART.v(51)</a><!@TM:1651297115> | Trying to extract state machine for register rx_state.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@N:CL189:@XP_MSG">UART.v(51)</a><!@TM:1651470562> | Register bit clk_cnt[9] is always 0.
+<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@W:CL260:@XP_MSG">UART.v(51)</a><!@TM:1651470562> | Pruning register bit 9 of clk_cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@N:CL201:@XP_MSG">UART.v(51)</a><!@TM:1651470562> | Trying to extract state machine for register rx_state.
 Extracted state machine for register rx_state
 State machine has 4 reachable states with original encodings of:
    00000000000000000000000000000000
    00000000000000000000000000000001
    00000000000000000000000000000010
    00000000000000000000000000000011
-@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@N:CL201:@XP_MSG">UART.v(51)</a><!@TM:1651297115> | Trying to extract state machine for register tx_state.
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v:51:0:51:6:@N:CL201:@XP_MSG">UART.v(51)</a><!@TM:1651470562> | Trying to extract state machine for register tx_state.
 Extracted state machine for register tx_state
 State machine has 4 reachable states with original encodings of:
    00000000000000000000000000000000
@@ -91,12 +95,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 96MB peak: 97MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 96MB peak: 97MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:35 2022
+# Mon May  2 07:49:22 2022
 
 ###########################################################]
 ###########################################################[
@@ -116,14 +120,14 @@ Hostname: DAYALAN1
 Implementation : impl1
 <a name=compilerReport3></a>Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @</a>
 
-@N: : <!@TM:1651297115> | Running in 64-bit mode 
+@N: : <!@TM:1651470562> | Running in 64-bit mode 
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:35 2022
+# Mon May  2 07:49:22 2022
 
 ###########################################################]
 
@@ -133,18 +137,18 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:35 2022
+# Mon May  2 07:49:22 2022
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1651297114>
+<!@TC:1651470561>
 ###########################################################[
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -162,7 +166,7 @@ Hostname: DAYALAN1
 Implementation : impl1
 <a name=compilerReport4></a>Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @</a>
 
-@N: : <!@TM:1651297117> | Running in 64-bit mode 
+@N: : <!@TM:1651470564> | Running in 64-bit mode 
 File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
@@ -170,14 +174,14 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 30 07:38:36 2022
+# Mon May  2 07:49:24 2022
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1651297114>
-# Sat Apr 30 07:38:37 2022
+<!@TC:1651470561>
+# Mon May  2 07:49:24 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -199,14 +203,14 @@ Implementation : impl1
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
 
 Reading constraint file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.fdc
-<font color=#A52A2A>@W: : <!@TM:1651297119> | derive_clock_uncertainty  not supported.</font> 
+<font color=#A52A2A>@W: : <!@TM:1651470566> | derive_clock_uncertainty  not supported.</font> 
 @L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_scck.rpt 
 See clock summary report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_scck.rpt"
-@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1651297119> | Option synthesis_strategy=base is enabled.  
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1651297119> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1651297119> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1651470566> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1651470566> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1651470566> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
 
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
@@ -223,19 +227,19 @@ original code -> new code
    00000000000000000000000000000001 -> 01
    00000000000000000000000000000010 -> 10
    00000000000000000000000000000011 -> 11
-@N:<a href="@N:MO225:@XP_HELP">MO225</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@N:MO225:@XP_MSG">uart.v(51)</a><!@TM:1651297119> | There are no possible illegal states for state machine rx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
+@N:<a href="@N:MO225:@XP_HELP">MO225</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@N:MO225:@XP_MSG">uart.v(51)</a><!@TM:1651470566> | There are no possible illegal states for state machine rx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
 Encoding state machine tx_state[3:0] (in view: work.UART(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 00
    00000000000000000000000000000001 -> 01
    00000000000000000000000000000010 -> 10
    00000000000000000000000000000011 -> 11
-@N:<a href="@N:MO225:@XP_HELP">MO225</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@N:MO225:@XP_MSG">uart.v(51)</a><!@TM:1651297119> | There are no possible illegal states for state machine tx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
+@N:<a href="@N:MO225:@XP_HELP">MO225</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@N:MO225:@XP_MSG">uart.v(51)</a><!@TM:1651470566> | There are no possible illegal states for state machine tx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
 Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
@@ -243,7 +247,7 @@ Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time
 
 Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
-@N:<a href="@N:FX1184:@XP_HELP">FX1184</a> : <!@TM:1651297119> | Applying syn_allowed_resources blockrams=9 on top level netlist top  
+@N:<a href="@N:FX1184:@XP_HELP">FX1184</a> : <!@TM:1651470566> | Applying syn_allowed_resources blockrams=9 on top level netlist top  
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
@@ -293,7 +297,7 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
 
-@N:<a href="@N:FX1143:@XP_HELP">FX1143</a> : <!@TM:1651297119> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
+@N:<a href="@N:FX1143:@XP_HELP">FX1143</a> : <!@TM:1651470566> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
 Finished Pre Mapping Phase.
 
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
@@ -301,23 +305,23 @@ Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
-<font color=#A52A2A>@W:<a href="@W:MF511:@XP_HELP">MF511</a> : <!@TM:1651297119> | Found issues with constraints. Please check constraint checker report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt" .</font> 
+<font color=#A52A2A>@W:<a href="@W:MF511:@XP_HELP">MF511</a> : <!@TM:1651470566> | Found issues with constraints. Please check constraint checker report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt" .</font> 
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 92MB peak: 174MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 92MB peak: 174MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Sat Apr 30 07:38:39 2022
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Mon May  2 07:49:26 2022
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1651297114>
-# Sat Apr 30 07:38:39 2022
+<!@TC:1651470561>
+# Mon May  2 07:49:27 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -338,9 +342,9 @@ Implementation : impl1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 117MB peak: 117MB)
 
-@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1651297123> | Option synthesis_strategy=base is enabled.  
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1651297123> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1651297123> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1651470571> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1651470571> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1651470571> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
 
@@ -355,28 +359,28 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
 
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
 
-@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@N:MO231:@XP_MSG">uart.v(51)</a><!@TM:1651297123> | Found counter in view:work.UART(verilog) instance clk_cnt[8:0] 
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@N:MO231:@XP_MSG">uart.v(51)</a><!@TM:1651470571> | Found counter in view:work.UART(verilog) instance clk_cnt[8:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
-<font color=#A52A2A>@W:<a href="@W:FX527:@XP_HELP">FX527</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@W:FX527:@XP_MSG">uart.v(51)</a><!@TM:1651297123> | Found false-path constraint on register UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP</font>
-<font color=#A52A2A>@W:<a href="@W:FX527:@XP_HELP">FX527</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@W:FX527:@XP_MSG">uart.v(51)</a><!@TM:1651297123> | Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP</font>
-<font color=#A52A2A>@W:<a href="@W:FX527:@XP_HELP">FX527</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@W:FX527:@XP_MSG">uart.v(51)</a><!@TM:1651297123> | Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</font>
+<font color=#A52A2A>@W:<a href="@W:FX527:@XP_HELP">FX527</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@W:FX527:@XP_MSG">uart.v(51)</a><!@TM:1651470571> | Found false-path constraint on register UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP</font>
+<font color=#A52A2A>@W:<a href="@W:FX527:@XP_HELP">FX527</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@W:FX527:@XP_MSG">uart.v(51)</a><!@TM:1651470571> | Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP</font>
+<font color=#A52A2A>@W:<a href="@W:FX527:@XP_HELP">FX527</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@W:FX527:@XP_MSG">uart.v(51)</a><!@TM:1651470571> | Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</font>
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
@@ -387,43 +391,43 @@ Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elaps
 Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    11.83ns		  76 /        61
+   1		0h:00m:02s		    11.83ns		  76 /        61
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 176MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 176MB)
 
-@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1651297123> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
-@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@A:BN291:@XP_MSG">uart.v(51)</a><!@TM:1651297123> | Boundary register UART_Inst.opTx.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1651470571> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v:51:0:51:6:@A:BN291:@XP_MSG">uart.v(51)</a><!@TM:1651470571> | Boundary register UART_Inst.opTx.fb (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 141MB peak: 176MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 176MB)
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
 Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
 
 Writing EDIF Netlist and constraint files
-@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1651297123> | Writing EDF file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.edi 
-@N:<a href="@N:BW106:@XP_HELP">BW106</a> : <!@TM:1651297123> | Synplicity Constraint File capacitance units using default value of 1pF  
+@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1651470571> | Writing EDF file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.edi 
+@N:<a href="@N:BW106:@XP_HELP">BW106</a> : <!@TM:1651470571> | Synplicity Constraint File capacitance units using default value of 1pF  
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 182MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 182MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 182MB)
 
-@N:<a href="@N:MT615:@XP_HELP">MT615</a> : <!@TM:1651297123> | Found clock ipClk with period 20.00ns  
+@N:<a href="@N:MT615:@XP_HELP">MT615</a> : <!@TM:1651470571> | Found clock ipClk with period 20.00ns  
 
 
 <a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
-# Timing report written on Sat Apr 30 07:38:42 2022
+# Timing report written on Mon May  2 07:49:30 2022
 #
 
 
@@ -433,9 +437,9 @@ Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.fdc
                        
-@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1651297123> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1651470571> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
 
-@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1651297123> | Clock constraints include only register-to-register paths associated with each individual clock. 
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1651470571> | Clock constraints include only register-to-register paths associated with each individual clock. 
 
 
 
@@ -524,7 +528,7 @@ UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]        
 
 
 <a name=worstPaths16></a>Worst Path Information</a>
-<a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.srr:srsfC:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.srs:fp:27645:31143:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+<a href="C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.srr:srsfC:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.srs:fp:28576:32074:@XP_NAMES_GATE">View Worst Path in Analyst</a>
 ***********************
 
 
@@ -587,8 +591,8 @@ UART_Inst.clk_cnt2[9]                     FD1S3AX      D        In      0.000   
 ##### END OF TIMING REPORT #####]
 
 Timing exceptions that could not be applied
-<font color=#A52A2A>@W:<a href="@W:MT447:@XP_HELP">MT447</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\counter.fdc:8:0:8:1:@W:MT447:@XP_MSG">counter.fdc(8)</a><!@TM:1651297123> | Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design </font>
-<font color=#A52A2A>@W:<a href="@W:MT447:@XP_HELP">MT447</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\counter.fdc:9:0:9:1:@W:MT447:@XP_MSG">counter.fdc(9)</a><!@TM:1651297123> | Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design </font>
+<font color=#A52A2A>@W:<a href="@W:MT447:@XP_HELP">MT447</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\counter.fdc:8:0:8:1:@W:MT447:@XP_MSG">counter.fdc(8)</a><!@TM:1651470571> | Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design </font>
+<font color=#A52A2A>@W:<a href="@W:MT447:@XP_HELP">MT447</a> : <a href="c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\counter.fdc:9:0:9:1:@W:MT447:@XP_MSG">counter.fdc(9)</a><!@TM:1651470571> | Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design </font>
 None
 
 Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 182MB)
@@ -624,10 +628,10 @@ VHI:            2
 VLO:            2
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 65MB peak: 182MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 65MB peak: 182MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Sat Apr 30 07:38:42 2022
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Mon May  2 07:49:31 2022
 
 ###########################################################]
 
