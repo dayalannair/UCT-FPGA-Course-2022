@@ -111,6 +111,11 @@ always @(posedge ipClk) begin
                   tx_state <= on;
                   tx_packet <= dest;
                 end
+                //for next valid byte
+                else if (ipTxStream.Valid) begin
+                  tx_state <= on;
+                  tx_packet <= data; // go straight to data state
+                end
               end
 //------------------------------------------------------------------------------
         on: begin

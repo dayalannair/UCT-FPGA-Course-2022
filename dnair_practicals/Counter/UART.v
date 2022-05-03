@@ -67,12 +67,14 @@ always @(posedge ipClk) begin
 					clk_cnt <= 10'd433;
 					opTxBusy <= 1'b0;
 					opTx <= 1'b1; // hold output bit high while off
-					if (ipTxSend) tx_state <= start;
+					if (ipTxSend) begin
+						tx_state <= start;
+						opTxBusy <= 1'b1;
+						txData <= ipTxData;
+					end
 				end
 				
 			start: begin
-					opTxBusy <= 1'b1;
-					txData <= ipTxData;
 					// hold opTx low to indicate start
 					if (clk_cnt != 0) begin
 						opTx <= 1'b0;
