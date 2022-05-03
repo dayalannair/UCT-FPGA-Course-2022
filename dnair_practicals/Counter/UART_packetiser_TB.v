@@ -65,11 +65,12 @@ initial begin
       #8681;
     end
     // send 4 bytes of data
-    for (i = 0, i<4,i++)begin
+    for (i = 0; i<4; i++)begin
         data ++;
         for(bit = 0; bit < 8; bit++) begin
             ipRx = data[bit];
             #8681;
         end 
     end
+
 endmodule

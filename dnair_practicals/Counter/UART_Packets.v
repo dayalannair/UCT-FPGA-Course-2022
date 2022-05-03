@@ -17,17 +17,13 @@ into a structure which is then outputted.
 //------------------------------------------------------------------------------
 
 module UART_Packets(
-  input              ipClk,
-  input              ipReset,
-
+  input ipClk,
+  input ipReset,
   // packet to be sent over UART received from registers
   input  UART_PACKET ipTxStream,
-
-  output             opTxReady, // ready to send 
-  output             opTx,     // connected to output of UART module
-
-  input              ipRx,
-
+  output reg opTxReady, // ready to send 
+  output opTx,     // connected to output of UART module
+  input ipRx,
   // Received packet from UART sent out to control/registers
   output UART_PACKET opRxStream
 );
@@ -69,7 +65,7 @@ STATE tx_state;
 typedef enum{
   src,
   dest,
-  lgth;
+  lgth,
   data
 } METADATA;
 
