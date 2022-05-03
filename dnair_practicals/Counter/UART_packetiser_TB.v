@@ -43,13 +43,19 @@ UART_Packets packetiser(
 
 // send data packet and monitor what is sent back -- check opTx
 initial begin
+    TxPacket.Valid <= 1'b0;
+
     TxPacket.Destination <= destination;
     TxPacket.Source <= source;
     TxPacket.Length <= length;
     TxPacket.Data <= data;
 
+    @(negedge ipReset);
+    @(posedge ipClk);
+    @(posedge ipClk);
+
     // posedge on Tx ready means packetiser set up to receive
-    @(posedge opTxReady); 
+    if(!opTxReady) @(posedge opTxReady); 
     @(posedge ipClk);
     // send first byte packet
     TxPacket.Valid <= 1'b1;
@@ -57,22 +63,24 @@ initial begin
 
     // wait for packetiser to be busy
     @(negedge opTxReady); 
-    @(posedge ipClk);
 
-    TxPacket.Valid <= 1'b0;
+    // TxPacket.Valid <= 1'b0;
     TxPacket.SoP <= 1'b0;
     @(posedge ipClk);
 
     // send next 3 byte packets
-    for (i = 0; i < 3; i++) begin
-        //@(posedge ipClk);
+ if(!opTxReady) @(posedge opTxReady); 
 
+
+
+ 
+    for (i = 0; i < 3; i++) begin
         data <= data + 1'b1;
         TxPacket.Valid <= 1'b1;
         @(negedge opTxReady); 
-        @(posedge ipClk);
         TxPacket.Valid <= 1'b0;
     end
+    
 
     // send header 
     // for(bit_pos = 0; bit_pos < 8; bit_pos++) begin

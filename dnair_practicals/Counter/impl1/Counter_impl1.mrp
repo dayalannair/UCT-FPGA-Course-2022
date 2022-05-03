@@ -17,7 +17,7 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   5
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  05/02/22  07:49:34
+Mapped on:  05/03/22  15:43:14
 
 Design Summary
 --------------
@@ -25,14 +25,14 @@ Design Summary
    Number of registers:     61 out of  3864 (2%)
       PFU registers:           59 out of  3564 (2%)
       PIO registers:            2 out of   300 (1%)
-   Number of SLICEs:        65 out of  2376 (3%)
-      SLICEs as Logic/ROM:     65 out of  2376 (3%)
+   Number of SLICEs:        64 out of  2376 (3%)
+      SLICEs as Logic/ROM:     64 out of  2376 (3%)
       SLICEs as RAM:            0 out of   405 (0%)
-      SLICEs as Carry:         19 out of  2376 (1%)
-   Number of LUT4s:        113 out of  4752 (2%)
-      Number used as logic LUTs:         75
+      SLICEs as Carry:         17 out of  2376 (1%)
+   Number of LUT4s:        111 out of  4752 (2%)
+      Number used as logic LUTs:         77
       Number used as distributed RAM:     0
-      Number used as ripple logic:       38
+      Number used as ripple logic:       34
       Number used as shift registers:     0
    Number of PIO sites used: 12 out of 100 (12%)
    Number of PIO FIXEDDELAY:    0
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  05/02/22  07:49:34
+Design:  top                                           Date:  05/03/22  15:43:14
 
 Design Summary (cont)
 ---------------------
@@ -76,14 +76,14 @@ Design Summary (cont)
    Number of clocks:  1
      Net ipClk_c: 39 loads, 39 rising, 0 falling (Driver: PIO ipClk )
    Number of Clock Enables:  8
-     Net un1_clk_cnt_0_sqmuxa_i_i: 1 loads, 0 LSLICEs
+     Net un1_clk_cnt_0_sqmuxa_0_0: 1 loads, 0 LSLICEs
      Net UART_TxData17: 4 loads, 4 LSLICEs
      Net UART_Inst/opRxValid_RNO_0: 1 loads, 1 LSLICEs
-     Net UART_Inst/tx_state[0]: 1 loads, 1 LSLICEs
-     Net UART_Inst/un1_rst_6_0_0: 4 loads, 4 LSLICEs
+     Net UART_Inst/un1_rst_9_0_0: 4 loads, 4 LSLICEs
+     Net UART_Inst/opTxBusy_en_0: 1 loads, 1 LSLICEs
      Net UART_Inst/rx_cnt_2_sqmuxa: 5 loads, 5 LSLICEs
-     Net UART_Inst/N_4_i: 5 loads, 5 LSLICEs
-     Net N_35_i_i: 1 loads, 1 LSLICEs
+     Net UART_Inst/N_7_i: 5 loads, 5 LSLICEs
+     Net N_37_i_i: 1 loads, 1 LSLICEs
    Number of LSRs:  4
      Net UART_Inst.rst: 3 loads, 2 LSLICEs
      Net UART_Inst/clk_cnt2_0_sqmuxa: 7 loads, 7 LSLICEs
@@ -91,16 +91,16 @@ Design Summary (cont)
      Net UART_Inst/un1_tx_cnt_6_s_3_0_S0: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net UART_Inst/tx_state[0]: 20 loads
      Net UART_Inst/VCC: 20 loads
-     Net UART_Inst/tx_state[0]: 19 loads
-     Net UART_Inst.rst: 16 loads
+     Net UART_Inst.rst: 15 loads
      Net UART_Inst/clk_cnt2_0_sqmuxa: 12 loads
-     Net UART_Inst/tx_state[1]: 12 loads
      Net UART_Inst/N_61: 11 loads
      Net UART_Inst/N_69: 11 loads
-     Net UART_Inst/N_72: 11 loads
-     Net UART_Inst/un1_rst_9_i_0_0: 11 loads
-     Net UART_Inst/N_111: 10 loads
+     Net UART_Inst/tx_state[1]: 11 loads
+     Net UART_Inst/un1_rst_7_i_0_0: 11 loads
+     Net UART_Inst/N_208: 10 loads
+     Net UART_Inst/rx_state[0]: 10 loads
 
 
 
@@ -132,7 +132,7 @@ IO (PIO) Attributes
 
 
 
-Design:  top                                           Date:  05/02/22  07:49:34
+Design:  top                                           Date:  05/03/22  15:43:14
 
 IO (PIO) Attributes (cont)
 --------------------------
@@ -161,62 +161,49 @@ Removed logic
 
 Block VCC undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal UART_Inst/tx_state_i[0] was merged into signal UART_Inst/tx_state[0]
 Signal VCC undriven or does not drive anything - clipped.
-Signal UART_Inst/un1_tx_cnt_6_cry_1dup_0_S1 undriven or does not drive anything
-     - clipped.
-Signal UART_Inst/un1_tx_cnt_6_cry_1dup_0_S0 undriven or does not drive anything
-     - clipped.
-Signal UART_Inst/un1_tx_cnt_6_s_3_0_S1 undriven or does not drive anything -
-     clipped.
-Signal UART_Inst/un1_tx_cnt_6_s_3_0_COUT undriven or does not drive anything -
-     clipped.
-Signal UART_Inst/clk_cnt_cry_0_S0[0] undriven or does not drive anything -
-     clipped.
-Signal UART_Inst/N_2 undriven or does not drive anything - clipped.
 Signal UART_Inst/clk_cnt_cry_0_COUT[7] undriven or does not drive anything -
      clipped.
 Signal UART_Inst/un1_clk_cnt2_15_cry_0_0_S1 undriven or does not drive anything
      - clipped.
 Signal UART_Inst/un1_clk_cnt2_15_cry_0_0_S0 undriven or does not drive anything
      - clipped.
-Signal UART_Inst/N_3 undriven or does not drive anything - clipped.
+Signal UART_Inst/N_2 undriven or does not drive anything - clipped.
 Signal UART_Inst/un1_clk_cnt2_15_s_9_0_S1 undriven or does not drive anything -
      clipped.
 Signal UART_Inst/un1_clk_cnt2_15_s_9_0_COUT undriven or does not drive anything
      - clipped.
+Signal UART_Inst/un1_rx_cnt_6_cry_0_0_S1 undriven or does not drive anything -
+     clipped.
+Signal UART_Inst/un1_rx_cnt_6_cry_0_0_S0 undriven or does not drive anything -
+     clipped.
+Signal UART_Inst/N_3 undriven or does not drive anything - clipped.
+Signal UART_Inst/un1_rx_cnt_6_s_3_0_S1 undriven or does not drive anything -
+     clipped.
+Signal UART_Inst/un1_rx_cnt_6_s_3_0_COUT undriven or does not drive anything -
+     clipped.
 Signal UART_Inst/un1_tx_cnt_6_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal UART_Inst/un1_tx_cnt_6_cry_0_0_S0 undriven or does not drive anything -
      clipped.
 Signal UART_Inst/N_4 undriven or does not drive anything - clipped.
-Signal UART_Inst/un1_tx_cnt_6_cry_1_0_COUT undriven or does not drive anything -
+Signal UART_Inst/un1_tx_cnt_6_s_3_0_S1 undriven or does not drive anything -
      clipped.
+Signal UART_Inst/un1_tx_cnt_6_s_3_0_COUT undriven or does not drive anything -
+     clipped.
+Signal UART_Inst/clk_cnt_cry_0_S0[0] undriven or does not drive anything -
 
                                     Page 3
 
 
 
 
-Design:  top                                           Date:  05/02/22  07:49:34
+Design:  top                                           Date:  05/03/22  15:43:14
 
 Removed logic (cont)
 --------------------
-Signal UART_Inst/un1_rx_cnt_6_cry_0_0_S1 undriven or does not drive anything -
      clipped.
-Signal UART_Inst/un1_rx_cnt_6_cry_0_0_S0 undriven or does not drive anything -
-     clipped.
-Signal UART_Inst/N_5 undriven or does not drive anything - clipped.
-Signal UART_Inst/un1_rx_cnt_6_s_3_0_S1 undriven or does not drive anything -
-     clipped.
-Signal UART_Inst/un1_rx_cnt_6_s_3_0_COUT undriven or does not drive anything -
-     clipped.
-Signal UART_Inst/un1_tx_cnt_6_cry_0dup_0_S1 undriven or does not drive anything
-     - clipped.
-Signal UART_Inst/un1_tx_cnt_6_cry_0dup_0_S0 undriven or does not drive anything
-     - clipped.
 Signal UART_Inst/N_1 undriven or does not drive anything - clipped.
-Block UART_Inst/opTxBusy_RNO was optimized away.
 
 Run Time and Memory Usage
 -------------------------
@@ -225,6 +212,19 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 59 MB
         
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

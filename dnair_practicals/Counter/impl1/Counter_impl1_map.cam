@@ -1,36 +1,29 @@
 [ START MERGED ]
-UART_Inst/tx_state_i[0] UART_Inst/tx_state[0]
 [ END MERGED ]
 [ START CLIPPED ]
 VCC
-UART_Inst/un1_tx_cnt_6_cry_1dup_0_S1
-UART_Inst/un1_tx_cnt_6_cry_1dup_0_S0
-UART_Inst/un1_tx_cnt_6_s_3_0_S1
-UART_Inst/un1_tx_cnt_6_s_3_0_COUT
-UART_Inst/clk_cnt_cry_0_S0[0]
-UART_Inst/N_2
 UART_Inst/clk_cnt_cry_0_COUT[7]
 UART_Inst/un1_clk_cnt2_15_cry_0_0_S1
 UART_Inst/un1_clk_cnt2_15_cry_0_0_S0
-UART_Inst/N_3
+UART_Inst/N_2
 UART_Inst/un1_clk_cnt2_15_s_9_0_S1
 UART_Inst/un1_clk_cnt2_15_s_9_0_COUT
+UART_Inst/un1_rx_cnt_6_cry_0_0_S1
+UART_Inst/un1_rx_cnt_6_cry_0_0_S0
+UART_Inst/N_3
+UART_Inst/un1_rx_cnt_6_s_3_0_S1
+UART_Inst/un1_rx_cnt_6_s_3_0_COUT
 UART_Inst/un1_tx_cnt_6_cry_0_0_S1
 UART_Inst/un1_tx_cnt_6_cry_0_0_S0
 UART_Inst/N_4
-UART_Inst/un1_tx_cnt_6_cry_1_0_COUT
-UART_Inst/un1_rx_cnt_6_cry_0_0_S1
-UART_Inst/un1_rx_cnt_6_cry_0_0_S0
-UART_Inst/N_5
-UART_Inst/un1_rx_cnt_6_s_3_0_S1
-UART_Inst/un1_rx_cnt_6_s_3_0_COUT
-UART_Inst/un1_tx_cnt_6_cry_0dup_0_S1
-UART_Inst/un1_tx_cnt_6_cry_0dup_0_S0
+UART_Inst/un1_tx_cnt_6_s_3_0_S1
+UART_Inst/un1_tx_cnt_6_s_3_0_COUT
+UART_Inst/clk_cnt_cry_0_S0[0]
 UART_Inst/N_1
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Mon May 02 07:49:35 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue May 03 15:43:15 2022
 
 SYSCONFIG DONE_OD=ON DONE_EX=OFF CONFIG_SECURE=OFF WAKE_UP=21 WAKE_ON_LOCK=OFF INBUF=ON MASTER_SPI_PORT=DISABLE SLAVE_SPI_PORT=DISABLE MY_ASSP=OFF ONE_TIME_PROGRAM=OFF ;
 LOCATE COMP "opLED[0]" SITE "46" ;

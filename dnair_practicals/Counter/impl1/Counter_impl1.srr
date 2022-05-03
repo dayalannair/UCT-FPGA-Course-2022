@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DAYALAN1
 
-# Mon May  2 07:49:21 2022
+# Tue May  3 15:43:00 2022
 
 #Implementation: impl1
 
@@ -59,6 +59,8 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v" (library work)
 Verilog syntax check successful!
+File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v changed - recompiling
+File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v changed - recompiling
 Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdep@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":6:0:6:5|Synthesizing module work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit in library work.
 Selecting top level module top
@@ -93,12 +95,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 96MB peak: 97MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 96MB peak: 98MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  2 07:49:22 2022
+# Tue May  3 15:43:02 2022
 
 ###########################################################]
 ###########################################################[
@@ -125,7 +127,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  2 07:49:22 2022
+# Tue May  3 15:43:02 2022
 
 ###########################################################]
 
@@ -135,12 +137,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 29MB peak: 29MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  2 07:49:22 2022
+# Tue May  3 15:43:02 2022
 
 ###########################################################]
 ###########################################################[
@@ -168,10 +170,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  2 07:49:24 2022
+# Tue May  3 15:43:03 2022
 
 ###########################################################]
-# Mon May  2 07:49:24 2022
+# Tue May  3 15:43:03 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -200,7 +202,7 @@ See clock summary report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dna
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 126MB peak: 129MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
 
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
@@ -209,7 +211,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 138MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 140MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 140MB)
 
 Encoding state machine rx_state[3:0] (in view: work.UART(verilog))
 original code -> new code
@@ -226,20 +228,20 @@ original code -> new code
    00000000000000000000000000000011 -> 11
 @N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|There are no possible illegal states for state machine tx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
 Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist top 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
 
 
@@ -290,24 +292,24 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 174MB peak: 174MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 92MB peak: 174MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 89MB peak: 175MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Mon May  2 07:49:26 2022
+# Tue May  3 15:43:06 2022
 
 ###########################################################]
-# Mon May  2 07:49:27 2022
+# Tue May  3 15:43:06 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -345,7 +347,7 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
 
 
 Available hyper_sources - for debug and ip models
@@ -368,23 +370,23 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    11.83ns		  76 /        61
+   1		0h:00m:02s		    11.83ns		  77 /        61
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 176MB)
 
@@ -394,7 +396,7 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 140MB peak: 176MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 141MB peak: 176MB)
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
@@ -407,13 +409,13 @@ Writing EDIF Netlist and constraint files
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 180MB peak: 182MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 182MB)
 
 @N: MT615 |Found clock ipClk with period 20.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon May  2 07:49:30 2022
+# Timing report written on Tue May  3 15:43:10 2022
 #
 
 
@@ -484,11 +486,11 @@ UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     Q       clk_cnt2[5]     1.09
 UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     Q       clk_cnt2[8]     1.091       11.151
 UART_Inst.clk_cnt2[9]     ipClk         FD1S3AX     Q       clk_cnt2[9]     1.091       11.151
 UART_Inst.clk_cnt2[0]     ipClk         FD1S3IX     Q       clk_cnt2[0]     1.213       11.235
-UART_Inst.clk_cnt2[4]     ipClk         FD1S3JX     Q       clk_cnt2[4]     1.166       11.282
+UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     Q       clk_cnt2[1]     1.166       11.282
+UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     Q       clk_cnt2[3]     1.166       11.282
 UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     Q       clk_cnt2[6]     1.166       11.282
-UART_Inst.clk_cnt2[7]     ipClk         FD1S3IX     Q       clk_cnt2[7]     1.166       11.282
-UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     Q       clk_cnt2[1]     1.166       11.376
-UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     Q       clk_cnt2[3]     1.166       11.376
+UART_Inst.clk_cnt2[4]     ipClk         FD1S3JX     Q       clk_cnt2[4]     1.166       11.376
+UART_Inst.clk_cnt2[7]     ipClk         FD1S3IX     Q       clk_cnt2[7]     1.166       11.376
 ==============================================================================================
 
 
@@ -504,11 +506,11 @@ UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     D       N_27_i              
 UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     D       N_28_i                         19.264       11.415
 UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     D       clk_cnt2_0[1]                  19.264       11.503
 UART_Inst.clk_cnt2[2]     ipClk         FD1S3AX     D       clk_cnt2_0[2]                  19.264       11.503
-UART_Inst.tx_cnt[3]       ipClk         FD1S3JX     PD      un1_tx_cnt_6_s_3_0_S0          19.640       12.509
+UART_Inst.tx_cnt[3]       ipClk         FD1S3JX     PD      un1_tx_cnt_6_s_3_0_S0          19.640       12.552
 UART_Inst.clk_cnt2[7]     ipClk         FD1S3IX     D       un1_clk_cnt2_15_cry_7_0_S0     20.057       12.577
 UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     D       un1_clk_cnt2_15_cry_7_0_S1     20.057       12.577
 UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     D       un1_clk_cnt2_15_cry_5_0_S0     20.057       12.665
-UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]                   20.057       12.737
+UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]                   20.057       12.742
 ==============================================================================================================
 
 
@@ -540,12 +542,12 @@ UART_Inst.clk_cnt2[2]                     FD1S3AX      Q        Out     1.091   
 clk_cnt2[2]                               Net          -        -       -         -           2         
 UART_Inst.rx_state_ns_1_0_.m32_i_o2_2     ORCALUT4     A        In      0.000     1.091 r     -         
 UART_Inst.rx_state_ns_1_0_.m32_i_o2_2     ORCALUT4     Z        Out     1.090     2.181 r     -         
-m32_i_o2_2                                Net          -        -       -         -           4         
+N_33                                      Net          -        -       -         -           4         
 UART_Inst.rx_state_ns_1_0_.m32_i_o2_3     ORCALUT4     A        In      0.000     2.181 r     -         
 UART_Inst.rx_state_ns_1_0_.m32_i_o2_3     ORCALUT4     Z        Out     1.137     3.318 r     -         
 m32_i_o2_3                                Net          -        -       -         -           6         
-UART_Inst.un1_rst_9_i_0_a2                ORCALUT4     A        In      0.000     3.318 r     -         
-UART_Inst.un1_rst_9_i_0_a2                ORCALUT4     Z        Out     1.194     4.512 f     -         
+UART_Inst.un1_rst_7_i_0_a2                ORCALUT4     A        In      0.000     3.318 r     -         
+UART_Inst.un1_rst_7_i_0_a2                ORCALUT4     Z        Out     1.194     4.512 f     -         
 N_61                                      Net          -        -       -         -           11        
 UART_Inst.un1_clk_cnt2_15_cry_0_0         CCU2B        C1       In      0.000     4.512 f     -         
 UART_Inst.un1_clk_cnt2_15_cry_0_0         CCU2B        COUT     Out     1.243     5.755 r     -         
@@ -595,7 +597,7 @@ I/O cells:       12
 
 
 Details:
-CCU2B:          19
+CCU2B:          17
 FD1P3AX:        34
 FD1P3IX:        2
 FD1S3AX:        10
@@ -604,18 +606,18 @@ FD1S3JX:        3
 GSR:            1
 IB:             3
 IFS1P3DX:       1
-INV:            2
+INV:            1
 OB:             9
 OFS1P3JX:       1
-ORCALUT4:       72
+ORCALUT4:       74
 PUR:            1
 VHI:            2
 VLO:            2
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 65MB peak: 182MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 64MB peak: 182MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Mon May  2 07:49:31 2022
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Tue May  3 15:43:11 2022
 
 ###########################################################]

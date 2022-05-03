@@ -48,6 +48,8 @@ reg[7:0] data_cache;
 reg UART_TxSend;
 reg UART_TxBusy;
 reg[7:0] UART_TxData;
+reg[7:0] UART_RxData;
+reg UART_RxValid;
 //------------------------------------------------------------------------------
 //                            TX/RX state machine
 //------------------------------------------------------------------------------
@@ -94,6 +96,17 @@ UART UART_Inst(
 // Convert packets to stream
 
 always @(posedge ipClk) begin
+  rst<= ipReset;
+
+  if (rst) begin
+    tx_state <= idle;
+    tx_packet <= dest;
+    opTxReady <= 1'b0;
+    rx_state <= idle;
+    rx_packet <= dest;
+
+  end
+  else begin
 
   case(tx_state) 
         idle: begin
@@ -112,16 +125,17 @@ always @(posedge ipClk) begin
                   tx_packet <= dest;
                 end
                 //for next valid byte
-                else if (ipTxStream.Valid) begin
-                  tx_state <= on;
-                  tx_packet <= data; // go straight to data state
-                end
+                // else if (ipTxStream.Valid) begin
+                //   tx_state <= on;
+                //   tx_packet <= data; // go straight to data state
+                // end
+                else UART_TxSend <= 1'b0;
               end
 //------------------------------------------------------------------------------
         on: begin
           // reset UART send line
-          UART_TxSend <= 1'b0;
-
+          //UART_TxSend <= 1'b0;
+      
           if (~UART_TxBusy && ipTxStream.Valid) begin
 
             case(tx_packet)
@@ -143,14 +157,20 @@ always @(posedge ipClk) begin
                     end
 
               data: begin
-                      if (n_bytes != 0) begin
+                      // send cached byte
+                      if (n_bytes == ipTxStream.Length - 1'b1) begin
+                        UART_TxData <= data_cache;
+                        opTxReady <= 1'b1;
+                        n_bytes <= n_bytes - 1'b1;
+                      end
+                      else if (n_bytes != 0) begin
                         // send data byte 2, if any
                         UART_TxData <= ipTxStream.Data;
                         opTxReady <= 1'b1;
                         n_bytes <= n_bytes - 1'b1;
                       end
                       else begin
-                        // UART_TxData <= valid
+                        //UART_TxData <= valid
                         tx_state <= idle;
                       end
                 end
@@ -162,6 +182,7 @@ always @(posedge ipClk) begin
         end
           default:;
   endcase
+  end
 end
 //------------------------------------------------------------------------------
 //                            RX Stream Packetiser
@@ -172,6 +193,7 @@ always @(posedge ipClk) begin
   case(rx_state)
     idle: begin
             //opRxStream.SoP <= UART_RxData;
+            opRxStream.Valid <= 1'b0;
             if (UART_RxValid && (UART_RxData == 8'h55)) begin
               rx_packet <= dest;
               rx_state <= on;
@@ -181,9 +203,6 @@ always @(posedge ipClk) begin
     on: begin
       //wait for next valid byte after sync
       // receive next valid bits 
-
-      opRxStream.Valid <= 1'b0;
-
       if (UART_RxValid) begin
           case (rx_packet)
               dest: begin

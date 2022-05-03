@@ -3,13 +3,13 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      65.00        100.0
+                                  SLIC	      64.00        100.0
                                  IOLGC	       2.00        100.0
-                                  LUT4	      75.00        100.0
+                                  LUT4	      77.00        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         12        100.0
                                 PFUREG	         59        100.0
-                                RIPPLE	         19        100.0
+                                RIPPLE	         17        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                                   UART	          1        93.8
@@ -18,7 +18,7 @@ Report for cell UART
    Instance path: top/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      61.00        93.8
-                                  LUT4	      74.00        98.7
+                                  SLIC	      60.00        93.8
+                                  LUT4	      76.00        98.7
                                 PFUREG	         50        84.7
-                                RIPPLE	         19        100.0
+                                RIPPLE	         17        100.0

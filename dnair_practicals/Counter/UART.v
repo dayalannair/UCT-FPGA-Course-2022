@@ -65,13 +65,14 @@ always @(posedge ipClk) begin
 			off: begin
 					tx_cnt <= 4'd8;
 					clk_cnt <= 10'd433;
-					opTxBusy <= 1'b0;
+					//opTxBusy <= 1'b0;
 					opTx <= 1'b1; // hold output bit high while off
 					if (ipTxSend) begin
 						tx_state <= start;
 						opTxBusy <= 1'b1;
 						txData <= ipTxData;
 					end
+					else opTxBusy <= 1'b0;
 				end
 				
 			start: begin
@@ -112,7 +113,10 @@ always @(posedge ipClk) begin
 					end
 				end
 			stop: begin
-					if (clk_cnt == 0) tx_state <= off;
+					if (clk_cnt == 0) begin
+						tx_state <= off;
+						opTxBusy <= 1'b0;
+					end
 					else begin
 						opTx <= 1'b1;
 						clk_cnt <= clk_cnt - 1'b1;
@@ -144,8 +148,9 @@ always @(posedge ipClk) begin
 			on: begin
 				// if bit held for clk_cnt and no more bits to send
 					if ((clk_cnt2 == 0) && (rx_cnt == 0)) begin
-						clk_cnt2 <= 10'd433;
-						rx_state <= stop;
+						//clk_cnt2 <= 10'd433;
+						rx_state <= off;
+						opRxValid <= 1'b1;
 					end
 					//if bit held for clk_cnt time and counter not = 0, move to next bit
 					else if ((clk_cnt2 == 0) && (rx_cnt != 0)) begin
@@ -156,16 +161,17 @@ always @(posedge ipClk) begin
 					// if bit not held for clk_cnt and cnt > 0, keep holding bit on the line
 					else clk_cnt2 <= clk_cnt2 - 1'b1;
 				end
-			stop: begin
-					if ((rx == 1) && (clk_cnt2 != 0)) clk_cnt2 <= clk_cnt2 - 1'b1;
+			// stop: begin
+			// 		if ((rx == 1) && (clk_cnt2 != 0)) clk_cnt2 <= clk_cnt2 - 1'b1;
 
-					else if ((rx == 1) && (clk_cnt2 == 0)) begin
-						opRxValid <= 1'b1;
-						rx_state <= off;
-					end
+			// 		else if ((rx == 1) && (clk_cnt2 == 0)) begin
+			// 			opRxValid <= 1'b1;
+			// 			rx_state <= off;
+			// 		end
+
 					// if protocol broken, return to off
 					//else rx_state <= off;
-				end
+				//end
 
 			default: rx_state <= off;
 		endcase

@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version Q-2020.03L-SP1
 #--  Project file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\run_options.txt
-#--  Written on Mon May  2 07:49:21 2022
+#--  Written on Tue May  3 15:43:00 2022
 
 
 #project files
