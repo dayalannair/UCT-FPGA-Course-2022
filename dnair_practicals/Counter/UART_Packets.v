@@ -23,7 +23,7 @@ module UART_Packets(
   // packet to be sent over UART received from registers
   input  UART_PACKET ipTxStream,
 
-  output             opTxReady, 
+  output             opTxReady, // ready to send 
   output             opTx,     // connected to output of UART module
 
   input              ipRx,
