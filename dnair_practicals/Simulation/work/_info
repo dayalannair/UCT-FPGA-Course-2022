@@ -12,25 +12,25 @@ dC:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation
 vControl
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 Z1 DXx4 work 10 Structures 0 22 aaz42`jVz?fYMWbJX34]>3
-DXx4 work 14 Control_v_unit 0 22 aS2i3`FZR;=H@VCV7aNIG0
-Z2 !s110 1651675337
+DXx4 work 14 Control_v_unit 0 22 24amJ?2]U<gYHInI`j[Uh3
+Z2 !s110 1651675789
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 !i10b 1
-!s100 FKX_YY_=U?hQePAQ0[i4E1
-I@ZX44>OBZcU8C^IZlBC7B3
+!s100 ;j59@l=bTiCZj@SWcV]WU0
+IgUcX?D[ehRQeIU7F7n7l31
 !s105 Control_v_unit
 S1
 Z4 dC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Simulation
-Z5 w1651675333
+Z5 w1651675752
 Z6 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
 Z7 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
-!i122 106
-L0 3 138
+!i122 108
+L0 3 123
 Z8 OT;L;2020.3;71
 31
-Z9 !s108 1651675337.000000
+Z9 !s108 1651675789.000000
 Z10 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
 Z11 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
 !s101 -O0
@@ -42,7 +42,7 @@ vControl_TB
 R0
 R1
 DXx4 work 17 Control_TB_v_unit 0 22 V=o<KN;XQQdO3UZa;HU1Y2
-Z14 !s110 1651675345
+Z14 !s110 1651675791
 R3
 r1
 !s85 0
@@ -55,11 +55,11 @@ R4
 Z15 w1651675144
 Z16 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
 Z17 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
-!i122 107
+!i122 109
 L0 2 94
 R8
 31
-Z18 !s108 1651675345.000000
+Z18 !s108 1651675791.000000
 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
 Z19 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
 !s101 -O0
@@ -83,7 +83,7 @@ R4
 R15
 R16
 R17
-!i122 107
+!i122 109
 Z20 L0 1 0
 R8
 31
@@ -99,19 +99,19 @@ XControl_v_unit
 R0
 R1
 R2
-VaS2i3`FZR;=H@VCV7aNIG0
+V24amJ?2]U<gYHInI`j[Uh3
 r1
 !s85 0
 !i10b 1
-!s100 P@_BKQLbEMTcX7ZSAd:aN3
-IaS2i3`FZR;=H@VCV7aNIG0
+!s100 31jAjJR:djO;RC4f6Wk5j3
+I24amJ?2]U<gYHInI`j[Uh3
 !i103 1
 S1
 R4
 R5
 R6
 R7
-!i122 106
+!i122 108
 R20
 R8
 31

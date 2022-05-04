@@ -7,8 +7,6 @@ fsm_state_encoding {8510511} on {01}
 
 fsm_state_encoding {8510511} start {10}
 
-fsm_state_encoding {8510511} stop {11}
-
 fsm_registers {8510511} {rx_state[1]}  {rx_state[0]} 
 
 fsm_encoding {8510512} sequential

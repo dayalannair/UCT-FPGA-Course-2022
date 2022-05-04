@@ -11,10 +11,13 @@ import Structures::*;
 
 module top_v2(
   input ipClk,
-  input ipReset,
+  input ipnReset,
   input ipRx,
-  output opRx
+  output opRx,
+  output [7:0]opLED
 );
+
+wire rst = ~ipnReset;
 
 // Control-packetiser connections
 UART_PACKET cpTxPacket;
@@ -26,13 +29,15 @@ wire crWrEnable;
 wire[7:0] crAddress;
 wire[31:0] crWrData;
 wire[31:0] crRdData;
-WR_REGISTERS crWrRegisters;
-RD_REGISTERS crRdRegisters;
 
+WR_REGISTERS WrRegisters;
+RD_REGISTERS RdRegisters;
+
+assign opLED = WrRegisters.LEDS;
 
 UART_Packets packetiser(
   .ipClk (ipClk),
-  .ipReset (ipReset),
+  .ipReset (rst),
   .ipTxStream (cpTxPacket), // packet to send from control
   .opRxStream (cpRxPacket), // received packet to control
   .opTxReady (cpTxReady), 
@@ -41,28 +46,26 @@ UART_Packets packetiser(
 );
 
 Control control(
-  .ipClk (ipClk),
-  .ipReset (ipReset),
+   .ipClk (ipClk),
+  .ipReset (rst),
   .ipRxPkt (cpRxPacket),
   .opTxPkt (cpTxPacket), //output of control is input of packetiser
-  .ipWrRegisters (crWrRegisters),
-  .opRdRegisters (crRdRegisters),
   .opAddress (crAddress),
   .opWrData (crWrData),
+  .ipRdData (crRdData),
   .opWrEnable (crWrEnable),
   .ipTxReady (cpTxReady)
 );
 
 Registers register(
   .ipClk (ipClk),
-  .ipReset (ipReset),
-  .ipWrRegisters (crWrRegisters),
-  .opRdRegisters (crRdRegisters),
+  .ipReset (rst),
+  .ipRdRegisters (RdRegisters),
+  .opWrRegisters (WrRegisters),
   .opRdData (crRdData),
-  .opAddress (crAddress),
-  .opWrData (crWrData),
-  .opWrEnable (crWrEnable)
+  .ipAddress (crAddress),
+  .ipWrData (crWrData),
+  .ipWrEnable (crWrEnable)
 );
-// always @(posedge ipClk) begin
-// end
+
 endmodule

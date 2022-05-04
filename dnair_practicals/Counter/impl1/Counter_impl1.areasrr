@@ -18,14 +18,14 @@ I/O cells:       12
                                 INV        1       100.0
                                  OB        9       100.0
                            OFS1P3JX        1       100.0
-                           ORCALUT4       74       100.0
+                           ORCALUT4       72       100.0
                                 PUR        1       100.0
                                 VHI        2       100.0
                                 VLO        2       100.0
 SUB MODULES 
                                UART        1       100.0
                             
-                         TOTAL           172           
+                         TOTAL           170           
 ----------------------------------------------------------------------
 Report for cell UART.netlist
      Instance path:  UART_Inst
@@ -38,8 +38,8 @@ Report for cell UART.netlist
                             FD1S3IX       10       100.0
                             FD1S3JX        3       100.0
                                 INV        1       100.0
-                           ORCALUT4       74       100.0
+                           ORCALUT4       72       100.0
                                 VHI        1        50.0
                                 VLO        1        50.0
                             
-                         TOTAL           144           
+                         TOTAL           142           

@@ -1,4 +1,4 @@
-# Tue May  3 15:43:06 2022
+# Wed May  4 17:18:21 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -43,39 +43,39 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 171MB peak: 171MB)
 
 @N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found counter in view:work.UART(verilog) instance clk_cnt[8:0] 
 
 Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
 Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP
-@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP
+@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
-
-
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    11.83ns		  77 /        61
+   1		0h:00m:02s		    10.93ns		  75 /        61
 
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 176MB)
 
@@ -89,13 +89,13 @@ Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 177MB peak: 177MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 182MB peak: 182MB)
 
 
 Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 182MB)
@@ -104,7 +104,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Tue May  3 15:43:10 2022
+# Timing report written on Wed May  4 17:18:25 2022
 #
 
 
@@ -124,12 +124,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 11.151
+Worst slack in design: 11.207
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock           
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group           
 -------------------------------------------------------------------------------------------------------------------
-ipClk              50.0 MHz      113.0 MHz     20.000        8.849         11.151     declared     default_clkgroup
+ipClk              50.0 MHz      113.7 MHz     20.000        8.793         11.207     declared     default_clkgroup
 ===================================================================================================================
 
 
@@ -143,7 +143,7 @@ Clocks            |    rise  to  rise    |    fall  to  fall   |    rise  to  fa
 ---------------------------------------------------------------------------------------------------------
 Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------
-ipClk     ipClk   |  20.000      11.151  |  No paths    -      |  No paths    -      |  No paths    -    
+ipClk     ipClk   |  20.000      11.207  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -170,14 +170,14 @@ Starting Points with Worst Slack
 Instance                  Reference     Type        Pin     Net             Time        Slack 
                           Clock                                                               
 ----------------------------------------------------------------------------------------------
-UART_Inst.clk_cnt2[2]     ipClk         FD1S3AX     Q       clk_cnt2[2]     1.091       11.151
-UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     Q       clk_cnt2[5]     1.091       11.151
-UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     Q       clk_cnt2[8]     1.091       11.151
-UART_Inst.clk_cnt2[9]     ipClk         FD1S3AX     Q       clk_cnt2[9]     1.091       11.151
-UART_Inst.clk_cnt2[0]     ipClk         FD1S3IX     Q       clk_cnt2[0]     1.213       11.235
-UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     Q       clk_cnt2[1]     1.166       11.282
-UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     Q       clk_cnt2[3]     1.166       11.282
-UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     Q       clk_cnt2[6]     1.166       11.282
+UART_Inst.clk_cnt2[0]     ipClk         FD1S3IX     Q       clk_cnt2[0]     1.213       11.207
+UART_Inst.clk_cnt2[2]     ipClk         FD1S3AX     Q       clk_cnt2[2]     1.091       11.245
+UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     Q       clk_cnt2[5]     1.091       11.245
+UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     Q       clk_cnt2[8]     1.091       11.245
+UART_Inst.clk_cnt2[9]     ipClk         FD1S3AX     Q       clk_cnt2[9]     1.091       11.245
+UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     Q       clk_cnt2[1]     1.166       11.254
+UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     Q       clk_cnt2[3]     1.166       11.254
+UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     Q       clk_cnt2[6]     1.166       11.254
 UART_Inst.clk_cnt2[4]     ipClk         FD1S3JX     Q       clk_cnt2[4]     1.166       11.376
 UART_Inst.clk_cnt2[7]     ipClk         FD1S3IX     Q       clk_cnt2[7]     1.166       11.376
 ==============================================================================================
@@ -190,15 +190,15 @@ Ending Points with Worst Slack
 Instance                  Reference     Type        Pin     Net                            Time         Slack 
                           Clock                                                                               
 --------------------------------------------------------------------------------------------------------------
-UART_Inst.clk_cnt2[9]     ipClk         FD1S3AX     D       N_26_i                         19.264       11.151
-UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     D       N_27_i                         19.264       11.327
-UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     D       N_28_i                         19.264       11.415
-UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     D       clk_cnt2_0[1]                  19.264       11.503
-UART_Inst.clk_cnt2[2]     ipClk         FD1S3AX     D       clk_cnt2_0[2]                  19.264       11.503
+UART_Inst.clk_cnt2[9]     ipClk         FD1S3AX     D       N_28_i                         19.264       11.207
+UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     D       N_29_i                         19.264       11.383
+UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     D       N_30_i                         19.264       11.471
+UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     D       N_25_i                         19.264       11.559
+UART_Inst.clk_cnt2[2]     ipClk         FD1S3AX     D       N_26_i                         19.264       11.559
 UART_Inst.tx_cnt[3]       ipClk         FD1S3JX     PD      un1_tx_cnt_6_s_3_0_S0          19.640       12.552
-UART_Inst.clk_cnt2[7]     ipClk         FD1S3IX     D       un1_clk_cnt2_15_cry_7_0_S0     20.057       12.577
-UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     D       un1_clk_cnt2_15_cry_7_0_S1     20.057       12.577
-UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     D       un1_clk_cnt2_15_cry_5_0_S0     20.057       12.665
+UART_Inst.clk_cnt2[7]     ipClk         FD1S3IX     D       un1_clk_cnt2_14_cry_7_0_S0     20.057       12.633
+UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     D       un1_clk_cnt2_14_cry_7_0_S1     20.057       12.633
+UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     D       un1_clk_cnt2_14_cry_5_0_S0     20.057       12.721
 UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]                   20.057       12.742
 ==============================================================================================================
 
@@ -214,53 +214,53 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         19.264
 
-    - Propagation time:                      8.113
+    - Propagation time:                      8.057
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     11.151
+    = Slack (critical) :                     11.207
 
     Number of logic level(s):                10
-    Starting point:                          UART_Inst.clk_cnt2[2] / Q
+    Starting point:                          UART_Inst.clk_cnt2[0] / Q
     Ending point:                            UART_Inst.clk_cnt2[9] / D
     The start point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
     The end   point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
 
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                      Type         Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-UART_Inst.clk_cnt2[2]                     FD1S3AX      Q        Out     1.091     1.091 r     -         
-clk_cnt2[2]                               Net          -        -       -         -           2         
-UART_Inst.rx_state_ns_1_0_.m32_i_o2_2     ORCALUT4     A        In      0.000     1.091 r     -         
-UART_Inst.rx_state_ns_1_0_.m32_i_o2_2     ORCALUT4     Z        Out     1.090     2.181 r     -         
-N_33                                      Net          -        -       -         -           4         
-UART_Inst.rx_state_ns_1_0_.m32_i_o2_3     ORCALUT4     A        In      0.000     2.181 r     -         
-UART_Inst.rx_state_ns_1_0_.m32_i_o2_3     ORCALUT4     Z        Out     1.137     3.318 r     -         
-m32_i_o2_3                                Net          -        -       -         -           6         
-UART_Inst.un1_rst_7_i_0_a2                ORCALUT4     A        In      0.000     3.318 r     -         
-UART_Inst.un1_rst_7_i_0_a2                ORCALUT4     Z        Out     1.194     4.512 f     -         
-N_61                                      Net          -        -       -         -           11        
-UART_Inst.un1_clk_cnt2_15_cry_0_0         CCU2B        C1       In      0.000     4.512 f     -         
-UART_Inst.un1_clk_cnt2_15_cry_0_0         CCU2B        COUT     Out     1.243     5.755 r     -         
-un1_clk_cnt2_15_cry_0                     Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_15_cry_1_0         CCU2B        CIN      In      0.000     5.755 r     -         
-UART_Inst.un1_clk_cnt2_15_cry_1_0         CCU2B        COUT     Out     0.088     5.843 r     -         
-un1_clk_cnt2_15_cry_2                     Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_15_cry_3_0         CCU2B        CIN      In      0.000     5.843 r     -         
-UART_Inst.un1_clk_cnt2_15_cry_3_0         CCU2B        COUT     Out     0.088     5.931 r     -         
-un1_clk_cnt2_15_cry_4                     Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_15_cry_5_0         CCU2B        CIN      In      0.000     5.931 r     -         
-UART_Inst.un1_clk_cnt2_15_cry_5_0         CCU2B        COUT     Out     0.088     6.019 r     -         
-un1_clk_cnt2_15_cry_6                     Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_15_cry_7_0         CCU2B        CIN      In      0.000     6.019 r     -         
-UART_Inst.un1_clk_cnt2_15_cry_7_0         CCU2B        COUT     Out     0.088     6.107 r     -         
-un1_clk_cnt2_15_cry_8                     Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_15_s_9_0           CCU2B        CIN      In      0.000     6.107 r     -         
-UART_Inst.un1_clk_cnt2_15_s_9_0           CCU2B        S0       Out     1.461     7.568 r     -         
-un1_clk_cnt2_15_s_9_0_S0                  Net          -        -       -         -           1         
-UART_Inst.clk_cnt2_RNO[9]                 ORCALUT4     C        In      0.000     7.568 r     -         
-UART_Inst.clk_cnt2_RNO[9]                 ORCALUT4     Z        Out     0.545     8.113 r     -         
-N_26_i                                    Net          -        -       -         -           1         
-UART_Inst.clk_cnt2[9]                     FD1S3AX      D        In      0.000     8.113 r     -         
-========================================================================================================
+Instance / Net                                     Pin      Pin               Arrival     No. of    
+Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------
+UART_Inst.clk_cnt2[0]                 FD1S3IX      Q        Out     1.213     1.213 r     -         
+clk_cnt2[0]                           Net          -        -       -         -           4         
+UART_Inst.un1_rst_7_i_0_a2_2_3        ORCALUT4     A        In      0.000     1.213 r     -         
+UART_Inst.un1_rst_7_i_0_a2_2_3        ORCALUT4     Z        Out     0.883     2.097 f     -         
+un1_rst_7_i_0_a2_2_3                  Net          -        -       -         -           1         
+UART_Inst.un1_rst_7_i_0_a2_2          ORCALUT4     D        In      0.000     2.097 f     -         
+UART_Inst.un1_rst_7_i_0_a2_2          ORCALUT4     Z        Out     1.156     3.253 f     -         
+N_70                                  Net          -        -       -         -           7         
+UART_Inst.un1_rst_7_i_0_a2_1          ORCALUT4     B        In      0.000     3.253 f     -         
+UART_Inst.un1_rst_7_i_0_a2_1          ORCALUT4     Z        Out     1.203     4.456 f     -         
+opRxValid_0_sqmuxa_1                  Net          -        -       -         -           12        
+UART_Inst.un1_clk_cnt2_14_cry_0_0     CCU2B        C1       In      0.000     4.456 f     -         
+UART_Inst.un1_clk_cnt2_14_cry_0_0     CCU2B        COUT     Out     1.243     5.699 r     -         
+un1_clk_cnt2_14_cry_0                 Net          -        -       -         -           1         
+UART_Inst.un1_clk_cnt2_14_cry_1_0     CCU2B        CIN      In      0.000     5.699 r     -         
+UART_Inst.un1_clk_cnt2_14_cry_1_0     CCU2B        COUT     Out     0.088     5.787 r     -         
+un1_clk_cnt2_14_cry_2                 Net          -        -       -         -           1         
+UART_Inst.un1_clk_cnt2_14_cry_3_0     CCU2B        CIN      In      0.000     5.787 r     -         
+UART_Inst.un1_clk_cnt2_14_cry_3_0     CCU2B        COUT     Out     0.088     5.875 r     -         
+un1_clk_cnt2_14_cry_4                 Net          -        -       -         -           1         
+UART_Inst.un1_clk_cnt2_14_cry_5_0     CCU2B        CIN      In      0.000     5.875 r     -         
+UART_Inst.un1_clk_cnt2_14_cry_5_0     CCU2B        COUT     Out     0.088     5.963 r     -         
+un1_clk_cnt2_14_cry_6                 Net          -        -       -         -           1         
+UART_Inst.un1_clk_cnt2_14_cry_7_0     CCU2B        CIN      In      0.000     5.963 r     -         
+UART_Inst.un1_clk_cnt2_14_cry_7_0     CCU2B        COUT     Out     0.088     6.051 r     -         
+un1_clk_cnt2_14_cry_8                 Net          -        -       -         -           1         
+UART_Inst.un1_clk_cnt2_14_s_9_0       CCU2B        CIN      In      0.000     6.051 r     -         
+UART_Inst.un1_clk_cnt2_14_s_9_0       CCU2B        S0       Out     1.461     7.512 r     -         
+un1_clk_cnt2_14_s_9_0_S0              Net          -        -       -         -           1         
+UART_Inst.clk_cnt2_RNO[9]             ORCALUT4     D        In      0.000     7.512 r     -         
+UART_Inst.clk_cnt2_RNO[9]             ORCALUT4     Z        Out     0.545     8.057 r     -         
+N_28_i                                Net          -        -       -         -           1         
+UART_Inst.clk_cnt2[9]                 FD1S3AX      D        In      0.000     8.057 r     -         
+====================================================================================================
 
 
 
@@ -271,10 +271,10 @@ Timing exceptions that could not be applied
 @W: MT447 :"c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc":9:0:9:0|Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 182MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 182MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 182MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 181MB peak: 182MB)
 
 ---------------------------------------
 Resource Usage Report
@@ -298,15 +298,15 @@ IFS1P3DX:       1
 INV:            1
 OB:             9
 OFS1P3JX:       1
-ORCALUT4:       74
+ORCALUT4:       72
 PUR:            1
 VHI:            2
 VLO:            2
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 64MB peak: 182MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 65MB peak: 182MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:03s cputime
-# Tue May  3 15:43:11 2022
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Wed May  4 17:18:25 2022
 
 ###########################################################]

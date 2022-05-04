@@ -110,31 +110,17 @@ always @(posedge ipClk) begin
             end
         write: begin
                 if (ipRxPkt.Valid) begin
-                    // build 32 bit word then set write enable high
-                    if (wr_byte_cnt == 3'd4) begin
-                        opWrData[7:0] <= ipRxPkt.Data;
-                        wr_byte_cnt <= wr_byte_cnt - 1'b1;
-                    end
-
-                    else if (wr_byte_cnt == 3'd3) begin
-                        opWrData[15:8] <= ipRxPkt.Data;
-                        wr_byte_cnt <= wr_byte_cnt - 1'b1;
-                    end 
-
-                    else if (wr_byte_cnt == 3'd2) begin
-                        opWrData[23:16] <= ipRxPkt.Data;
-                        wr_byte_cnt <= wr_byte_cnt - 1'b1;
-                    end 
-
-                    else if (wr_byte_cnt == 3'd1) begin
-                        opWrData[31:24] <= ipRxPkt.Data;
+                    opWrData <= {ipRxPkt.Data, opWrData[31:8]};
+                    if (wr_byte_cnt == 3'd1) begin
                         opWrEnable <= 1'b1;
                         state <= idle;
                     end
+                    wr_byte_cnt <= wr_byte_cnt - 1'b1;
                 end
             end
-            default:;
-    endcase
-   
+        
+        default:;
+
+    endcase 
 end
 endmodule

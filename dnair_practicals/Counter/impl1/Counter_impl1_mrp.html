@@ -25,19 +25,19 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   5
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  05/03/22  15:43:14
+Mapped on:  05/04/22  17:18:28
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of registers:     61 out of  3864 (2%)
       PFU registers:           59 out of  3564 (2%)
       PIO registers:            2 out of   300 (1%)
-   Number of SLICEs:        64 out of  2376 (3%)
-      SLICEs as Logic/ROM:     64 out of  2376 (3%)
+   Number of SLICEs:        62 out of  2376 (3%)
+      SLICEs as Logic/ROM:     62 out of  2376 (3%)
       SLICEs as RAM:            0 out of   405 (0%)
       SLICEs as Carry:         17 out of  2376 (1%)
-   Number of LUT4s:        111 out of  4752 (2%)
-      Number used as logic LUTs:         77
+   Number of LUT4s:        109 out of  4752 (2%)
+      Number used as logic LUTs:         75
       Number used as distributed RAM:     0
       Number used as ripple logic:       34
       Number used as shift registers:     0
@@ -76,34 +76,34 @@ Mapped on:  05/03/22  15:43:14
    Number of Clock Enables:  8
      Net un1_clk_cnt_0_sqmuxa_0_0: 1 loads, 0 LSLICEs
      Net UART_TxData17: 4 loads, 4 LSLICEs
-     Net UART_Inst/opRxValid_RNO_0: 1 loads, 1 LSLICEs
+     Net UART_Inst/opRxValid_RNO: 1 loads, 1 LSLICEs
+     Net UART_Inst/rx_cnt_2_sqmuxa: 5 loads, 5 LSLICEs
      Net UART_Inst/un1_rst_9_0_0: 4 loads, 4 LSLICEs
      Net UART_Inst/opTxBusy_en_0: 1 loads, 1 LSLICEs
-     Net UART_Inst/rx_cnt_2_sqmuxa: 5 loads, 5 LSLICEs
      Net UART_Inst/N_7_i: 5 loads, 5 LSLICEs
      Net N_37_i_i: 1 loads, 1 LSLICEs
    Number of LSRs:  4
      Net UART_Inst.rst: 3 loads, 2 LSLICEs
-     Net UART_Inst/clk_cnt2_0_sqmuxa: 7 loads, 7 LSLICEs
+     Net UART_Inst/opRxValid_0_sqmuxa: 7 loads, 7 LSLICEs
      Net UART_Inst/tx_cnt_0_sqmuxa: 2 loads, 2 LSLICEs
      Net UART_Inst/un1_tx_cnt_6_s_3_0_S0: 1 loads, 1 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net UART_Inst/VCC: 21 loads
      Net UART_Inst/tx_state[0]: 20 loads
-     Net UART_Inst/VCC: 20 loads
-     Net UART_Inst.rst: 15 loads
-     Net UART_Inst/clk_cnt2_0_sqmuxa: 12 loads
-     Net UART_Inst/N_61: 11 loads
-     Net UART_Inst/N_69: 11 loads
+     Net UART_Inst/rx_state[1]: 17 loads
+     Net UART_Inst.rst: 16 loads
+     Net UART_Inst/opRxValid_0_sqmuxa: 12 loads
+     Net UART_Inst/opRxValid_0_sqmuxa_1: 12 loads
      Net UART_Inst/tx_state[1]: 11 loads
-     Net UART_Inst/un1_rst_7_i_0_0: 11 loads
-     Net UART_Inst/N_208: 10 loads
-     Net UART_Inst/rx_state[0]: 10 loads
+     Net UART_Inst/un1_rst_7_i_0_2: 11 loads
+     Net UART_Inst/N_193: 10 loads
+     Net UART_Inst/N_75: 10 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  4
    Number of errors:    0
      
 
@@ -112,7 +112,23 @@ Mapped on:  05/03/22  15:43:14
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-   No errors or warnings present.
+WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
+     ls/Counter/Counter.lpf(22): Semantic error in "LOCATE COMP "opTx" SITE
+     "109" ;": COMP "opTx" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
+     ls/Counter/Counter.lpf(23): Semantic error in "LOCATE COMP "ipRx" SITE
+     "110" ;": COMP "ipRx" cannot be found in design. This preference has been
+     disabled.
+WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
+     ls/Counter/Counter.lpf(25): Semantic error in "IOBUF PORT "ipRx"
+     IO_TYPE=LVCMOS33 ;": Port "ipRx" does not exist in the design. This
+     preference has been disabled.
+WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
+     ls/Counter/Counter.lpf(27): Semantic error in "IOBUF PORT "opTx"
+
+     IO_TYPE=LVCMOS33 ;": Port "opTx" does not exist in the design. This
+     preference has been disabled.
 
 
 
@@ -126,8 +142,7 @@ Mapped on:  05/03/22  15:43:14
 +---------------------+-----------+-----------+------------+------------+
 | ipClk               | INPUT     | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
-| opUART_Tx           | OUTPUT    | LVCMOS33  | OUT        |            |
-
+| opUART_Tx           | OUTPUT    | LVCMOS25  | OUT        |            |
 +---------------------+-----------+-----------+------------+------------+
 | opLED[7]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
@@ -143,7 +158,7 @@ Mapped on:  05/03/22  15:43:14
 +---------------------+-----------+-----------+------------+------------+
 | opLED[1]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
-| ipUART_Rx           | INPUT     | LVCMOS33  | IN         |            |
+| ipUART_Rx           | INPUT     | LVCMOS25  | IN         |            |
 +---------------------+-----------+-----------+------------+------------+
 | ipnReset            | INPUT     | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
@@ -157,19 +172,20 @@ Block GSR_INST undriven or does not drive anything - clipped.
 Signal VCC undriven or does not drive anything - clipped.
 Signal UART_Inst/clk_cnt_cry_0_COUT[7] undriven or does not drive anything -
      clipped.
-Signal UART_Inst/un1_clk_cnt2_15_cry_0_0_S1 undriven or does not drive anything
+Signal UART_Inst/un1_clk_cnt2_14_cry_0_0_S1 undriven or does not drive anything
      - clipped.
-Signal UART_Inst/un1_clk_cnt2_15_cry_0_0_S0 undriven or does not drive anything
+Signal UART_Inst/un1_clk_cnt2_14_cry_0_0_S0 undriven or does not drive anything
      - clipped.
 Signal UART_Inst/N_2 undriven or does not drive anything - clipped.
-Signal UART_Inst/un1_clk_cnt2_15_s_9_0_S1 undriven or does not drive anything -
+Signal UART_Inst/un1_clk_cnt2_14_s_9_0_S1 undriven or does not drive anything -
      clipped.
-Signal UART_Inst/un1_clk_cnt2_15_s_9_0_COUT undriven or does not drive anything
+Signal UART_Inst/un1_clk_cnt2_14_s_9_0_COUT undriven or does not drive anything
      - clipped.
 Signal UART_Inst/un1_rx_cnt_6_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal UART_Inst/un1_rx_cnt_6_cry_0_0_S0 undriven or does not drive anything -
      clipped.
+
 Signal UART_Inst/N_3 undriven or does not drive anything - clipped.
 Signal UART_Inst/un1_rx_cnt_6_s_3_0_S1 undriven or does not drive anything -
      clipped.
@@ -185,7 +201,6 @@ Signal UART_Inst/un1_tx_cnt_6_s_3_0_S1 undriven or does not drive anything -
 Signal UART_Inst/un1_tx_cnt_6_s_3_0_COUT undriven or does not drive anything -
      clipped.
 Signal UART_Inst/clk_cnt_cry_0_S0[0] undriven or does not drive anything -
-
      clipped.
 Signal UART_Inst/N_1 undriven or does not drive anything - clipped.
 
@@ -198,21 +213,6 @@ Signal UART_Inst/N_1 undriven or does not drive anything - clipped.
    Total REAL Time: 0 secs  
    Peak Memory Usage: 59 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

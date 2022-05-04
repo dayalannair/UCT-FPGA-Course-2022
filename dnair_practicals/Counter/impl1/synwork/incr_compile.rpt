@@ -16,8 +16,8 @@ Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct
 
 Modified Files: 2
 FID:  path (prevtimestamp, timestamp)
-0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-03 12:36:51, 2022-05-03 15:28:23)
-19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (2022-05-03 12:02:14, 2022-05-03 15:11:06)
+0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-03 15:28:23, 2022-05-03 16:14:46)
+19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (2022-05-03 15:11:06, 2022-05-04 07:42:26)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 0

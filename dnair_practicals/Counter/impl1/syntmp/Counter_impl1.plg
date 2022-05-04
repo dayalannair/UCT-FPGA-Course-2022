@@ -1,9 +1,9 @@
-@P:  Worst Slack : 11.151
-@P:  ipClk - Estimated Frequency : 113.0 MHz
+@P:  Worst Slack : 11.207
+@P:  ipClk - Estimated Frequency : 113.7 MHz
 @P:  ipClk - Requested Frequency : 50.0 MHz
-@P:  ipClk - Estimated Period : 8.849
+@P:  ipClk - Estimated Period : 8.793
 @P:  ipClk - Requested Period : 20.000
-@P:  ipClk - Slack : 11.151
-@P:  Total Area : 75.0
+@P:  ipClk - Slack : 11.207
+@P:  Total Area : 73.0
 @P:  Total Area : 0.0
-@P:  CPU Time : 0h:00m:03s
+@P:  CPU Time : 0h:00m:04s
