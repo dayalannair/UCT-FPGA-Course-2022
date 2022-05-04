@@ -60,11 +60,13 @@ reg[7:0] data = 8'h02; // ipAdress of LEDS
 initial begin
 
     // send read packet containing address to read
+    // set up packet coming in to control from UART packetiser
     ipRxPacket.Valid <= 1'b0;
-    ipRxPacket.Destination <= destination;
+    ipRxPacket.Destination <= destination; // read
     ipRxPacket.Source <= source;
     ipRxPacket.Length <= length;
-    ipRxPacket.Data <= data;
+    ipRxPacket.Data <= data; // address to read
+
     @(negedge ipReset);
     @(posedge ipClk);
     @(posedge ipClk);
@@ -72,10 +74,11 @@ initial begin
     if(!cpTxReady) @(posedge cpTxReady); 
     @(posedge ipClk);
 
-    ipRxPacket.Valid <= 1'b1;
+    ipRxPacket.Valid <= 1'b1; // packet coming in to control is valid
     ipRxPacket.SoP <= 1'b1;
+
     @(negedge cpTxReady); 
-    TxPacket.SoP <= 1'b0;
+    opTxPacket.SoP <= 1'b0;
     ipRxPacket.Valid <= 1'b0;
     @(posedge ipClk);
 

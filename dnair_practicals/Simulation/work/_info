@@ -12,27 +12,27 @@ dC:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation
 vControl
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 Z1 DXx4 work 10 Structures 0 22 aaz42`jVz?fYMWbJX34]>3
-DXx4 work 14 Control_v_unit 0 22 QE6h^Y@b2aQ>=QzknXG<I3
-Z2 !s110 1651644786
+DXx4 work 14 Control_v_unit 0 22 ?nB0am:zjkiYNB1[Tohj82
+Z2 !s110 1651662391
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 !i10b 1
-!s100 <eXjSi<1nR@gl]K@3Ch8n0
-IV8ibDRPQiC_:f`L159QcK1
+!s100 @C281Eeh;P_o6`o02hIDF2
+IXNjUKX_AI`:e]>060HaF63
 !s105 Control_v_unit
 S1
 Z4 dC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Simulation
-Z5 w1651644778
+Z5 w1651662388
 Z6 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
 Z7 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
-!i122 74
-L0 3 151
+!i122 90
+L0 3 164
 Z8 OT;L;2020.3;71
 31
-Z9 !s108 1651644786.000000
+Z9 !s108 1651662391.000000
 Z10 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
-Z11 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
+Z11 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
 !s101 -O0
 !i113 1
 Z12 o-work work -O0
@@ -41,27 +41,27 @@ n@control
 vControl_TB
 R0
 R1
-DXx4 work 17 Control_TB_v_unit 0 22 ojlNgl^`aVFSSKOdQjZ0Z0
-Z14 !s110 1651644839
+DXx4 work 17 Control_TB_v_unit 0 22 in?bA2gSzbcd5LKd=Q02H0
+Z14 !s110 1651662396
 R3
 r1
 !s85 0
 !i10b 1
-!s100 `o=BnTe73bN26HJLUfKAb1
-IA4z2V=L@KkTj_S677d1MF0
+!s100 mPN<RlP@VWP:BznC@;F[b0
+I4bmn3DmX_m?oHdnH[1RU82
 !s105 Control_TB_v_unit
 S1
 R4
-Z15 w1651644832
+Z15 w1651660700
 Z16 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
 Z17 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
-!i122 77
-L0 2 83
+!i122 91
+L0 2 86
 R8
 31
-Z18 !s108 1651644839.000000
+Z18 !s108 1651662396.000000
 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
-Z19 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
+Z19 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
 !s101 -O0
 !i113 1
 R12
@@ -71,19 +71,19 @@ XControl_TB_v_unit
 R0
 R1
 R14
-VojlNgl^`aVFSSKOdQjZ0Z0
+Vin?bA2gSzbcd5LKd=Q02H0
 r1
 !s85 0
 !i10b 1
-!s100 SeONOIg4JHiMWEz0QECfi1
-IojlNgl^`aVFSSKOdQjZ0Z0
+!s100 JFk`Z83W>i[o]FYLWQdke2
+Iin?bA2gSzbcd5LKd=Q02H0
 !i103 1
 S1
 R4
 R15
 R16
 R17
-!i122 77
+!i122 91
 Z20 L0 1 0
 R8
 31
@@ -99,19 +99,19 @@ XControl_v_unit
 R0
 R1
 R2
-VQE6h^Y@b2aQ>=QzknXG<I3
+V?nB0am:zjkiYNB1[Tohj82
 r1
 !s85 0
 !i10b 1
-!s100 XaE3L=3L6ogXjl;;GC;ih3
-IQE6h^Y@b2aQ>=QzknXG<I3
+!s100 5Qo_Z<GaFUFRh`ZUzQSC_0
+I?nB0am:zjkiYNB1[Tohj82
 !i103 1
 S1
 R4
 R5
 R6
 R7
-!i122 74
+!i122 90
 R20
 R8
 31
@@ -126,27 +126,27 @@ n@control_v_unit
 vRegisters
 R0
 R1
-DXx4 work 16 Registers_v_unit 0 22 EF8BR_DJI5G6T1iLW33N41
-Z22 !s110 1651644790
+DXx4 work 16 Registers_v_unit 0 22 B[jj9=TKA;[ogaY90O3Tm3
+Z22 !s110 1651660945
 R3
 r1
 !s85 0
 !i10b 1
 !s100 Q77gFZ6?]:Id?ijYk3Aej2
-IUB<ISnd2cb3ZQj;7BlJ852
+IzZDz_R[VlYMCW6JQMzWb33
 !s105 Registers_v_unit
 S1
 R4
 Z23 w1651492517
 Z24 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v
 Z25 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v
-!i122 75
+!i122 87
 L0 9 41
 R8
 31
-Z26 !s108 1651644790.000000
+Z26 !s108 1651660945.000000
 Z27 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v|
-Z28 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v|
+Z28 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v|
 !s101 -O0
 !i113 1
 R12
@@ -156,19 +156,19 @@ XRegisters_v_unit
 R0
 R1
 R22
-VEF8BR_DJI5G6T1iLW33N41
+VB[jj9=TKA;[ogaY90O3Tm3
 r1
 !s85 0
 !i10b 1
 !s100 CX`d9d1jQA8YbFAH2H80R2
-IEF8BR_DJI5G6T1iLW33N41
+IB[jj9=TKA;[ogaY90O3Tm3
 !i103 1
 S1
 R4
 R23
 R24
 R25
-!i122 75
+!i122 87
 L0 6 0
 R8
 31
@@ -182,7 +182,7 @@ R13
 n@registers_v_unit
 XStructures
 R0
-!s110 1651586594
+!s110 1651660941
 !i10b 1
 !s100 ZGORJA[L[h;LEkSWG0QOh0
 Z29 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -192,14 +192,14 @@ R4
 w1651298146
 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v
 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v
-!i122 33
+!i122 86
 R20
 Vaaz42`jVz?fYMWbJX34]>3
 R8
 r1
 !s85 0
 31
-!s108 1651586593.000000
+!s108 1651660941.000000
 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v|
 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v|
 !s101 -O0
