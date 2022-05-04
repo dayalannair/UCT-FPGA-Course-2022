@@ -28,20 +28,12 @@ module UART_Packets(
   output UART_PACKET opRxStream
 );
 
-reg [7:0] n_bytes; // num bytes
 reg rst;
-reg rx = ipRx;
-reg [3:0] rx_pos_cnt; // position in packet 
 // Receive registers
 reg [7:0]rx_src;
 reg [7:0]rx_dest;
 reg [7:0]tx_len;
 reg [7:0]rx_len;
-
-reg rx_sop;
-reg rx_eop;
-reg [7:0] rx_data;
-reg rx_valid;
 
 reg[7:0] data_cache; 
 // Capture outputs from UART module
@@ -104,7 +96,6 @@ always @(posedge ipClk) begin
     opTxReady <= 1'b0;
     rx_state <= idle;
     rx_packet <= dest;
-
   end
   else begin
 
@@ -120,7 +111,7 @@ always @(posedge ipClk) begin
                   // cache current data
                   data_cache <= ipTxStream.Data;
                   // get num bytes (less current data byte)
-                  n_bytes = ipTxStream.Length - 1'b1;
+                  tx_len = ipTxStream.Length;
                   tx_state <= on;
                   tx_packet <= dest;
                 end
@@ -158,16 +149,16 @@ always @(posedge ipClk) begin
 
               data: begin
                       // send cached byte
-                      if (n_bytes == ipTxStream.Length - 1'b1) begin
+                      if (tx_len == ipTxStream.Length) begin
                         UART_TxData <= data_cache;
                         opTxReady <= 1'b1;
-                        n_bytes <= n_bytes - 1'b1;
+                        tx_len <= tx_len - 1'b1;
                       end
-                      else if (n_bytes != 0) begin
+                      else if (tx_len != 0) begin
                         // send data byte 2, if any
                         UART_TxData <= ipTxStream.Data;
                         opTxReady <= 1'b1;
-                        n_bytes <= n_bytes - 1'b1;
+                        tx_len <= tx_len - 1'b1;
                       end
                       else begin
                         //UART_TxData <= valid
@@ -192,8 +183,8 @@ always @(posedge ipClk) begin
 
   case(rx_state)
     idle: begin
-            //opRxStream.SoP <= UART_RxData;
             opRxStream.Valid <= 1'b0;
+            rx_len <= 0;
             if (UART_RxValid && (UART_RxData == 8'h55)) begin
               rx_packet <= dest;
               rx_state <= on;
@@ -219,12 +210,16 @@ always @(posedge ipClk) begin
                       rx_packet <= data;
                     end
               data: begin
-                      if (rx_len != 0) begin
+                      if (rx_len > 1) begin
                         opRxStream.Data <= UART_RxData;
                         opRxStream.Valid <= 1'b1;
-                        tx_len <= tx_len - 1'b1;
+                        rx_len <= rx_len - 1'b1;
                       end
-                      else rx_state <= idle;
+                      else begin
+                        opRxStream.Data <= UART_RxData;
+                        opRxStream.Valid <= 1'b1;
+                        rx_state <= idle;
+                      end
                     end
               default:;
           endcase

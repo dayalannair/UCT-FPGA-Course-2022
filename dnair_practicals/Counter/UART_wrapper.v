@@ -26,8 +26,8 @@ wire crWrEnable;
 wire[7:0] crAddress;
 wire[31:0] crWrData;
 wire[31:0] crRdData;
-WR_REGISTERS crWrRegisters,
-RD_REGISTERS crRdRegisters,
+WR_REGISTERS crWrRegisters;
+RD_REGISTERS crRdRegisters;
 
 
 UART_Packets packetiser(

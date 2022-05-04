@@ -66,6 +66,8 @@ wire      opRxValid;
 reg  [7:0]RxData;
 integer   RxBit;
 
+
+
 initial begin
   ipRx = 1;
 

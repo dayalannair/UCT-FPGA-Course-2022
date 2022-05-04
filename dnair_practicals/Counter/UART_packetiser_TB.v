@@ -49,7 +49,7 @@ initial begin
     TxPacket.Source <= source;
     TxPacket.Length <= length;
     TxPacket.Data <= data;
-
+    data <= data + 1'b1;
     @(negedge ipReset);
     @(posedge ipClk);
     @(posedge ipClk);
@@ -70,46 +70,15 @@ initial begin
 
     // send next 3 byte packets
  if(!opTxReady) @(posedge opTxReady); 
-
-
-
- 
-    for (i = 0; i < 3; i++) begin
+    for (i = 0; i < 10; i++) begin
+        //if(!opTxReady) @(posedge opTxReady); 
         data <= data + 1'b1;
+        TxPacket.Data <= data;
         TxPacket.Valid <= 1'b1;
         @(negedge opTxReady); 
         TxPacket.Valid <= 1'b0;
     end
-    
 
-    // send header 
-    // for(bit_pos = 0; bit_pos < 8; bit_pos++) begin
-    //   ipRx = sync[bit_pos];
-    //   #8681;
-    // end
-
-    // for(bit_pos = 0; bit_pos < 8; bit_pos++) begin
-    //   ipRx = destination[bit_pos];
-    //   #8681;
-    // end
-
-    // for(bit_pos = 0; bit_pos < 8; bit_pos++) begin
-    //   ipRx = source[bit_pos];
-    //   #8681;
-    // end
-
-    // for(bit_pos = 0; bit_pos < 8; bit_pos++) begin
-    //   ipRx = length[bit_pos];
-    //   #8681;
-    // end
-    // // send 4 bytes of data
-    // for (i = 0; i<4; i++)begin
-    //     data ++;
-    //     for(bit_pos = 0; bit_pos < 8; bit_pos++) begin
-    //         ipRx = data[bit_pos];
-    //         #8681;
-    //     end 
-    // end
 end
 
 endmodule

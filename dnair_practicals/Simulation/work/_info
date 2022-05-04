@@ -9,22 +9,193 @@ z2
 !i10f 100
 cModel Technology
 dC:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation
-XStructures
+vControl
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z1 DXx4 work 10 Structures 0 22 aaz42`jVz?fYMWbJX34]>3
+DXx4 work 14 Control_v_unit 0 22 QE6h^Y@b2aQ>=QzknXG<I3
+Z2 !s110 1651644786
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+!i10b 1
+!s100 <eXjSi<1nR@gl]K@3Ch8n0
+IV8ibDRPQiC_:f`L159QcK1
+!s105 Control_v_unit
+S1
+Z4 dC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Simulation
+Z5 w1651644778
+Z6 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
+Z7 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
+!i122 74
+L0 3 151
+Z8 OT;L;2020.3;71
+31
+Z9 !s108 1651644786.000000
+Z10 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
+Z11 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
+!s101 -O0
+!i113 1
+Z12 o-work work -O0
+Z13 tSvlog 1 CvgOpt 0
+n@control
+vControl_TB
+R0
+R1
+DXx4 work 17 Control_TB_v_unit 0 22 ojlNgl^`aVFSSKOdQjZ0Z0
+Z14 !s110 1651644839
+R3
+r1
+!s85 0
+!i10b 1
+!s100 `o=BnTe73bN26HJLUfKAb1
+IA4z2V=L@KkTj_S677d1MF0
+!s105 Control_TB_v_unit
+S1
+R4
+Z15 w1651644832
+Z16 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
+Z17 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
+!i122 77
+L0 2 83
+R8
+31
+Z18 !s108 1651644839.000000
+!s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
+Z19 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
+!s101 -O0
+!i113 1
+R12
+R13
+n@control_@t@b
+XControl_TB_v_unit
+R0
+R1
+R14
+VojlNgl^`aVFSSKOdQjZ0Z0
+r1
+!s85 0
+!i10b 1
+!s100 SeONOIg4JHiMWEz0QECfi1
+IojlNgl^`aVFSSKOdQjZ0Z0
+!i103 1
+S1
+R4
+R15
+R16
+R17
+!i122 77
+Z20 L0 1 0
+R8
+31
+R18
+Z21 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
+R19
+!s101 -O0
+!i113 1
+R12
+R13
+n@control_@t@b_v_unit
+XControl_v_unit
+R0
+R1
+R2
+VQE6h^Y@b2aQ>=QzknXG<I3
+r1
+!s85 0
+!i10b 1
+!s100 XaE3L=3L6ogXjl;;GC;ih3
+IQE6h^Y@b2aQ>=QzknXG<I3
+!i103 1
+S1
+R4
+R5
+R6
+R7
+!i122 74
+R20
+R8
+31
+R9
+R10
+R11
+!s101 -O0
+!i113 1
+R12
+R13
+n@control_v_unit
+vRegisters
+R0
+R1
+DXx4 work 16 Registers_v_unit 0 22 EF8BR_DJI5G6T1iLW33N41
+Z22 !s110 1651644790
+R3
+r1
+!s85 0
+!i10b 1
+!s100 Q77gFZ6?]:Id?ijYk3Aej2
+IUB<ISnd2cb3ZQj;7BlJ852
+!s105 Registers_v_unit
+S1
+R4
+Z23 w1651492517
+Z24 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v
+Z25 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v
+!i122 75
+L0 9 41
+R8
+31
+Z26 !s108 1651644790.000000
+Z27 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v|
+Z28 !s90 -reportprogress|300|-work|work|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v|
+!s101 -O0
+!i113 1
+R12
+R13
+n@registers
+XRegisters_v_unit
+R0
+R1
+R22
+VEF8BR_DJI5G6T1iLW33N41
+r1
+!s85 0
+!i10b 1
+!s100 CX`d9d1jQA8YbFAH2H80R2
+IEF8BR_DJI5G6T1iLW33N41
+!i103 1
+S1
+R4
+R23
+R24
+R25
+!i122 75
+L0 6 0
+R8
+31
+R26
+R27
+R28
+!s101 -O0
+!i113 1
+R12
+R13
+n@registers_v_unit
+XStructures
+R0
 !s110 1651586594
 !i10b 1
 !s100 ZGORJA[L[h;LEkSWG0QOh0
-Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z29 !s11b Dg1SIo80bB@j0V0VzS_@n1
 Iaaz42`jVz?fYMWbJX34]>3
 S1
-Z2 dC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Simulation
+R4
 w1651298146
 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v
 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v
 !i122 33
-Z3 L0 1 0
+R20
 Vaaz42`jVz?fYMWbJX34]>3
-Z4 OT;L;2020.3;71
+R8
 r1
 !s85 0
 31
@@ -33,25 +204,25 @@ r1
 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v|
 !s101 -O0
 !i113 1
-Z5 o-work work -O0
-Z6 tSvlog 1 CvgOpt 0
+R12
+R13
 n@structures
 vUART
 R0
 !s110 1651587290
 !i10b 1
 !s100 zY6`A5R0F;2E3U4P2F[_P1
-R1
+R29
 In`eW0X`PMe13kGAZHYW9a0
 S1
-R2
+R4
 w1651587286
 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v
 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v
 !i122 41
 L0 19 163
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-R4
+R3
+R8
 r1
 !s85 0
 31
@@ -60,120 +231,120 @@ r1
 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v|
 !s101 -O0
 !i113 1
-R5
-R6
+R12
+R13
 n@u@a@r@t
 vUART_packetiser_TB
 R0
-Z8 DXx4 work 10 Structures 0 22 aaz42`jVz?fYMWbJX34]>3
-DXx4 work 25 UART_packetiser_TB_v_unit 0 22 lblmMOzj6`1nc7TC>H0U[1
-Z9 !s110 1651591854
-R7
+R1
+DXx4 work 25 UART_packetiser_TB_v_unit 0 22 IC]XTZ8Uj;<BZdK[bcQAX3
+Z30 !s110 1651641084
+R3
 r1
 !s85 0
 !i10b 1
-!s100 Qj9HNaJ[K;TVEO4S;N]JB0
-IgUJJAMEV>:T^m>n`:aZTi2
+!s100 fn=WlC:W<DeV2zUF`@8W<1
+IWK3_`<NHob2<h=eXIO]XX2
 !s105 UART_packetiser_TB_v_unit
 S1
-R2
-Z10 w1651591831
-Z11 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v
-Z12 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v
-!i122 49
-L0 2 111
 R4
+Z31 w1651640713
+Z32 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v
+Z33 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v
+!i122 61
+L0 2 116
+R8
 31
-Z13 !s108 1651591854.000000
-!s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v|
-Z14 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v|
+Z34 !s108 1651641084.000000
+Z35 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v|
+Z36 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v|
 !s101 -O0
 !i113 1
-R5
-R6
+R12
+R13
 n@u@a@r@t_packetiser_@t@b
 XUART_packetiser_TB_v_unit
 R0
-R8
-R9
-VlblmMOzj6`1nc7TC>H0U[1
+R1
+R30
+VIC]XTZ8Uj;<BZdK[bcQAX3
 r1
 !s85 0
 !i10b 1
-!s100 RmM^=`P2DXTo@]_<eTiGl0
-IlblmMOzj6`1nc7TC>H0U[1
+!s100 :<A:zI3T:`?MaUBh1hX6[1
+IIC]XTZ8Uj;<BZdK[bcQAX3
 !i103 1
 S1
-R2
-R10
-R11
-R12
-!i122 49
-R3
 R4
+R31
+R32
+R33
+!i122 61
+R20
+R8
 31
-R13
-Z15 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_packetiser_TB.v|
-R14
+R34
+R35
+R36
 !s101 -O0
 !i113 1
-R5
-R6
+R12
+R13
 n@u@a@r@t_packetiser_@t@b_v_unit
 vUART_Packets
 R0
-R8
-DXx4 work 19 UART_Packets_v_unit 0 22 48Gbi9>2oWmgJUD;dzjM;0
-Z16 !s110 1651591166
-R7
+R1
+DXx4 work 19 UART_Packets_v_unit 0 22 HR8iUIR_J]PS=;oiFPLbn2
+Z37 !s110 1651642951
+R3
 r1
 !s85 0
 !i10b 1
-!s100 k=^aneI>6Z<_]SkXWYR?a1
-I=fgT`F@ZFB@g1elXNE6ZL0
+!s100 7DbD0NlQ5cYi`Go^Lnf093
+I17>R@TOoU[dil>NmLjGlR3
 !s105 UART_Packets_v_unit
 S1
-R2
-Z17 w1651591151
-Z18 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v
-Z19 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v
-!i122 48
-L0 19 219
 R4
+Z38 w1651642946
+Z39 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v
+Z40 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v
+!i122 70
+L0 19 214
+R8
 31
-Z20 !s108 1651591166.000000
-Z21 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v|
-Z22 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v|
+Z41 !s108 1651642951.000000
+Z42 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v|
+Z43 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v|
 !s101 -O0
 !i113 1
-R5
-R6
+R12
+R13
 n@u@a@r@t_@packets
 XUART_Packets_v_unit
 R0
-R8
-R16
-V48Gbi9>2oWmgJUD;dzjM;0
+R1
+R37
+VHR8iUIR_J]PS=;oiFPLbn2
 r1
 !s85 0
 !i10b 1
-!s100 V9P^WAn:XCYPDQo9kK?XJ3
-I48Gbi9>2oWmgJUD;dzjM;0
+!s100 eo3D0zRY03<fQCE@:39YX1
+IHR8iUIR_J]PS=;oiFPLbn2
 !i103 1
 S1
-R2
-R17
-R18
-R19
-!i122 48
-R3
 R4
-31
+R38
+R39
+R40
+!i122 70
 R20
-R21
-R22
+R8
+31
+R41
+R42
+R43
 !s101 -O0
 !i113 1
-R5
-R6
+R12
+R13
 n@u@a@r@t_@packets_v_unit
