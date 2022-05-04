@@ -12,25 +12,25 @@ dC:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation
 vControl
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
 Z1 DXx4 work 10 Structures 0 22 aaz42`jVz?fYMWbJX34]>3
-DXx4 work 14 Control_v_unit 0 22 ?nB0am:zjkiYNB1[Tohj82
-Z2 !s110 1651662391
+DXx4 work 14 Control_v_unit 0 22 aS2i3`FZR;=H@VCV7aNIG0
+Z2 !s110 1651675337
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 r1
 !s85 0
 !i10b 1
-!s100 @C281Eeh;P_o6`o02hIDF2
-IXNjUKX_AI`:e]>060HaF63
+!s100 FKX_YY_=U?hQePAQ0[i4E1
+I@ZX44>OBZcU8C^IZlBC7B3
 !s105 Control_v_unit
 S1
 Z4 dC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Simulation
-Z5 w1651662388
+Z5 w1651675333
 Z6 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
 Z7 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v
-!i122 90
-L0 3 164
+!i122 106
+L0 3 138
 Z8 OT;L;2020.3;71
 31
-Z9 !s108 1651662391.000000
+Z9 !s108 1651675337.000000
 Z10 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
 Z11 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v|
 !s101 -O0
@@ -41,25 +41,25 @@ n@control
 vControl_TB
 R0
 R1
-DXx4 work 17 Control_TB_v_unit 0 22 in?bA2gSzbcd5LKd=Q02H0
-Z14 !s110 1651662396
+DXx4 work 17 Control_TB_v_unit 0 22 V=o<KN;XQQdO3UZa;HU1Y2
+Z14 !s110 1651675345
 R3
 r1
 !s85 0
 !i10b 1
-!s100 mPN<RlP@VWP:BznC@;F[b0
-I4bmn3DmX_m?oHdnH[1RU82
+!s100 kZL:2Kf;`EAA`XCQ=H3>m2
+I^PYhARW@EC:HUK<7L1iIQ2
 !s105 Control_TB_v_unit
 S1
 R4
-Z15 w1651660700
+Z15 w1651675144
 Z16 8C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
 Z17 FC:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v
-!i122 91
-L0 2 86
+!i122 107
+L0 2 94
 R8
 31
-Z18 !s108 1651662396.000000
+Z18 !s108 1651675345.000000
 !s107 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
 Z19 !s90 -reportprogress|300|-work|work|-O0|C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control_TB.v|
 !s101 -O0
@@ -71,19 +71,19 @@ XControl_TB_v_unit
 R0
 R1
 R14
-Vin?bA2gSzbcd5LKd=Q02H0
+VV=o<KN;XQQdO3UZa;HU1Y2
 r1
 !s85 0
 !i10b 1
-!s100 JFk`Z83W>i[o]FYLWQdke2
-Iin?bA2gSzbcd5LKd=Q02H0
+!s100 Ghh_bD>cFm68gePMZ745b0
+IV=o<KN;XQQdO3UZa;HU1Y2
 !i103 1
 S1
 R4
 R15
 R16
 R17
-!i122 91
+!i122 107
 Z20 L0 1 0
 R8
 31
@@ -99,19 +99,19 @@ XControl_v_unit
 R0
 R1
 R2
-V?nB0am:zjkiYNB1[Tohj82
+VaS2i3`FZR;=H@VCV7aNIG0
 r1
 !s85 0
 !i10b 1
-!s100 5Qo_Z<GaFUFRh`ZUzQSC_0
-I?nB0am:zjkiYNB1[Tohj82
+!s100 P@_BKQLbEMTcX7ZSAd:aN3
+IaS2i3`FZR;=H@VCV7aNIG0
 !i103 1
 S1
 R4
 R5
 R6
 R7
-!i122 90
+!i122 106
 R20
 R8
 31

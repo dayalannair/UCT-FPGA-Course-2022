@@ -16,25 +16,24 @@ end
 // Control-packetiser connections
 UART_PACKET opTxPacket;
 UART_PACKET ipRxPacket;
-wire cpTxReady;
+reg cpTxReady;
 
 // control-register connections
 wire crWrEnable;
 wire[7:0] crAddress;
 wire[31:0] crWrData;
 wire[31:0] crRdData;
-WR_REGISTERS crWrRegisters;
-RD_REGISTERS crRdRegisters;
+WR_REGISTERS opWrRegisters;
+RD_REGISTERS ipRdRegisters;
 
 Control control(
   .ipClk (ipClk),
   .ipReset (ipReset),
   .ipRxPkt (ipRxPacket),
   .opTxPkt (opTxPacket), //output of control is input of packetiser
-  .ipWrRegisters (crWrRegisters),
-  .opRdRegisters (crRdRegisters),
   .opAddress (crAddress),
   .opWrData (crWrData),
+  .ipRdData (crRdData),
   .opWrEnable (crWrEnable),
   .ipTxReady (cpTxReady)
 );
@@ -42,12 +41,12 @@ Control control(
 Registers register(
   .ipClk (ipClk),
   .ipReset (ipReset),
-  .ipWrRegisters (crWrRegisters),
-  .opRdRegisters (crRdRegisters),
+  .ipRdRegisters (ipRdRegisters),
+  .opWrRegisters (opWrRegisters),
   .opRdData (crRdData),
-  .opAddress (crAddress),
-  .opWrData (crWrData),
-  .opWrEnable (crWrEnable)
+  .ipAddress (crAddress),
+  .ipWrData (crWrData),
+  .ipWrEnable (crWrEnable)
 );
 
 // read 4 bytes
@@ -57,8 +56,10 @@ reg[7:0] source = 8'h2C;
 reg[7:0] length = 8'h04;
 reg[7:0] data = 8'h02; // ipAdress of LEDS
 
-initial begin
+integer i; 
 
+initial begin
+    cpTxReady <= 1;
     // send read packet containing address to read
     // set up packet coming in to control from UART packetiser
     ipRxPacket.Valid <= 1'b0;
@@ -71,16 +72,23 @@ initial begin
     @(posedge ipClk);
     @(posedge ipClk);
 
-    if(!cpTxReady) @(posedge cpTxReady); 
-    @(posedge ipClk);
 
     ipRxPacket.Valid <= 1'b1; // packet coming in to control is valid
     ipRxPacket.SoP <= 1'b1;
-
-    @(negedge cpTxReady); 
-    opTxPacket.SoP <= 1'b0;
-    ipRxPacket.Valid <= 1'b0;
     @(posedge ipClk);
+    ipRxPacket.Valid <= 1'b0;
+    data <= data + 1'b1;
+    @(posedge ipClk);
+    
+
+    for (i = 0; i < 4; i++) begin
+        //if(!cpTxReady) @(posedge cpTxReady); 
+        data <= data + 1'b1;
+        ipRxPacket.Data <= data;
+        ipRxPacket.Valid <= 1'b1;
+        @(posedge ipClk);
+        ipRxPacket.Valid <= 1'b0;
+    end
 
 
 end

@@ -10,18 +10,12 @@ module Control(
     input UART_PACKET ipRxPkt,
     // Packet sent out from FPGA - registers
     output UART_PACKET opTxPkt,
-    
-//  TO/FROM REGISTERS MODULE
-//------------------------------------------------------------------------------
-    // read registers - from Registers module
-    input  WR_REGISTERS ipWrRegisters,
-    // write registers
-    output RD_REGISTERS opRdRegisters,
-   
     // // address of register to read/write
     output reg[ 7:0] opAddress,
     // // data to write to register
     output reg[31:0] opWrData,
+
+    input[31:0] ipRdData,
     // // enable write to register
     output reg opWrEnable,
     // // data to read from register
@@ -30,112 +24,93 @@ module Control(
 );
 
 reg rst;
-reg[31:0] wr_data;
 reg[31:0] rd_data;
-reg[7:0] current_byte;
 reg[3:0] wr_byte_cnt;
 reg[3:0] rd_byte_cnt;
 
 typedef enum {
 	idle,
-  on
+    one_clk,
+    read,
+    write
 	} STATE;
 
-STATE read;
-STATE write;
-
-reg one_clk;
+STATE state;
 
 always @(posedge ipClk) begin
     rst <= ipReset;
     if (rst) begin
-        read <= idle;
-        write <= idle;
+        state <= idle;
+        rd_byte_cnt <= 3'd5;
+        wr_byte_cnt <= 3'd4;
+        rd_data <= 0;
     end
 
-    if (ipRxPkt.Valid) begin
-        // if read register, turn on transmit state
-        // state change only when received packet valid
-        if (ipRxPkt.Destination == 8'h00) begin
-            write <= on;
-            opAddress <= ipRxPkt.Data; // write to LED address
-        end
-
-        else if (ipRxPkt.Destination == 8'h01) begin
-            read <= on;
-            opAddress <= ipRxPkt.Data;
-            opTxPkt.Destination <= ipRxPkt.Source;
-            opTxPkt.Length <= 4'h4;
-            opTxPkt.Source <= opTxPkt.Destination;
-        end
-        else begin
-            write <= idle;
-            read <= idle;
-        end
-    end
-
-    // Read registers and put read data into packets
-    case(read)
+    case(state)
         idle: begin
-            one_clk <= 0;
-            opWrEnable <= 0;
-            opTxPkt.Valid <= 0;
-            opTxPkt.SoP <= 0;
-            rd_byte_cnt <= 3'd5;
-        end
-        on: begin
-            // send first byte
-            if ((ipTxReady == 1'b1) && one_clk) begin
-                if (rd_byte_cnt == 3'd4) begin
-                    rd_byte_cnt <= rd_byte_cnt - 1'b1;
-                    opTxPkt.SoP <= 1'b1;
-                    // CONTINUE HERERERER
-                    rd_data <= opData;
-                    opTxPkt.Data <= ipRdRegisters.opData[7:0];
-                    opTxPkt.Valid <= 1'b1;
-                end
-            // send second byte
-                else if (rd_byte_cnt == 3'd3) begin
-                    opTxPkt.SoP <= 1'b0;
-                    rd_byte_cnt <= rd_byte_cnt - 1'b1;
-                    opTxPkt.Data <= rd_data[15:8];
-                    opTxPkt.Valid <= 1'b1;
-                end
-            // send third byte
-                else if (rd_byte_cnt == 3'd2) begin
-                    opTxPkt.SoP <= 1'b0;
-                    rd_byte_cnt <= rd_byte_cnt - 1'b1;
-                    opTxPkt.Data <= rd_data[23:16];
-                    opTxPkt.Valid <= 1'b1;
-                end
-            // send fourth byte
-                else if (rd_byte_cnt == 3'd1) begin
-                    opTxPkt.SoP <= 1'b0;
-                    rd_byte_cnt <= rd_byte_cnt - 1'b1;
-                    opTxPkt.Data <= rd_data[31:24];
-                    opTxPkt.Valid <= 1'b1;
-                end
-            // return to idle
-                else if (rd_byte_cnt == 3'd0) begin
-                    opTxPkt.Valid <= 0;
-                    read <= idle;
+                opWrEnable <= 0;
+                opTxPkt.Valid <= 0;
+                opTxPkt.SoP <= 0;
+                rd_byte_cnt <= 3'd5;
+                wr_byte_cnt <= 3'd4;
+                opTxPkt.Length <= 8'h4;
+
+                if (ipRxPkt.Valid) begin
+                    // read state. Return packets
+                    if ((ipRxPkt.Destination == 8'h00) && (ipRxPkt.Length == 8'h4)) begin
+                        opAddress <= ipRxPkt.Data;
+                        opTxPkt.Destination <= ipRxPkt.Source;
+                        opTxPkt.Source <= opTxPkt.Destination;
+                        state <= one_clk;
+                    end
+                    // write state. fire and forget
+                    else if (ipRxPkt.Destination == 8'h01) begin
+                        opAddress <= ipRxPkt.Data; // address to write to
+                        state <= write;
+                    end
                 end
             end
-            //else opTxPkt.Valid <= 1'b0;
-            else if (~one_clk) one_clk <= 1'b1;
 
-        end
-    endcase
+        one_clk: begin
+                    state <= read;
+                end
 
-    case (write)
-        idle: begin
-            wr_byte_cnt <= 3'd4;
-            opAddress <= 8'hFF;
-            opWrEnable <= 1'b0;
-        end
-        on: begin
-            if (ipRxPkt.Valid) begin
-                // receive first byte
+        read: begin
+                // send first byte
+                if (ipTxReady == 1'b1) begin
+                    if (rd_byte_cnt == 3'd4) begin
+                        rd_data <= ipRdData; // read data from registers
+                        opTxPkt.Data <= ipRdData[7:0];
+                        opTxPkt.SoP <= 1'b1;
+                        opTxPkt.Valid <= 1'b1;
+                        rd_byte_cnt <= rd_byte_cnt - 1'b1;
+                    end
+                // send second byte
+                    else if (rd_byte_cnt == 3'd3) begin
+                        opTxPkt.SoP <= 1'b0;
+                        rd_byte_cnt <= rd_byte_cnt - 1'b1;
+                        opTxPkt.Data <= rd_data[15:8];
+                    end
+                // send third byte
+                    else if (rd_byte_cnt == 3'd2) begin
+                        rd_byte_cnt <= rd_byte_cnt - 1'b1;
+                        opTxPkt.Data <= rd_data[23:16];
+                    end
+                // send fourth byte
+                    else if (rd_byte_cnt == 3'd1) begin
+                        rd_byte_cnt <= rd_byte_cnt - 1'b1;
+                        opTxPkt.Data <= rd_data[31:24];
+                    end
+                // return to idle
+                    else if (rd_byte_cnt == 3'd0) begin
+                        opTxPkt.Valid <= 0;
+                        state <= idle;
+                    end
+                end
+            end
+        write: begin
+                if (ipRxPkt.Valid) begin
+                    // build 32 bit word then set write enable high
                     if (wr_byte_cnt == 3'd4) begin
                         opWrData[7:0] <= ipRxPkt.Data;
                         wr_byte_cnt <= wr_byte_cnt - 1'b1;
@@ -153,15 +128,13 @@ always @(posedge ipClk) begin
 
                     else if (wr_byte_cnt == 3'd1) begin
                         opWrData[31:24] <= ipRxPkt.Data;
-                        wr_byte_cnt <= wr_byte_cnt - 1'b1;
-                    end
-                // turn on write enable to write 32 bit word and return to idle
-                    else if (wr_byte_cnt == 0) begin
                         opWrEnable <= 1'b1;
-                        write <= idle;
+                        state <= idle;
                     end
+                end
             end
-        end
+            default:;
     endcase
+   
 end
 endmodule
