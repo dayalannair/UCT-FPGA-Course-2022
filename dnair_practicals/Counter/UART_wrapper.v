@@ -9,7 +9,7 @@
 
 import Structures::*;
 
-module top_v2(
+module UART_wrapper(
   input ipClk,
   input ipnReset,
   input ipRx,
@@ -33,7 +33,7 @@ wire[31:0] crRdData;
 WR_REGISTERS WrRegisters;
 RD_REGISTERS RdRegisters;
 
-assign opLED = WrRegisters.LEDS;
+assign opLED = WrRegisters.LEDs;
 
 UART_Packets packetiser(
   .ipClk (ipClk),

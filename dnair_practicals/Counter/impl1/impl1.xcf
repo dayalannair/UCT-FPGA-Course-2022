@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.jed</File>
-			<FileTime>04/30/22 07:35:02</FileTime>
-			<JedecChecksum>0xA60A</JedecChecksum>
+			<FileTime>05/04/22 17:18:46</FileTime>
+			<JedecChecksum>0xADA3</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

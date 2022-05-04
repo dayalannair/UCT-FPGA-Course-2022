@@ -14,22 +14,22 @@ Hostname: DAYALAN1
 Implementation : impl1
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 2
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-03 15:28:23, 2022-05-03 16:14:46)
-19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (2022-05-03 15:11:06, 2022-05-04 07:42:26)
+19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (2022-05-04 19:29:15, 2022-05-04 19:30:47)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 0
 MID:  lib.cell.view
 
 *******************************************************************
-Unmodified files: 10
+Unmodified files: 11
 FID:  path (timestamp)
+20       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v (2022-05-04 16:50:59)
 17       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v (2022-05-02 13:55:17)
 18       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v (2022-04-30 07:55:46)
-1        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v (2022-04-27 15:47:38)
-2        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v (2022-04-29 16:39:48)
+0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-03 16:14:46)
+21       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v (2022-05-04 19:09:07)
 3        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
 4        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
 5        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)

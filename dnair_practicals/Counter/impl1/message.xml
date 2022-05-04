@@ -40,28 +40,220 @@
             <Severity>Info</Severity>
         </Message>
         <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v&quot;:7:17:7:21|Object opLED is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
-            <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>17</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>21</Navigation>
-            <Navigation>Object opLED is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+            <ID>2019990</ID>
+            <Severity>Error</Severity>
+            <Dynamic>CS153 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v&quot;:163:31:163:31|Can't mix blocking and non-blocking assignments to a variable</Dynamic>
+            <Navigation>CS153</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v</Navigation>
+            <Navigation>163</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>163</Navigation>
+            <Navigation>31</Navigation>
+            <Navigation>Can't mix blocking and non-blocking assignments to a variable</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v&quot;:39:2:39:7|Pruning unused register rst. Make sure that there are no unused intermediate registers.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v&quot;:18:13:18:15|Object opRxStream.SoP is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Object opRxStream.SoP is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v&quot;:19:13:19:15|Object opRxStream.EoP is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Object opRxStream.EoP is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v&quot;:33:9:33:14|Object rx_src is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>33</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>Object rx_src is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v&quot;:34:9:34:15|Object rx_dest is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>34</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Object rx_dest is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL169 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v&quot;:91:0:91:5|Pruning unused register tx_len2[7:0]. Make sure that there are no unused intermediate registers.</Dynamic>
             <Navigation>CL169</Navigation>
-            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>2</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>Pruning unused register rst. Make sure that there are no unused intermediate registers.</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v</Navigation>
+            <Navigation>91</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>91</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused register tx_len2[7:0]. Make sure that there are no unused intermediate registers.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v&quot;:19:13:19:15|Object opTxPkt.EoP is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>13</Navigation>
+            <Navigation>19</Navigation>
+            <Navigation>15</Navigation>
+            <Navigation>Object opTxPkt.EoP is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL271 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v&quot;:40:0:40:5|Pruning unused bits 7 to 0 of rd_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL271</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning unused bits 7 to 0 of rd_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG360 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v&quot;:16:9:16:12|Removing wire opRx, as there is no assignment to it.</Dynamic>
+            <Navigation>CG360</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>Removing wire opRx, as there is no assignment to it.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v&quot;:5:14:5:23|Object RdRegisters.ClockTicks is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>Object RdRegisters.ClockTicks is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v&quot;:6:14:6:20|Object RdRegisters.Buttons is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>14</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>20</Navigation>
+            <Navigation>Object RdRegisters.Buttons is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL318 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v&quot;:16:9:16:12|*Output opRx has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Dynamic>
+            <Navigation>CL318</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>9</Navigation>
+            <Navigation>16</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>*Output opRx has undriven bits; assigning undriven bits to 'Z'.  Simulation mismatch possible. Assign all bits of the output.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL246 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v&quot;:17:22:17:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Navigation>CL246</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>17</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL260 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v&quot;:40:0:40:5|Pruning register bit 3 of rd_byte_cnt[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Dynamic>
+            <Navigation>CL260</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bit 3 of rd_byte_cnt[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v&quot;:40:0:40:5|Pruning register bits 31 to 2 of state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>40</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 31 to 2 of state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL246 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v&quot;:10:22:10:28|Input port bits 10 to 9 of ipRxPkt[34:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Navigation>CL246</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>22</Navigation>
+            <Navigation>10</Navigation>
+            <Navigation>28</Navigation>
+            <Navigation>Input port bits 10 to 9 of ipRxPkt[34:0] are unused. Assign logic for all port bits or change the input port size.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v&quot;:91:0:91:5|Pruning register bits 31 to 1 of rx_state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v</Navigation>
+            <Navigation>91</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>91</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 31 to 1 of rx_state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CL247 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v&quot;:23:21:23:30|Input port bit 9 of ipTxStream[34:0] is unused</Dynamic>
+            <Navigation>CL247</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>21</Navigation>
+            <Navigation>23</Navigation>
+            <Navigation>30</Navigation>
+            <Navigation>Input port bit 9 of ipTxStream[34:0] is unused</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -74,73 +266,6 @@
             <Navigation>51</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Pruning register bit 9 of clk_cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019993</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MF511 |Found issues with constraints. Please check constraint checker report &quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Dynamic>
-            <Navigation>MF511</Navigation>
-            <Navigation>Found issues with constraints. Please check constraint checker report &quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt&quot; .</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>FX527 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v&quot;:51:0:51:5|Found false-path constraint on register UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP</Dynamic>
-            <Navigation>FX527</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Found false-path constraint on register UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>FX527 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v&quot;:51:0:51:5|Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</Dynamic>
-            <Navigation>FX527</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>FX527 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v&quot;:51:0:51:5|Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP</Dynamic>
-            <Navigation>FX527</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT447 :&quot;c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc&quot;:8:0:8:0|Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design</Dynamic>
-            <Navigation>MT447</Navigation>
-            <Navigation>c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>8</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Timing constraint (from [get_ports bp*] to [get_registers *]) (false path) was not applied to the design because none of the '-from' objects specified by the constraint exist in the design </Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MT447 :&quot;c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc&quot;:9:0:9:0|Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design</Dynamic>
-            <Navigation>MT447</Navigation>
-            <Navigation>c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>9</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design </Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

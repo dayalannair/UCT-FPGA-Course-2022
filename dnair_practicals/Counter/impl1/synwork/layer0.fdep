@@ -1,4 +1,4 @@
-#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\impl1\\synwork\\Counter_impl1_comp.srs|-top|top|-prodtype|synplify_pro|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter|-I|C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\impl1\\|-I|C:\\lscc\\diamond\\3.12\\synpbase\\lib|-sysv|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\xp2.v|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\impl1\\synwork\\Counter_impl1_comp.srs|-top|UART_wrapper|-prodtype|synplify_pro|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter|-I|C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\impl1\\|-I|C:\\lscc\\diamond\\3.12\\synpbase\\lib|-sysv|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\xp2.v|-devicelib|C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv|-lib|work|-fsysv"
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\bin64\\c_ver.exe":1603959522
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\xp2.v":1603959654
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\lucent\\pmi_def.v":1603959654
@@ -7,38 +7,38 @@
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_objects.v":1603959790
 #CUR:"C:\\lscc\\diamond\\3.12\\synpbase\\lib\\vlog\\scemi_pipes.svh":1603959790
 #CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\Structures.v":1651298146
-#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\counter.v":1651067258
-#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\UART.v":1651587286
-#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\top.v":1651243188
+#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\UART_wrapper.v":1651684147
 #CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\Registers.v":1651492517
-#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\UART_Packets.v":1651642946
+#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\Control.v":1651675859
+#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\UART_Packets.v":1651685447
+#CUR:"C:\\Users\\Dayalan Nair\\Desktop\\UCT-FPGA-Course-2022\\dnair_practicals\\Counter\\UART.v":1651587286
 #numinternalfiles:6
 #defaultlanguage:verilog
 0			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v" verilog
-1			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v" verilog
-2			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" verilog
-3			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v" verilog
-4			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v" verilog
-5			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v" verilog
+1			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v" verilog
+2			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v" verilog
+3			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v" verilog
+4			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v" verilog
+5			"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" verilog
 #Dependency Lists(Uses List)
-0 0 4
-1 0 4
-2 0 4
-3 2 0 4
-4 0 4
-5 0 2 4
+0 0 1
+1 0 4 3 2 1
+2 0 1
+3 0 1
+4 0 5 1
+5 0 1
 #Dependency Lists(Users Of)
-0 4 5 1 2 3
-1 -1
-2 3 5
-3 -1
-4 0 1 2 3 5
-5 -1
+0 1 2 3 4 5
+1 0 2 3 4 5
+2 1
+3 1
+4 1
+5 4
 #Design Unit to File Association
 package work Structures 0
-module work counter 1
-module work UART 2
-module work top 3
-package work work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit 4
-module work Registers 4
-module work UART_Packets 5
+package work work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit 1
+module work UART_wrapper 1
+module work UART_Packets 4
+module work Control 3
+module work Registers 2
+module work UART 5

@@ -10,21 +10,34 @@ LEDs       = 0x02
 #-------------------------------------------------------------------------------
 
 def Write(s, Address, Data):
-    s.write(struct.pack('<BBBBBI', 0x55, 0x01, 0xAA, 0x05, Address, Data))
+	s.write(struct.pack('<BBBBBI', 0x55, 0x01, 0xAA, 0x05, Address, Data))
 #-------------------------------------------------------------------------------
 
 def Read(s, Address):
-    s.write(struct.pack('<BBBBB', 0x55, 0x00, 0xAA, 0x01, Address))
-    return struct.unpack_from('<I', s.read(9), offset=5)[0]
+	s.write(struct.pack('<BBBBB', 0x55, 0x00, 0xAA, 0x01, Address))
+	return struct.unpack_from('<I', s.read(9), offset=5)[0]
 #-------------------------------------------------------------------------------
 
-with serial.Serial(port='COM9', baudrate=115200) as s:
-    for n in range(5):
-        #print(Read(s, Buttons))
-        #Time = Read(s, ClockTicks)
-        Write(s, LEDs, 7)
+s = serial.Serial()
+s.port='COM9' 
+s.baudrate=115200
+if not s.isOpen():
+		print("Com9 is not open \n")
+s.open()
+for n in range(500):
+	print(Read(s, Buttons))
+	Time = Read(s, ClockTicks)
+	#Write(s, LEDs, 7)
 
-        #print(Time)
-        sys.stdout.flush()
-        time.sleep(0.02)
+	print(Time)
+	sys.stdout.flush()
+	time.sleep(0.02)
+
+# try:
+	
+# except:
+# 	print("Could not open serial")
+# 	exit()
+		
+	
 #-------------------------------------------------------------------------------

@@ -1,4 +1,3 @@
-rvl_alias "ipClk" "ipClk";
 BLOCK RESETPATHS ;
 BLOCK ASYNCPATHS ;
 LOCATE COMP "ipClk" SITE "21" ;

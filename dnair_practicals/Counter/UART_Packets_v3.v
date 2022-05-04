@@ -33,7 +33,6 @@ reg rst;
 reg [7:0]rx_src;
 reg [7:0]rx_dest;
 reg [7:0]tx_len;
-reg [7:0]tx_len2;
 reg [7:0]rx_len;
 
 reg[7:0] data_cache; 
@@ -151,10 +150,9 @@ always @(posedge ipClk) begin
               data: begin
                       // send cached byte
                       if (tx_len == ipTxStream.Length) begin
-                        tx_len2 <= tx_len - 1'b1;
                         UART_TxData <= data_cache;
                         opTxReady <= 1'b1;
-                        
+                        tx_len <= tx_len - 1'b1;
                       end
                       else if (tx_len != 0) begin
                         // send data byte 2, if any
