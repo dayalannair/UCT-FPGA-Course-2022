@@ -14,22 +14,24 @@ Hostname: DAYALAN1
 Implementation : impl1
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 1
+Modified Files: 3
 FID:  path (prevtimestamp, timestamp)
-19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (2022-05-04 19:29:15, 2022-05-04 19:30:47)
+0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (N/A, 2022-05-03 16:14:46)
+1        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.v (2022-04-27 15:47:38, N/A)
+2        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v (N/A, 2022-04-29 16:39:48)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 0
+Modules that may have changed as a result of file changes: 2
 MID:  lib.cell.view
+0        work.UART.verilog may have changed because the following files changed:
+                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (N/A, 2022-05-03 16:14:46) <-- (module definition)
+                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v (N/A, 2022-04-29 16:39:48) <-- (may instantiate this module)
+2        work.top.verilog may have changed because the following files changed:
+                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v (N/A, 2022-04-29 16:39:48) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 11
+Unmodified files: 6
 FID:  path (timestamp)
-20       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v (2022-05-04 16:50:59)
-17       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v (2022-05-02 13:55:17)
-18       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v (2022-04-30 07:55:46)
-0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-03 16:14:46)
-21       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v (2022-05-04 19:09:07)
 3        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
 4        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
 5        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)

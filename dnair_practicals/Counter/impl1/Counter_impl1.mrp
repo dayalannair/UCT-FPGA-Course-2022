@@ -17,7 +17,7 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   5
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  05/04/22  17:18:28
+Mapped on:  05/06/22  21:08:21
 
 Design Summary
 --------------
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  top                                           Date:  05/04/22  17:18:28
+Design:  top                                           Date:  05/06/22  21:08:21
 
 Design Summary (cont)
 ---------------------
@@ -113,26 +113,26 @@ Design Errors/Warnings
 ----------------------
 
 WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(22): Semantic error in "LOCATE COMP "opTx" SITE
+     ls/Counter/Counter.lpf(21): Semantic error in "LOCATE COMP "opTx" SITE
      "109" ;": COMP "opTx" cannot be found in design. This preference has been
      disabled.
 WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(23): Semantic error in "LOCATE COMP "ipRx" SITE
+     ls/Counter/Counter.lpf(22): Semantic error in "LOCATE COMP "ipRx" SITE
      "110" ;": COMP "ipRx" cannot be found in design. This preference has been
      disabled.
 WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(25): Semantic error in "IOBUF PORT "ipRx"
+     ls/Counter/Counter.lpf(24): Semantic error in "IOBUF PORT "ipRx"
      IO_TYPE=LVCMOS33 ;": Port "ipRx" does not exist in the design. This
      preference has been disabled.
 WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(27): Semantic error in "IOBUF PORT "opTx"
+     ls/Counter/Counter.lpf(26): Semantic error in "IOBUF PORT "opTx"
 
                                     Page 2
 
 
 
 
-Design:  top                                           Date:  05/04/22  17:18:28
+Design:  top                                           Date:  05/06/22  21:08:21
 
 Design Errors/Warnings (cont)
 -----------------------------
@@ -198,7 +198,7 @@ Signal UART_Inst/un1_rx_cnt_6_cry_0_0_S0 undriven or does not drive anything -
 
 
 
-Design:  top                                           Date:  05/04/22  17:18:28
+Design:  top                                           Date:  05/06/22  21:08:21
 
 Removed logic (cont)
 --------------------

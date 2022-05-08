@@ -2,24 +2,30 @@
 <BaliProject version="3.2" title="Counter" device="LFXP2-5E-5TN144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="System Verilog" def_top="top_v2" top="UART_wrapper"/>
-        <Source name="Structures.v" type="Verilog" type_short="Verilog">
+        <Options VerilogStandard="System Verilog" def_top="top" top="top"/>
+        <Source name="Structures.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="UART_wrapper.v" type="Verilog" type_short="Verilog">
+        <Source name="UART_wrapper.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="Registers.v" type="Verilog" type_short="Verilog">
+        <Source name="Registers.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="Control.v" type="Verilog" type_short="Verilog">
+        <Source name="Control.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="UART_Packets.v" type="Verilog" type_short="Verilog">
+        <Source name="UART_Packets.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
+        </Source>
+        <Source name="top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="counter.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
         </Source>
         <Source name="counter.fdc" type="Synplify Design Constraints File" type_short="SDC">
             <Options/>

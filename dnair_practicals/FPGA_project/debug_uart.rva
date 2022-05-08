@@ -1,0 +1,108 @@
+<!DOCTYPE ispTLA>
+<ispTLA>
+ <CreationDate>Sat 30. Apr 07:55:52 2022</CreationDate>
+ <XCFFileName/>
+ <CableSetting>
+  <IsTRSTConnected val="false"/>
+  <TRSTSetting val="0"/>
+  <IsBSCANConnected val="false"/>
+  <BSCANSetting val="0"/>
+  <CableType val="USB2"/>
+  <PortAddress val="0"/>
+  <PortSetting val="0"/>
+  <TCKDelay val="1"/>
+ </CableSetting>
+ <DeviceCount>1</DeviceCount>
+ <Device>
+  <DeviceIndex>0</DeviceIndex>
+  <DeviceName>1. LFXP2-5E</DeviceName>
+  <DeviceID>0x01299043</DeviceID>
+  <HasIspTRACY>true</HasIspTRACY>
+  <HasJTAG2WB>false</HasJTAG2WB>
+  <SERDES/>
+  <IRBypassLen>8</IRBypassLen>
+  <RVLFileName>rvl_ins1.rvl</RVLFileName>
+  <RVSFileName>rvl_ins1.rvs</RVSFileName>
+  <LACoreCount>1</LACoreCount>
+  <WinUI CoreIndex="0">
+   <TraceSigTreeData>
+    <TraceSignal IsHidden="false" Name="UART_Inst/ipRx" NodeType="0" PortIndex="0"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2" NodeType="1" PortIndex="1">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:0" NodeType="2" PortIndex="1"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:1" NodeType="2" PortIndex="2"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:2" NodeType="2" PortIndex="3"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:3" NodeType="2" PortIndex="4"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:4" NodeType="2" PortIndex="5"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:5" NodeType="2" PortIndex="6"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:6" NodeType="2" PortIndex="7"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:7" NodeType="2" PortIndex="8"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:8" NodeType="2" PortIndex="9"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt2:9" NodeType="2" PortIndex="10"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt" NodeType="1" PortIndex="11">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:0" NodeType="2" PortIndex="11"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:1" NodeType="2" PortIndex="12"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:2" NodeType="2" PortIndex="13"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:3" NodeType="2" PortIndex="14"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:4" NodeType="2" PortIndex="15"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:5" NodeType="2" PortIndex="16"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:6" NodeType="2" PortIndex="17"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:7" NodeType="2" PortIndex="18"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:8" NodeType="2" PortIndex="19"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/clk_cnt:9" NodeType="2" PortIndex="20"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/rx_cnt" NodeType="1" PortIndex="21">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="UART_Inst/rx_cnt:0" NodeType="2" PortIndex="21"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/rx_cnt:1" NodeType="2" PortIndex="22"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/rx_cnt:2" NodeType="2" PortIndex="23"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/rx_cnt:3" NodeType="2" PortIndex="24"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/tx_cnt" NodeType="1" PortIndex="25">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="UART_Inst/tx_cnt:0" NodeType="2" PortIndex="25"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/tx_cnt:1" NodeType="2" PortIndex="26"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/tx_cnt:2" NodeType="2" PortIndex="27"/>
+    <TraceSignal IsHidden="false" Name="UART_Inst/tx_cnt:3" NodeType="2" PortIndex="28"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData" NodeType="1" PortIndex="29">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="UART_RxData:0" NodeType="2" PortIndex="29"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData:1" NodeType="2" PortIndex="30"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData:2" NodeType="2" PortIndex="31"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData:3" NodeType="2" PortIndex="32"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData:4" NodeType="2" PortIndex="33"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData:5" NodeType="2" PortIndex="34"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData:6" NodeType="2" PortIndex="35"/>
+    <TraceSignal IsHidden="false" Name="UART_RxData:7" NodeType="2" PortIndex="36"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData" NodeType="1" PortIndex="37">
+     <BusRadix Radix="0"/>
+     <IsExpanded Expand="false"/>
+    </TraceSignal>
+    <TraceSignal IsHidden="false" Name="UART_TxData:0" NodeType="2" PortIndex="37"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData:1" NodeType="2" PortIndex="38"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData:2" NodeType="2" PortIndex="39"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData:3" NodeType="2" PortIndex="40"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData:4" NodeType="2" PortIndex="41"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData:5" NodeType="2" PortIndex="42"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData:6" NodeType="2" PortIndex="43"/>
+    <TraceSignal IsHidden="false" Name="UART_TxData:7" NodeType="2" PortIndex="44"/>
+    <TraceSignal IsHidden="false" Name="ipUART_Rx" NodeType="0" PortIndex="45"/>
+    <TraceSignal IsHidden="false" Name="UART_RxValid" NodeType="0" PortIndex="46"/>
+   </TraceSigTreeData>
+   <TriggerUI UserSelect="0" PreSelectType="0" PreSelect="1" UserSelectPos="0"/>
+   <CoreRun Run="true"/>
+   <CoreWndUIData>
+    <ClockFrequency Unit="ns" Frequency="-1.0"/>
+   </CoreWndUIData>
+  </WinUI>
+ </Device>
+</ispTLA>

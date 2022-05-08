@@ -1,2 +1,2 @@
-@E: CS153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":163:31:163:31|Can't mix blocking and non-blocking assignments to a variable
+@E: No component with name top to synthesize
 

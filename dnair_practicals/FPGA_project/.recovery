@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="Counter" device="LFXP2-5E-5TN144C" default_implementation="impl1">
+    <Options/>
+    <Strategy name="Strategy1" file="Counter1.sty"/>
+</BaliProject>
