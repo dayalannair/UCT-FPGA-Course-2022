@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="UART_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="UART_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4,719.366667 us"></ZoomStartTime>
+      <ZoomEndTime time="4,830.266668 us"></ZoomEndTime>
+      <Cursor1Time time="4,682.270000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="172"></NameColumnWidth>
+      <ValueColumnWidth column_width="110"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/UART_TB/ipClk" type="logic">
+      <obj_property name="ElementShortName">ipClk</obj_property>
+      <obj_property name="ObjectShortName">ipClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/ipReset" type="logic">
+      <obj_property name="ElementShortName">ipReset</obj_property>
+      <obj_property name="ObjectShortName">ipReset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/opTxBusy" type="logic">
+      <obj_property name="ElementShortName">opTxBusy</obj_property>
+      <obj_property name="ObjectShortName">opTxBusy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/ipTxSend" type="logic">
+      <obj_property name="ElementShortName">ipTxSend</obj_property>
+      <obj_property name="ObjectShortName">ipTxSend</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/opTx" type="logic">
+      <obj_property name="ElementShortName">opTx</obj_property>
+      <obj_property name="ObjectShortName">opTx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/ipTxData" type="array">
+      <obj_property name="ElementShortName">ipTxData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">ipTxData[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/opRxData" type="array">
+      <obj_property name="ElementShortName">opRxData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">opRxData[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/opRxValid" type="logic">
+      <obj_property name="ElementShortName">opRxValid</obj_property>
+      <obj_property name="ObjectShortName">opRxValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/RxData" type="array">
+      <obj_property name="ElementShortName">RxData[7:0]</obj_property>
+      <obj_property name="ObjectShortName">RxData[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/ipRx" type="logic">
+      <obj_property name="ElementShortName">ipRx</obj_property>
+      <obj_property name="ObjectShortName">ipRx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/DUT/clk_cnt2" type="array">
+      <obj_property name="ElementShortName">clk_cnt2[9:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_cnt2[9:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/DUT/rx_cnt" type="array">
+      <obj_property name="ElementShortName">rx_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_cnt[3:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/UART_TB/DUT/rx_state" type="array">
+      <obj_property name="ElementShortName">rx_state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_state[31:0]</obj_property>
+   </wvobject>
+</wave_config>
