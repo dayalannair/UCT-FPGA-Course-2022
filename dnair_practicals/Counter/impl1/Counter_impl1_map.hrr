@@ -1,24 +1,24 @@
 ---------------------------------------------------
-Report for cell top
-   Instance path: top
+Report for cell UART_echo_top
+   Instance path: UART_echo_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      62.00        100.0
+                                  SLIC	      72.00        100.0
                                  IOLGC	       2.00        100.0
-                                  LUT4	      75.00        100.0
+                                  LUT4	      86.00        100.0
                                  IOREG	          2        100.0
                                  IOBUF	         12        100.0
                                 PFUREG	         59        100.0
-                                RIPPLE	         17        100.0
+                                RIPPLE	         19        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                  UART	          1        93.5
+                                  UART	          1        94.1
 ---------------------------------------------------
 Report for cell UART
-   Instance path: top/UART_Inst
+   Instance path: UART_echo_top/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      58.00        93.5
-                                  LUT4	      74.00        98.7
+                                  SLIC	      67.75        94.1
+                                  LUT4	      85.00        98.8
                                 PFUREG	         50        84.7
-                                RIPPLE	         17        100.0
+                                RIPPLE	         19        100.0

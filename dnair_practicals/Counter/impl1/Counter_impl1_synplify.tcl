@@ -48,10 +48,10 @@ set_option -seqshift_no_replicate 0
 #-- add_file options
 set_option -include_path {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter}
 add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v}
-add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/top.v}
+add_file -verilog -vlog_std sysv {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_echo_top.v}
 
 #-- top module name
-set_option -top_module top
+set_option -top_module UART_echo_top
 
 #-- set result format/file last
 project -result_file {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.edi}

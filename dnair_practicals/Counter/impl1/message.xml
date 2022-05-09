@@ -1,39 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf(21): Semantic error in &quot;LOCATE COMP &quot;opTx&quot; SITE &quot;109&quot; ;&quot;: </Dynamic>
-            <Dynamic>opTx</Dynamic>
-            <Navigation>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf</Navigation>
-            <Navigation>21</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf(22): Semantic error in &quot;LOCATE COMP &quot;ipRx&quot; SITE &quot;110&quot; ;&quot;: </Dynamic>
-            <Dynamic>ipRx</Dynamic>
-            <Navigation>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf</Navigation>
-            <Navigation>22</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf(24): Semantic error in &quot;IOBUF PORT &quot;ipRx&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>ipRx</Dynamic>
-            <Navigation>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf</Navigation>
-            <Navigation>24</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf(26): Semantic error in &quot;IOBUF PORT &quot;opTx&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>opTx</Dynamic>
-            <Navigation>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf</Navigation>
-            <Navigation>26</Navigation>
-        </Message>
-    </Task>
     <Task name="Synplify_Synthesis">
         <Message>
             <ID>2011000</ID>
@@ -42,9 +8,9 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v&quot;:7:17:7:21|Object opLED is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v&quot;:7:17:7:21|Object opLED is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
-            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v</Navigation>
             <Navigation>7</Navigation>
             <Navigation>17</Navigation>
             <Navigation>7</Navigation>
@@ -54,14 +20,14 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL169 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v&quot;:39:2:39:7|Pruning unused register rst. Make sure that there are no unused intermediate registers.</Dynamic>
-            <Navigation>CL169</Navigation>
-            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\top.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>2</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>7</Navigation>
-            <Navigation>Pruning unused register rst. Make sure that there are no unused intermediate registers.</Navigation>
+            <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v&quot;:11:6:11:8|Object rst is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
+            <Navigation>CG133</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>6</Navigation>
+            <Navigation>11</Navigation>
+            <Navigation>8</Navigation>
+            <Navigation>Object rst is declared but not assigned. Either assign a value or remove the declaration.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>
@@ -97,18 +63,6 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>FX527 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v&quot;:51:0:51:5|Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</Dynamic>
-            <Navigation>FX527</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>51</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
             <Dynamic>FX527 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v&quot;:51:0:51:5|Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP</Dynamic>
             <Navigation>FX527</Navigation>
             <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v</Navigation>
@@ -117,6 +71,18 @@
             <Navigation>51</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>FX527 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v&quot;:51:0:51:5|Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</Dynamic>
+            <Navigation>FX527</Navigation>
+            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>51</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

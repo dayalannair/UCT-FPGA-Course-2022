@@ -1,7 +1,7 @@
-C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.srs"  -osyn  "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_mult.srs"  -log  "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\Counter_impl1_multi_srs_gen.srr" 
-relcom:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.srs" -osyn "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_mult.srs" -log "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\Counter_impl1_multi_srs_gen.srr"
-rc:0 success:1 runtime:0
-file:..\synwork\Counter_impl1_comp.srs|io:i|time:1651864090|size:8329|exec:0|csum:7EF265844841F2CF1FDC9AFFC4D7FBB4
-file:..\synwork\Counter_impl1_mult.srs|io:o|time:1651864091|size:3063|exec:0|csum:
-file:..\synlog\Counter_impl1_multi_srs_gen.srr|io:o|time:1651864091|size:1175|exec:0|csum:
+C:\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe  -link  -top  UART_echo_top  -multisrs  "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.srs"  -osyn  "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_mult.srs"  -log  "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\Counter_impl1_multi_srs_gen.srr" 
+relcom:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe -link -top UART_echo_top -multisrs "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.srs" -osyn "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_mult.srs" -log "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synlog\Counter_impl1_multi_srs_gen.srr"
+rc:0 success:1 runtime:1
+file:..\synwork\Counter_impl1_comp.srs|io:i|time:1652080120|size:8233|exec:0|csum:6CCC0261BBA97D177E36FA1637E4F586
+file:..\synwork\Counter_impl1_mult.srs|io:o|time:1652080121|size:3110|exec:0|csum:
+file:..\synlog\Counter_impl1_multi_srs_gen.srr|io:o|time:1652080122|size:1175|exec:0|csum:
 file:..\..\..\..\..\..\..\..\lscc\diamond\3.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1603959522|size:8875008|exec:1|csum:43373AFF0ED6BCEB26CB4B4947B972DD

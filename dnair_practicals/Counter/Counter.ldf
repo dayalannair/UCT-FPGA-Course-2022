@@ -21,11 +21,11 @@
         <Source name="UART.v" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="top.v" type="Verilog" type_short="Verilog">
-            <Options top_module="top"/>
-        </Source>
         <Source name="counter.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
+        </Source>
+        <Source name="UART_echo_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
         </Source>
         <Source name="counter.fdc" type="Synplify Design Constraints File" type_short="SDC">
             <Options/>

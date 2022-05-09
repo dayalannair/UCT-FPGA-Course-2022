@@ -5,7 +5,7 @@
 #project files
 add_file -fpga_constraint "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.fdc"
 add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v"
-add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/top.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_echo_top.v"
 
 
 #implementation: "impl1"
@@ -27,7 +27,7 @@ set_option -speed_grade -5
 set_option -part_companion ""
 
 #compilation/mapping options
-set_option -top_module "top"
+set_option -top_module "UART_echo_top"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

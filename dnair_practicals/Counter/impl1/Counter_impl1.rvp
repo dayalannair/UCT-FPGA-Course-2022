@@ -16,7 +16,7 @@ title = Counter
 path = C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1
 core_generate = C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1
 search_path = C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter
-top = top
+top = counter
 lpf = C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf
 synthesis = synplify
 
@@ -26,12 +26,6 @@ VHDL2008 = true
 #HDLs options
 [HDLs]
 C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.v = System Verilog
-C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v = System Verilog
-C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/top.v = System Verilog
 [HDL_Defines]
 SBP_SYNTHESIS=
 [HDL_Param]
-[Generated]
-C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v=Verilog
-C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/reveal_workspace/tmpreveal/top_la0_gen.v=Verilog
-C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/reveal_workspace/tmpreveal/top_rvl.v=System Verilog,work

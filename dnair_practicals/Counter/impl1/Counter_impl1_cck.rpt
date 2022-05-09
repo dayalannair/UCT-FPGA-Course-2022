@@ -13,11 +13,11 @@ Hostname: DAYALAN1
 
 Implementation : impl1
 
-# Written on Fri May  6 21:08:14 2022
+# Written on Mon May  9 09:08:44 2022
 
 ##### DESIGN INFO #######################################################
 
-Top View:                "top"
+Top View:                "UART_echo_top"
 Constraint File(s):      "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.fdc"
 
 

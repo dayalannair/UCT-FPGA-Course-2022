@@ -1,45 +1,47 @@
 ----------------------------------------------------------------------
-Report for cell top.verilog
+Report for cell UART_echo_top.verilog
 
 Register bits: 61 of 4752 (1%)
 PIC Latch:       0
 I/O cells:       12
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2B       17       100.0
+                              CCU2B       19       100.0
                             FD1P3AX       34       100.0
                             FD1P3IX        2       100.0
-                            FD1S3AX       10       100.0
-                            FD1S3IX       10       100.0
-                            FD1S3JX        3       100.0
+                            FD1S3AX       15       100.0
+                            FD1S3IX        6       100.0
+                            FD1S3JX        2       100.0
                                 GSR        1       100.0
                                  IB        3       100.0
                            IFS1P3DX        1       100.0
                                 INV        1       100.0
                                  OB        9       100.0
                            OFS1P3JX        1       100.0
-                           ORCALUT4       72       100.0
+                           ORCALUT4       83       100.0
+                              PFUMX        1       100.0
                                 PUR        1       100.0
                                 VHI        2       100.0
                                 VLO        2       100.0
 SUB MODULES 
                                UART        1       100.0
                             
-                         TOTAL           170           
+                         TOTAL           184           
 ----------------------------------------------------------------------
 Report for cell UART.netlist
      Instance path:  UART_Inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2B       17       100.0
+                              CCU2B       19       100.0
                             FD1P3AX       25        73.5
                             FD1P3IX        2       100.0
-                            FD1S3AX       10       100.0
-                            FD1S3IX       10       100.0
-                            FD1S3JX        3       100.0
+                            FD1S3AX       15       100.0
+                            FD1S3IX        6       100.0
+                            FD1S3JX        2       100.0
                                 INV        1       100.0
-                           ORCALUT4       72       100.0
+                           ORCALUT4       83       100.0
+                              PFUMX        1       100.0
                                 VHI        1        50.0
                                 VLO        1        50.0
                             
-                         TOTAL           142           
+                         TOTAL           156           

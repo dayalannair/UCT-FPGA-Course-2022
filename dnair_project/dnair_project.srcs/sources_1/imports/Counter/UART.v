@@ -30,6 +30,9 @@ module UART(
   output reg      opRxValid  // holds received data 
 );
 
+parameter MAX_BDCOUNT = 10'd433;//10'd867;
+parameter HALF_MAX_BDCOUNT = 10'd110;//10'd433; //Quarter
+
 reg rst;
 reg rx;
 reg [3:0] rx_cnt;
@@ -63,54 +66,40 @@ always @(posedge ipClk) begin
 	else begin
 		case(tx_state)
 			off: begin
-					tx_cnt <= 4'd8;
-					clk_cnt <= 10'd433;
-					//opTxBusy <= 1'b0;
-					opTx <= 1'b1; // hold output bit high while off
 					if (ipTxSend) begin
+						tx_cnt <= 4'd8;
+						clk_cnt <= MAX_BDCOUNT;
 						tx_state <= start;
 						opTxBusy <= 1'b1;
 						txData <= ipTxData;
 					end
-					else opTxBusy <= 1'b0;
+					else begin
+						opTxBusy <= 1'b0;
+						opTx <= 1'b1;
+					end
 				end
 				
 			start: begin
-					// hold opTx low to indicate start
 					if (clk_cnt != 0) begin
 						opTx <= 1'b0;
 						clk_cnt <= clk_cnt - 1'b1;
 					end
-					else begin
-						//clk_cnt <= 10'd433;
-						tx_state <= on;
-					end
+					else tx_state <= on;
 				end
 			on: begin 
-					// if bit held for clk_cnt and no more bits to send
-					// if count starts at 8, bit 0 corresp to cnt = 1
-
-					if ((clk_cnt == 0) && (tx_cnt == 0)) begin
-						clk_cnt <= 10'd433;
+					if ((clk_cnt == 0) && (tx_cnt != 0)) begin
+						opTx <= txData[0]; 
+						txData <= txData>>1;
+						tx_cnt <= tx_cnt - 1'b1;
+						clk_cnt <= MAX_BDCOUNT;
+					end
+					else if ((clk_cnt == 0) && (tx_cnt == 0)) begin
+						clk_cnt <= MAX_BDCOUNT;
 						opTx <= 1'b1;
 						tx_state <= stop;
 
 					end
-					// else if  ((clk_cnt == 0) && (tx_cnt == 1)) begin
-
-					// end
-					//if bit held for clk_cnt time and counter not = 0, move to next bit
-					else if ((clk_cnt == 0) && (tx_cnt != 0)) begin
-						tx_cnt <= tx_cnt - 1'b1; // move to next bit
-						opTx <= txData[0]; 
-						txData <= txData>>1; // put next bit on line (next cycle)
-						clk_cnt <= 10'd433; // reset hold time
-					end
-					// if bit not held for clk_cnt and cnt > 0, keep holding bit on the line
-					else begin
-						// opTx <= txData[0];
-						clk_cnt <= clk_cnt - 1'b1;
-					end
+					else clk_cnt <= clk_cnt - 1'b1;
 				end
 			stop: begin
 					if (clk_cnt == 0) begin
@@ -130,35 +119,31 @@ always @(posedge ipClk) begin
 		case(rx_state)
 			
 			off: begin
-					clk_cnt2 <= 10'd600;
-					rx_cnt <= 4'd8;
-					opRxValid <= 1'b0; 
-					if (rx == 0) rx_state <= start; // change state if ipRx goes low
+					opRxValid <= 1'b0;
+					if (rx == 0) begin
+						clk_cnt2 <= MAX_BDCOUNT+HALF_MAX_BDCOUNT;
+						rx_cnt <= 4'd8; 
+						rx_state <= start;
+					end
 				end
 
 			start: begin
-						// if ipRx still zero after required time, turn on
-						if ((rx == 0) && (clk_cnt2 == 10'd170)) rx_state <= on;
-						// else decrement counter 
-						else if ((rx == 0) && (clk_cnt2 != 0)) clk_cnt2 <= clk_cnt2 - 1'b1;
-						// if ipRx does not remain low for required time, revert to off state
+						if ((rx == 0) && (clk_cnt2 > HALF_MAX_BDCOUNT)) clk_cnt2 <= clk_cnt2 - 1'b1;
+						else if ((rx == 0) && (clk_cnt2 == HALF_MAX_BDCOUNT)) rx_state <= on;
 						else rx_state <= off;
 					end
 	
 			on: begin
-				// if bit held for clk_cnt and no more bits to send
-					if ((clk_cnt2 == 0) && (rx_cnt == 0)) begin
-						//clk_cnt2 <= 10'd433;
-						rx_state <= off;
-						opRxValid <= 1'b1;
-					end
-					//if bit held for clk_cnt time and counter not = 0, move to next bit
-					else if ((clk_cnt2 == 0) && (rx_cnt != 0)) begin
-						rx_cnt <= rx_cnt - 1'b1; // move to next bit
+					if ((clk_cnt2 == 0) && (rx_cnt != 0)) begin
+						rx_cnt <= rx_cnt - 1'b1;
 						opRxData <= {rx, opRxData[7:1]}; 
-						clk_cnt2 <= 10'd433; // reset hold time
+						clk_cnt2 <= MAX_BDCOUNT;
 					end
-					// if bit not held for clk_cnt and cnt > 0, keep holding bit on the line
+					else if ((clk_cnt2 == 0) && (rx_cnt == 0)) begin
+						clk_cnt2 <= MAX_BDCOUNT;
+						opRxValid <= 1'b1;
+						rx_state <= off;
+					end
 					else clk_cnt2 <= clk_cnt2 - 1'b1;
 				end
 			// stop: begin
@@ -169,9 +154,9 @@ always @(posedge ipClk) begin
 			// 			rx_state <= off;
 			// 		end
 
-					// if protocol broken, return to off
-					//else rx_state <= off;
-				//end
+			// 		//if protocol broken, return to off
+			// 		else rx_state <= off;
+			// 	end
 
 			default: rx_state <= off;
 		endcase

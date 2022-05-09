@@ -21,16 +21,18 @@ wire      opTxBusy;
 wire      opTx;
 
 integer TxBit;
-
+integer i;
+integer j;
+reg finished = 0;
 initial begin
   ipTxSend = 0;
 
   @(negedge ipReset);
   @(posedge ipClk);
 
-  while(1) begin
+for (i = 0; i<10; i++) begin
     //ipTxData = $urandom_range(0, 255);
-    ipTxData = "a";
+    ipTxData = "0" + i;
     if(opTxBusy) @(negedge opTxBusy);
 
     assert(opTx == 1) else
@@ -75,11 +77,11 @@ initial begin
   @(negedge ipReset);
   @(posedge ipClk);
 
-  while(1) begin
+for (j = 0; j<10; j++) begin
     #($urandom_range(5000, 50000));
 
     //RxData = $urandom_range(0, 255);
-    RxData = 8'b10010001;
+    RxData = "0"+ j;
     ipRx = 0;
     #8681;
     for(RxBit = 0; RxBit < 8; RxBit++) begin

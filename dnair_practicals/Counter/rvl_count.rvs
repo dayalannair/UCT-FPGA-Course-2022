@@ -1,0 +1,15 @@
+<Project ModBy="Analyzer" Name="C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/rvl_count.rvs" Date="2022-05-09">
+ <Core Name="counter_LA0">
+  <Setting>
+   <Capture SamplesPerTrig="512" NumTrigsCap="1"/>
+   <Event EventCnt="0" CntEnableRun="0"/>
+   <TrigSetting PreTrgSamples="" AND_ALL="0" PostTrgSamples="" TURadix="0"/>
+  </Setting>
+  <Dataset Name="Base">
+   <Trigger>
+    <TU Operator="6" Name="TU1" ID="1" Value="00000001" Radix="0"/>
+    <TE Enable="1" Expression="TU1" Name="TE1" ID="1"/>
+   </Trigger>
+  </Dataset>
+ </Core>
+</Project>

@@ -19,7 +19,7 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1.jed</File>
+			<File>C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/JEDECS/uart.jed</File>
 			<FileTime>05/06/22 21:08:39</FileTime>
 			<JedecChecksum>0xADA3</JedecChecksum>
 			<Operation>FLASH Erase,Program,Verify</Operation>
@@ -48,7 +48,7 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Lattice FTUSB Interface Cable A Location 0000</USBID>
+		<USBID>Lattice FTUSB Interface Cable A Location 0000 Serial A</USBID>
 		<JTAGPinSetting>
 			TRST	ABSENT;
 			ISPEN	ABSENT;
