@@ -14,23 +14,23 @@ Hostname: DAYALAN1
 Implementation : impl1
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 2
+Modified Files: 6
 FID:  path (prevtimestamp, timestamp)
-0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-09 08:43:35, 2022-05-09 09:07:48)
-22       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v (2022-05-09 08:34:09, 2022-05-09 09:04:21)
+20       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v (N/A, 2022-05-04 16:50:59)
+17       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v (N/A, 2022-05-02 13:55:17)
+18       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v (N/A, 2022-04-30 07:55:46)
+19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (N/A, 2022-05-09 09:22:51)
+22       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v (2022-05-09 09:04:21, N/A)
+21       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v (N/A, 2022-05-09 09:23:33)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 2
+Modules that may have changed as a result of file changes: 0
 MID:  lib.cell.view
-0        work.UART.verilog may have changed because the following files changed:
-                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-09 08:43:35, 2022-05-09 09:07:48) <-- (module definition)
-                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v (2022-05-09 08:34:09, 2022-05-09 09:04:21) <-- (may instantiate this module)
-61       work.UART_echo_top.verilog may have changed because the following files changed:
-                        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v (2022-05-09 08:34:09, 2022-05-09 09:04:21) <-- (module definition)
 
 *******************************************************************
-Unmodified files: 6
+Unmodified files: 7
 FID:  path (timestamp)
+0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-09 09:07:48)
 3        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
 4        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
 5        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)

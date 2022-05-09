@@ -1,8 +1,8 @@
 i ipClk
 m 0 0
-u 17 61
-p {p:ipClk}{t:UART_TxData[7:0].C}
-e ckid0_0 {t:UART_TxData[7:0].C} dffe
+u 49 268
+p {p:ipClk}{t:register.ipClk}{p:register.ipClk}{t:register.opWrRegisters\.LEDs[7:0].C}
+e ckid0_0 {t:register.opWrRegisters\.LEDs[7:0].C} sdffre
 c ckid0_0 {p:ipClk} port Unsupported/too complex instance on clock path
 l 0 0 0 0 0
 r 0 0 0 0 0 0 0 0

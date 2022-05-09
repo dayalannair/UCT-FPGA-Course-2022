@@ -1,12 +1,131 @@
-Selecting top level module UART_echo_top
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v":10:0:10:5|Synthesizing module work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit in library work.
+Selecting top level module UART_wrapper
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":19:7:19:10|Synthesizing module UART in library work.
 Running optimization stage 1 on UART .......
-@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":2:7:2:19|Synthesizing module UART_echo_top in library work.
-@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":7:17:7:21|Object opLED is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":11:6:11:8|Object rst is declared but not assigned. Either assign a value or remove the declaration.
-Running optimization stage 1 on UART_echo_top .......
-Running optimization stage 2 on UART_echo_top .......
-@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":7:17:7:21|*Unassigned bits of opLED[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":19:7:19:18|Synthesizing module UART_Packets in library work.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":18:13:18:15|Object opRxStream.SoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|Object opRxStream.EoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":33:9:33:14|Object rx_src is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":34:9:34:15|Object rx_dest is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":35:9:35:17|Object tx_byte_n is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on UART_Packets .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":3:7:3:13|Synthesizing module Control in library work.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|Object opTxPkt.EoP is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on Control .......
+@W: CL271 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Pruning unused bits 7 to 0 of rd_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":9:7:9:15|Synthesizing module Registers in library work.
+Running optimization stage 1 on Registers .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v":12:7:12:18|Synthesizing module UART_wrapper in library work.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":5:14:5:23|Object RdRegisters.ClockTicks is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":6:14:6:20|Object RdRegisters.Buttons is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on UART_wrapper .......
+Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdepRunning optimization stage 2 on UART_wrapper .......
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":5:14:5:23|*Unassigned bits of RdRegisters.ClockTicks[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":6:14:6:20|*Unassigned bits of RdRegisters.Buttons[3:0] are referenced and tied to 0 -- simulation mismatch possible.
+Running optimization stage 2 on Registers .......
+@W: CL246 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":17:22:17:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.
+Running optimization stage 2 on Control .......
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[0] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[1] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[2] is always 1.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[3] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[4] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[5] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[6] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[7] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit rd_byte_cnt[3] is always 0.
+@W: CL260 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Pruning register bit 3 of rd_byte_cnt[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Trying to extract state machine for register state.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[2] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[3] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[4] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[5] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[6] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[7] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[8] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[9] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[10] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[11] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[12] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[13] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[14] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[15] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[16] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[17] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[18] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[19] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[20] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[21] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[22] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[23] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[24] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[25] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[26] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[27] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[28] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[29] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[30] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[31] is always 0.
+@W: CL279 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Pruning register bits 31 to 2 of state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL246 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":10:22:10:28|Input port bits 10 to 9 of ipRxPkt[34:0] are unused. Assign logic for all port bits or change the input port size.
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|*Unassigned bits of opTxPkt.EoP are referenced and tied to 0 -- simulation mismatch possible.
+Running optimization stage 2 on UART_Packets .......
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[1] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[2] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[3] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[4] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[5] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[6] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[7] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[8] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[9] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[10] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[11] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[12] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[13] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[14] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[15] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[16] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[17] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[18] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[19] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[20] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[21] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[22] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[23] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[24] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[25] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[26] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[27] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[28] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[29] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[30] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[31] is always 0.
+@W: CL279 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Pruning register bits 31 to 1 of rx_state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Trying to extract state machine for register tx_packet.
+Extracted state machine for register tx_packet
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Trying to extract state machine for register rx_packet.
+Extracted state machine for register rx_packet
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Trying to extract state machine for register tx_state.
+Extracted state machine for register tx_state
+State machine has 2 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+@W: CL247 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":23:21:23:30|Input port bit 9 of ipTxStream[34:0] is unused
+
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":18:13:18:15|*Unassigned bits of opRxStream.SoP are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|*Unassigned bits of opRxStream.EoP are referenced and tied to 0 -- simulation mismatch possible.
 Running optimization stage 2 on UART .......
 @N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":51:0:51:5|Register bit clk_cnt[9] is always 0.
 @W: CL260 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":51:0:51:5|Pruning register bit 9 of clk_cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.

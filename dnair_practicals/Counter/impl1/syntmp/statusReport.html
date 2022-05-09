@@ -10,7 +10,7 @@
 <table style="border:none;" width="100%" ><tr> <td class="outline">
 <table width="100%" border="0" cellspacing="0" cellpadding="0"> 	     <thead class="tablehead"><tr><th colspan="4">Project Settings</th><tr> 
  <tr> <td class="optionTitle" align="left"> Project Name</td> <td> proj_1</td> <td class="optionTitle" align="left"> Device Name</td> <td> impl1: Lattice XP2 : LFXP2_5E</td> </tr>
-<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> impl1</td> <td class="optionTitle" align="left"> Top Module</td> <td> UART_echo_top</td> </tr>
+<tr> <td class="optionTitle" align="left"> Implementation Name</td> <td> impl1</td> <td class="optionTitle" align="left"> Top Module</td> <td> UART_wrapper</td> </tr>
  		 </thead> 
 		 <tbody> <tr> <td class="optionTitle" align="left"> Pipelining</td> <td> 1</td> <td class="optionTitle" align="left"> Retiming</td> <td> 0</td> </tr>
 <tr> <td class="optionTitle" align="left"> Resource Sharing</td> <td> 1</td> <td class="optionTitle" align="left"> Fanout Guide</td> <td> 1000</td> </tr>
@@ -34,40 +34,40 @@
          </tr>
   <tr>
   <td class="optionTitle"> (compiler)</td><td>Complete</td>
- <td>10</td>
- <td>3</td>
+ <td>88</td>
+ <td>16</td>
 <td>0</td>
 <td>-</td>
-<td>00m:01s</td>
+<td>00m:04s</td>
 <td>-</td>
-<td><font size="-1">2022/05/09</font><br/><font size="-2">09:08:40</font></td>
+<td><font size="-1">2022/05/09</font><br/><font size="-2">09:25:27</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (premap)</td><td>Complete</td>
- <td>6</td>
+ <td>9</td>
  <td>1</td>
 <td>0</td>
-<td>0m:01s</td>
 <td>0m:02s</td>
-<td>175MB</td>
-<td><font size="-1">2022/05/09</font><br/><font size="-2">09:08:44</font></td>
+<td>0m:02s</td>
+<td>176MB</td>
+<td><font size="-1">2022/05/09</font><br/><font size="-2">09:25:31</font></td>
 </tr> 
 
  <tr>
   <td class="optionTitle"> (fpga_mapper)</td><td>Complete</td>
- <td>10</td>
- <td>5</td>
+ <td>35</td>
+ <td>34</td>
 <td>0</td>
-<td>0m:03s</td>
 <td>0m:04s</td>
-<td>183MB</td>
-<td><font size="-1">2022/05/09</font><br/><font size="-2">09:08:48</font></td>
+<td>0m:04s</td>
+<td>188MB</td>
+<td><font size="-1">2022/05/09</font><br/><font size="-2">09:25:35</font></td>
 </tr> 
 
 <tr>
   <td class="optionTitle">Multi-srs Generator</td>
-  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td>00m:01s</td><td class="empty"></td><td class="empty"></td><td><font size="-1">2022/05/09</font><br/><font size="-2">09:08:42</font></td> 		</tbody>
+  <td>Complete</td><td class="empty"></td><td class="empty"></td><td class="empty"></td><td></td><td class="empty"></td><td class="empty"></td><td><font size="-1">2022/05/09</font><br/><font size="-2">09:25:28</font></td> 		</tbody>
      </table>
  <br> 
  <table width="100%" border="1" cellspacing= "0" cellpadding= "0" >
@@ -75,7 +75,7 @@
 <tfoot> <tr> <td class="optionTitle" colspan="4"></td></tr> 
  </tfoot> 
  <tbody> <tr> 
-<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>61</td>
+<td title ="Total Register bits used" class="optionTitle" align="left">Register bits</td> <td>217</td>
 <td title ="Total I/O cells used" class="optionTitle" align="left">I/O cells</td> <td>12</td>
 </tr>
 <tr> 
@@ -86,7 +86,7 @@
 </tr>
 <tr> 
 <td title ="Total ORCA LUTs used" class="optionTitle" align="left">ORCA LUTs
-(total_luts)</td> <td>83</td>
+(total_luts)</td> <td>189</td>
 <td class="optionTitle"></td><td></td></tr> 
 </tbody>
     </table><br>
@@ -96,7 +96,7 @@
  </tfoot> 
 <tbody> 
    <tr><th class="optionTitle" align= "left ">Clock Name</th><th class="optionTitle" align= "left ">Req Freq</th><th class="optionTitle" align= "left ">Est Freq</th><th class="optionTitle" align= "left ">Slack</th></tr> 
-<tr> <td  align="left">ipClk</td><td  align="left">50.0 MHz</td><td  align="left">102.4 MHz</td><td  align="left">10.239</td></tr> 
+<tr> <td  align="left">ipClk</td><td  align="left">50.0 MHz</td><td  align="left">103.4 MHz</td><td  align="left">10.327</td></tr> 
 </tbody> 
  </table>
 <br>

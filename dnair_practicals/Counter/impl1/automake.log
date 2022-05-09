@@ -10,7 +10,7 @@ Lattice Diamond Version 3.12.0.240.2
 #OS: Windows 8 6.2
 #Hostname: DAYALAN1
 
-# Mon May  9 09:08:39 2022
+# Mon May  9 09:25:23 2022
 
 #Implementation: impl1
 
@@ -59,20 +59,142 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\lscc\diamond\3.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v" (library work)
+@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" (library work)
-@I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v" (library work)
 Verilog syntax check successful!
-File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v changed - recompiling
-File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v changed - recompiling
-Selecting top level module UART_echo_top
+Options changed - recompiling
+Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdep@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v":10:0:10:5|Synthesizing module work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit in library work.
+Selecting top level module UART_wrapper
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":19:7:19:10|Synthesizing module UART in library work.
 Running optimization stage 1 on UART .......
-@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":2:7:2:19|Synthesizing module UART_echo_top in library work.
-@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":7:17:7:21|Object opLED is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":11:6:11:8|Object rst is declared but not assigned. Either assign a value or remove the declaration.
-Running optimization stage 1 on UART_echo_top .......
-Running optimization stage 2 on UART_echo_top .......
-@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_echo_top.v":7:17:7:21|*Unassigned bits of opLED[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":19:7:19:18|Synthesizing module UART_Packets in library work.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":18:13:18:15|Object opRxStream.SoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|Object opRxStream.EoP is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":33:9:33:14|Object rx_src is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":34:9:34:15|Object rx_dest is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":35:9:35:17|Object tx_byte_n is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on UART_Packets .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":3:7:3:13|Synthesizing module Control in library work.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|Object opTxPkt.EoP is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on Control .......
+@W: CL271 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Pruning unused bits 7 to 0 of rd_data[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":9:7:9:15|Synthesizing module Registers in library work.
+Running optimization stage 1 on Registers .......
+@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v":12:7:12:18|Synthesizing module UART_wrapper in library work.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":5:14:5:23|Object RdRegisters.ClockTicks is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":6:14:6:20|Object RdRegisters.Buttons is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on UART_wrapper .......
+Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdepRunning optimization stage 2 on UART_wrapper .......
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":5:14:5:23|*Unassigned bits of RdRegisters.ClockTicks[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":6:14:6:20|*Unassigned bits of RdRegisters.Buttons[3:0] are referenced and tied to 0 -- simulation mismatch possible.
+Running optimization stage 2 on Registers .......
+@W: CL246 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":17:22:17:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.
+Running optimization stage 2 on Control .......
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[0] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[1] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[2] is always 1.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[3] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[4] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[5] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[6] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit opTxPkt.Length[7] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit rd_byte_cnt[3] is always 0.
+@W: CL260 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Pruning register bit 3 of rd_byte_cnt[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Trying to extract state machine for register state.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[2] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[3] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[4] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[5] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[6] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[7] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[8] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[9] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[10] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[11] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[12] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[13] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[14] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[15] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[16] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[17] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[18] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[19] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[20] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[21] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[22] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[23] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[24] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[25] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[26] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[27] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[28] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[29] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[30] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Register bit state[31] is always 0.
+@W: CL279 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":40:0:40:5|Pruning register bits 31 to 2 of state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL246 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":10:22:10:28|Input port bits 10 to 9 of ipRxPkt[34:0] are unused. Assign logic for all port bits or change the input port size.
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|*Unassigned bits of opTxPkt.EoP are referenced and tied to 0 -- simulation mismatch possible.
+Running optimization stage 2 on UART_Packets .......
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[1] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[2] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[3] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[4] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[5] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[6] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[7] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[8] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[9] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[10] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[11] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[12] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[13] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[14] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[15] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[16] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[17] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[18] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[19] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[20] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[21] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[22] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[23] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[24] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[25] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[26] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[27] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[28] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[29] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[30] is always 0.
+@N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Register bit rx_state[31] is always 0.
+@W: CL279 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Pruning register bits 31 to 1 of rx_state[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Trying to extract state machine for register tx_packet.
+Extracted state machine for register tx_packet
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Trying to extract state machine for register rx_packet.
+Extracted state machine for register rx_packet
+State machine has 4 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+@N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":91:0:91:5|Trying to extract state machine for register tx_state.
+Extracted state machine for register tx_state
+State machine has 2 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+@W: CL247 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":23:21:23:30|Input port bit 9 of ipTxStream[34:0] is unused
+
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":18:13:18:15|*Unassigned bits of opRxStream.SoP are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":19:13:19:15|*Unassigned bits of opRxStream.EoP are referenced and tied to 0 -- simulation mismatch possible.
 Running optimization stage 2 on UART .......
 @N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":51:0:51:5|Register bit clk_cnt[9] is always 0.
 @W: CL260 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v":51:0:51:5|Pruning register bit 9 of clk_cnt[9:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
@@ -95,12 +217,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 96MB peak: 100MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 103MB peak: 113MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Mon May  9 09:08:40 2022
+# Mon May  9 09:25:26 2022
 
 ###########################################################]
 ###########################################################[
@@ -122,12 +244,12 @@ Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 90MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  9 09:08:40 2022
+# Mon May  9 09:25:27 2022
 
 ###########################################################]
 
@@ -137,12 +259,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 23MB peak: 23MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 29MB peak: 29MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Mon May  9 09:08:40 2022
+# Mon May  9 09:25:27 2022
 
 ###########################################################]
 ###########################################################[
@@ -165,15 +287,17 @@ Synopsys Synopsys Netlist Linker, Version comp202003synp2, Build 182R, Built Oct
 @N|Running in 64-bit mode
 File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 90MB peak: 91MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 91MB peak: 91MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon May  9 09:08:42 2022
+# Mon May  9 09:25:28 2022
 
 ###########################################################]
-# Mon May  9 09:08:42 2022
+Premap Report
+
+# Mon May  9 09:25:28 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -208,10 +332,10 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 138MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
 
 Encoding state machine rx_state[2:0] (in view: work.UART(verilog))
 original code -> new code
@@ -225,21 +349,40 @@ original code -> new code
    00000000000000000000000000000010 -> 10
    00000000000000000000000000000011 -> 11
 @N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|There are no possible illegal states for state machine tx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
+Encoding state machine tx_state[1:0] (in view: work.UART_Packets(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0
+   00000000000000000000000000000001 -> 1
+@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|There are no possible illegal states for state machine tx_state[1:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
+Encoding state machine rx_packet[3:0] (in view: work.UART_Packets(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 00
+   00000000000000000000000000000001 -> 01
+   00000000000000000000000000000010 -> 10
+   00000000000000000000000000000011 -> 11
+@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|There are no possible illegal states for state machine rx_packet[3:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
+Encoding state machine tx_packet[3:0] (in view: work.UART_Packets(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 00
+   00000000000000000000000000000001 -> 01
+   00000000000000000000000000000010 -> 10
+   00000000000000000000000000000011 -> 11
+@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|There are no possible illegal states for state machine tx_packet[3:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
 
 Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
-@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist UART_echo_top 
+@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist UART_wrapper 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
 
@@ -249,7 +392,7 @@ Clock Summary
           Start     Requested     Requested     Clock        Clock                Clock
 Level     Clock     Frequency     Period        Type         Group                Load 
 ---------------------------------------------------------------------------------------
-0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     61   
+0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     268  
 =======================================================================================
 
 
@@ -257,11 +400,11 @@ Level     Clock     Frequency     Period        Type         Group              
 Clock Load Summary
 ***********************
 
-          Clock     Source          Clock Pin         Non-clock Pin     Non-clock Pin
-Clock     Load      Pin             Seq Example       Seq Example       Comb Example 
--------------------------------------------------------------------------------------
-ipClk     61        ipClk(port)     UART_TxSend.C     -                 -            
-=====================================================================================
+          Clock     Source          Clock Pin            Non-clock Pin     Non-clock Pin
+Clock     Load      Pin             Seq Example          Seq Example       Comb Example 
+----------------------------------------------------------------------------------------
+ipClk     268       ipClk(port)     register.Reset.C     -                 -            
+========================================================================================
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -274,15 +417,15 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 61 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 268 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-============================ Non-Gated/Non-Generated Clocks ============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance 
-----------------------------------------------------------------------------------------
-@KP:ckid0_0       ipClk               port                   61         UART_TxData[7:0]
-========================================================================================
+==================================== Non-Gated/Non-Generated Clocks =====================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
+---------------------------------------------------------------------------------------------------------
+@KP:ckid0_0       ipClk               port                   268        register.opWrRegisters\.LEDs[7:0]
+=========================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -290,24 +433,26 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 175MB peak: 175MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 89MB peak: 175MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 93MB peak: 176MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Mon May  9 09:08:44 2022
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Mon May  9 09:25:31 2022
 
 ###########################################################]
-# Mon May  9 09:08:44 2022
+Map & Optimize Report
+
+# Mon May  9 09:25:31 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -332,92 +477,154 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 129MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 120MB peak: 129MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 133MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 134MB)
 
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 168MB peak: 168MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 169MB peak: 169MB)
 
+@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Removing sequential instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 171MB peak: 171MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[8] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[9] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[10] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[11] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[12] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[13] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[14] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[15] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[16] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[17] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[18] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[19] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[20] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[21] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[22] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[23] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[24] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[25] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[26] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[27] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[28] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[29] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[30] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[31] is reduced to a combinational gate by constant propagation.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[31] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[30] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[29] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[28] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[27] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[26] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[25] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[24] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[23] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[22] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[21] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[20] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[19] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[18] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[17] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[16] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[15] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[14] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[13] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[12] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[11] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[10] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[9] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Removing sequential instance control.rd_data[8] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Found counter in view:work.UART_Packets(verilog) instance tx_byte_length[7:0] 
 @N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found counter in view:work.UART(verilog) instance clk_cnt[8:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+
+@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing instance packetiser.rst because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Removing instance packetiser.UART_Inst.rst because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
+
+@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register packetiser.UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP
+@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register packetiser.UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP
+@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register packetiser.UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP
+@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":40:0:40:5|Found false-path constraint on register control.wr_byte_cnt[0] which prevents the register from being packed into DSP
+@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Found false-path constraint on register packetiser.rx_len[0] which prevents the register from being packed into DSP
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
-
-@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP
-@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP
-@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP
-
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
-
-
-Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:01s		    11.60ns		  87 /        61
+   1		0h:00m:02s		    11.34ns		 193 /       217
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 182MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Boundary register UART_Inst.opTx.fb (in view: work.UART_echo_top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_7_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_6_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_5_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_4_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_3_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_2_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_1_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_0_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Boundary register packetiser.UART_Inst.opTx.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 182MB peak: 182MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 141MB peak: 177MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 182MB)
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 177MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 183MB peak: 183MB)
 
 Writing EDIF Netlist and constraint files
 @N: FX1056 |Writing EDF file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 182MB peak: 182MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 188MB peak: 188MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 183MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 188MB)
 
 @N: MT615 |Found clock ipClk with period 20.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Mon May  9 09:08:48 2022
+# Timing report written on Mon May  9 09:25:35 2022
 #
 
 
-Top view:               UART_echo_top
+Top view:               UART_wrapper
 Requested Frequency:    50.0 MHz
 Wire load mode:         top
 Paths requested:        5
@@ -433,12 +640,12 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 10.239
+Worst slack in design: 10.327
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock           
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group           
 -------------------------------------------------------------------------------------------------------------------
-ipClk              50.0 MHz      102.4 MHz     20.000        9.761         10.239     declared     default_clkgroup
+ipClk              50.0 MHz      103.4 MHz     20.000        9.673         10.327     declared     default_clkgroup
 ===================================================================================================================
 
 
@@ -452,7 +659,7 @@ Clocks            |    rise  to  rise    |    fall  to  fall   |    rise  to  fa
 ---------------------------------------------------------------------------------------------------------
 Starting  Ending  |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ---------------------------------------------------------------------------------------------------------
-ipClk     ipClk   |  20.000      10.239  |  No paths    -      |  No paths    -      |  No paths    -    
+ipClk     ipClk   |  20.000      10.327  |  No paths    -      |  No paths    -      |  No paths    -    
 =========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -475,41 +682,41 @@ Detailed Report for Clock: ipClk
 Starting Points with Worst Slack
 ********************************
 
-                          Starting                                          Arrival           
-Instance                  Reference     Type        Pin     Net             Time        Slack 
-                          Clock                                                               
-----------------------------------------------------------------------------------------------
-UART_Inst.clk_cnt2[0]     ipClk         FD1S3AX     Q       un4lt1          1.251       10.239
-UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     Q       un4lto1         1.213       10.277
-UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     Q       clk_cnt2[6]     1.166       10.324
-UART_Inst.clk_cnt2[7]     ipClk         FD1S3AX     Q       clk_cnt2[7]     1.166       10.324
-UART_Inst.clk_cnt2[2]     ipClk         FD1S3AX     Q       un4lto2         1.213       11.160
-UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     Q       clk_cnt2[3]     1.213       11.160
-UART_Inst.clk_cnt2[4]     ipClk         FD1S3AX     Q       clk_cnt2[4]     1.213       11.160
-UART_Inst.clk_cnt[0]      ipClk         FD1P3AX     Q       clk_cnt[0]      1.091       11.844
-UART_Inst.clk_cnt[1]      ipClk         FD1P3AX     Q       clk_cnt[1]      1.091       11.844
-UART_Inst.clk_cnt[2]      ipClk         FD1P3AX     Q       clk_cnt[2]      1.091       11.844
-==============================================================================================
+                                     Starting                                          Arrival           
+Instance                             Reference     Type        Pin     Net             Time        Slack 
+                                     Clock                                                               
+---------------------------------------------------------------------------------------------------------
+packetiser.UART_Inst.clk_cnt2[0]     ipClk         FD1S3JX     Q       un4lt1          1.251       10.327
+packetiser.UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     Q       un4lto5         1.251       10.327
+packetiser.UART_Inst.clk_cnt2[1]     ipClk         FD1S3IX     Q       un4lto1         1.213       10.365
+packetiser.UART_Inst.clk_cnt2[2]     ipClk         FD1S3IX     Q       un4lto2         1.213       10.365
+packetiser.UART_Inst.clk_cnt2[3]     ipClk         FD1S3JX     Q       clk_cnt2[3]     1.213       10.365
+packetiser.UART_Inst.clk_cnt2[4]     ipClk         FD1S3IX     Q       clk_cnt2[4]     1.213       10.365
+packetiser.UART_Inst.clk_cnt2[6]     ipClk         FD1S3IX     Q       clk_cnt2[6]     1.213       10.365
+packetiser.UART_Inst.clk_cnt2[7]     ipClk         FD1S3JX     Q       clk_cnt2[7]     1.213       10.365
+packetiser.UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     Q       clk_cnt2[8]     1.166       11.295
+packetiser.UART_Inst.clk_cnt2[9]     ipClk         FD1S3JX     Q       clk_cnt2[9]     1.166       11.295
+=========================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                          Starting                                              Required           
-Instance                  Reference     Type        Pin     Net                 Time         Slack 
-                          Clock                                                                    
----------------------------------------------------------------------------------------------------
-UART_Inst.clk_cnt2[9]     ipClk         FD1S3AX     D       clk_cnt2_0[9]       19.264       10.239
-UART_Inst.clk_cnt2[7]     ipClk         FD1S3AX     D       clk_cnt2_0_0[7]     19.264       10.327
-UART_Inst.clk_cnt2[8]     ipClk         FD1S3AX     D       clk_cnt2_0_0[8]     19.264       10.327
-UART_Inst.clk_cnt2[5]     ipClk         FD1S3AX     D       clk_cnt2_0_0[5]     19.264       10.415
-UART_Inst.clk_cnt2[6]     ipClk         FD1S3AX     D       clk_cnt2_0[6]       19.264       10.415
-UART_Inst.clk_cnt2[3]     ipClk         FD1S3AX     D       clk_cnt2_0[3]       19.264       10.503
-UART_Inst.clk_cnt2[4]     ipClk         FD1S3AX     D       clk_cnt2_0_0[4]     19.264       10.503
-UART_Inst.clk_cnt2[1]     ipClk         FD1S3AX     D       clk_cnt2_0[1]       19.264       10.591
-UART_Inst.clk_cnt2[2]     ipClk         FD1S3AX     D       clk_cnt2_0[2]       19.264       10.591
-UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]        20.057       11.844
-===================================================================================================
+                                     Starting                                                         Required           
+Instance                             Reference     Type        Pin     Net                            Time         Slack 
+                                     Clock                                                                               
+-------------------------------------------------------------------------------------------------------------------------
+packetiser.UART_Inst.clk_cnt2[7]     ipClk         FD1S3JX     D       clk_cnt2_0[7]                  19.264       10.327
+packetiser.UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     D       clk_cnt2_8[8]                  19.264       10.327
+packetiser.UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     D       clk_cnt2_8[5]                  19.264       10.415
+packetiser.UART_Inst.clk_cnt2[4]     ipClk         FD1S3IX     D       clk_cnt2_8[4]                  19.264       10.503
+packetiser.UART_Inst.clk_cnt2[9]     ipClk         FD1S3JX     D       un1_clk_cnt2_11_s_9_0_S0       20.057       11.577
+packetiser.UART_Inst.clk_cnt2[6]     ipClk         FD1S3IX     D       un1_clk_cnt2_11_cry_5_0_S1     20.057       11.753
+packetiser.UART_Inst.clk_cnt2[3]     ipClk         FD1S3JX     D       un1_clk_cnt2_11_cry_3_0_S0     20.057       11.841
+packetiser.UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]                   20.057       11.844
+packetiser.UART_Inst.clk_cnt[8]      ipClk         FD1P3AX     D       clk_cnt_s[8]                   20.057       11.844
+packetiser.UART_Inst.clk_cnt2[1]     ipClk         FD1S3IX     D       un1_clk_cnt2_11_cry_1_0_S0     20.057       11.929
+=========================================================================================================================
 
 
 
@@ -523,56 +730,53 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         19.264
 
-    - Propagation time:                      9.025
+    - Propagation time:                      8.937
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     10.239
+    = Slack (critical) :                     10.327
 
-    Number of logic level(s):                11
-    Starting point:                          UART_Inst.clk_cnt2[0] / Q
-    Ending point:                            UART_Inst.clk_cnt2[9] / D
+    Number of logic level(s):                10
+    Starting point:                          packetiser.UART_Inst.clk_cnt2[0] / Q
+    Ending point:                            packetiser.UART_Inst.clk_cnt2[8] / D
     The start point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
     The end   point is clocked by            ipClk [rising] (rise=0.000 fall=10.000 period=20.000) on pin CK
 
-Instance / Net                                           Pin      Pin               Arrival     No. of    
-Name                                        Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------
-UART_Inst.clk_cnt2[0]                       FD1S3AX      Q        Out     1.251     1.251 r     -         
-un4lt1                                      Net          -        -       -         -           5         
-UART_Inst.clk_cnt2_2_sqmuxa_i_a2_0_a2_4     ORCALUT4     C        In      0.000     1.251 r     -         
-UART_Inst.clk_cnt2_2_sqmuxa_i_a2_0_a2_4     ORCALUT4     Z        Out     0.883     2.134 f     -         
-clk_cnt2_2_sqmuxa_i_a2_0_a2_4               Net          -        -       -         -           1         
-UART_Inst.clk_cnt2_2_sqmuxa_i_a2_0_a2_5     ORCALUT4     C        In      0.000     2.134 f     -         
-UART_Inst.clk_cnt2_2_sqmuxa_i_a2_0_a2_5     ORCALUT4     Z        Out     0.883     3.018 f     -         
-clk_cnt2_2_sqmuxa_i_a2_0_a2_5               Net          -        -       -         -           1         
-UART_Inst.clk_cnt2_2_sqmuxa_i_a2_0_a2       ORCALUT4     C        In      0.000     3.018 f     -         
-UART_Inst.clk_cnt2_2_sqmuxa_i_a2_0_a2       ORCALUT4     Z        Out     1.212     4.230 f     -         
-clk_cnt2_2_sqmuxa_i_a2_0_a2                 Net          -        -       -         -           13        
-UART_Inst.un1_rst_5_0_2                     ORCALUT4     C        In      0.000     4.230 f     -         
-UART_Inst.un1_rst_5_0_2                     ORCALUT4     Z        Out     1.194     5.424 f     -         
-un1_rst_5_0_2                               Net          -        -       -         -           11        
-UART_Inst.un1_clk_cnt2_11_cry_0_0           CCU2B        B1       In      0.000     5.424 f     -         
-UART_Inst.un1_clk_cnt2_11_cry_0_0           CCU2B        COUT     Out     1.243     6.667 r     -         
-un1_clk_cnt2_11_cry_0                       Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_11_cry_1_0           CCU2B        CIN      In      0.000     6.667 r     -         
-UART_Inst.un1_clk_cnt2_11_cry_1_0           CCU2B        COUT     Out     0.088     6.755 r     -         
-un1_clk_cnt2_11_cry_2                       Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_11_cry_3_0           CCU2B        CIN      In      0.000     6.755 r     -         
-UART_Inst.un1_clk_cnt2_11_cry_3_0           CCU2B        COUT     Out     0.088     6.843 r     -         
-un1_clk_cnt2_11_cry_4                       Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_11_cry_5_0           CCU2B        CIN      In      0.000     6.843 r     -         
-UART_Inst.un1_clk_cnt2_11_cry_5_0           CCU2B        COUT     Out     0.088     6.931 r     -         
-un1_clk_cnt2_11_cry_6                       Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_11_cry_7_0           CCU2B        CIN      In      0.000     6.931 r     -         
-UART_Inst.un1_clk_cnt2_11_cry_7_0           CCU2B        COUT     Out     0.088     7.019 r     -         
-un1_clk_cnt2_11_cry_8                       Net          -        -       -         -           1         
-UART_Inst.un1_clk_cnt2_11_s_9_0             CCU2B        CIN      In      0.000     7.019 r     -         
-UART_Inst.un1_clk_cnt2_11_s_9_0             CCU2B        S0       Out     1.461     8.480 r     -         
-un1_clk_cnt2_11_s_9_0_S0                    Net          -        -       -         -           1         
-UART_Inst.clk_cnt2_0[9]                     ORCALUT4     B        In      0.000     8.480 r     -         
-UART_Inst.clk_cnt2_0[9]                     ORCALUT4     Z        Out     0.545     9.025 r     -         
-clk_cnt2_0[9]                               Net          -        -       -         -           1         
-UART_Inst.clk_cnt2[9]                       FD1S3AX      D        In      0.000     9.025 r     -         
-==========================================================================================================
+Instance / Net                                                 Pin      Pin               Arrival     No. of    
+Name                                              Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------------------------
+packetiser.UART_Inst.clk_cnt2[0]                  FD1S3JX      Q        Out     1.251     1.251 r     -         
+un4lt1                                            Net          -        -       -         -           5         
+packetiser.UART_Inst.clk_cnt2_2_sqmuxa_i_a2_4     ORCALUT4     B        In      0.000     1.251 r     -         
+packetiser.UART_Inst.clk_cnt2_2_sqmuxa_i_a2_4     ORCALUT4     Z        Out     0.883     2.134 f     -         
+clk_cnt2_2_sqmuxa_i_a2_4                          Net          -        -       -         -           1         
+packetiser.UART_Inst.clk_cnt2_2_sqmuxa_i_a2       ORCALUT4     B        In      0.000     2.134 f     -         
+packetiser.UART_Inst.clk_cnt2_2_sqmuxa_i_a2       ORCALUT4     Z        Out     1.212     3.347 f     -         
+N_116                                             Net          -        -       -         -           13        
+packetiser.UART_Inst.clk_cnt2_2_sqmuxa_i          ORCALUT4     A        In      0.000     3.347 f     -         
+packetiser.UART_Inst.clk_cnt2_2_sqmuxa_i          ORCALUT4     Z        Out     0.883     4.230 f     -         
+N_85                                              Net          -        -       -         -           1         
+packetiser.UART_Inst.un1_rx_state_0_sqmuxa        ORCALUT4     A        In      0.000     4.230 f     -         
+packetiser.UART_Inst.un1_rx_state_0_sqmuxa        ORCALUT4     Z        Out     1.194     5.424 r     -         
+un1_rx_state_0_sqmuxa                             Net          -        -       -         -           11        
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_0_0      CCU2B        B1       In      0.000     5.424 r     -         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_0_0      CCU2B        COUT     Out     1.243     6.667 r     -         
+un1_clk_cnt2_11_cry_0                             Net          -        -       -         -           1         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_1_0      CCU2B        CIN      In      0.000     6.667 r     -         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_1_0      CCU2B        COUT     Out     0.088     6.755 r     -         
+un1_clk_cnt2_11_cry_2                             Net          -        -       -         -           1         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_3_0      CCU2B        CIN      In      0.000     6.755 r     -         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_3_0      CCU2B        COUT     Out     0.088     6.843 r     -         
+un1_clk_cnt2_11_cry_4                             Net          -        -       -         -           1         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_5_0      CCU2B        CIN      In      0.000     6.843 r     -         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_5_0      CCU2B        COUT     Out     0.088     6.931 r     -         
+un1_clk_cnt2_11_cry_6                             Net          -        -       -         -           1         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_7_0      CCU2B        CIN      In      0.000     6.931 r     -         
+packetiser.UART_Inst.un1_clk_cnt2_11_cry_7_0      CCU2B        S1       Out     1.461     8.392 r     -         
+un1_clk_cnt2_11_cry_7_0_S1                        Net          -        -       -         -           1         
+packetiser.UART_Inst.clk_cnt2_8[8]                ORCALUT4     A        In      0.000     8.392 r     -         
+packetiser.UART_Inst.clk_cnt2_8[8]                ORCALUT4     Z        Out     0.545     8.937 r     -         
+clk_cnt2_8[8]                                     Net          -        -       -         -           1         
+packetiser.UART_Inst.clk_cnt2[8]                  FD1S3IX      D        In      0.000     8.937 r     -         
+================================================================================================================
 
 
 
@@ -583,44 +787,43 @@ Timing exceptions that could not be applied
 @W: MT447 :"c:/users/dayalan nair/desktop/uct-fpga-course-2022/dnair_practicals/counter/counter.fdc":9:0:9:0|Timing constraint (from [get_registers *] to [get_ports bp*]) (false path) was not applied to the design because none of the '-to' objects specified by the constraint exist in the design 
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 183MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 188MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 183MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 186MB peak: 188MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfxp2_5e-5
 
-Register bits: 61 of 4752 (1%)
+Register bits: 217 of 4752 (5%)
 PIC Latch:       0
 I/O cells:       12
 
 
 Details:
-CCU2B:          19
-FD1P3AX:        34
-FD1P3IX:        2
-FD1S3AX:        15
-FD1S3IX:        6
-FD1S3JX:        2
+CCU2B:          32
+FD1P3AX:        148
+FD1P3IX:        13
+FD1S3AX:        10
+FD1S3IX:        34
+FD1S3JX:        10
 GSR:            1
 IB:             3
 IFS1P3DX:       1
-INV:            1
+INV:            4
 OB:             9
 OFS1P3JX:       1
-ORCALUT4:       83
-PFUMX:          1
+ORCALUT4:       189
 PUR:            1
-VHI:            2
-VLO:            2
+VHI:            5
+VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 65MB peak: 183MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 68MB peak: 188MB)
 
-Process took 0h:00m:04s realtime, 0h:00m:03s cputime
-# Mon May  9 09:08:48 2022
+Process took 0h:00m:04s realtime, 0h:00m:04s cputime
+# Mon May  9 09:25:36 2022
 
 ###########################################################]
 
@@ -639,7 +842,7 @@ Writing the design to Counter_impl1.ngo...
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 10 MB
+Peak Memory Usage: 12 MB
 
 
 ngdbuild  -a "LatticeXP2" -d LFXP2-5E  -p "C:/lscc/diamond/3.12/ispfpga/mg5a00/data"  -p "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1" -p "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter"  "Counter_impl1.ngo" "Counter_impl1.ngd"  	
@@ -662,12 +865,12 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    182 blocks expanded
+    465 blocks expanded
 Complete the first expansion.
 Writing 'Counter_impl1.ngd' ...
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 18 MB
+Peak Memory Usage: 19 MB
 
 
 map -a "LatticeXP2" -p LFXP2-5E -t TQFP144 -s 5 -oc Commercial   "Counter_impl1.ngd" -o "Counter_impl1_map.ncd" -pr "Counter_impl1.prf" -mp "Counter_impl1.mrp" -lpf "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/impl1/Counter_impl1_synplify.lpf" -lpf "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Counter.lpf"             
@@ -700,23 +903,23 @@ Removing unused logic...
 
 Optimizing...
 
-38 CCU2 constant inputs absorbed.
+80 CCU2 constant inputs absorbed.
 
 
 
 
 Design Summary:
-   Number of registers:     61 out of  3864 (2%)
-      PFU registers:           59 out of  3564 (2%)
+   Number of registers:    217 out of  3864 (6%)
+      PFU registers:          215 out of  3564 (6%)
       PIO registers:            2 out of   300 (1%)
-   Number of SLICEs:        72 out of  2376 (3%)
-      SLICEs as Logic/ROM:     72 out of  2376 (3%)
+   Number of SLICEs:       195 out of  2376 (8%)
+      SLICEs as Logic/ROM:    195 out of  2376 (8%)
       SLICEs as RAM:            0 out of   405 (0%)
-      SLICEs as Carry:         19 out of  2376 (1%)
-   Number of LUT4s:        124 out of  4752 (3%)
-      Number used as logic LUTs:         86
+      SLICEs as Carry:         32 out of  2376 (1%)
+   Number of LUT4s:        256 out of  4752 (5%)
+      Number used as logic LUTs:        192
       Number used as distributed RAM:     0
-      Number used as ripple logic:       38
+      Number used as ripple logic:       64
       Number used as shift registers:     0
    Number of PIO sites used: 12 out of 100 (12%)
    Number of PIO FIXEDDELAY:    0
@@ -746,34 +949,55 @@ Design Summary:
    --------------------------------
    Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
-     Net ipClk_c: 39 loads, 39 rising, 0 falling (Driver: PIO ipClk )
-   Number of Clock Enables:  8
-     Net N_35: 1 loads, 0 LSLICEs
-     Net UART_TxData17: 5 loads, 5 LSLICEs
-     Net UART_Inst/un1_rx_state_1_0: 1 loads, 1 LSLICEs
-     Net UART_Inst/un1_rst_2_i: 5 loads, 5 LSLICEs
-     Net UART_Inst/un1_rst_4_0_a2_0dup: 4 loads, 4 LSLICEs
-     Net UART_Inst/opTxBusy_en_0: 1 loads, 1 LSLICEs
-     Net UART_Inst/N_8_i: 5 loads, 5 LSLICEs
-     Net N_54_i_i: 1 loads, 1 LSLICEs
-   Number of LSRs:  5
-     Net UART_Inst.rst: 3 loads, 2 LSLICEs
-     Net UART_Inst/un1_rst_4_0_a2_0_a6_0dup: 2 loads, 2 LSLICEs
-     Net UART_Inst/rx_state_0_sqmuxa: 2 loads, 2 LSLICEs
-     Net UART_Inst/un1_rx_cnt_6_s_3_0_S0: 1 loads, 1 LSLICEs
-     Net UART_Inst/un1_tx_cnt_6_s_3_0_S0: 1 loads, 1 LSLICEs
+     Net ipClk_c: 126 loads, 126 rising, 0 falling (Driver: PIO ipClk )
+   Number of Clock Enables:  23
+     Net un1_clk_cnt_0_sqmuxa_i_i: 1 loads, 0 LSLICEs
+     Net control.rst: 1 loads, 1 LSLICEs
+     Net register/LEDs11_i: 4 loads, 4 LSLICEs
+     Net control/opWrData_0_sqmuxa: 16 loads, 16 LSLICEs
+     Net control/Valid_RNO: 1 loads, 1 LSLICEs
+     Net control/opAddress_0_sqmuxa_1: 4 loads, 4 LSLICEs
+     Net control/state_0_sqmuxa_0_i_0: 1 loads, 1 LSLICEs
+     Net control/state_0_sqmuxa_1: 8 loads, 8 LSLICEs
+     Net control/un1_state_2_i: 1 loads, 1 LSLICEs
+     Net control/N_158_i: 4 loads, 4 LSLICEs
+     Net packetiser/opTxReady_0_sqmuxa_1_i: 1 loads, 1 LSLICEs
+     Net packetiser/un1_rst_2_i: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/un1_rst_2_i: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/opRxValid_RNO: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/un1_rst_4_0_a2_0dup: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/opTxBusy_en_0: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/N_258_i: 5 loads, 5 LSLICEs
+     Net packetiser/rx_packet_1_sqmuxa: 4 loads, 4 LSLICEs
+     Net packetiser/rx_packet_2_sqmuxa_1: 4 loads, 4 LSLICEs
+     Net packetiser/N_262_i: 4 loads, 4 LSLICEs
+     Net packetiser/N_193_i: 5 loads, 5 LSLICEs
+     Net packetiser/rx_packet_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net packetiser/tx_packet_0_sqmuxa_1: 4 loads, 4 LSLICEs
+   Number of LSRs:  11
+     Net control.rst: 8 loads, 7 LSLICEs
+     Net crAddress[1]: 4 loads, 4 LSLICEs
+     Net control/state_RNIMKMQ[0]: 3 loads, 3 LSLICEs
+     Net control/wr_byte_cnt_5[2]: 1 loads, 1 LSLICEs
+     Net control/un1_rd_byte_cnt_0_sqmuxa_1_i_0: 3 loads, 3 LSLICEs
+     Net control/opWrEnable11: 3 loads, 3 LSLICEs
+     Net packetiser/fb: 1 loads, 1 LSLICEs
+     Net packetiser/rx_state[0]: 6 loads, 6 LSLICEs
+     Net packetiser/UART_Inst/un1_rst_4_0_a2_0_a3_0dup: 2 loads, 2 LSLICEs
+     Net packetiser/UART_Inst/un1_tx_cnt_6_s_3_0_S0: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/rx_state_0_sqmuxa: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net UART_Inst/VCC: 27 loads
-     Net UART_Inst.rst: 21 loads
-     Net UART_Inst/tx_state[0]: 20 loads
-     Net UART_Inst/clk_cnt2_2_sqmuxa_i_a2_0_a2: 13 loads
-     Net UART_Inst/rx_state_0_sqmuxa: 13 loads
-     Net UART_Inst/tx_state[1]: 12 loads
-     Net UART_Inst/N_83: 11 loads
-     Net UART_Inst/rx_state[0]: 11 loads
-     Net UART_Inst/un1_rst_5_0_2: 11 loads
-     Net UART_Inst/clk_cnt: 10 loads
+     Net control.rst: 57 loads
+     Net packetiser/tx_state[0]: 29 loads
+     Net packetiser/UART_Inst/VCC: 27 loads
+     Net packetiser/UART_Inst/tx_state[0]: 20 loads
+     Net control/rd_byte_cnt[2]: 19 loads
+     Net packetiser/rx_packet_2_sqmuxa: 17 loads
+     Net control/opWrData_0_sqmuxa: 16 loads
+     Net control/state[1]: 16 loads
+     Net packetiser/rx_state[0]: 15 loads
+     Net control/rd_data10_sn: 13 loads
  
 
    Number of warnings:  0
@@ -783,7 +1007,7 @@ Design Summary:
 
 Total CPU Time: 0 secs  
 Total REAL Time: 0 secs  
-Peak Memory Usage: 59 MB
+Peak Memory Usage: 60 MB
 
 Dumping design to file Counter_impl1_map.ncd.
 
@@ -797,7 +1021,7 @@ Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Loading design for application trce from file counter_impl1_map.ncd.
-Design name: UART_echo_top
+Design name: UART_wrapper
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFXP2-5E
@@ -810,7 +1034,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:08:52 2022
+Mon May 09 09:25:41 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -840,11 +1064,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 3606 paths, 1 nets, and 551 connections (99.82% coverage)
+Constraints cover 5240 paths, 1 nets, and 1291 connections (97.07% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:08:52 2022
+Mon May 09 09:25:42 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -874,7 +1098,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 3606 paths, 1 nets, and 551 connections (99.82% coverage)
+Constraints cover 5240 paths, 1 nets, and 1323 connections (99.47% coverage)
 
 
 
@@ -890,7 +1114,7 @@ Cumulative negative slack: 0 (0+0)
 
 Total CPU Time: 1 secs 
 Total REAL Time: 2 secs 
-Peak Memory Usage: 156 MB
+Peak Memory Usage: 162 MB
 
 
 mpartrce -p "Counter_impl1.p2t" -f "Counter_impl1.p3t" -tf "Counter_impl1.pt" "Counter_impl1_map.ncd" "Counter_impl1.ncd"
@@ -900,7 +1124,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "Counter_impl1_map.ncd"
-Mon May 09 09:08:53 2022
+Mon May 09 09:25:43 2022
 
 PAR: Place And Route Diamond (64-bit) 3.12.0.240.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/promote.xml" -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1 Counter_impl1_map.ncd Counter_impl1.dir/5_1.ncd Counter_impl1.prf
@@ -909,7 +1133,7 @@ Placement level-cost: 5-1.
 Routing Iterations: 6
 
 Loading design for application par from file Counter_impl1_map.ncd.
-Design name: UART_echo_top
+Design name: UART_wrapper
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFXP2-5E
@@ -927,18 +1151,18 @@ Device utilization summary:
    IOLOGIC            2/196           1% used
    PIO (prelim)      12/174           6% used
                      12/100          12% bonded
-   SLICE             72/2376          3% used
+   SLICE            195/2376          8% used
 
 
 
-Number of Signals: 187
-Number of Connections: 552
+Number of Signals: 478
+Number of Connections: 1330
 
 Pin Constraint Summary:
    12 out of 12 pins locked (100% locked).
 
 The following 1 signal is selected to use the primary clock routing resources:
-    ipClk_c (driver: ipClk, clk load #: 39)
+    ipClk_c (driver: ipClk, clk load #: 126)
 
 No signal is selected as DCS clock.
 
@@ -946,18 +1170,18 @@ No signal is selected as secondary clock.
 
 No signal is selected as Global Set/Reset.
 Starting Placer Phase 0.
-........
+..........
 Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
-...................
-Placer score = 18231.
-Finished Placer Phase 1.  REAL time: 7 secs 
+....................
+Placer score = 45789.
+Finished Placer Phase 1.  REAL time: 8 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  17994
-Finished Placer Phase 2.  REAL time: 7 secs 
+Placer score =  45606
+Finished Placer Phase 2.  REAL time: 8 secs 
 
 
 ------------------ Clock Report ------------------
@@ -968,7 +1192,7 @@ Global Clock Resources:
   CLKDIV     : 0 out of 2 (0%)
 
 Global Clocks:
-  PRIMARY "ipClk_c" from comp "ipClk" on CLK_PIN site "21 (PL12A)", clk load = 39
+  PRIMARY "ipClk_c" from comp "ipClk" on CLK_PIN site "21 (PL12A)", clk load = 126
 
   PRIMARY  : 1 out of 8 (12%)
      DCS   : 0 out of 2 (0%)
@@ -1013,16 +1237,16 @@ DSP Block #:              1 2 3
 # of MULT9X9ADDSUBB            
 # of MULT9X9ADDSUBSUMB         
 
-Total placer CPU time: 6 secs 
+Total placer CPU time: 8 secs 
 
 Dumping design to file Counter_impl1.dir/5_1.ncd.
 
-0 connections routed; 552 unrouted.
+0 connections routed; 1330 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 8 secs 
+Completed router resource preassignment. Real time: 10 secs 
 
-Start NBR router at 09:09:01 05/09/22
+Start NBR router at 09:25:53 05/09/22
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -1037,32 +1261,35 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-Start NBR special constraint process at 09:09:01 05/09/22
+Start NBR special constraint process at 09:25:53 05/09/22
 
-Start NBR section for initial routing at 09:09:01 05/09/22
+Start NBR section for initial routing at 09:25:53 05/09/22
 Level 4, iteration 1
-11(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.476ns/0.000ns; real time: 8 secs 
+37(0.02%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 10.471ns/0.000ns; real time: 11 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 09:09:01 05/09/22
+Start NBR section for normal routing at 09:25:54 05/09/22
 Level 4, iteration 1
-4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.366ns/0.000ns; real time: 8 secs 
+14(0.01%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 10.471ns/0.000ns; real time: 11 secs 
 Level 4, iteration 2
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 10.471ns/0.000ns; real time: 11 secs 
+Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.366ns/0.000ns; real time: 8 secs 
+Estimated worst slack/total negative slack<setup>: 10.425ns/0.000ns; real time: 11 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 09:09:01 05/09/22
+Start NBR section for setup/hold timing optimization with effort level 3 at 09:25:54 05/09/22
 
-Start NBR section for re-routing at 09:09:02 05/09/22
+Start NBR section for re-routing at 09:25:55 05/09/22
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.366ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 10.425ns/0.000ns; real time: 12 secs 
 
-Start NBR section for post-routing at 09:09:02 05/09/22
+Start NBR section for post-routing at 09:25:55 05/09/22
 
 End NBR router with 0 unrouted connection
 
@@ -1070,17 +1297,17 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 10.366ns
+  Estimated worst slack<setup> : 10.425ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-Total CPU time 9 secs 
-Total REAL time: 10 secs 
+Total CPU time 13 secs 
+Total REAL time: 14 secs 
 Completely routed.
-End of route.  552 routed (100.00%); 0 unrouted.
+End of route.  1330 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -1091,14 +1318,14 @@ Dumping design to file Counter_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 10.366
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 10.425
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.175
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 9 secs 
-Total REAL time to completion: 10 secs 
+Total CPU  time to completion: 13 secs 
+Total REAL time to completion: 14 secs 
 
 par done!
 
@@ -1122,7 +1349,7 @@ Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 Loading design for application trce from file counter_impl1.ncd.
-Design name: UART_echo_top
+Design name: UART_wrapper
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFXP2-5E
@@ -1135,7 +1362,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:09:05 2022
+Mon May 09 09:25:58 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1165,11 +1392,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 3606 paths, 1 nets, and 551 connections (99.82% coverage)
+Constraints cover 5240 paths, 1 nets, and 1323 connections (99.47% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:09:05 2022
+Mon May 09 09:25:58 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1199,7 +1426,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 3606 paths, 1 nets, and 551 connections (99.82% coverage)
+Constraints cover 5240 paths, 1 nets, and 1323 connections (99.47% coverage)
 
 
 
@@ -1213,9 +1440,9 @@ Cumulative negative slack: 0 (0+0)
 
 --------------------------------------------------------------------------------
 
-Total CPU Time: 1 secs 
+Total CPU Time: 2 secs 
 Total REAL Time: 2 secs 
-Peak Memory Usage: 155 MB
+Peak Memory Usage: 162 MB
 
 
 tmcheck -par "Counter_impl1.par" 
@@ -1232,7 +1459,7 @@ Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
 
 
 Loading design for application Bitgen from file Counter_impl1.ncd.
-Design name: UART_echo_top
+Design name: UART_wrapper
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFXP2-5E
@@ -1283,5 +1510,5 @@ Preference Summary:
 Creating bit map...
 Saving bit stream in "Counter_impl1.jed".
 Total CPU Time: 2 secs 
-Total REAL Time: 2 secs 
-Peak Memory Usage: 277 MB
+Total REAL Time: 3 secs 
+Peak Memory Usage: 278 MB

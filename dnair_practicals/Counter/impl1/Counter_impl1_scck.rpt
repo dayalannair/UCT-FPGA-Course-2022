@@ -13,7 +13,7 @@ Hostname: DAYALAN1
 
 Implementation : impl1
 
-# Written on Mon May  9 09:08:42 2022
+# Written on Mon May  9 09:25:29 2022
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\counter.fdc"
@@ -33,15 +33,15 @@ Clock Summary
           Start     Requested     Requested     Clock        Clock                Clock
 Level     Clock     Frequency     Period        Type         Group                Load 
 ---------------------------------------------------------------------------------------
-0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     61   
+0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     268  
 =======================================================================================
 
 
 Clock Load Summary
 ******************
 
-          Clock     Source          Clock Pin         Non-clock Pin     Non-clock Pin
-Clock     Load      Pin             Seq Example       Seq Example       Comb Example 
--------------------------------------------------------------------------------------
-ipClk     61        ipClk(port)     UART_TxSend.C     -                 -            
-=====================================================================================
+          Clock     Source          Clock Pin            Non-clock Pin     Non-clock Pin
+Clock     Load      Pin             Seq Example          Seq Example       Comb Example 
+----------------------------------------------------------------------------------------
+ipClk     268       ipClk(port)     register.Reset.C     -                 -            
+========================================================================================

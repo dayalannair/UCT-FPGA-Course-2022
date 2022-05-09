@@ -12,8 +12,8 @@ import Structures::*;
 module UART_wrapper(
   input ipClk,
   input ipnReset,
-  input ipRx,
-  output opRx,
+  input ipUART_Rx,
+  output reg opUART_Tx,
   output [7:0]opLED
 );
 
@@ -41,8 +41,8 @@ UART_Packets packetiser(
   .ipTxStream (cpTxPacket), // packet to send from control
   .opRxStream (cpRxPacket), // received packet to control
   .opTxReady (cpTxReady), 
-  .opTx (opTx), 
-  .ipRx (ipRx)
+  .opTx (opUART_Tx), 
+  .ipRx (ipUART_Rx)
 );
 
 Control control(

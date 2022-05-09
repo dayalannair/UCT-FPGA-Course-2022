@@ -23,11 +23,14 @@ s.port='COM9'
 s.baudrate=115200
 if not s.isOpen():
 		print("Com9 is not open \n")
+		exit()
+
 s.open()
 for n in range(500):
 	print(Read(s, Buttons))
 	Time = Read(s, ClockTicks)
-	#Write(s, LEDs, 7)
+	print("Writing to LEDS...\n")
+	Write(s, LEDs, 7)
 
 	print(Time)
 	sys.stdout.flush()

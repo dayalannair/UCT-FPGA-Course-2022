@@ -30,7 +30,7 @@ Control control(
   .ipClk (ipClk),
   .ipReset (ipReset),
   .ipRxPkt (ipRxPacket),
-  .opTxPkt (opTxPacket), //output of control is input of packetiser
+  .opTxPkt (opTxPacket),
   .opAddress (crAddress),
   .opWrData (crWrData),
   .ipRdData (crRdData),
@@ -51,17 +51,17 @@ Registers register(
 
 // read 4 bytes
 //reg[7:0] sync = 8'h55;
-reg[7:0] destination = 8'h01; //read
+reg[7:0] destination = 8'h00; //read
 reg[7:0] source = 8'h2C;
-reg[7:0] length = 8'h04;
+reg[7:0] length = 8'h01;
 reg[7:0] data = 8'h02; // ipAdress of LEDS
 
 integer i; 
 
 initial begin
+
+//------------------- READ REGISTERS ----------------------------------  
     cpTxReady <= 1;
-    // send read packet containing address to read
-    // set up packet coming in to control from UART packetiser
     ipRxPacket.Valid <= 1'b0;
     ipRxPacket.Destination <= destination; // read
     ipRxPacket.Source <= source;
@@ -69,26 +69,16 @@ initial begin
     ipRxPacket.Data <= data; // address to read
 
     @(negedge ipReset);
+    opWrRegisters.LEDs <= 32'h8E9A;
     @(posedge ipClk);
     @(posedge ipClk);
-
 
     ipRxPacket.Valid <= 1'b1; // packet coming in to control is valid
-    ipRxPacket.SoP <= 1'b1;
     @(posedge ipClk);
     ipRxPacket.Valid <= 1'b0;
-    data <= data + 1'b1;
     @(posedge ipClk);
-    
-
-    for (i = 0; i < 4; i++) begin
-        //if(!cpTxReady) @(posedge cpTxReady); 
-        data <= data + 1'b1;
-        ipRxPacket.Data <= data;
-        ipRxPacket.Valid <= 1'b1;
-        @(posedge ipClk);
-        ipRxPacket.Valid <= 1'b0;
-    end
+    //@(posedge cpTxReady);
+    @(negedge opTxPacket.Valid);
 
 
 end
