@@ -13,7 +13,7 @@ Hostname: DAYALAN1
 
 Implementation : impl1
 
-# Written on Mon May  9 09:25:31 2022
+# Written on Tue May 10 18:19:55 2022
 
 ##### DESIGN INFO #######################################################
 
@@ -105,14 +105,6 @@ set_false_path -from [get_registers *] -to [get_ports op*]
 		control.opTxPkt\.Destination[6]
 		control.opTxPkt\.Destination[7]
 		control.opTxPkt\.SoP
-		control.opTxPkt\.Source[0]
-		control.opTxPkt\.Source[1]
-		control.opTxPkt\.Source[2]
-		control.opTxPkt\.Source[3]
-		control.opTxPkt\.Source[4]
-		control.opTxPkt\.Source[5]
-		control.opTxPkt\.Source[6]
-		control.opTxPkt\.Source[7]
 		control.opTxPkt\.Valid
 		control.opWrData[0]
 		control.opWrData[1]
@@ -150,6 +142,7 @@ set_false_path -from [get_registers *] -to [get_ports op*]
 		control.rd_byte_cnt[0]
 		control.rd_byte_cnt[1]
 		control.rd_byte_cnt[2]
+		control.rd_byte_cnt[3]
 		control.rd_data[8]
 		control.rd_data[9]
 		control.rd_data[10]
@@ -385,14 +378,6 @@ set_false_path -to [get_registers *] -from [get_ports ip*]
 		control.opTxPkt\.Destination[6]
 		control.opTxPkt\.Destination[7]
 		control.opTxPkt\.SoP
-		control.opTxPkt\.Source[0]
-		control.opTxPkt\.Source[1]
-		control.opTxPkt\.Source[2]
-		control.opTxPkt\.Source[3]
-		control.opTxPkt\.Source[4]
-		control.opTxPkt\.Source[5]
-		control.opTxPkt\.Source[6]
-		control.opTxPkt\.Source[7]
 		control.opTxPkt\.Valid
 		control.opWrData[0]
 		control.opWrData[1]
@@ -430,6 +415,7 @@ set_false_path -to [get_registers *] -from [get_ports ip*]
 		control.rd_byte_cnt[0]
 		control.rd_byte_cnt[1]
 		control.rd_byte_cnt[2]
+		control.rd_byte_cnt[3]
 		control.rd_data[8]
 		control.rd_data[9]
 		control.rd_data[10]

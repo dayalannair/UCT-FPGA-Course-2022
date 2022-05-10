@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:25:58 2022
+Tue May 10 18:20:23 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -47,55 +47,55 @@ Passed: The following path meets requirements by 10.425ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
    Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[4]  (to ipClk_c +)
 
    Delay:               9.482ns  (30.2% logic, 69.8% route), 8 logic levels.
 
  Constraint Details:
 
-      9.482ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100 meets
+      9.482ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
       0.093ns DIN_SET requirement (totaling 19.907ns) by 10.425ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100:
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790     R14C18B.A0 to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOF1_DE  ---     0.393    R14C18C.FCI to     R14C18C.F1 packetiser/UART_Inst/SLICE_13
-ROUTE         1     1.199     R14C18C.F1 to     R15C19B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
-CTOF_DEL    ---     0.260     R15C19B.A0 to     R15C19B.F0 packetiser/UART_Inst/SLICE_100
-ROUTE         1     0.000     R15C19B.F0 to    R15C19B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q1 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     1.247     R17C11B.Q1 to     R18C11C.B1 packetiser/UART_Inst/un4lto2
+CTOF_DEL    ---     0.260     R18C11C.B1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.506     R18C12D.F0 to     R17C11B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C0TOFCO_DE  ---     0.790     R17C11B.A0 to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOF1_DE  ---     0.393    R17C11C.FCI to     R17C11C.F1 packetiser/UART_Inst/SLICE_16
+ROUTE         1     1.153     R17C11C.F1 to     R18C12B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
+CTOF_DEL    ---     0.260     R18C12B.A0 to     R18C12B.F0 packetiser/UART_Inst/SLICE_95
+ROUTE         1     0.000     R18C12B.F0 to    R18C12B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
                   --------
                     9.482   (30.2% logic, 69.8% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_100:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -104,177 +104,240 @@ Passed: The following path meets requirements by 10.558ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
    Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[4]  (to ipClk_c +)
 
    Delay:               9.349ns  (28.2% logic, 71.8% route), 9 logic levels.
 
  Constraint Details:
 
-      9.349ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100 meets
+      9.349ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
       0.093ns DIN_SET requirement (totaling 19.907ns) by 10.558ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100:
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.561     R16C19B.F0 to     R14C18A.B1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C1TOFCO_DE  ---     0.475     R14C18A.B1 to    R14C18A.FCO packetiser/UART_Inst/SLICE_15
-ROUTE         1     0.000    R14C18A.FCO to    R14C18B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_0
-FCITOFCO_D  ---     0.081    R14C18B.FCI to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOF1_DE  ---     0.393    R14C18C.FCI to     R14C18C.F1 packetiser/UART_Inst/SLICE_13
-ROUTE         1     1.199     R14C18C.F1 to     R15C19B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
-CTOF_DEL    ---     0.260     R15C19B.A0 to     R15C19B.F0 packetiser/UART_Inst/SLICE_100
-ROUTE         1     0.000     R15C19B.F0 to    R15C19B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q1 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     1.247     R17C11B.Q1 to     R18C11C.B1 packetiser/UART_Inst/un4lto2
+CTOF_DEL    ---     0.260     R18C11C.B1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.607     R18C12D.F0 to     R17C11A.B1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C1TOFCO_DE  ---     0.475     R17C11A.B1 to    R17C11A.FCO packetiser/UART_Inst/SLICE_18
+ROUTE         1     0.000    R17C11A.FCO to    R17C11B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_0
+FCITOFCO_D  ---     0.081    R17C11B.FCI to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOF1_DE  ---     0.393    R17C11C.FCI to     R17C11C.F1 packetiser/UART_Inst/SLICE_16
+ROUTE         1     1.153     R17C11C.F1 to     R18C12B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
+CTOF_DEL    ---     0.260     R18C12B.A0 to     R18C12B.F0 packetiser/UART_Inst/SLICE_95
+ROUTE         1     0.000     R18C12B.F0 to    R18C12B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
                   --------
                     9.349   (28.2% logic, 71.8% route), 9 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_100:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.646ns
+Passed: The following path meets requirements by 10.600ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
    Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[8]  (to ipClk_c +)
 
-   Delay:               9.261ns  (32.7% logic, 67.3% route), 10 logic levels.
+   Delay:               9.307ns  (32.5% logic, 67.5% route), 10 logic levels.
 
  Constraint Details:
 
-      9.261ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101 meets
+      9.307ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.646ns
+      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.600ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101:
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790     R14C18B.A0 to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOFCO_D  ---     0.081    R14C18C.FCI to    R14C18C.FCO packetiser/UART_Inst/SLICE_13
-ROUTE         1     0.000    R14C18C.FCO to    R14C19A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
-FCITOFCO_D  ---     0.081    R14C19A.FCI to    R14C19A.FCO packetiser/UART_Inst/SLICE_12
-ROUTE         1     0.000    R14C19A.FCO to    R14C19B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
-FCITOF1_DE  ---     0.393    R14C19B.FCI to     R14C19B.F1 packetiser/UART_Inst/SLICE_11
-ROUTE         1     0.816     R14C19B.F1 to     R15C19C.D0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
-CTOF_DEL    ---     0.260     R15C19C.D0 to     R15C19C.F0 packetiser/UART_Inst/SLICE_101
-ROUTE         1     0.000     R15C19C.F0 to    R15C19C.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q1 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     1.247     R17C11B.Q1 to     R18C11C.B1 packetiser/UART_Inst/un4lto2
+CTOF_DEL    ---     0.260     R18C11C.B1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.506     R18C12D.F0 to     R17C11B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C0TOFCO_DE  ---     0.790     R17C11B.A0 to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOFCO_D  ---     0.081    R17C11C.FCI to    R17C11C.FCO packetiser/UART_Inst/SLICE_16
+ROUTE         1     0.000    R17C11C.FCO to    R17C12A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
+FCITOFCO_D  ---     0.081    R17C12A.FCI to    R17C12A.FCO packetiser/UART_Inst/SLICE_15
+ROUTE         1     0.000    R17C12A.FCO to    R17C12B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
+FCITOF1_DE  ---     0.393    R17C12B.FCI to     R17C12B.F1 packetiser/UART_Inst/SLICE_14
+ROUTE         1     0.816     R17C12B.F1 to     R18C12C.D0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
+CTOF_DEL    ---     0.260     R18C12C.D0 to     R18C12C.F0 packetiser/UART_Inst/SLICE_96
+ROUTE         1     0.000     R18C12C.F0 to    R18C12C.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
                   --------
-                    9.261   (32.7% logic, 67.3% route), 10 logic levels.
+                    9.307   (32.5% logic, 67.5% route), 10 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_101:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_96:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19C.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12C.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.727ns
+Passed: The following path meets requirements by 10.681ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
    Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[8]  (to ipClk_c +)
 
-   Delay:               9.180ns  (32.1% logic, 67.9% route), 9 logic levels.
+   Delay:               9.226ns  (31.9% logic, 68.1% route), 9 logic levels.
 
  Constraint Details:
 
-      9.180ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101 meets
+      9.226ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.727ns
+      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.681ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101:
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18C.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790     R14C18C.A0 to    R14C18C.FCO packetiser/UART_Inst/SLICE_13
-ROUTE         1     0.000    R14C18C.FCO to    R14C19A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
-FCITOFCO_D  ---     0.081    R14C19A.FCI to    R14C19A.FCO packetiser/UART_Inst/SLICE_12
-ROUTE         1     0.000    R14C19A.FCO to    R14C19B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
-FCITOF1_DE  ---     0.393    R14C19B.FCI to     R14C19B.F1 packetiser/UART_Inst/SLICE_11
-ROUTE         1     0.816     R14C19B.F1 to     R15C19C.D0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
-CTOF_DEL    ---     0.260     R15C19C.D0 to     R15C19C.F0 packetiser/UART_Inst/SLICE_101
-ROUTE         1     0.000     R15C19C.F0 to    R15C19C.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q1 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     1.247     R17C11B.Q1 to     R18C11C.B1 packetiser/UART_Inst/un4lto2
+CTOF_DEL    ---     0.260     R18C11C.B1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.506     R18C12D.F0 to     R17C11C.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C0TOFCO_DE  ---     0.790     R17C11C.A0 to    R17C11C.FCO packetiser/UART_Inst/SLICE_16
+ROUTE         1     0.000    R17C11C.FCO to    R17C12A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
+FCITOFCO_D  ---     0.081    R17C12A.FCI to    R17C12A.FCO packetiser/UART_Inst/SLICE_15
+ROUTE         1     0.000    R17C12A.FCO to    R17C12B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
+FCITOF1_DE  ---     0.393    R17C12B.FCI to     R17C12B.F1 packetiser/UART_Inst/SLICE_14
+ROUTE         1     0.816     R17C12B.F1 to     R18C12C.D0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
+CTOF_DEL    ---     0.260     R18C12C.D0 to     R18C12C.F0 packetiser/UART_Inst/SLICE_96
+ROUTE         1     0.000     R18C12C.F0 to    R18C12C.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
                   --------
-                    9.180   (32.1% logic, 67.9% route), 9 logic levels.
+                    9.226   (31.9% logic, 68.1% route), 9 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_101:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_96:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19C.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12C.CLK ipClk_c
+                  --------
+                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 10.733ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
+   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[8]  (to ipClk_c +)
+
+   Delay:               9.174ns  (30.5% logic, 69.5% route), 11 logic levels.
+
+ Constraint Details:
+
+      9.174ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96 meets
+     20.000ns delay constraint less
+      0.000ns skew and
+      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.733ns
+
+ Physical Path Details:
+
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q1 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     1.247     R17C11B.Q1 to     R18C11C.B1 packetiser/UART_Inst/un4lto2
+CTOF_DEL    ---     0.260     R18C11C.B1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.607     R18C12D.F0 to     R17C11A.B1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C1TOFCO_DE  ---     0.475     R17C11A.B1 to    R17C11A.FCO packetiser/UART_Inst/SLICE_18
+ROUTE         1     0.000    R17C11A.FCO to    R17C11B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_0
+FCITOFCO_D  ---     0.081    R17C11B.FCI to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOFCO_D  ---     0.081    R17C11C.FCI to    R17C11C.FCO packetiser/UART_Inst/SLICE_16
+ROUTE         1     0.000    R17C11C.FCO to    R17C12A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
+FCITOFCO_D  ---     0.081    R17C12A.FCI to    R17C12A.FCO packetiser/UART_Inst/SLICE_15
+ROUTE         1     0.000    R17C12A.FCO to    R17C12B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
+FCITOF1_DE  ---     0.393    R17C12B.FCI to     R17C12B.F1 packetiser/UART_Inst/SLICE_14
+ROUTE         1     0.816     R17C12B.F1 to     R18C12C.D0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
+CTOF_DEL    ---     0.260     R18C12C.D0 to     R18C12C.F0 packetiser/UART_Inst/SLICE_96
+ROUTE         1     0.000     R18C12C.F0 to    R18C12C.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
+                  --------
+                    9.174   (30.5% logic, 69.5% route), 11 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
+                  --------
+                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_96:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     1.233       21.PADDI to    R18C12C.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -283,348 +346,289 @@ Passed: The following path meets requirements by 10.740ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
    Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[4]  (to ipClk_c +)
 
    Delay:               9.167ns  (27.8% logic, 72.2% route), 8 logic levels.
 
  Constraint Details:
 
-      9.167ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100 meets
+      9.167ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
       0.093ns DIN_SET requirement (totaling 19.907ns) by 10.740ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100:
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18B.A1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C1TOFCO_DE  ---     0.475     R14C18B.A1 to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOF1_DE  ---     0.393    R14C18C.FCI to     R14C18C.F1 packetiser/UART_Inst/SLICE_13
-ROUTE         1     1.199     R14C18C.F1 to     R15C19B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
-CTOF_DEL    ---     0.260     R15C19B.A0 to     R15C19B.F0 packetiser/UART_Inst/SLICE_100
-ROUTE         1     0.000     R15C19B.F0 to    R15C19B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q1 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     1.247     R17C11B.Q1 to     R18C11C.B1 packetiser/UART_Inst/un4lto2
+CTOF_DEL    ---     0.260     R18C11C.B1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.506     R18C12D.F0 to     R17C11B.A1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C1TOFCO_DE  ---     0.475     R17C11B.A1 to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOF1_DE  ---     0.393    R17C11C.FCI to     R17C11C.F1 packetiser/UART_Inst/SLICE_16
+ROUTE         1     1.153     R17C11C.F1 to     R18C12B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
+CTOF_DEL    ---     0.260     R18C12B.A0 to     R18C12B.F0 packetiser/UART_Inst/SLICE_95
+ROUTE         1     0.000     R18C12B.F0 to    R18C12B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
                   --------
                     9.167   (27.8% logic, 72.2% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_100:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.779ns
+Passed: The following path meets requirements by 10.830ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
-   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[8]  (to ipClk_c +)
-
-   Delay:               9.128ns  (30.6% logic, 69.4% route), 11 logic levels.
-
- Constraint Details:
-
-      9.128ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101 meets
-     20.000ns delay constraint less
-      0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.779ns
-
- Physical Path Details:
-
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.561     R16C19B.F0 to     R14C18A.B1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C1TOFCO_DE  ---     0.475     R14C18A.B1 to    R14C18A.FCO packetiser/UART_Inst/SLICE_15
-ROUTE         1     0.000    R14C18A.FCO to    R14C18B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_0
-FCITOFCO_D  ---     0.081    R14C18B.FCI to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOFCO_D  ---     0.081    R14C18C.FCI to    R14C18C.FCO packetiser/UART_Inst/SLICE_13
-ROUTE         1     0.000    R14C18C.FCO to    R14C19A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
-FCITOFCO_D  ---     0.081    R14C19A.FCI to    R14C19A.FCO packetiser/UART_Inst/SLICE_12
-ROUTE         1     0.000    R14C19A.FCO to    R14C19B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
-FCITOF1_DE  ---     0.393    R14C19B.FCI to     R14C19B.F1 packetiser/UART_Inst/SLICE_11
-ROUTE         1     0.816     R14C19B.F1 to     R15C19C.D0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
-CTOF_DEL    ---     0.260     R15C19C.D0 to     R15C19C.F0 packetiser/UART_Inst/SLICE_101
-ROUTE         1     0.000     R15C19C.F0 to    R15C19C.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
-                  --------
-                    9.128   (30.6% logic, 69.4% route), 11 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
-                  --------
-                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_101:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19C.CLK ipClk_c
-                  --------
-                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 10.799ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
-   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[5]  (to ipClk_c +)
-
-   Delay:               9.108ns  (31.4% logic, 68.6% route), 9 logic levels.
-
- Constraint Details:
-
-      9.108ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_112 meets
-     20.000ns delay constraint less
-      0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.799ns
-
- Physical Path Details:
-
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_112:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790     R14C18B.A0 to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOFCO_D  ---     0.081    R14C18C.FCI to    R14C18C.FCO packetiser/UART_Inst/SLICE_13
-ROUTE         1     0.000    R14C18C.FCO to    R14C19A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
-FCITOF0_DE  ---     0.305    R14C19A.FCI to     R14C19A.F0 packetiser/UART_Inst/SLICE_12
-ROUTE         1     0.832     R14C19A.F0 to     R16C19C.C0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_5_0_S0
-CTOF_DEL    ---     0.260     R16C19C.C0 to     R16C19C.F0 packetiser/UART_Inst/SLICE_112
-ROUTE         1     0.000     R16C19C.F0 to    R16C19C.DI0 packetiser/UART_Inst/clk_cnt2_8[5] (to ipClk_c)
-                  --------
-                    9.108   (31.4% logic, 68.6% route), 9 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
-                  --------
-                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_112:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R16C19C.CLK ipClk_c
-                  --------
-                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 10.814ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
    Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[4]  (to ipClk_c +)
 
-   Delay:               9.093ns  (31.5% logic, 68.5% route), 8 logic levels.
+   Delay:               9.077ns  (31.6% logic, 68.4% route), 8 logic levels.
 
  Constraint Details:
 
-      9.093ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100 meets
+      9.077ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.814ns
+      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.830ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_100:
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q1 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     0.858     R14C18B.Q1 to     R15C18C.A1 packetiser/UART_Inst/un4lto2
-CTOF_DEL    ---     0.260     R15C18C.A1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790     R14C18B.A0 to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOF1_DE  ---     0.393    R14C18C.FCI to     R14C18C.F1 packetiser/UART_Inst/SLICE_13
-ROUTE         1     1.199     R14C18C.F1 to     R15C19B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
-CTOF_DEL    ---     0.260     R15C19B.A0 to     R15C19B.F0 packetiser/UART_Inst/SLICE_100
-ROUTE         1     0.000     R15C19B.F0 to    R15C19B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q0 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     0.842     R17C11B.Q0 to     R18C11C.C1 packetiser/UART_Inst/un4lto1
+CTOF_DEL    ---     0.260     R18C11C.C1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.506     R18C12D.F0 to     R17C11B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C0TOFCO_DE  ---     0.790     R17C11B.A0 to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOF1_DE  ---     0.393    R17C11C.FCI to     R17C11C.F1 packetiser/UART_Inst/SLICE_16
+ROUTE         1     1.153     R17C11C.F1 to     R18C12B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
+CTOF_DEL    ---     0.260     R18C12B.A0 to     R18C12B.F0 packetiser/UART_Inst/SLICE_95
+ROUTE         1     0.000     R18C12B.F0 to    R18C12B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
                   --------
-                    9.093   (31.5% logic, 68.5% route), 8 logic levels.
+                    9.077   (31.6% logic, 68.4% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_100:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.831ns
+Passed: The following path meets requirements by 10.881ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[0]  (from ipClk_c +)
    Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[4]  (to ipClk_c +)
 
-   Delay:               9.076ns  (31.6% logic, 68.4% route), 8 logic levels.
+   Delay:               9.026ns  (31.8% logic, 68.2% route), 8 logic levels.
 
  Constraint Details:
 
-      9.076ns physical path delay packetiser/UART_Inst/SLICE_111 to packetiser/UART_Inst/SLICE_100 meets
+      9.026ns physical path delay packetiser/UART_Inst/SLICE_106 to packetiser/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.831ns
+      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.881ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_111 to packetiser/UART_Inst/SLICE_100:
+      Data path packetiser/UART_Inst/SLICE_106 to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R16C18A.CLK to     R16C18A.Q0 packetiser/UART_Inst/SLICE_111 (from ipClk_c)
-ROUTE         5     0.841     R16C18A.Q0 to     R15C18C.C1 packetiser/UART_Inst/un4lt1
-CTOF_DEL    ---     0.260     R15C18C.C1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790     R14C18B.A0 to    R14C18B.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1     0.000    R14C18B.FCO to    R14C18C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOF1_DE  ---     0.393    R14C18C.FCI to     R14C18C.F1 packetiser/UART_Inst/SLICE_13
-ROUTE         1     1.199     R14C18C.F1 to     R15C19B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
-CTOF_DEL    ---     0.260     R15C19B.A0 to     R15C19B.F0 packetiser/UART_Inst/SLICE_100
-ROUTE         1     0.000     R15C19B.F0 to    R15C19B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
+REG_DEL     ---     0.383    R18C11A.CLK to     R18C11A.Q0 packetiser/UART_Inst/SLICE_106 (from ipClk_c)
+ROUTE         5     0.791     R18C11A.Q0 to     R18C11C.A1 packetiser/UART_Inst/un4lt1
+CTOF_DEL    ---     0.260     R18C11C.A1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.506     R18C12D.F0 to     R17C11B.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C0TOFCO_DE  ---     0.790     R17C11B.A0 to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOF1_DE  ---     0.393    R17C11C.FCI to     R17C11C.F1 packetiser/UART_Inst/SLICE_16
+ROUTE         1     1.153     R17C11C.F1 to     R18C12B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
+CTOF_DEL    ---     0.260     R18C12B.A0 to     R18C12B.F0 packetiser/UART_Inst/SLICE_95
+ROUTE         1     0.000     R18C12B.F0 to    R18C12B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
                   --------
-                    9.076   (31.6% logic, 68.4% route), 8 logic levels.
+                    9.026   (31.8% logic, 68.2% route), 8 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_111:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_106:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R16C18A.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C11A.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_100:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R15C19B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 10.880ns
+Passed: The following path meets requirements by 10.915ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[2]  (from ipClk_c +)
+   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[8]  (to ipClk_c +)
+
+   Delay:               8.992ns  (30.2% logic, 69.8% route), 10 logic levels.
+
+ Constraint Details:
+
+      8.992ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96 meets
+     20.000ns delay constraint less
+      0.000ns skew and
+      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.915ns
+
+ Physical Path Details:
+
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_96:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q1 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     1.247     R17C11B.Q1 to     R18C11C.B1 packetiser/UART_Inst/un4lto2
+CTOF_DEL    ---     0.260     R18C11C.B1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.506     R18C12D.F0 to     R17C11B.A1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C1TOFCO_DE  ---     0.475     R17C11B.A1 to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOFCO_D  ---     0.081    R17C11C.FCI to    R17C11C.FCO packetiser/UART_Inst/SLICE_16
+ROUTE         1     0.000    R17C11C.FCO to    R17C12A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
+FCITOFCO_D  ---     0.081    R17C12A.FCI to    R17C12A.FCO packetiser/UART_Inst/SLICE_15
+ROUTE         1     0.000    R17C12A.FCO to    R17C12B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
+FCITOF1_DE  ---     0.393    R17C12B.FCI to     R17C12B.F1 packetiser/UART_Inst/SLICE_14
+ROUTE         1     0.816     R17C12B.F1 to     R18C12C.D0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
+CTOF_DEL    ---     0.260     R18C12C.D0 to     R18C12C.F0 packetiser/UART_Inst/SLICE_96
+ROUTE         1     0.000     R18C12C.F0 to    R18C12C.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
+                  --------
+                    8.992   (30.2% logic, 69.8% route), 10 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
+                  --------
+                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_96:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     1.233       21.PADDI to    R18C12C.CLK ipClk_c
+                  --------
+                    1.233   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 10.963ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
-   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[5]  (to ipClk_c +)
+   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[4]  (to ipClk_c +)
 
-   Delay:               9.027ns  (30.8% logic, 69.2% route), 8 logic levels.
+   Delay:               8.944ns  (29.4% logic, 70.6% route), 9 logic levels.
 
  Constraint Details:
 
-      9.027ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_112 meets
+      8.944ns physical path delay packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95 meets
      20.000ns delay constraint less
       0.000ns skew and
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.880ns
+      0.093ns DIN_SET requirement (totaling 19.907ns) by 10.963ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_112:
+      Data path packetiser/UART_Inst/SLICE_17 to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R14C18B.CLK to     R14C18B.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4     1.247     R14C18B.Q0 to     R15C18C.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260     R15C18C.B1 to     R15C18C.F1 packetiser/UART_Inst/SLICE_102
-ROUTE         1     1.153     R15C18C.F1 to     R16C19A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
-CTOF_DEL    ---     0.260     R16C19A.A1 to     R16C19A.F1 packetiser/UART_Inst/SLICE_151
-ROUTE        13     0.858     R16C19A.F1 to     R16C19B.A1 packetiser/UART_Inst/N_116
-CTOF_DEL    ---     0.260     R16C19B.A1 to     R16C19B.F1 packetiser/UART_Inst/SLICE_152
-ROUTE         1     0.699     R16C19B.F1 to     R16C19B.B0 packetiser/UART_Inst/N_85
-CTOF_DEL    ---     0.260     R16C19B.B0 to     R16C19B.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11     1.460     R16C19B.F0 to     R14C18C.A0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790     R14C18C.A0 to    R14C18C.FCO packetiser/UART_Inst/SLICE_13
-ROUTE         1     0.000    R14C18C.FCO to    R14C19A.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
-FCITOF0_DE  ---     0.305    R14C19A.FCI to     R14C19A.F0 packetiser/UART_Inst/SLICE_12
-ROUTE         1     0.832     R14C19A.F0 to     R16C19C.C0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_5_0_S0
-CTOF_DEL    ---     0.260     R16C19C.C0 to     R16C19C.F0 packetiser/UART_Inst/SLICE_112
-ROUTE         1     0.000     R16C19C.F0 to    R16C19C.DI0 packetiser/UART_Inst/clk_cnt2_8[5] (to ipClk_c)
+REG_DEL     ---     0.383    R17C11B.CLK to     R17C11B.Q0 packetiser/UART_Inst/SLICE_17 (from ipClk_c)
+ROUTE         4     0.842     R17C11B.Q0 to     R18C11C.C1 packetiser/UART_Inst/un4lto1
+CTOF_DEL    ---     0.260     R18C11C.C1 to     R18C11C.F1 packetiser/UART_Inst/SLICE_97
+ROUTE         1     1.153     R18C11C.F1 to     R19C12A.A1 packetiser/UART_Inst/clk_cnt2_2_sqmuxa_i_a2_4
+CTOF_DEL    ---     0.260     R19C12A.A1 to     R19C12A.F1 packetiser/UART_Inst/SLICE_146
+ROUTE        13     0.858     R19C12A.F1 to     R18C12D.A1 packetiser/UART_Inst/N_116
+CTOF_DEL    ---     0.260     R18C12D.A1 to     R18C12D.F1 packetiser/UART_Inst/SLICE_147
+ROUTE         1     0.699     R18C12D.F1 to     R18C12D.B0 packetiser/UART_Inst/N_85
+CTOF_DEL    ---     0.260     R18C12D.B0 to     R18C12D.F0 packetiser/UART_Inst/SLICE_147
+ROUTE        11     1.607     R18C12D.F0 to     R17C11A.B1 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
+C1TOFCO_DE  ---     0.475     R17C11A.B1 to    R17C11A.FCO packetiser/UART_Inst/SLICE_18
+ROUTE         1     0.000    R17C11A.FCO to    R17C11B.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_0
+FCITOFCO_D  ---     0.081    R17C11B.FCI to    R17C11B.FCO packetiser/UART_Inst/SLICE_17
+ROUTE         1     0.000    R17C11B.FCO to    R17C11C.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
+FCITOF1_DE  ---     0.393    R17C11C.FCI to     R17C11C.F1 packetiser/UART_Inst/SLICE_16
+ROUTE         1     1.153     R17C11C.F1 to     R18C12B.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_3_0_S1
+CTOF_DEL    ---     0.260     R18C12B.A0 to     R18C12B.F0 packetiser/UART_Inst/SLICE_95
+ROUTE         1     0.000     R18C12B.F0 to    R18C12B.DI0 packetiser/UART_Inst/clk_cnt2_8[4] (to ipClk_c)
                   --------
-                    9.027   (30.8% logic, 69.2% route), 8 logic levels.
+                    8.944   (29.4% logic, 70.6% route), 9 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_14:
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_17:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R14C18B.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R17C11B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_112:
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     1.233       21.PADDI to    R16C19C.CLK ipClk_c
+ROUTE       124     1.233       21.PADDI to    R18C12B.CLK ipClk_c
                   --------
                     1.233   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -855,30 +859,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Lengt
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -1262,19 +1242,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/opRxDa
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -1286,13 +1260,19 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -1322,13 +1302,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -1429,7 +1409,7 @@ Blocked:
    Name    Fanout   Delay (ns)          Site               Resource
 PADI_DEL    ---     0.858         19.PAD to       19.PADDI ipnReset
 ROUTE         1     1.345       19.PADDI to     R11C11C.D0 ipnReset_c
-CTOF_DEL    ---     0.260     R11C11C.D0 to     R11C11C.F0 control/SLICE_32
+CTOF_DEL    ---     0.260     R11C11C.D0 to     R11C11C.F0 control/SLICE_35
 ROUTE         1     0.000     R11C11C.F0 to    R11C11C.DI0 control/ipnReset_c_i (to ipClk_c)
                   --------
                     2.463   (45.4% logic, 54.6% route), 2 logic levels.
@@ -1449,6 +1429,12 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -1653,54 +1639,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2196,30 +2134,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Leng
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Destination[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -2598,19 +2512,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/opRxD
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2622,13 +2530,19 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2658,13 +2572,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2767,6 +2681,12 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2971,54 +2891,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -3743,54 +3615,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[3]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Destination[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -4547,18 +4371,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/opRxData[7]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -4571,13 +4383,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4595,13 +4407,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[1]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4614,6 +4426,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opU
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4667,18 +4491,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[4]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -4686,6 +4498,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUA
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4890,6 +4714,18 @@ Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opUART_Tx" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -5303,102 +5139,6 @@ Preference: BLOCK PATH FROM CELL "control/opTxPkt.Valid" TO PORT "opLED[7]" ;
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "control/opTxPkt.SoP" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -5801,14 +5541,14 @@ Blocked:
    Source:         FF         Q              register/opWrRegisters.LEDs[7]  (from ipClk_c +)
    Destination:    Port       Pad            opLED[7]
 
-   Delay:               3.002ns  (53.0% logic, 47.0% route), 2 logic levels.
+   Delay:               3.040ns  (52.3% logic, 47.7% route), 2 logic levels.
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383    R21C11B.CLK to     R21C11B.Q1 register/SLICE_68 (from ipClk_c)
-ROUTE         2     1.412     R21C11B.Q1 to       37.PADDO opLED_c[7]
+REG_DEL     ---     0.383    R20C14B.CLK to     R20C14B.Q1 register/SLICE_69 (from ipClk_c)
+ROUTE         2     1.450     R20C14B.Q1 to       37.PADDO opLED_c[7]
 DOPAD_DEL   ---     1.207       37.PADDO to         37.PAD opLED[7]
                   --------
-                    3.002   (53.0% logic, 47.0% route), 2 logic levels.
+                    3.040   (52.3% logic, 47.7% route), 2 logic levels.
 
 
 ================================================================================
@@ -5925,7 +5665,7 @@ Clock Domains Analysis
 
 Found 1 clocks:
 
-Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 126
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 124
    Covered under: FREQUENCY PORT "ipClk" 50.000000 MHz ;
 
 
@@ -5935,11 +5675,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5240 paths, 1 nets, and 1323 connections (99.47% coverage)
+Constraints cover 5186 paths, 1 nets, and 1282 connections (99.46% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:25:58 2022
+Tue May 10 18:20:24 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -5973,135 +5713,6 @@ Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              control/opWrData[1]  (from ipClk_c +)
-   Destination:    FF         Data in        register/opWrRegisters.LEDs[1]  (to ipClk_c +)
-
-   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
-
- Constraint Details:
-
-      0.161ns physical path delay control/SLICE_60 to register/SLICE_65 meets
-     -0.014ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
-
- Physical Path Details:
-
-      Data path control/SLICE_60 to register/SLICE_65:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R21C13B.CLK to     R21C13B.Q1 control/SLICE_60 (from ipClk_c)
-ROUTE         1     0.041     R21C13B.Q1 to     R21C13C.M1 crWrData[1] (to ipClk_c)
-                  --------
-                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path ipClk to control/SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R21C13B.CLK ipClk_c
-                  --------
-                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path ipClk to register/SLICE_65:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R21C13C.CLK ipClk_c
-                  --------
-                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.175ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              control/opWrData[13]  (from ipClk_c +)
-   Destination:    FF         Data in        control/opWrData[5]  (to ipClk_c +)
-
-   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
-
- Constraint Details:
-
-      0.161ns physical path delay control/SLICE_35 to control/SLICE_62 meets
-     -0.014ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
-
- Physical Path Details:
-
-      Data path control/SLICE_35 to control/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R19C11B.CLK to     R19C11B.Q1 control/SLICE_35 (from ipClk_c)
-ROUTE         1     0.041     R19C11B.Q1 to     R19C11C.M1 control/opWrData[13] (to ipClk_c)
-                  --------
-                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path ipClk to control/SLICE_35:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R19C11B.CLK ipClk_c
-                  --------
-                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path ipClk to control/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R19C11C.CLK ipClk_c
-                  --------
-                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.175ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              control/opWrData[10]  (from ipClk_c +)
-   Destination:    FF         Data in        control/opWrData[2]  (to ipClk_c +)
-
-   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
-
- Constraint Details:
-
-      0.161ns physical path delay control/SLICE_34 to control/SLICE_61 meets
-     -0.014ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
-
- Physical Path Details:
-
-      Data path control/SLICE_34 to control/SLICE_61:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R20C10B.CLK to     R20C10B.Q0 control/SLICE_34 (from ipClk_c)
-ROUTE         1     0.041     R20C10B.Q0 to     R20C10A.M0 control/opWrData[10] (to ipClk_c)
-                  --------
-                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path ipClk to control/SLICE_34:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R20C10B.CLK ipClk_c
-                  --------
-                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path ipClk to control/SLICE_61:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R20C10A.CLK ipClk_c
-                  --------
-                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.175ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
    Source:         FF         Q              control/opWrData[18]  (from ipClk_c +)
    Destination:    FF         Data in        control/opWrData[10]  (to ipClk_c +)
 
@@ -6109,34 +5720,34 @@ Passed: The following path meets requirements by 0.175ns
 
  Constraint Details:
 
-      0.161ns physical path delay control/SLICE_38 to control/SLICE_34 meets
+      0.161ns physical path delay control/SLICE_41 to control/SLICE_37 meets
      -0.014ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path control/SLICE_38 to control/SLICE_34:
+      Data path control/SLICE_41 to control/SLICE_37:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R20C10C.CLK to     R20C10C.Q0 control/SLICE_38 (from ipClk_c)
-ROUTE         1     0.041     R20C10C.Q0 to     R20C10B.M0 control/opWrData[18] (to ipClk_c)
+REG_DEL     ---     0.120    R20C15C.CLK to     R20C15C.Q0 control/SLICE_41 (from ipClk_c)
+ROUTE         1     0.041     R20C15C.Q0 to     R20C15B.M0 control/opWrData[18] (to ipClk_c)
                   --------
                     0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to control/SLICE_38:
+      Source Clock Path ipClk to control/SLICE_41:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R20C10C.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R20C15C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to control/SLICE_34:
+      Destination Clock Path ipClk to control/SLICE_37:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R20C10B.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R20C15B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -6145,41 +5756,41 @@ Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/opRxData[0]  (from ipClk_c +)
-   Destination:    FF         Data in        packetiser/opRxStream.Destination[0]  (to ipClk_c +)
+   Source:         FF         Q              packetiser/opRxStream.Data[6]  (from ipClk_c +)
+   Destination:    FF         Data in        control/opWrData[30]  (to ipClk_c +)
 
    Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.161ns physical path delay packetiser/UART_Inst/SLICE_113 to packetiser/SLICE_73 meets
+      0.161ns physical path delay packetiser/SLICE_73 to control/SLICE_47 meets
      -0.014ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_113 to packetiser/SLICE_73:
+      Data path packetiser/SLICE_73 to control/SLICE_47:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R16C14B.CLK to     R16C14B.Q0 packetiser/UART_Inst/SLICE_113 (from ipClk_c)
-ROUTE         7     0.041     R16C14B.Q0 to     R16C14C.M0 packetiser/UART_RxData[0] (to ipClk_c)
+REG_DEL     ---     0.120    R20C18C.CLK to     R20C18C.Q0 packetiser/SLICE_73 (from ipClk_c)
+ROUTE         2     0.041     R20C18C.Q0 to     R20C18B.M0 opRxStream.Data_Q[6] (to ipClk_c)
                   --------
                     0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_113:
+      Source Clock Path ipClk to packetiser/SLICE_73:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R16C14B.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R20C18C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/SLICE_73:
+      Destination Clock Path ipClk to control/SLICE_47:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R16C14C.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R20C18B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -6195,34 +5806,34 @@ Passed: The following path meets requirements by 0.175ns
 
  Constraint Details:
 
-      0.161ns physical path delay control/SLICE_37 to control/SLICE_33 meets
+      0.161ns physical path delay control/SLICE_40 to control/SLICE_36 meets
      -0.014ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path control/SLICE_37 to control/SLICE_33:
+      Data path control/SLICE_40 to control/SLICE_36:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R21C12B.CLK to     R21C12B.Q0 control/SLICE_37 (from ipClk_c)
-ROUTE         1     0.041     R21C12B.Q0 to     R21C12A.M0 control/opWrData[16] (to ipClk_c)
+REG_DEL     ---     0.120    R19C15B.CLK to     R19C15B.Q0 control/SLICE_40 (from ipClk_c)
+ROUTE         1     0.041     R19C15B.Q0 to     R19C15C.M0 control/opWrData[16] (to ipClk_c)
                   --------
                     0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to control/SLICE_37:
+      Source Clock Path ipClk to control/SLICE_40:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R21C12B.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R19C15B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to control/SLICE_33:
+      Destination Clock Path ipClk to control/SLICE_36:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R21C12A.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R19C15C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -6231,41 +5842,41 @@ Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              control/opWrData[12]  (from ipClk_c +)
-   Destination:    FF         Data in        control/opWrData[4]  (to ipClk_c +)
+   Source:         FF         Q              control/opWrData[20]  (from ipClk_c +)
+   Destination:    FF         Data in        control/opWrData[12]  (to ipClk_c +)
 
    Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.161ns physical path delay control/SLICE_35 to control/SLICE_62 meets
+      0.161ns physical path delay control/SLICE_42 to control/SLICE_38 meets
      -0.014ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path control/SLICE_35 to control/SLICE_62:
+      Data path control/SLICE_42 to control/SLICE_38:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R19C11B.CLK to     R19C11B.Q0 control/SLICE_35 (from ipClk_c)
-ROUTE         1     0.041     R19C11B.Q0 to     R19C11C.M0 control/opWrData[12] (to ipClk_c)
+REG_DEL     ---     0.120    R20C17C.CLK to     R20C17C.Q0 control/SLICE_42 (from ipClk_c)
+ROUTE         1     0.041     R20C17C.Q0 to     R20C17B.M0 control/opWrData[20] (to ipClk_c)
                   --------
                     0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to control/SLICE_35:
+      Source Clock Path ipClk to control/SLICE_42:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R19C11B.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R20C17C.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to control/SLICE_62:
+      Destination Clock Path ipClk to control/SLICE_38:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R19C11C.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R20C17B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -6274,41 +5885,84 @@ Passed: The following path meets requirements by 0.175ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/opRxData[1]  (from ipClk_c +)
-   Destination:    FF         Data in        packetiser/opRxStream.Destination[1]  (to ipClk_c +)
+   Source:         FF         Q              control/opWrData[17]  (from ipClk_c +)
+   Destination:    FF         Data in        control/opWrData[9]  (to ipClk_c +)
 
    Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
 
  Constraint Details:
 
-      0.161ns physical path delay packetiser/UART_Inst/SLICE_113 to packetiser/SLICE_73 meets
+      0.161ns physical path delay control/SLICE_40 to control/SLICE_36 meets
      -0.014ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_113 to packetiser/SLICE_73:
+      Data path control/SLICE_40 to control/SLICE_36:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R16C14B.CLK to     R16C14B.Q1 packetiser/UART_Inst/SLICE_113 (from ipClk_c)
-ROUTE         7     0.041     R16C14B.Q1 to     R16C14C.M1 packetiser/UART_RxData[1] (to ipClk_c)
+REG_DEL     ---     0.120    R19C15B.CLK to     R19C15B.Q1 control/SLICE_40 (from ipClk_c)
+ROUTE         1     0.041     R19C15B.Q1 to     R19C15C.M1 control/opWrData[17] (to ipClk_c)
                   --------
                     0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_113:
+      Source Clock Path ipClk to control/SLICE_40:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R16C14B.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R19C15B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to packetiser/SLICE_73:
+      Destination Clock Path ipClk to control/SLICE_36:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R16C14C.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R19C15C.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.175ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              packetiser/UART_Inst/opRxData[2]  (from ipClk_c +)
+   Destination:    FF         Data in        packetiser/UART_Inst/opRxData[1]  (to ipClk_c +)
+
+   Delay:               0.161ns  (74.5% logic, 25.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.161ns physical path delay packetiser/UART_Inst/SLICE_109 to packetiser/UART_Inst/SLICE_108 meets
+     -0.014ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.014ns) by 0.175ns
+
+ Physical Path Details:
+
+      Data path packetiser/UART_Inst/SLICE_109 to packetiser/UART_Inst/SLICE_108:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.120    R17C19C.CLK to     R17C19C.Q0 packetiser/UART_Inst/SLICE_109 (from ipClk_c)
+ROUTE         7     0.041     R17C19C.Q0 to     R17C19A.M1 packetiser/UART_RxData[2] (to ipClk_c)
+                  --------
+                    0.161   (74.5% logic, 25.5% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_109:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     0.300       21.PADDI to    R17C19C.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_108:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     0.300       21.PADDI to    R17C19A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -6324,34 +5978,34 @@ Passed: The following path meets requirements by 0.175ns
 
  Constraint Details:
 
-      0.161ns physical path delay control/SLICE_60 to register/SLICE_65 meets
+      0.161ns physical path delay control/SLICE_61 to register/SLICE_66 meets
      -0.014ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.014ns) by 0.175ns
 
  Physical Path Details:
 
-      Data path control/SLICE_60 to register/SLICE_65:
+      Data path control/SLICE_61 to register/SLICE_66:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R21C13B.CLK to     R21C13B.Q0 control/SLICE_60 (from ipClk_c)
-ROUTE         1     0.041     R21C13B.Q0 to     R21C13C.M0 crWrData[0] (to ipClk_c)
+REG_DEL     ---     0.120    R19C14B.CLK to     R19C14B.Q0 control/SLICE_61 (from ipClk_c)
+ROUTE         1     0.041     R19C14B.Q0 to     R19C14A.M0 crWrData[0] (to ipClk_c)
                   --------
                     0.161   (74.5% logic, 25.5% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to control/SLICE_60:
+      Source Clock Path ipClk to control/SLICE_61:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R21C13B.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R19C14B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to register/SLICE_65:
+      Destination Clock Path ipClk to register/SLICE_66:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R21C13C.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R19C14A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -6360,43 +6014,133 @@ Passed: The following path meets requirements by 0.235ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              control/rd_byte_cnt[1]  (from ipClk_c +)
-   Destination:    FF         Data in        control/rd_byte_cnt[1]  (to ipClk_c +)
+   Source:         FF         Q              packetiser/opRxStream.Valid  (from ipClk_c +)
+   Destination:    FF         Data in        packetiser/opRxStream.Valid  (to ipClk_c +)
 
    Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
 
  Constraint Details:
 
-      0.236ns physical path delay control/SLICE_47 to control/SLICE_47 meets
+      0.236ns physical path delay SLICE_84 to SLICE_84 meets
       0.001ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.001ns) by 0.235ns
 
  Physical Path Details:
 
-      Data path control/SLICE_47 to control/SLICE_47:
+      Data path SLICE_84 to SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120    R19C14C.CLK to     R19C14C.Q0 control/SLICE_47 (from ipClk_c)
-ROUTE        11     0.057     R19C14C.Q0 to     R19C14C.D0 control/rd_data9_sn
-CTOF_DEL    ---     0.059     R19C14C.D0 to     R19C14C.F0 control/SLICE_47
-ROUTE         1     0.000     R19C14C.F0 to    R19C14C.DI0 control/N_134_i (to ipClk_c)
+REG_DEL     ---     0.120    R18C19B.CLK to     R18C19B.Q0 SLICE_84 (from ipClk_c)
+ROUTE         2     0.057     R18C19B.Q0 to     R18C19B.D0 opRxStream.Valid_Q
+CTOF_DEL    ---     0.059     R18C19B.D0 to     R18C19B.F0 SLICE_84
+ROUTE         1     0.000     R18C19B.F0 to    R18C19B.DI0 packetiser/fb_0 (to ipClk_c)
                   --------
                     0.236   (75.8% logic, 24.2% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path ipClk to control/SLICE_47:
+      Source Clock Path ipClk to SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R19C14C.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R18C19B.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path ipClk to control/SLICE_47:
+      Destination Clock Path ipClk to SLICE_84:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       126     0.300       21.PADDI to    R19C14C.CLK ipClk_c
+ROUTE       124     0.300       21.PADDI to    R18C19B.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.235ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              control/state[0]  (from ipClk_c +)
+   Destination:    FF         Data in        control/state[0]  (to ipClk_c +)
+
+   Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.236ns physical path delay control/SLICE_49 to control/SLICE_49 meets
+      0.001ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.001ns) by 0.235ns
+
+ Physical Path Details:
+
+      Data path control/SLICE_49 to control/SLICE_49:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.120    R17C18A.CLK to     R17C18A.Q0 control/SLICE_49 (from ipClk_c)
+ROUTE        24     0.057     R17C18A.Q0 to     R17C18A.D0 control/state[0]
+CTOF_DEL    ---     0.059     R17C18A.D0 to     R17C18A.F0 control/SLICE_49
+ROUTE         1     0.000     R17C18A.F0 to    R17C18A.DI0 control/N_16_i (to ipClk_c)
+                  --------
+                    0.236   (75.8% logic, 24.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path ipClk to control/SLICE_49:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     0.300       21.PADDI to    R17C18A.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path ipClk to control/SLICE_49:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     0.300       21.PADDI to    R17C18A.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.235ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[0]  (from ipClk_c +)
+   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[0]  (to ipClk_c +)
+
+   Delay:               0.236ns  (75.8% logic, 24.2% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.236ns physical path delay packetiser/UART_Inst/SLICE_106 to packetiser/UART_Inst/SLICE_106 meets
+      0.001ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.001ns) by 0.235ns
+
+ Physical Path Details:
+
+      Data path packetiser/UART_Inst/SLICE_106 to packetiser/UART_Inst/SLICE_106:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.120    R18C11A.CLK to     R18C11A.Q0 packetiser/UART_Inst/SLICE_106 (from ipClk_c)
+ROUTE         5     0.057     R18C11A.Q0 to     R18C11A.D0 packetiser/UART_Inst/un4lt1
+CTOF_DEL    ---     0.059     R18C11A.D0 to     R18C11A.F0 packetiser/UART_Inst/SLICE_106
+ROUTE         1     0.000     R18C11A.F0 to    R18C11A.DI0 packetiser/UART_Inst/clk_cnt2_0[0] (to ipClk_c)
+                  --------
+                    0.236   (75.8% logic, 24.2% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path ipClk to packetiser/UART_Inst/SLICE_106:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     0.300       21.PADDI to    R18C11A.CLK ipClk_c
+                  --------
+                    0.300   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path ipClk to packetiser/UART_Inst/SLICE_106:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       124     0.300       21.PADDI to    R18C11A.CLK ipClk_c
                   --------
                     0.300   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -6625,30 +6369,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Lengt
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7032,19 +6752,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/opRxDa
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7056,13 +6770,19 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7092,13 +6812,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7199,7 +6919,7 @@ Blocked:
    Name    Fanout   Delay (ns)          Site               Resource
 PADI_DEL    ---     0.557         19.PAD to       19.PADDI ipnReset
 ROUTE         1     0.400       19.PADDI to     R11C11C.D0 ipnReset_c
-CTOF_DEL    ---     0.085     R11C11C.D0 to     R11C11C.F0 control/SLICE_32
+CTOF_DEL    ---     0.085     R11C11C.D0 to     R11C11C.F0 control/SLICE_35
 ROUTE         1     0.000     R11C11C.F0 to    R11C11C.DI0 control/ipnReset_c_i (to ipClk_c)
                   --------
                     1.042   (61.6% logic, 38.4% route), 2 logic levels.
@@ -7219,6 +6939,12 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7423,54 +7149,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7966,30 +7644,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Leng
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Destination[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -8368,19 +8022,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/opRxD
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -8392,13 +8040,19 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -8428,13 +8082,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -8537,6 +8191,12 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -8741,54 +8401,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -9513,54 +9125,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[3]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Destination[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -10317,18 +9881,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/opRxData[7]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -10341,13 +9893,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -10365,13 +9917,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[1]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -10384,6 +9936,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opU
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -10437,18 +10001,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[4]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -10456,6 +10008,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUA
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -10660,6 +10224,18 @@ Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opUART_Tx" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -11073,102 +10649,6 @@ Preference: BLOCK PATH FROM CELL "control/opTxPkt.Valid" TO PORT "opLED[7]" ;
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "control/opTxPkt.SoP" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -11571,14 +11051,14 @@ Blocked:
    Source:         FF         Q              register/opWrRegisters.LEDs[7]  (from ipClk_c +)
    Destination:    Port       Pad            opLED[7]
 
-   Delay:               1.053ns  (71.2% logic, 28.8% route), 2 logic levels.
+   Delay:               1.077ns  (69.6% logic, 30.4% route), 2 logic levels.
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.122    R21C11B.CLK to     R21C11B.Q1 register/SLICE_68 (from ipClk_c)
-ROUTE         2     0.464     R21C11B.Q1 to       37.PADDO opLED_c[7]
+REG_DEL     ---     0.122    R20C14B.CLK to     R20C14B.Q1 register/SLICE_69 (from ipClk_c)
+ROUTE         2     0.470     R20C14B.Q1 to       37.PADDO opLED_c[7]
 DOPAD_DEL   ---     0.630       37.PADDO to         37.PAD opLED[7]
                   --------
-                    1.216   (61.8% logic, 38.2% route), 2 logic levels.
+                    1.222   (61.5% logic, 38.5% route), 2 logic levels.
 
 
 ================================================================================
@@ -11695,7 +11175,7 @@ Clock Domains Analysis
 
 Found 1 clocks:
 
-Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 126
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 124
    Covered under: FREQUENCY PORT "ipClk" 50.000000 MHz ;
 
 
@@ -11705,7 +11185,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5240 paths, 1 nets, and 1323 connections (99.47% coverage)
+Constraints cover 5186 paths, 1 nets, and 1282 connections (99.46% coverage)
 
 
 

@@ -1,16 +1,17 @@
 ----------------------------------------------------------------------
 Report for cell UART_wrapper.verilog
 
-Register bits: 217 of 4752 (5%)
+Register bits: 206 of 4752 (4%)
 PIC Latch:       0
 I/O cells:       12
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2B       32       100.0
-                            FD1P3AX      148       100.0
+                              CCU2B       35       100.0
+                            FD1P3AX      130       100.0
                             FD1P3IX       13       100.0
-                            FD1S3AX       10       100.0
-                            FD1S3IX       34       100.0
+                            FD1P3JX        4       100.0
+                            FD1S3AX       12       100.0
+                            FD1S3IX       35       100.0
                             FD1S3JX       10       100.0
                                 GSR        1       100.0
                                  IB        3       100.0
@@ -18,7 +19,7 @@ I/O cells:       12
                                 INV        4       100.0
                                  OB        9       100.0
                            OFS1P3JX        1       100.0
-                           ORCALUT4      189       100.0
+                           ORCALUT4      176       100.0
                                 PUR        1       100.0
                                 VHI        5       100.0
                                 VLO        5       100.0
@@ -28,15 +29,15 @@ SUB MODULES
                                UART        1       100.0
                        UART_Packets        1       100.0
                             
-                         TOTAL           470           
+                         TOTAL           449           
 ----------------------------------------------------------------------
 Report for cell Registers.netlist
      Instance path:  register
                                           Cell usage:
                                cell       count    Res Usage(%)
                             FD1P3IX        8        61.5
-                            FD1S3IX        8        23.5
-                           ORCALUT4        3         1.6
+                            FD1S3IX        8        22.9
+                           ORCALUT4        3         1.7
                                 VHI        1        20.0
                                 VLO        1        20.0
                             
@@ -46,49 +47,50 @@ Report for cell Control.netlist
      Instance path:  control
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2B        3         9.4
-                            FD1P3AX       66        44.6
+                              CCU2B        6        17.1
+                            FD1P3AX       56        43.1
                             FD1P3IX        2        15.4
-                            FD1S3AX        1        10.0
-                            FD1S3IX        5        14.7
+                            FD1S3AX        3        25.0
+                            FD1S3IX        6        17.1
                             FD1S3JX        3        30.0
                                 INV        3        75.0
-                           ORCALUT4       50        26.5
+                           ORCALUT4       41        23.3
                                 VHI        1        20.0
                                 VLO        1        20.0
                             
-                         TOTAL           135           
+                         TOTAL           122           
 ----------------------------------------------------------------------
 Report for cell UART_Packets.netlist
      Instance path:  packetiser
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2B       29        90.6
-                            FD1P3AX       82        55.4
+                              CCU2B       29        82.9
+                            FD1P3AX       74        56.9
                             FD1P3IX        3        23.1
-                            FD1S3AX        9        90.0
-                            FD1S3IX       21        61.8
+                            FD1P3JX        4       100.0
+                            FD1S3AX        9        75.0
+                            FD1S3IX       21        60.0
                             FD1S3JX        7        70.0
                                 INV        1        25.0
-                           ORCALUT4      136        72.0
+                           ORCALUT4      132        75.0
                                 VHI        2        40.0
                                 VLO        2        40.0
 SUB MODULES 
                                UART        1       100.0
                             
-                         TOTAL           293           
+                         TOTAL           285           
 ----------------------------------------------------------------------
 Report for cell UART.netlist
      Instance path:  packetiser.UART_Inst
                                           Cell usage:
                                cell       count    Res Usage(%)
-                              CCU2B       19        59.4
-                            FD1P3AX       25        16.9
+                              CCU2B       19        54.3
+                            FD1P3AX       25        19.2
                             FD1P3IX        2        15.4
-                            FD1S3AX        4        40.0
-                            FD1S3IX       12        35.3
+                            FD1S3AX        4        33.3
+                            FD1S3IX       12        34.3
                             FD1S3JX        6        60.0
-                           ORCALUT4       58        30.7
+                           ORCALUT4       58        33.0
                                 VHI        1        20.0
                                 VLO        1        20.0
                             

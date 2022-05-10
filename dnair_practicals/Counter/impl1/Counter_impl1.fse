@@ -1,14 +1,4 @@
 
-fsm_encoding {11510514} sequential
-
-fsm_state_encoding {11510514} off {00}
-
-fsm_state_encoding {11510514} on {01}
-
-fsm_state_encoding {11510514} start {10}
-
-fsm_registers {11510514} {rx_state[1]}  {rx_state[0]} 
-
 fsm_encoding {11510515} sequential
 
 fsm_state_encoding {11510515} off {00}
@@ -17,17 +7,39 @@ fsm_state_encoding {11510515} on {01}
 
 fsm_state_encoding {11510515} start {10}
 
-fsm_state_encoding {11510515} stop {11}
+fsm_registers {11510515} {rx_state[1]}  {rx_state[0]} 
 
-fsm_registers {11510515} {tx_state[1]}  {tx_state[0]} 
+fsm_encoding {11510516} sequential
+
+fsm_state_encoding {11510516} off {00}
+
+fsm_state_encoding {11510516} on {01}
+
+fsm_state_encoding {11510516} start {10}
+
+fsm_state_encoding {11510516} stop {11}
+
+fsm_registers {11510516} {tx_state[1]}  {tx_state[0]} 
+
+fsm_encoding {10910914} sequential
+
+fsm_state_encoding {10910914} idle {0}
+
+fsm_state_encoding {10910914} on {1}
+
+fsm_registers {10910914} {tx_state[0]} 
 
 fsm_encoding {10910913} sequential
 
-fsm_state_encoding {10910913} idle {0}
+fsm_state_encoding {10910913} src {00}
 
-fsm_state_encoding {10910913} on {1}
+fsm_state_encoding {10910913} dest {01}
 
-fsm_registers {10910913} {tx_state[0]} 
+fsm_state_encoding {10910913} lgth {10}
+
+fsm_state_encoding {10910913} data {11}
+
+fsm_registers {10910913} {rx_packet[1]}  {rx_packet[0]} 
 
 fsm_encoding {10910912} sequential
 
@@ -39,16 +51,14 @@ fsm_state_encoding {10910912} lgth {10}
 
 fsm_state_encoding {10910912} data {11}
 
-fsm_registers {10910912} {rx_packet[1]}  {rx_packet[0]} 
+fsm_registers {10910912} {tx_packet[1]}  {tx_packet[0]} 
 
-fsm_encoding {10910911} sequential
+fsm_encoding {9390391} sequential
 
-fsm_state_encoding {10910911} src {00}
+fsm_state_encoding {9390391} idle {00}
 
-fsm_state_encoding {10910911} dest {01}
+fsm_state_encoding {9390391} read {01}
 
-fsm_state_encoding {10910911} lgth {10}
+fsm_state_encoding {9390391} write {10}
 
-fsm_state_encoding {10910911} data {11}
-
-fsm_registers {10910911} {tx_packet[1]}  {tx_packet[0]} 
+fsm_registers {9390391} {state[1]}  {state[0]} 

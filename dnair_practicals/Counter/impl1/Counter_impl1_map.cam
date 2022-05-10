@@ -39,15 +39,20 @@ packetiser/UART_Inst/un1_rx_cnt_6_s_3_0_COUT
 packetiser/rx_len_7_cry_0_0_S1
 packetiser/rx_len_7_cry_0_0_S0
 packetiser/N_1
-control/un1_wr_byte_cnt_1_cry_0_0_S1
-control/un1_wr_byte_cnt_1_cry_0_0_S0
+control/un1_wr_byte_cnt_2_cry_0_0_S1
+control/un1_wr_byte_cnt_2_cry_0_0_S0
 control/N_1
-control/un1_wr_byte_cnt_1_s_3_0_S1
-control/un1_wr_byte_cnt_1_s_3_0_COUT
+control/un1_wr_byte_cnt_2_s_3_0_S1
+control/un1_wr_byte_cnt_2_s_3_0_COUT
+control/un1_rd_byte_cnt_4_cry_0_0_S1
+control/un1_rd_byte_cnt_4_cry_0_0_S0
+control/N_2
+control/un1_rd_byte_cnt_4_s_3_0_S1
+control/un1_rd_byte_cnt_4_s_3_0_COUT
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Mon May 09 09:25:40 2022
+# map:  version Diamond (64-bit) 3.12.0.240.2 -- WARNING: Map write only section -- Tue May 10 18:20:03 2022
 
 SYSCONFIG DONE_OD=ON DONE_EX=OFF CONFIG_SECURE=OFF WAKE_UP=21 WAKE_ON_LOCK=OFF INBUF=ON MASTER_SPI_PORT=DISABLE SLAVE_SPI_PORT=DISABLE MY_ASSP=OFF ONE_TIME_PROGRAM=OFF ;
 LOCATE COMP "opUART_Tx" SITE "109" ;

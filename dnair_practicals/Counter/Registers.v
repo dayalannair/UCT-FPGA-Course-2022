@@ -34,7 +34,7 @@ always @(posedge ipClk) begin
   Reset <= ipReset;
 
   if(Reset) begin
-    opWrRegisters.LEDs <= 0;
+    opWrRegisters.LEDs <= 0;//32'h8E9A;//0;
   //----------------------------------------------------------------------------
 
   end else if(ipWrEnable) begin

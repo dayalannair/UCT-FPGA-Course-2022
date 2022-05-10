@@ -1,0 +1,36 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /Control_TB/control/state
+add wave -noupdate -radix hexadecimal /Control_TB/crRdData
+add wave -noupdate -radix hexadecimal /Control_TB/crWrData
+add wave -noupdate -radix unsigned /Control_TB/crWrEnable
+add wave -noupdate /Control_TB/cpTxReady
+add wave -noupdate /Control_TB/ipReset
+add wave -noupdate -radix unsigned /Control_TB/control/rd_byte_cnt
+add wave -noupdate -divider REGISTERS
+add wave -noupdate -radix hexadecimal -childformat {{/Control_TB/opWrRegisters.LEDs -radix hexadecimal}} -expand -subitemconfig {/Control_TB/opWrRegisters.LEDs {-height 15 -radix hexadecimal}} /Control_TB/opWrRegisters
+add wave -noupdate -radix hexadecimal /Control_TB/register/ipAddress
+add wave -noupdate -radix hexadecimal /Control_TB/register/opRdData
+add wave -noupdate /Control_TB/register/Reset
+add wave -noupdate -radix unsigned /Control_TB/register/ipWrEnable
+add wave -noupdate -divider PACKETS
+add wave -noupdate -radix hexadecimal -childformat {{/Control_TB/opTxPacket.Source -radix hexadecimal} {/Control_TB/opTxPacket.Destination -radix hexadecimal} {/Control_TB/opTxPacket.Length -radix hexadecimal} {/Control_TB/opTxPacket.SoP -radix hexadecimal} {/Control_TB/opTxPacket.EoP -radix hexadecimal} {/Control_TB/opTxPacket.Data -radix hexadecimal} {/Control_TB/opTxPacket.Valid -radix hexadecimal}} -subitemconfig {/Control_TB/opTxPacket.Source {-height 15 -radix hexadecimal} /Control_TB/opTxPacket.Destination {-height 15 -radix hexadecimal} /Control_TB/opTxPacket.Length {-height 15 -radix hexadecimal} /Control_TB/opTxPacket.SoP {-height 15 -radix hexadecimal} /Control_TB/opTxPacket.EoP {-height 15 -radix hexadecimal} /Control_TB/opTxPacket.Data {-height 15 -radix hexadecimal} /Control_TB/opTxPacket.Valid {-height 15 -radix hexadecimal}} /Control_TB/opTxPacket
+add wave -noupdate -radix hexadecimal -childformat {{/Control_TB/ipRxPacket.Source -radix hexadecimal} {/Control_TB/ipRxPacket.Destination -radix hexadecimal} {/Control_TB/ipRxPacket.Length -radix hexadecimal} {/Control_TB/ipRxPacket.SoP -radix hexadecimal} {/Control_TB/ipRxPacket.EoP -radix hexadecimal} {/Control_TB/ipRxPacket.Data -radix hexadecimal} {/Control_TB/ipRxPacket.Valid -radix hexadecimal}} -subitemconfig {/Control_TB/ipRxPacket.Source {-height 15 -radix hexadecimal} /Control_TB/ipRxPacket.Destination {-height 15 -radix hexadecimal} /Control_TB/ipRxPacket.Length {-height 15 -radix hexadecimal} /Control_TB/ipRxPacket.SoP {-height 15 -radix hexadecimal} /Control_TB/ipRxPacket.EoP {-height 15 -radix hexadecimal} /Control_TB/ipRxPacket.Data {-height 15 -radix hexadecimal} /Control_TB/ipRxPacket.Valid {-height 15 -radix hexadecimal}} /Control_TB/ipRxPacket
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {130 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 209
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ms
+update
+WaveRestoreZoom {69 ps} {173 ps}

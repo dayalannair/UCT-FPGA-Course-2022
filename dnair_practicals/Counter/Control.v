@@ -30,7 +30,6 @@ reg[3:0] rd_byte_cnt;
 
 typedef enum {
 	idle,
-    one_clk,
     read,
     write
 	} STATE;
@@ -51,7 +50,7 @@ always @(posedge ipClk) begin
                 opWrEnable <= 0;
                 opTxPkt.Valid <= 0;
                 opTxPkt.SoP <= 0;
-                rd_byte_cnt <= 3'd4;
+                rd_byte_cnt <= 3'd5; // will wait one clock before reading
                 wr_byte_cnt <= 3'd4;
                 opTxPkt.Length <= 8'h4;
 
@@ -60,20 +59,16 @@ always @(posedge ipClk) begin
                         opAddress <= ipRxPkt.Data;
                         opTxPkt.Destination <= ipRxPkt.Source;
                         opTxPkt.Source <= ipRxPkt.Destination;
-                        state <= one_clk;
+                        state <= read;
                     end
  
                     else if (ipRxPkt.Destination == 8'h01) begin
                         opAddress <= ipRxPkt.Data;
+                        wr_byte_cnt <= ipRxPkt.Length - 1'b1; // first byte is address
                         state <= write;
                     end
                 end
             end
-
-        one_clk: begin
-                    state <= read;
-                end
-
         read: begin
                 if (ipTxReady == 1'b1) begin
                     case(rd_byte_cnt)
@@ -98,14 +93,12 @@ always @(posedge ipClk) begin
                 end
             end
         write: begin
-                if (ipRxPkt.Valid) begin
-                    opWrData <= {ipRxPkt.Data, opWrData[31:8]};
-                    if (wr_byte_cnt == 3'd0) begin
-                        opWrEnable <= 1'b1;
-                        state <= idle;
-                    end
-                    wr_byte_cnt <= wr_byte_cnt - 1'b1;
+                opWrData <= {ipRxPkt.Data, opWrData[31:8]};
+                if (wr_byte_cnt == 3'd0) begin
+                    opWrEnable <= 1'b1;
+                    state <= idle;
                 end
+                wr_byte_cnt <= wr_byte_cnt - 1'b1;
             end
         
         default:;

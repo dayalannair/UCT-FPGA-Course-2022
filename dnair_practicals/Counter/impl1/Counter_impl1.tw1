@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:25:41 2022
+Tue May 10 18:20:04 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -43,50 +43,44 @@ Preference: FREQUENCY PORT "ipClk" 50.000000 MHz ;
 --------------------------------------------------------------------------------
 
 
-Passed: The following path meets requirements by 11.190ns
+Passed: The following path meets requirements by 10.778ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              packetiser/UART_Inst/clk_cnt2[1]  (from ipClk_c +)
-   Destination:    FF         Data in        packetiser/UART_Inst/clk_cnt2[8]  (to ipClk_c +)
+   Source:         FF         Q              packetiser/opRxStream.Destination[1]  (from ipClk_c +)
+   Destination:    FF         Data in        control/wr_byte_cnt[2]  (to ipClk_c +)
 
-   Delay:               8.717ns  (34.7% logic, 65.3% route), 10 logic levels.
+   Delay:               8.778ns  (26.1% logic, 73.9% route), 7 logic levels.
 
  Constraint Details:
 
-      8.717ns physical path delay packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101 meets
+      8.778ns physical path delay packetiser/SLICE_74 to control/SLICE_51 meets
      20.000ns delay constraint less
-      0.093ns DIN_SET requirement (totaling 19.907ns) by 11.190ns
+      0.444ns LSR_SET requirement (totaling 19.556ns) by 10.778ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_14 to packetiser/UART_Inst/SLICE_101:
+      Data path packetiser/SLICE_74 to control/SLICE_51:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_14.CLK to *t/SLICE_14.Q0 packetiser/UART_Inst/SLICE_14 (from ipClk_c)
-ROUTE         4   e 1.081 *t/SLICE_14.Q0 to */SLICE_155.B1 packetiser/UART_Inst/un4lto1
-CTOF_DEL    ---     0.260 */SLICE_155.B1 to */SLICE_155.F1 packetiser/UART_Inst/SLICE_155
-ROUTE         2   e 0.280 */SLICE_155.F1 to */SLICE_155.C0 packetiser/UART_Inst/un4lt4
-CTOF_DEL    ---     0.260 */SLICE_155.C0 to */SLICE_155.F0 packetiser/UART_Inst/SLICE_155
-ROUTE         1   e 1.081 */SLICE_155.F0 to */SLICE_153.D0 packetiser/UART_Inst/un4lt7
-CTOF_DEL    ---     0.260 */SLICE_153.D0 to */SLICE_153.F0 packetiser/UART_Inst/SLICE_153
-ROUTE         1   e 1.081 */SLICE_153.F0 to */SLICE_152.D0 packetiser/UART_Inst/un4
-CTOF_DEL    ---     0.260 */SLICE_152.D0 to */SLICE_152.F0 packetiser/UART_Inst/SLICE_152
-ROUTE        11   e 1.081 */SLICE_152.F0 to *t/SLICE_14.B0 packetiser/UART_Inst/un1_rx_state_0_sqmuxa
-C0TOFCO_DE  ---     0.790 *t/SLICE_14.B0 to */SLICE_14.FCO packetiser/UART_Inst/SLICE_14
-ROUTE         1   e 0.001 */SLICE_14.FCO to */SLICE_13.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_2
-FCITOFCO_D  ---     0.081 */SLICE_13.FCI to */SLICE_13.FCO packetiser/UART_Inst/SLICE_13
-ROUTE         1   e 0.001 */SLICE_13.FCO to */SLICE_12.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_4
-FCITOFCO_D  ---     0.081 */SLICE_12.FCI to */SLICE_12.FCO packetiser/UART_Inst/SLICE_12
-ROUTE         1   e 0.001 */SLICE_12.FCO to */SLICE_11.FCI packetiser/UART_Inst/un1_clk_cnt2_11_cry_6
-FCITOF1_DE  ---     0.393 */SLICE_11.FCI to *t/SLICE_11.F1 packetiser/UART_Inst/SLICE_11
-ROUTE         1   e 1.081 *t/SLICE_11.F1 to */SLICE_101.A0 packetiser/UART_Inst/un1_clk_cnt2_11_cry_7_0_S1
-CTOF_DEL    ---     0.260 */SLICE_101.A0 to */SLICE_101.F0 packetiser/UART_Inst/SLICE_101
-ROUTE         1   e 0.001 */SLICE_101.F0 to *SLICE_101.DI0 packetiser/UART_Inst/clk_cnt2_8[8] (to ipClk_c)
+REG_DEL     ---     0.383 */SLICE_74.CLK to *r/SLICE_74.Q1 packetiser/SLICE_74 (from ipClk_c)
+ROUTE         1   e 1.081 *r/SLICE_74.Q1 to */SLICE_169.A0 opRxStream.Destination_Q[1]
+CTOF_DEL    ---     0.260 */SLICE_169.A0 to */SLICE_169.F0 control/SLICE_169
+ROUTE         1   e 1.081 */SLICE_169.F0 to */SLICE_140.A1 control/opAddress_0_sqmuxa_0_o2_0_3
+CTOF_DEL    ---     0.260 */SLICE_140.A1 to */SLICE_140.F1 control/SLICE_140
+ROUTE         6   e 1.081 */SLICE_140.F1 to */SLICE_141.B1 control/N_78
+CTOF_DEL    ---     0.260 */SLICE_141.B1 to */SLICE_141.F1 control/SLICE_141
+ROUTE         4   e 1.081 */SLICE_141.F1 to *l/SLICE_50.A1 control/N_80
+CTOF_DEL    ---     0.260 *l/SLICE_50.A1 to *l/SLICE_50.F1 control/SLICE_50
+ROUTE         2   e 1.081 *l/SLICE_50.F1 to *ol/SLICE_5.C1 control/un1_wr_byte_cnt_1_i_m2[0]
+C1TOFCO_DE  ---     0.475 *ol/SLICE_5.C1 to *l/SLICE_5.FCO control/SLICE_5
+ROUTE         1   e 0.001 *l/SLICE_5.FCO to *l/SLICE_4.FCI control/un1_wr_byte_cnt_2_cry_0
+FCITOF1_DE  ---     0.393 *l/SLICE_4.FCI to *ol/SLICE_4.F1 control/SLICE_4
+ROUTE         1   e 1.081 *ol/SLICE_4.F1 to */SLICE_51.LSR control/wr_byte_cnt_7[2] (to ipClk_c)
                   --------
-                    8.717   (34.7% logic, 65.3% route), 10 logic levels.
+                    8.778   (26.1% logic, 73.9% route), 7 logic levels.
 
-Report:  113.507MHz is the maximum frequency for this preference.
+Report:  108.436MHz is the maximum frequency for this preference.
 
 
 ================================================================================
@@ -313,30 +307,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Lengt
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -720,19 +690,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/opRxDa
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -744,13 +708,19 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -780,13 +750,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -886,9 +856,9 @@ Blocked:
 
    Name    Fanout   Delay (ns)          Site               Resource
 PADI_DEL    ---     0.858         19.PAD to       19.PADDI ipnReset
-ROUTE         1   e 1.081       19.PADDI to *l/SLICE_32.A0 ipnReset_c
-CTOF_DEL    ---     0.260 *l/SLICE_32.A0 to *l/SLICE_32.F0 control/SLICE_32
-ROUTE         1   e 0.001 *l/SLICE_32.F0 to */SLICE_32.DI0 control/ipnReset_c_i (to ipClk_c)
+ROUTE         1   e 1.081       19.PADDI to *l/SLICE_35.A0 ipnReset_c
+CTOF_DEL    ---     0.260 *l/SLICE_35.A0 to *l/SLICE_35.F0 control/SLICE_35
+ROUTE         1   e 0.001 *l/SLICE_35.F0 to */SLICE_35.DI0 control/ipnReset_c_i (to ipClk_c)
                   --------
                     2.200   (50.8% logic, 49.2% route), 2 logic levels.
 
@@ -907,6 +877,12 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -1111,54 +1087,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -1654,30 +1582,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Leng
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Destination[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -2056,19 +1960,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/opRxD
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2080,13 +1978,19 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2116,13 +2020,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2225,6 +2129,12 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -2429,54 +2339,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -3201,54 +3063,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[3]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Destination[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -4005,18 +3819,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/opRxData[7]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -4029,13 +3831,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4053,13 +3855,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[1]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4072,6 +3874,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opU
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4125,18 +3939,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[4]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -4144,6 +3946,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUA
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4348,6 +4162,18 @@ Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opUART_Tx" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -4761,102 +4587,6 @@ Preference: BLOCK PATH FROM CELL "control/opTxPkt.Valid" TO PORT "opLED[7]" ;
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "control/opTxPkt.SoP" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -5262,8 +4992,8 @@ Blocked:
    Delay:               2.671ns  (59.5% logic, 40.5% route), 2 logic levels.
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_68.CLK to *r/SLICE_68.Q1 register/SLICE_68 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_68.Q1 to       37.PADDO opLED_c[7]
+REG_DEL     ---     0.383 */SLICE_69.CLK to *r/SLICE_69.Q1 register/SLICE_69 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_69.Q1 to       37.PADDO opLED_c[7]
 DOPAD_DEL   ---     1.207       37.PADDO to         37.PAD opLED[7]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5385,11 +5115,11 @@ Preference: Unconstrained: CLOCK_TO_OUT
 Unconstrained Preference:
    CLOCK_TO_OUT PORT "opLED[0]" CLKPORT "ipClk" 
 
-Report:    2.671ns delay register/SLICE_65 to opLED[0]
+Report:    2.671ns delay register/SLICE_66 to opLED[0]
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_65.CLK to *r/SLICE_65.Q0 register/SLICE_65 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_65.Q0 to       46.PADDO opLED_c[0]
+REG_DEL     ---     0.383 */SLICE_66.CLK to *r/SLICE_66.Q0 register/SLICE_66 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_66.Q0 to       46.PADDO opLED_c[0]
 DOPAD_DEL   ---     1.207       46.PADDO to         46.PAD opLED[0]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5397,11 +5127,11 @@ DOPAD_DEL   ---     1.207       46.PADDO to         46.PAD opLED[0]
 Unconstrained Preference:
    CLOCK_TO_OUT PORT "opLED[1]" CLKPORT "ipClk" 
 
-Report:    2.671ns delay register/SLICE_65 to opLED[1]
+Report:    2.671ns delay register/SLICE_66 to opLED[1]
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_65.CLK to *r/SLICE_65.Q1 register/SLICE_65 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_65.Q1 to       45.PADDO opLED_c[1]
+REG_DEL     ---     0.383 */SLICE_66.CLK to *r/SLICE_66.Q1 register/SLICE_66 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_66.Q1 to       45.PADDO opLED_c[1]
 DOPAD_DEL   ---     1.207       45.PADDO to         45.PAD opLED[1]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5409,11 +5139,11 @@ DOPAD_DEL   ---     1.207       45.PADDO to         45.PAD opLED[1]
 Unconstrained Preference:
    CLOCK_TO_OUT PORT "opLED[2]" CLKPORT "ipClk" 
 
-Report:    2.671ns delay register/SLICE_66 to opLED[2]
+Report:    2.671ns delay register/SLICE_67 to opLED[2]
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_66.CLK to *r/SLICE_66.Q0 register/SLICE_66 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_66.Q0 to       44.PADDO opLED_c[2]
+REG_DEL     ---     0.383 */SLICE_67.CLK to *r/SLICE_67.Q0 register/SLICE_67 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_67.Q0 to       44.PADDO opLED_c[2]
 DOPAD_DEL   ---     1.207       44.PADDO to         44.PAD opLED[2]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5421,11 +5151,11 @@ DOPAD_DEL   ---     1.207       44.PADDO to         44.PAD opLED[2]
 Unconstrained Preference:
    CLOCK_TO_OUT PORT "opLED[3]" CLKPORT "ipClk" 
 
-Report:    2.671ns delay register/SLICE_66 to opLED[3]
+Report:    2.671ns delay register/SLICE_67 to opLED[3]
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_66.CLK to *r/SLICE_66.Q1 register/SLICE_66 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_66.Q1 to       43.PADDO opLED_c[3]
+REG_DEL     ---     0.383 */SLICE_67.CLK to *r/SLICE_67.Q1 register/SLICE_67 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_67.Q1 to       43.PADDO opLED_c[3]
 DOPAD_DEL   ---     1.207       43.PADDO to         43.PAD opLED[3]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5433,11 +5163,11 @@ DOPAD_DEL   ---     1.207       43.PADDO to         43.PAD opLED[3]
 Unconstrained Preference:
    CLOCK_TO_OUT PORT "opLED[4]" CLKPORT "ipClk" 
 
-Report:    2.671ns delay register/SLICE_67 to opLED[4]
+Report:    2.671ns delay register/SLICE_68 to opLED[4]
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_67.CLK to *r/SLICE_67.Q0 register/SLICE_67 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_67.Q0 to       40.PADDO opLED_c[4]
+REG_DEL     ---     0.383 */SLICE_68.CLK to *r/SLICE_68.Q0 register/SLICE_68 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_68.Q0 to       40.PADDO opLED_c[4]
 DOPAD_DEL   ---     1.207       40.PADDO to         40.PAD opLED[4]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5445,11 +5175,11 @@ DOPAD_DEL   ---     1.207       40.PADDO to         40.PAD opLED[4]
 Unconstrained Preference:
    CLOCK_TO_OUT PORT "opLED[5]" CLKPORT "ipClk" 
 
-Report:    2.671ns delay register/SLICE_67 to opLED[5]
+Report:    2.671ns delay register/SLICE_68 to opLED[5]
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_67.CLK to *r/SLICE_67.Q1 register/SLICE_67 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_67.Q1 to       39.PADDO opLED_c[5]
+REG_DEL     ---     0.383 */SLICE_68.CLK to *r/SLICE_68.Q1 register/SLICE_68 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_68.Q1 to       39.PADDO opLED_c[5]
 DOPAD_DEL   ---     1.207       39.PADDO to         39.PAD opLED[5]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5457,11 +5187,11 @@ DOPAD_DEL   ---     1.207       39.PADDO to         39.PAD opLED[5]
 Unconstrained Preference:
    CLOCK_TO_OUT PORT "opLED[6]" CLKPORT "ipClk" 
 
-Report:    2.671ns delay register/SLICE_68 to opLED[6]
+Report:    2.671ns delay register/SLICE_69 to opLED[6]
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.383 */SLICE_68.CLK to *r/SLICE_68.Q0 register/SLICE_68 (from ipClk_c)
-ROUTE         2   e 1.081 *r/SLICE_68.Q0 to       38.PADDO opLED_c[6]
+REG_DEL     ---     0.383 */SLICE_69.CLK to *r/SLICE_69.Q0 register/SLICE_69 (from ipClk_c)
+ROUTE         2   e 1.081 *r/SLICE_69.Q0 to       38.PADDO opLED_c[6]
 DOPAD_DEL   ---     1.207       38.PADDO to         38.PAD opLED[6]
                   --------
                     2.671   (59.5% logic, 40.5% route), 2 logic levels.
@@ -5478,7 +5208,7 @@ Report Summary
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY PORT "ipClk" 50.000000 MHz ;  |   50.000 MHz|  113.507 MHz|  10  
+FREQUENCY PORT "ipClk" 50.000000 MHz ;  |   50.000 MHz|  108.436 MHz|   7  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -5491,7 +5221,7 @@ Clock Domains Analysis
 
 Found 1 clocks:
 
-Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 126
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 124
    Covered under: FREQUENCY PORT "ipClk" 50.000000 MHz ;
 
 
@@ -5501,9 +5231,6 @@ Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 126
 
      Delay                        Element                 Net
 
-  e 1.081ns          ipClk.PADDI to control/SLICE_33.CLK ipClk_c
-  e 1.081ns          ipClk.PADDI to control/SLICE_34.CLK ipClk_c
-  e 1.081ns          ipClk.PADDI to control/SLICE_35.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_36.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_37.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_38.CLK ipClk_c
@@ -5513,33 +5240,36 @@ Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 126
   e 1.081ns          ipClk.PADDI to control/SLICE_42.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_43.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_44.CLK ipClk_c
-  e 1.081ns          ipClk.PADDI to egister/SLICE_56.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to control/SLICE_45.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to control/SLICE_46.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to control/SLICE_47.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to egister/SLICE_57.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to egister/SLICE_58.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to egister/SLICE_59.CLK ipClk_c
-  e 1.081ns          ipClk.PADDI to control/SLICE_60.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to egister/SLICE_60.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_61.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_62.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to control/SLICE_63.CLK ipClk_c
-  e 1.081ns          ipClk.PADDI to ketiser/SLICE_69.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to control/SLICE_64.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to ketiser/SLICE_70.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to ketiser/SLICE_71.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to ketiser/SLICE_72.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to ketiser/SLICE_73.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to ketiser/SLICE_80.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to ketiser/SLICE_81.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to ketiser/SLICE_82.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to ketiser/SLICE_83.CLK ipClk_c
-  e 1.081ns          ipClk.PADDI to ketiser/SLICE_84.CLK ipClk_c
+  e 1.081ns          ipClk.PADDI to etiser/SLICE_123.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to etiser/SLICE_124.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to etiser/SLICE_125.CLK ipClk_c
   e 1.081ns          ipClk.PADDI to etiser/SLICE_126.CLK ipClk_c
-  e 1.081ns          ipClk.PADDI to etiser/SLICE_127.CLK ipClk_c
-  e 1.081ns register/SLICE_65.Q0 to       opLED[0].PADDO opLED_c[0]
-  e 1.081ns register/SLICE_65.Q1 to       opLED[1].PADDO opLED_c[1]
-  e 1.081ns register/SLICE_66.Q0 to       opLED[2].PADDO opLED_c[2]
-  e 1.081ns register/SLICE_66.Q1 to       opLED[3].PADDO opLED_c[3]
-  e 1.081ns register/SLICE_67.Q0 to       opLED[4].PADDO opLED_c[4]
-  e 1.081ns register/SLICE_67.Q1 to       opLED[5].PADDO opLED_c[5]
-  e 1.081ns register/SLICE_68.Q0 to       opLED[6].PADDO opLED_c[6]
+  e 1.081ns register/SLICE_66.Q0 to       opLED[0].PADDO opLED_c[0]
+  e 1.081ns register/SLICE_66.Q1 to       opLED[1].PADDO opLED_c[1]
+  e 1.081ns register/SLICE_67.Q0 to       opLED[2].PADDO opLED_c[2]
+  e 1.081ns register/SLICE_67.Q1 to       opLED[3].PADDO opLED_c[3]
+  e 1.081ns register/SLICE_68.Q0 to       opLED[4].PADDO opLED_c[4]
+  e 1.081ns register/SLICE_68.Q1 to       opLED[5].PADDO opLED_c[5]
+  e 1.081ns register/SLICE_69.Q0 to       opLED[6].PADDO opLED_c[6]
 
 --------------------------------------------------------------------------------
 
@@ -5550,11 +5280,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5240 paths, 1 nets, and 1291 connections (97.07% coverage)
+Constraints cover 5186 paths, 1 nets, and 1250 connections (96.97% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
-Mon May 09 09:25:42 2022
+Tue May 10 18:20:04 2022
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -5595,17 +5325,17 @@ Passed: The following path meets requirements by 0.237ns
 
  Constraint Details:
 
-      0.223ns physical path delay packetiser/UART_Inst/SLICE_115 to packetiser/UART_Inst/SLICE_115 meets
+      0.223ns physical path delay packetiser/UART_Inst/SLICE_110 to packetiser/UART_Inst/SLICE_110 meets
      -0.014ns M_HLD and
       0.000ns delay constraint requirement (totaling -0.014ns) by 0.237ns
 
  Physical Path Details:
 
-      Data path packetiser/UART_Inst/SLICE_115 to packetiser/UART_Inst/SLICE_115:
+      Data path packetiser/UART_Inst/SLICE_110 to packetiser/UART_Inst/SLICE_110:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.120 *SLICE_115.CLK to */SLICE_115.Q1 packetiser/UART_Inst/SLICE_115 (from ipClk_c)
-ROUTE         7   e 0.103 */SLICE_115.Q1 to */SLICE_115.M0 packetiser/UART_RxData[5] (to ipClk_c)
+REG_DEL     ---     0.120 *SLICE_110.CLK to */SLICE_110.Q1 packetiser/UART_Inst/SLICE_110 (from ipClk_c)
+ROUTE         6   e 0.103 */SLICE_110.Q1 to */SLICE_110.M0 packetiser/UART_RxData[5] (to ipClk_c)
                   --------
                     0.223   (53.8% logic, 46.2% route), 1 logic levels.
 
@@ -5834,30 +5564,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Lengt
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/opRxStream.Length[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -6241,19 +5947,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/opRxDa
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -6265,13 +5965,19 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -6301,13 +6007,13 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cn
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -6407,9 +6113,9 @@ Blocked:
 
    Name    Fanout   Delay (ns)          Site               Resource
 PADI_DEL    ---     0.557         19.PAD to       19.PADDI ipnReset
-ROUTE         1   e 0.450       19.PADDI to *l/SLICE_32.A0 ipnReset_c
-CTOF_DEL    ---     0.085 *l/SLICE_32.A0 to *l/SLICE_32.F0 control/SLICE_32
-ROUTE         1   e 0.001 *l/SLICE_32.F0 to */SLICE_32.DI0 control/ipnReset_c_i (to ipClk_c)
+ROUTE         1   e 0.450       19.PADDI to *l/SLICE_35.A0 ipnReset_c
+CTOF_DEL    ---     0.085 *l/SLICE_35.A0 to *l/SLICE_35.F0 control/SLICE_35
+ROUTE         1   e 0.001 *l/SLICE_35.F0 to */SLICE_35.DI0 control/ipnReset_c_i (to ipClk_c)
                   --------
                     1.093   (58.7% logic, 41.3% route), 2 logic levels.
 
@@ -6428,6 +6134,12 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -6632,54 +6344,6 @@ Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipnReset" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7175,30 +6839,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Leng
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Length[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/opRxStream.Destination[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -7577,19 +7217,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/opRxD
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[0]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7601,13 +7235,19 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[1]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[2]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7637,13 +7277,13 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_c
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt[5]" ;
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "packetiser/UART_Inst/clk_cnt2[5]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7746,6 +7386,12 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[1]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[2]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/rd_byte_cnt[3]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -7950,54 +7596,6 @@ Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opWrData[31]" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Valid" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[0]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[1]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[2]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[3]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[4]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[5]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[6]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM PORT "ipUART_Rx" TO CELL "control/opTxPkt.Source[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -8722,54 +8320,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[3]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Length[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/opRxStream.Destination[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -9526,18 +9076,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/opRxData[7]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -9550,13 +9088,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[0]" TO PORT "opL
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[0]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -9574,13 +9112,13 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[1]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[1]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -9593,6 +9131,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opU
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[2]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -9646,18 +9196,6 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[4]" TO PORT "opLE
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -9665,6 +9203,18 @@ Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opUA
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt[5]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "packetiser/UART_Inst/clk_cnt2[5]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -9869,6 +9419,18 @@ Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opUART_Tx" ;
 
 ================================================================================
 Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[2]" TO PORT "opLED[7]" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opUART_Tx" ;
+            0 items scored.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: BLOCK PATH FROM CELL "control/rd_byte_cnt[3]" TO PORT "opLED[7]" ;
             0 items scored.
 --------------------------------------------------------------------------------
 
@@ -10282,102 +9844,6 @@ Preference: BLOCK PATH FROM CELL "control/opTxPkt.Valid" TO PORT "opLED[7]" ;
 
 
 ================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[0]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[1]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[2]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[3]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[4]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[5]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[6]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opUART_Tx" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
-Preference: BLOCK PATH FROM CELL "control/opTxPkt.Source[7]" TO PORT "opLED[7]" ;
-            0 items scored.
---------------------------------------------------------------------------------
-
-
-================================================================================
 Preference: BLOCK PATH FROM CELL "control/opTxPkt.SoP" TO PORT "opUART_Tx" ;
             0 items scored.
 --------------------------------------------------------------------------------
@@ -10783,8 +10249,8 @@ Blocked:
    Delay:               1.200ns  (62.5% logic, 37.5% route), 2 logic levels.
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.122 */SLICE_68.CLK to *r/SLICE_68.Q1 register/SLICE_68 (from ipClk_c)
-ROUTE         2   e 0.450 *r/SLICE_68.Q1 to       37.PADDO opLED_c[7]
+REG_DEL     ---     0.122 */SLICE_69.CLK to *r/SLICE_69.Q1 register/SLICE_69 (from ipClk_c)
+ROUTE         2   e 0.450 *r/SLICE_69.Q1 to       37.PADDO opLED_c[7]
 DOPAD_DEL   ---     0.630       37.PADDO to         37.PAD opLED[7]
                   --------
                     1.202   (62.6% logic, 37.4% route), 2 logic levels.
@@ -10904,7 +10370,7 @@ Clock Domains Analysis
 
 Found 1 clocks:
 
-Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 126
+Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 124
    Covered under: FREQUENCY PORT "ipClk" 50.000000 MHz ;
 
 
@@ -10914,13 +10380,13 @@ Clock Domain: ipClk_c   Source: ipClk.PAD   Loads: 126
 
      Delay                        Element                 Net
 
-  e 0.450ns register/SLICE_65.Q0 to       opLED[0].PADDO opLED_c[0]
-  e 0.450ns register/SLICE_65.Q1 to       opLED[1].PADDO opLED_c[1]
-  e 0.450ns register/SLICE_66.Q0 to       opLED[2].PADDO opLED_c[2]
-  e 0.450ns register/SLICE_66.Q1 to       opLED[3].PADDO opLED_c[3]
-  e 0.450ns register/SLICE_67.Q0 to       opLED[4].PADDO opLED_c[4]
-  e 0.450ns register/SLICE_67.Q1 to       opLED[5].PADDO opLED_c[5]
-  e 0.450ns register/SLICE_68.Q0 to       opLED[6].PADDO opLED_c[6]
+  e 0.450ns register/SLICE_66.Q0 to       opLED[0].PADDO opLED_c[0]
+  e 0.450ns register/SLICE_66.Q1 to       opLED[1].PADDO opLED_c[1]
+  e 0.450ns register/SLICE_67.Q0 to       opLED[2].PADDO opLED_c[2]
+  e 0.450ns register/SLICE_67.Q1 to       opLED[3].PADDO opLED_c[3]
+  e 0.450ns register/SLICE_68.Q0 to       opLED[4].PADDO opLED_c[4]
+  e 0.450ns register/SLICE_68.Q1 to       opLED[5].PADDO opLED_c[5]
+  e 0.450ns register/SLICE_69.Q0 to       opLED[6].PADDO opLED_c[6]
 
 --------------------------------------------------------------------------------
 
@@ -10931,7 +10397,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 5240 paths, 1 nets, and 1323 connections (99.47% coverage)
+Constraints cover 5186 paths, 1 nets, and 1282 connections (99.46% coverage)
 
 
 
