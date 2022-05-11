@@ -7,7 +7,6 @@
 @N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing sequential instance opRxStream\.Length[4] (in view: work.UART_Packets(verilog)) because it does not drive other instances.
 @N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Found counter in view:work.UART_Packets(verilog) instance tx_byte_length[7:0] 
 @N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found counter in view:work.UART(verilog) instance clk_cnt[8:0] 
-@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing sequential instance control.rd_data[10] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: FX1056 |Writing EDF file: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1.edi
 @N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 

@@ -9,27 +9,27 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: DAYALAN1
+Hostname: DAYALAN-YOGA910
 
 Implementation : impl1
 Synopsys HDL compiler and linker, Version comp202003synp2, Build 182R, Built Oct 29 2020 10:49:53, @
 
-Modified Files: 2
+Modified Files: 0
 FID:  path (prevtimestamp, timestamp)
-20       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v (2022-05-04 16:50:59, 2022-05-10 18:03:29)
-17       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v (2022-05-02 13:55:17, 2022-05-10 17:51:08)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 0
 MID:  lib.cell.view
 
 *******************************************************************
-Unmodified files: 10
+Unmodified files: 12
 FID:  path (timestamp)
+20       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v (2022-05-10 18:03:29)
+17       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v (2022-05-11 08:41:41)
 18       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v (2022-04-30 07:55:46)
 0        C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v (2022-05-09 09:07:48)
 19       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v (2022-05-09 09:22:51)
-21       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v (2022-05-09 09:23:33)
+21       C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v (2022-05-11 08:29:19)
 3        C:\lscc\diamond\3.12\synpbase\lib\lucent\pmi_def.v (2020-10-29 10:20:54)
 4        C:\lscc\diamond\3.12\synpbase\lib\lucent\xp2.v (2020-10-29 10:20:54)
 5        C:\lscc\diamond\3.12\synpbase\lib\vlog\hypermods.v (2020-10-29 10:23:10)

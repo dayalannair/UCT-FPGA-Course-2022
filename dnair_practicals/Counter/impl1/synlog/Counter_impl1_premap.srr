@@ -1,4 +1,4 @@
-# Tue May 10 18:19:53 2022
+# Wed May 11 08:44:27 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -11,7 +11,7 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: DAYALAN1
+Hostname: DAYALAN-YOGA910
 
 Implementation : impl1
 Synopsys Lattice Technology Pre-mapping, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
@@ -75,20 +75,20 @@ original code -> new code
    00000000000000000000000000000001 -> 01
    00000000000000000000000000000010 -> 10
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 173MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist UART_wrapper 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
 
@@ -98,7 +98,7 @@ Clock Summary
           Start     Requested     Requested     Clock        Clock                Clock
 Level     Clock     Frequency     Period        Type         Group                Load 
 ---------------------------------------------------------------------------------------
-0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     261  
+0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     214  
 =======================================================================================
 
 
@@ -106,11 +106,11 @@ Level     Clock     Frequency     Period        Type         Group              
 Clock Load Summary
 ***********************
 
-          Clock     Source          Clock Pin            Non-clock Pin     Non-clock Pin
-Clock     Load      Pin             Seq Example          Seq Example       Comb Example 
-----------------------------------------------------------------------------------------
-ipClk     261       ipClk(port)     register.Reset.C     -                 -            
-========================================================================================
+          Clock     Source          Clock Pin        Non-clock Pin     Non-clock Pin
+Clock     Load      Pin             Seq Example      Seq Example       Comb Example 
+------------------------------------------------------------------------------------
+ipClk     214       ipClk(port)     clk_cnt[0].C     -                 -            
+====================================================================================
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -123,15 +123,15 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 261 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 214 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-==================================== Non-Gated/Non-Generated Clocks =====================================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance                  
----------------------------------------------------------------------------------------------------------
-@KP:ckid0_0       ipClk               port                   261        register.opWrRegisters\.LEDs[7:0]
-=========================================================================================================
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_0       ipClk               port                   214        clk_cnt[0]     
+=======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -139,20 +139,20 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 93MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 176MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Tue May 10 18:19:55 2022
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Wed May 11 08:44:30 2022
 
 ###########################################################]

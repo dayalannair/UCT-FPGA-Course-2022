@@ -31,7 +31,7 @@ for n in range(500):
 	#print("Writing to LEDS...\n")
 	Write(s, LEDs, 36)
 
-	print(Time)
+	#print(Time)
 	sys.stdout.flush()
 	time.sleep(0.02)
 

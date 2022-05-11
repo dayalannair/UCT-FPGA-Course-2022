@@ -6,25 +6,29 @@ Performance Grade:      5
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.42
 
-Tue May 10 18:20:16 2022
+Wed May 11 08:44:47 2022
 
 Pinout by Port Name:
-+-----------+----------+--------------+-------+-------------------------------+
-| Port Name | Pin/Bank | Buffer Type  | Site  | Properties                    |
-+-----------+----------+--------------+-------+-------------------------------+
-| ipClk     | 21/7     | LVCMOS33_IN  | PL12A | SLEW:FAST PULL:UP             |
-| ipUART_Rx | 110/1    | LVCMOS33_IN  | PT28A | SLEW:FAST PULL:UP             |
-| ipnReset  | 19/7     | LVCMOS33_IN  | PL11A | SLEW:FAST PULL:UP             |
-| opLED[0]  | 46/5     | LVCMOS33_OUT | PB14A | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opLED[1]  | 45/5     | LVCMOS33_OUT | PB15A | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opLED[2]  | 44/5     | LVCMOS33_OUT | PB13A | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opLED[3]  | 43/5     | LVCMOS33_OUT | PB13B | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opLED[4]  | 40/5     | LVCMOS33_OUT | PB7B  | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opLED[5]  | 39/5     | LVCMOS33_OUT | PB8B  | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opLED[6]  | 38/5     | LVCMOS33_OUT | PB7A  | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opLED[7]  | 37/5     | LVCMOS33_OUT | PB8A  | DRIVE:12mA SLEW:FAST PULL:UP  |
-| opUART_Tx | 109/1    | LVCMOS33_OUT | PT28B | DRIVE:12mA SLEW:FAST PULL:UP  |
-+-----------+----------+--------------+-------+-------------------------------+
++--------------+----------+--------------+-------+-------------------------------+
+| Port Name    | Pin/Bank | Buffer Type  | Site  | Properties                    |
++--------------+----------+--------------+-------+-------------------------------+
+| ipButtons[0] | 54/5     | LVCMOS33_IN  | PB17B | SLEW:FAST PULL:UP             |
+| ipButtons[1] | 53/5     | LVCMOS33_IN  | PB17A | SLEW:FAST PULL:UP             |
+| ipButtons[2] | 52/5     | LVCMOS33_IN  | PB16B | SLEW:FAST PULL:UP             |
+| ipButtons[3] | 50/5     | LVCMOS33_IN  | PB16A | SLEW:FAST PULL:UP             |
+| ipClk        | 21/7     | LVCMOS33_IN  | PL12A | SLEW:FAST PULL:UP             |
+| ipUART_Rx    | 110/1    | LVCMOS33_IN  | PT28A | SLEW:FAST PULL:UP             |
+| ipnReset     | 19/7     | LVCMOS33_IN  | PL11A | SLEW:FAST PULL:UP             |
+| opLED[0]     | 46/5     | LVCMOS33_OUT | PB14A | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opLED[1]     | 45/5     | LVCMOS33_OUT | PB15A | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opLED[2]     | 44/5     | LVCMOS33_OUT | PB13A | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opLED[3]     | 43/5     | LVCMOS33_OUT | PB13B | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opLED[4]     | 40/5     | LVCMOS33_OUT | PB7B  | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opLED[5]     | 39/5     | LVCMOS33_OUT | PB8B  | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opLED[6]     | 38/5     | LVCMOS33_OUT | PB7A  | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opLED[7]     | 37/5     | LVCMOS33_OUT | PB8A  | DRIVE:12mA SLEW:FAST PULL:UP  |
+| opUART_Tx    | 109/1    | LVCMOS33_OUT | PT28B | DRIVE:12mA SLEW:FAST PULL:UP  |
++--------------+----------+--------------+-------+-------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -81,10 +85,10 @@ Pinout by Pin Number:
 | 46/5     | opLED[0]            | LOCATED    | LVCMOS33_OUT | PB14A | BDQ15                |
 | 47/5     |     unused, PULL:UP |            |              | PB15B | BDQ15                |
 | 48/5     |     unused, PULL:UP |            |              | PB14B | BDQ15                |
-| 50/5     |     unused, PULL:UP |            |              | PB16A | BDQ15                |
-| 52/5     |     unused, PULL:UP |            |              | PB16B | BDQ15                |
-| 53/5     |     unused, PULL:UP |            |              | PB17A | BDQ15                |
-| 54/5     |     unused, PULL:UP |            |              | PB17B | BDQ15                |
+| 50/5     | ipButtons[3]        | LOCATED    | LVCMOS33_IN  | PB16A | BDQ15                |
+| 52/5     | ipButtons[2]        | LOCATED    | LVCMOS33_IN  | PB16B | BDQ15                |
+| 53/5     | ipButtons[1]        | LOCATED    | LVCMOS33_IN  | PB17A | BDQ15                |
+| 54/5     | ipButtons[0]        | LOCATED    | LVCMOS33_IN  | PB17B | BDQ15                |
 | 55/5     |     unused, PULL:UP |            |              | PB18A | BDQ15                |
 | 56/5     |     unused, PULL:UP |            |              | PB19A | PCLKT5_0/BDQ15       |
 | 57/5     |     unused, PULL:UP |            |              | PB18B | BDQ15                |
@@ -251,6 +255,10 @@ Pinout by Pin Number:
 List of All Pins' Locate Preferences Based on Final Placement After PAR 
 to Help Users Lock Down ALL the Pins Easily (by Simply Copy & Paste): 
 
+LOCATE  COMP  "ipButtons[0]"  SITE  "54";
+LOCATE  COMP  "ipButtons[1]"  SITE  "53";
+LOCATE  COMP  "ipButtons[2]"  SITE  "52";
+LOCATE  COMP  "ipButtons[3]"  SITE  "50";
 LOCATE  COMP  "ipClk"  SITE  "21";
 LOCATE  COMP  "ipUART_Rx"  SITE  "110";
 LOCATE  COMP  "ipnReset"  SITE  "19";
@@ -274,5 +282,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
-Tue May 10 18:20:16 2022
+Wed May 11 08:44:47 2022
 

@@ -13,6 +13,7 @@ module UART_wrapper(
   input ipClk,
   input ipnReset,
   input ipUART_Rx,
+  input[3:0] ipButtons,
   output reg opUART_Tx,
   output [7:0]opLED
 );
@@ -34,6 +35,7 @@ WR_REGISTERS WrRegisters;
 RD_REGISTERS RdRegisters;
 
 assign opLED = WrRegisters.LEDs;
+reg [31:0] clk_cnt;
 
 UART_Packets packetiser(
   .ipClk (ipClk),
@@ -60,6 +62,8 @@ Control control(
 Registers register(
   .ipClk (ipClk),
   .ipReset (rst),
+  .ipButtons (ipButtons),
+  .clk_cnt (clk_cnt),  
   .ipRdRegisters (RdRegisters),
   .opWrRegisters (WrRegisters),
   .opRdData (crRdData),
@@ -67,5 +71,8 @@ Registers register(
   .ipWrData (crWrData),
   .ipWrEnable (crWrEnable)
 );
-
+always @(posedge ipClk)begin
+  if (rst) clk_cnt <= 0;
+  else clk_cnt <= clk_cnt + 1'b1;
+end
 endmodule

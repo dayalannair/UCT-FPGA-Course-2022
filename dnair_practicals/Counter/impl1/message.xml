@@ -92,6 +92,30 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
+            <Dynamic>CL279 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v&quot;:29:0:29:5|Pruning register bits 31 to 8 of opRdData[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Dynamic>
+            <Navigation>CL279</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>0</Navigation>
+            <Navigation>29</Navigation>
+            <Navigation>5</Navigation>
+            <Navigation>Pruning register bits 31 to 8 of opRdData[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CS263 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v&quot;:66:12:66:18|Port-width mismatch for port clk_cnt. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Dynamic>
+            <Navigation>CS263</Navigation>
+            <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v</Navigation>
+            <Navigation>66</Navigation>
+            <Navigation>12</Navigation>
+            <Navigation>66</Navigation>
+            <Navigation>18</Navigation>
+            <Navigation>Port-width mismatch for port clk_cnt. The port definition is 1 bits, but the actual port connection bit width is 32. Adjust either the definition or the instantiation of this port.</Navigation>
+        </Message>
+        <Message>
+            <ID>2019991</ID>
+            <Severity>Warning</Severity>
             <Dynamic>CG133 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v&quot;:5:14:5:23|Object RdRegisters.ClockTicks is declared but not assigned. Either assign a value or remove the declaration.</Dynamic>
             <Navigation>CG133</Navigation>
             <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v</Navigation>
@@ -116,12 +140,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>CL246 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v&quot;:17:22:17:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
+            <Dynamic>CL246 :&quot;C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v&quot;:19:22:19:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.</Dynamic>
             <Navigation>CL246</Navigation>
             <Navigation>C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v</Navigation>
-            <Navigation>17</Navigation>
+            <Navigation>19</Navigation>
             <Navigation>22</Navigation>
-            <Navigation>17</Navigation>
+            <Navigation>19</Navigation>
             <Navigation>29</Navigation>
             <Navigation>Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.</Navigation>
         </Message>
@@ -207,300 +231,12 @@
         <Message>
             <ID>2019991</ID>
             <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[8] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[8] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[9] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[9] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[10] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[10] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[11] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[11] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[12] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[12] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[13] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[13] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[14] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[14] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[15] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[15] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[16] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[16] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[17] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[17] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[18] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[18] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[19] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[19] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[20] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[20] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[21] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[21] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[22] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[22] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[23] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[23] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[24] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[24] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[25] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[25] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[26] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[26] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[27] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[27] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[28] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[28] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[29] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[29] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[30] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[30] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>MO129 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Sequential instance register.opRdData[31] is reduced to a combinational gate by constant propagation.</Dynamic>
-            <Navigation>MO129</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Sequential instance register.opRdData[31] is reduced to a combinational gate by constant propagation.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:25:0:25:5|Removing instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
+            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v&quot;:29:0:29:5|Removing instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
             <Navigation>BN132</Navigation>
             <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v</Navigation>
-            <Navigation>25</Navigation>
+            <Navigation>29</Navigation>
             <Navigation>0</Navigation>
-            <Navigation>25</Navigation>
+            <Navigation>29</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
@@ -527,282 +263,6 @@
             <Navigation>51</Navigation>
             <Navigation>5</Navigation>
             <Navigation>Removing instance packetiser.UART_Inst.rst because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[31] because it is equivalent to instance control.rd_data[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[31] because it is equivalent to instance control.rd_data[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[30] because it is equivalent to instance control.rd_data[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[30] because it is equivalent to instance control.rd_data[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[29] because it is equivalent to instance control.rd_data[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[29] because it is equivalent to instance control.rd_data[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[28] because it is equivalent to instance control.rd_data[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[28] because it is equivalent to instance control.rd_data[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[27] because it is equivalent to instance control.rd_data[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[27] because it is equivalent to instance control.rd_data[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[26] because it is equivalent to instance control.rd_data[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[26] because it is equivalent to instance control.rd_data[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[25] because it is equivalent to instance control.rd_data[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[25] because it is equivalent to instance control.rd_data[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[24] because it is equivalent to instance control.rd_data[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[24] because it is equivalent to instance control.rd_data[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[23] because it is equivalent to instance control.rd_data[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[23] because it is equivalent to instance control.rd_data[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[22] because it is equivalent to instance control.rd_data[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[22] because it is equivalent to instance control.rd_data[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[21] because it is equivalent to instance control.rd_data[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[21] because it is equivalent to instance control.rd_data[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[20] because it is equivalent to instance control.rd_data[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[20] because it is equivalent to instance control.rd_data[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[19] because it is equivalent to instance control.rd_data[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[19] because it is equivalent to instance control.rd_data[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[18] because it is equivalent to instance control.rd_data[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[18] because it is equivalent to instance control.rd_data[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[17] because it is equivalent to instance control.rd_data[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[17] because it is equivalent to instance control.rd_data[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[16] because it is equivalent to instance control.rd_data[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[16] because it is equivalent to instance control.rd_data[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[15] because it is equivalent to instance control.rd_data[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[15] because it is equivalent to instance control.rd_data[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[14] because it is equivalent to instance control.rd_data[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[14] because it is equivalent to instance control.rd_data[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[13] because it is equivalent to instance control.rd_data[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[13] because it is equivalent to instance control.rd_data[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[12] because it is equivalent to instance control.rd_data[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[12] because it is equivalent to instance control.rd_data[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[11] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[11] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[9] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[9] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
-        </Message>
-        <Message>
-            <ID>2019991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>BN132 :&quot;c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v&quot;:39:0:39:5|Removing instance control.rd_data[8] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Dynamic>
-            <Navigation>BN132</Navigation>
-            <Navigation>c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>0</Navigation>
-            <Navigation>39</Navigation>
-            <Navigation>5</Navigation>
-            <Navigation>Removing instance control.rd_data[8] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</Navigation>
         </Message>
         <Message>
             <ID>2019991</ID>

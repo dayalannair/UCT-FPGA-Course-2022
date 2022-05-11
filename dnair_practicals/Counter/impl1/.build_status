@@ -2,43 +2,43 @@
 <BuildStatus>
     <Strategy name="Strategy1">
         <Milestone name="Export" build_result="0" build_time="0">
-            <Task name="IBIS" build_result="0" update_result="2" update_time="1652199622"/>
-            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1652199622"/>
-            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1652199622"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1652199628"/>
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1652251493"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1652251493"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1652251493"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1652251498"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1652199603">
-            <Task name="Map" build_result="2" update_result="0" update_time="1652199603"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1652199605"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1652199603"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1652199603"/>
+        <Milestone name="Map" build_result="2" build_time="1652251477">
+            <Task name="Map" build_result="2" update_result="0" update_time="1652251477"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1652251479"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1652251477"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1652251477"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1652199622">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1652199622"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1652199624"/>
-            <Task name="IOTiming" build_result="0" update_result="2" update_time="1652199622"/>
+        <Milestone name="PAR" build_result="2" build_time="1652251492">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1652251492"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1652251495"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1652251493"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1652199601">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1652199601"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1652251475">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1652251475"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1652199577"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1652199577"/>
-            <Task name="SSO" build_result="0" update_result="2" update_time="1652199601"/>
-            <Task name="PIODRC" build_result="0" update_result="2" update_time="1652199601"/>
-            <Task name="DEC" build_result="0" update_result="2" update_time="1652199601"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1652251303"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1652251303"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1652251476"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1652251476"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1652251476"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1652199601">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1652199601"/>
+        <Milestone name="Translate" build_result="2" build_time="1652251476">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1652251476"/>
         </Milestone>
-        <Report name="Counter_impl1.bgn" last_build_time="1652199628" last_build_size="3667"/>
-        <Report name="Counter_impl1.edi" last_build_time="1652199599" last_build_size="271144"/>
-        <Report name="Counter_impl1.jed" last_build_time="1652199628" last_build_size="1268324"/>
-        <Report name="Counter_impl1.ncd" last_build_time="1652199622" last_build_size="253384"/>
-        <Report name="Counter_impl1.ngd" last_build_time="1652199601" last_build_size="256713"/>
-        <Report name="Counter_impl1.tw1" last_build_time="1652199605" last_build_size="487061"/>
-        <Report name="Counter_impl1.twr" last_build_time="1652199624" last_build_size="525967"/>
-        <Report name="Counter_impl1_map.ncd" last_build_time="1652199603" last_build_size="164440"/>
+        <Report name="Counter_impl1.bgn" last_build_time="1652251498" last_build_size="3667"/>
+        <Report name="Counter_impl1.edi" last_build_time="1652251473" last_build_size="278162"/>
+        <Report name="Counter_impl1.jed" last_build_time="1652251498" last_build_size="1268464"/>
+        <Report name="Counter_impl1.ncd" last_build_time="1652251492" last_build_size="259757"/>
+        <Report name="Counter_impl1.ngd" last_build_time="1652251476" last_build_size="261618"/>
+        <Report name="Counter_impl1.tw1" last_build_time="1652251479" last_build_size="613521"/>
+        <Report name="Counter_impl1.twr" last_build_time="1652251495" last_build_size="648326"/>
+        <Report name="Counter_impl1_map.ncd" last_build_time="1652251477" last_build_size="168555"/>
     </Strategy>
 </BuildStatus>
-                                                   
+                                                                        

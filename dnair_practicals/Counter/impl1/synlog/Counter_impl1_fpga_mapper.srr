@@ -1,4 +1,4 @@
-# Tue May 10 18:19:55 2022
+# Wed May 11 08:44:30 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -11,7 +11,7 @@ Build: Q-2020.03L-SP1
 Install: C:\lscc\diamond\3.12\synpbase
 OS: Windows 6.2
 
-Hostname: DAYALAN1
+Hostname: DAYALAN-YOGA910
 
 Implementation : impl1
 Synopsys Lattice Technology Mapper, Version map202003lat, Build 172R, Built Nov  2 2020 09:31:45, @
@@ -43,32 +43,8 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 172MB peak: 172MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 172MB peak: 172MB)
 
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[8] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[9] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[10] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[11] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[12] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[13] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[14] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[15] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[16] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[17] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[18] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[19] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[20] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[21] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[22] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[23] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[24] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[25] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[26] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[27] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[28] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[29] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[30] is reduced to a combinational gate by constant propagation.
-@W: MO129 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Sequential instance register.opRdData[31] is reduced to a combinational gate by constant propagation.
 @N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing sequential instance opRxStream\.Length[7] (in view: work.UART_Packets(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing sequential instance opRxStream\.Length[6] (in view: work.UART_Packets(verilog)) because it does not drive other instances.
 @N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing sequential instance opRxStream\.Length[5] (in view: work.UART_Packets(verilog)) because it does not drive other instances.
@@ -76,40 +52,16 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 @N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Found counter in view:work.UART_Packets(verilog) instance tx_byte_length[7:0] 
 @N: MO231 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found counter in view:work.UART(verilog) instance clk_cnt[8:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 175MB peak: 175MB)
 
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Removing instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Removing instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing instance packetiser.rst because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Removing instance packetiser.UART_Inst.rst because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[31] because it is equivalent to instance control.rd_data[30]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[30] because it is equivalent to instance control.rd_data[29]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[29] because it is equivalent to instance control.rd_data[28]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[28] because it is equivalent to instance control.rd_data[27]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[27] because it is equivalent to instance control.rd_data[26]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[26] because it is equivalent to instance control.rd_data[25]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[25] because it is equivalent to instance control.rd_data[24]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[24] because it is equivalent to instance control.rd_data[23]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[23] because it is equivalent to instance control.rd_data[22]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[22] because it is equivalent to instance control.rd_data[21]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[21] because it is equivalent to instance control.rd_data[20]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[20] because it is equivalent to instance control.rd_data[19]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[19] because it is equivalent to instance control.rd_data[18]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[18] because it is equivalent to instance control.rd_data[17]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[17] because it is equivalent to instance control.rd_data[16]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[16] because it is equivalent to instance control.rd_data[15]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[15] because it is equivalent to instance control.rd_data[14]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[14] because it is equivalent to instance control.rd_data[13]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[13] because it is equivalent to instance control.rd_data[12]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[12] because it is equivalent to instance control.rd_data[11]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[11] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[9] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing instance control.rd_data[8] because it is equivalent to instance control.rd_data[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":39:0:39:5|Removing sequential instance control.rd_data[10] (in view: work.UART_wrapper(verilog)) because it does not drive other instances.
 
-Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 176MB peak: 176MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 177MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register packetiser.UART_Inst.clk_cnt2[0] which prevents the register from being packed into DSP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register packetiser.UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP
@@ -129,29 +81,29 @@ Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CP
 Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:02s		    11.34ns		 181 /       206
+   1		0h:00m:01s		    11.34ns		 183 /       207
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 179MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 178MB peak: 178MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_7_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_6_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_5_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_4_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_3_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_2_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_1_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":25:0:25:5|Boundary register register.opWrRegisters\.LEDs_0_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_7_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_6_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_5_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_4_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_3_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_2_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_1_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_0_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Boundary register packetiser.UART_Inst.opTx.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 179MB peak: 179MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 142MB peak: 179MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 179MB)
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
@@ -164,13 +116,13 @@ Writing EDIF Netlist and constraint files
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 185MB peak: 185MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 182MB peak: 185MB)
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 185MB)
 
 @N: MT615 |Found clock ipClk with period 20.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Tue May 10 18:19:59 2022
+# Timing report written on Wed May 11 08:44:34 2022
 #
 
 
@@ -261,11 +213,11 @@ packetiser.UART_Inst.clk_cnt2[8]     ipClk         FD1S3IX     D       clk_cnt2_
 packetiser.UART_Inst.clk_cnt2[5]     ipClk         FD1S3IX     D       clk_cnt2_8[5]                  19.264       10.415
 packetiser.UART_Inst.clk_cnt2[4]     ipClk         FD1S3IX     D       clk_cnt2_8[4]                  19.264       10.503
 packetiser.UART_Inst.clk_cnt2[9]     ipClk         FD1S3JX     D       un1_clk_cnt2_11_s_9_0_S0       20.057       11.577
+packetiser.UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]                   20.057       11.637
+packetiser.UART_Inst.clk_cnt[8]      ipClk         FD1P3AX     D       clk_cnt_s[8]                   20.057       11.637
+packetiser.UART_Inst.clk_cnt[5]      ipClk         FD1P3AX     D       clk_cnt_s[5]                   20.057       11.725
+packetiser.UART_Inst.clk_cnt[6]      ipClk         FD1P3AX     D       clk_cnt_s[6]                   20.057       11.725
 packetiser.UART_Inst.clk_cnt2[6]     ipClk         FD1S3IX     D       un1_clk_cnt2_11_cry_5_0_S1     20.057       11.753
-packetiser.UART_Inst.clk_cnt2[3]     ipClk         FD1S3JX     D       un1_clk_cnt2_11_cry_3_0_S0     20.057       11.841
-packetiser.UART_Inst.clk_cnt[7]      ipClk         FD1P3AX     D       clk_cnt_s[7]                   20.057       11.844
-packetiser.UART_Inst.clk_cnt[8]      ipClk         FD1P3AX     D       clk_cnt_s[8]                   20.057       11.844
-control.wr_byte_cnt[2]               ipClk         FD1S3JX     PD      wr_byte_cnt_7[2]               19.640       11.850
 =========================================================================================================================
 
 
@@ -340,40 +292,41 @@ None
 Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 185MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 183MB peak: 185MB)
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 183MB peak: 185MB)
 
 ---------------------------------------
 Resource Usage Report
 Part: lfxp2_5e-5
 
-Register bits: 206 of 4752 (4%)
+Register bits: 207 of 4752 (4%)
 PIC Latch:       0
-I/O cells:       12
+I/O cells:       16
 
 
 Details:
 CCU2B:          35
-FD1P3AX:        130
-FD1P3IX:        13
+FD1P3AX:        122
+FD1P3IX:        21
 FD1P3JX:        4
-FD1S3AX:        12
-FD1S3IX:        35
+FD1S3AX:        20
+FD1S3IX:        27
 FD1S3JX:        10
 GSR:            1
-IB:             3
+IB:             7
 IFS1P3DX:       1
-INV:            4
+IFS1P3IX:       1
+INV:            3
 OB:             9
 OFS1P3JX:       1
-ORCALUT4:       176
+ORCALUT4:       179
 PUR:            1
 VHI:            5
 VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 67MB peak: 185MB)
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 67MB peak: 185MB)
 
 Process took 0h:00m:04s realtime, 0h:00m:04s cputime
-# Tue May 10 18:20:00 2022
+# Wed May 11 08:44:34 2022
 
 ###########################################################]

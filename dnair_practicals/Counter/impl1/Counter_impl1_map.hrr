@@ -4,32 +4,32 @@ Report for cell UART_wrapper
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	     186.00        100.0
-                                 IOLGC	       2.00        100.0
-                                  LUT4	     180.00        100.0
-                                 IOREG	          2        100.0
-                                 IOBUF	         12        100.0
+                                 IOLGC	       3.00        100.0
+                                  LUT4	     183.00        100.0
+                                 IOREG	          3        100.0
+                                 IOBUF	         16        100.0
                                 PFUREG	        204        100.0
                                 RIPPLE	         35        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          UART_Packets	          1        65.2
-                             Registers	          1         5.0
-                               Control	          1        29.7
+                          UART_Packets	          1        65.9
+                             Registers	          1         5.6
+                               Control	          1        28.4
 ---------------------------------------------------
 Report for cell Registers
    Instance path: UART_wrapper/register
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	       9.33         5.0
-                                  LUT4	       3.00         1.7
+                                  SLIC	      10.50         5.6
+                                  LUT4	      12.00         6.6
                                 PFUREG	         16         7.8
 ---------------------------------------------------
 Report for cell Control
    Instance path: UART_wrapper/control
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      55.33        29.7
-                                  LUT4	      43.00        23.9
+                                  SLIC	      52.83        28.4
+                                  LUT4	      34.00        18.6
                                 PFUREG	         70        34.3
                                 RIPPLE	          6        17.1
 ---------------------------------------------------
@@ -37,8 +37,8 @@ Report for cell UART_Packets
    Instance path: UART_wrapper/packetiser
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     121.33        65.2
-                                  LUT4	     134.00        74.4
+                                  SLIC	     122.67        65.9
+                                  LUT4	     137.00        74.9
                                 PFUREG	        118        57.8
                                 RIPPLE	         29        82.9
 SUB MODULES
@@ -49,7 +49,7 @@ Report for cell UART
    Instance path: UART_wrapper/packetiser/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.33        29.2
-                                  LUT4	      59.00        32.8
+                                  SLIC	      54.25        29.2
+                                  LUT4	      60.00        32.8
                                 PFUREG	         49        24.0
                                 RIPPLE	         19        54.3

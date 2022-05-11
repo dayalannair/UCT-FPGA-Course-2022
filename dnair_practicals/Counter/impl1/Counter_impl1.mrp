@@ -17,24 +17,24 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   5
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  05/10/22  18:20:02
+Mapped on:  05/11/22  08:44:36
 
 Design Summary
 --------------
 
-   Number of registers:    206 out of  3864 (5%)
+   Number of registers:    207 out of  3864 (5%)
       PFU registers:          204 out of  3564 (6%)
-      PIO registers:            2 out of   300 (1%)
+      PIO registers:            3 out of   300 (1%)
    Number of SLICEs:       186 out of  2376 (8%)
       SLICEs as Logic/ROM:    186 out of  2376 (8%)
       SLICEs as RAM:            0 out of   405 (0%)
       SLICEs as Carry:         35 out of  2376 (1%)
-   Number of LUT4s:        250 out of  4752 (5%)
-      Number used as logic LUTs:        180
+   Number of LUT4s:        253 out of  4752 (5%)
+      Number used as logic LUTs:        183
       Number used as distributed RAM:     0
       Number used as ripple logic:       70
       Number used as shift registers:     0
-   Number of PIO sites used: 12 out of 100 (12%)
+   Number of PIO sites used: 16 out of 100 (16%)
    Number of PIO FIXEDDELAY:    0
    Number of DQSDLLs:  0 out of 2 (0%)
    Number of PLLs:  0 out of 2 (0%)
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  UART_wrapper                                  Date:  05/10/22  18:20:02
+Design:  UART_wrapper                                  Date:  05/11/22  08:44:36
 
 Design Summary (cont)
 ---------------------
@@ -74,56 +74,56 @@ Design Summary (cont)
    --------------------------------
    Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
-     Net ipClk_c: 124 loads, 124 rising, 0 falling (Driver: PIO ipClk )
+     Net ipClk_c: 125 loads, 125 rising, 0 falling (Driver: PIO ipClk )
    Number of Clock Enables:  22
-     Net un1_clk_cnt_0_sqmuxa_i_i: 1 loads, 0 LSLICEs
+     Net un1_clk_cnt_0_sqmuxa_i_i_0_a2_0_RNI13CU4: 1 loads, 0 LSLICEs
      Net control.rst: 1 loads, 1 LSLICEs
      Net register/LEDs11_i: 4 loads, 4 LSLICEs
      Net control/state[1]: 16 loads, 16 LSLICEs
+     Net control/opAddress_0_sqmuxa: 4 loads, 4 LSLICEs
      Net control/state_0_sqmuxa: 4 loads, 4 LSLICEs
-     Net control/N_79_i: 4 loads, 4 LSLICEs
-     Net control/N_18_i: 1 loads, 1 LSLICEs
-     Net control/N_59_i: 1 loads, 1 LSLICEs
+     Net control/N_27_i: 1 loads, 1 LSLICEs
+     Net control/N_29_i: 1 loads, 1 LSLICEs
      Net control/un1_state_7_i: 4 loads, 4 LSLICEs
      Net packetiser/un1_rst_2_i: 8 loads, 8 LSLICEs
-     Net packetiser/opTxReady_0_sqmuxa_1_i: 1 loads, 1 LSLICEs
+     Net packetiser/opTxReady_RNO: 1 loads, 1 LSLICEs
      Net packetiser/UART_Inst/un1_rst_2_i: 4 loads, 4 LSLICEs
      Net packetiser/UART_Inst/opRxValid_RNO: 1 loads, 1 LSLICEs
-     Net packetiser/UART_Inst/un1_rst_4_0_a2_0dup: 4 loads, 4 LSLICEs
-     Net packetiser/UART_Inst/opTxBusy_en_0: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/un1_rst_4_0_a2_0_0dup: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/m11_0_0_o2: 1 loads, 1 LSLICEs
      Net packetiser/UART_Inst/N_5_i: 5 loads, 5 LSLICEs
+     Net packetiser/rx_packet_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net packetiser/rx_state_RNI9H901[0]: 4 loads, 4 LSLICEs
      Net packetiser/rx_packet_1_sqmuxa: 4 loads, 4 LSLICEs
      Net packetiser/rx_packet_2_sqmuxa_1: 2 loads, 2 LSLICEs
-     Net packetiser/N_150_i: 4 loads, 4 LSLICEs
-     Net packetiser/N_92_i: 5 loads, 5 LSLICEs
-     Net packetiser/rx_packet_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net packetiser/N_26_i: 5 loads, 5 LSLICEs
      Net packetiser/tx_packet_0_sqmuxa_1: 4 loads, 4 LSLICEs
-   Number of LSRs:  12
+   Number of LSRs:  13
      Net control.rst: 8 loads, 7 LSLICEs
-     Net crAddress[1]: 4 loads, 4 LSLICEs
-     Net control/un1_state_7_0_o2_RNI1HPQ: 3 loads, 3 LSLICEs
-     Net control/N_75_i: 3 loads, 3 LSLICEs
-     Net control/state_s0_0_a2_i_o3_RNI0E8F1: 3 loads, 3 LSLICEs
+     Net clk_cnt[0]: 1 loads, 0 LSLICEs
+     Net control/state_RNIIOKQ[0]: 3 loads, 3 LSLICEs
+     Net control/N_39_i: 3 loads, 3 LSLICEs
+     Net control/wr_byte_cnt_0_sqmuxa_i_o2_RNITUUN: 3 loads, 3 LSLICEs
      Net control/wr_byte_cnt_7[2]: 1 loads, 1 LSLICEs
+     Net control/un1_state_7_0_0_RNI6JJO1_0: 4 loads, 4 LSLICEs
      Net packetiser/fb: 1 loads, 1 LSLICEs
      Net packetiser/rx_state[0]: 6 loads, 6 LSLICEs
-     Net packetiser/un1_rst_2_0_m3_RNI0A101: 4 loads, 4 LSLICEs
-     Net packetiser/UART_Inst/un1_rst_4_0_a2_0_a3_0dup: 2 loads, 2 LSLICEs
+     Net packetiser/un1_rst_2_0_0_m2_RNIE4JR: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/clk_cnt_0_sqmuxa_2_0_1_a2dup: 2 loads, 2 LSLICEs
      Net packetiser/UART_Inst/un1_tx_cnt_6_s_3_0_S0: 1 loads, 1 LSLICEs
      Net packetiser/UART_Inst/rx_state_0_sqmuxa: 11 loads, 11 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net control.rst: 55 loads
-     Net control/state[1]: 27 loads
+     Net control.rst: 48 loads
      Net packetiser/tx_state[0]: 27 loads
-     Net packetiser/UART_Inst/VCC: 27 loads
-     Net control/state[0]: 24 loads
-     Net packetiser/UART_Inst/tx_state[0]: 20 loads
+     Net control/state[1]: 25 loads
+     Net control/state[0]: 23 loads
+     Net packetiser/UART_Inst/VCC: 23 loads
      Net packetiser/tx_packet[1]: 19 loads
+     Net packetiser/UART_Inst/tx_state[0]: 19 loads
      Net packetiser/rx_packet_2_sqmuxa: 17 loads
-     Net packetiser/rx_state[0]: 15 loads
-     Net control/rd_byte_cnt[2]: 14 loads
-
+     Net packetiser/rx_state[0]: 14 loads
+     Net packetiser/tx_packet[0]: 13 loads
 
 
 
@@ -132,7 +132,7 @@ Design Summary (cont)
 
 
 
-Design:  UART_wrapper                                  Date:  05/10/22  18:20:02
+Design:  UART_wrapper                                  Date:  05/11/22  08:44:36
 
 
 
@@ -173,9 +173,17 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+------------+
 | opLED[0]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
+| ipButtons[3]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipButtons[2]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipButtons[1]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipButtons[0]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
 | ipUART_Rx           | INPUT     | LVCMOS33  | IN         |            |
 +---------------------+-----------+-----------+------------+------------+
-| ipnReset            | INPUT     | LVCMOS33  |            |            |
+| ipnReset            | INPUT     | LVCMOS33  | IN         |            |
 +---------------------+-----------+-----------+------------+------------+
 
 Removed logic
@@ -184,24 +192,23 @@ Removed logic
 Block VCC undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
 Block GND undriven or does not drive anything - clipped.
-Block register/GND undriven or does not drive anything - clipped.
-Block register/VCC undriven or does not drive anything - clipped.
-Signal packetiser/rx_state_i[0] was merged into signal packetiser/rx_state[0]
-Signal control.rst_i was merged into signal control.rst
-Signal crAddress_i[1] was merged into signal crAddress[1]
-Signal VCC undriven or does not drive anything - clipped.
-Signal GND undriven or does not drive anything - clipped.
-Signal packetiser/rx_len_7_s_7_0_S1 undriven or does not drive anything -
 
                                     Page 3
 
 
 
 
-Design:  UART_wrapper                                  Date:  05/10/22  18:20:02
+Design:  UART_wrapper                                  Date:  05/11/22  08:44:36
 
 Removed logic (cont)
 --------------------
+Block register/GND undriven or does not drive anything - clipped.
+Block register/VCC undriven or does not drive anything - clipped.
+Signal packetiser/rx_state_i[0] was merged into signal packetiser/rx_state[0]
+Signal control.rst_i was merged into signal control.rst
+Signal VCC undriven or does not drive anything - clipped.
+Signal GND undriven or does not drive anything - clipped.
+Signal packetiser/rx_len_7_s_7_0_S1 undriven or does not drive anything -
      clipped.
 Signal packetiser/rx_len_7_s_7_0_COUT undriven or does not drive anything -
      clipped.
@@ -251,6 +258,16 @@ Signal packetiser/UART_Inst/un1_rx_cnt_6_cry_0_0_S1 undriven or does not drive
 Signal packetiser/UART_Inst/un1_rx_cnt_6_cry_0_0_S0 undriven or does not drive
      anything - clipped.
 Signal packetiser/UART_Inst/N_5 undriven or does not drive anything - clipped.
+
+                                    Page 4
+
+
+
+
+Design:  UART_wrapper                                  Date:  05/11/22  08:44:36
+
+Removed logic (cont)
+--------------------
 Signal packetiser/UART_Inst/un1_rx_cnt_6_s_3_0_S1 undriven or does not drive
      anything - clipped.
 Signal packetiser/UART_Inst/un1_rx_cnt_6_s_3_0_COUT undriven or does not drive
@@ -258,16 +275,6 @@ Signal packetiser/UART_Inst/un1_rx_cnt_6_s_3_0_COUT undriven or does not drive
 Signal packetiser/rx_len_7_cry_0_0_S1 undriven or does not drive anything -
      clipped.
 Signal packetiser/rx_len_7_cry_0_0_S0 undriven or does not drive anything -
-
-                                    Page 4
-
-
-
-
-Design:  UART_wrapper                                  Date:  05/10/22  18:20:02
-
-Removed logic (cont)
---------------------
      clipped.
 Signal packetiser/N_1 undriven or does not drive anything - clipped.
 Signal control/un1_wr_byte_cnt_2_cry_0_0_S1 undriven or does not drive anything
@@ -290,21 +297,14 @@ Signal control/un1_rd_byte_cnt_4_s_3_0_COUT undriven or does not drive anything
      - clipped.
 Block packetiser/rx_state_RNIBCT1[0] was optimized away.
 Block control/rst_RNI8DEA was optimized away.
-Block control/opAddress_RNITHSC[1] was optimized away.
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 60 MB
+   Peak Memory Usage: 61 MB
         
-
-
-
-
-
-
 
 
 

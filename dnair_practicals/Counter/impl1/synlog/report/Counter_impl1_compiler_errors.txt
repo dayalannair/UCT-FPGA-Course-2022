@@ -1,2 +1,2 @@
-@E: No component with name top to synthesize
+@E: CS153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":28:16:28:22|Can't mix blocking and non-blocking assignments to a variable
 
