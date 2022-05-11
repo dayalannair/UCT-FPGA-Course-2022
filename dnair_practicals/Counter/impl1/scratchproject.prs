@@ -5,9 +5,11 @@
 #project files
 add_file -fpga_constraint "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/counter.fdc"
 add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Structures.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_wrapper.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v"
+add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v"
 add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_Packets.v"
 add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v"
-add_file -verilog -vlog_std sysv "C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Packet_echo_top.v"
 
 
 #implementation: "impl1"
@@ -29,7 +31,7 @@ set_option -speed_grade -5
 set_option -part_companion ""
 
 #compilation/mapping options
-set_option -top_module "Packet_echo_top"
+set_option -top_module "UART_wrapper"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

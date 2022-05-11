@@ -2,42 +2,43 @@
 <BuildStatus>
     <Strategy name="Strategy1">
         <Milestone name="Export" build_result="0" build_time="0">
-            <Task name="IBIS" build_result="0" update_result="2" update_time="1652254149"/>
-            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1652254149"/>
-            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1652254149"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1652254154"/>
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1652296507"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1652296507"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1652296507"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1652296513"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1652254136">
-            <Task name="Map" build_result="2" update_result="0" update_time="1652254136"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1652254139"/>
-            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1652254136"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1652254136"/>
+        <Milestone name="Map" build_result="2" build_time="1652296486">
+            <Task name="Map" build_result="2" update_result="0" update_time="1652296486"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1652296489"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1652296486"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1652296486"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1652254149">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1652254149"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1652254151"/>
-            <Task name="IOTiming" build_result="0" update_result="2" update_time="1652254149"/>
+        <Milestone name="PAR" build_result="2" build_time="1652296507">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1652296507"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1652296510"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1652296507"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1652254135">
-            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1652254135"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1652296484">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1652296484"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1652254114"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1652254113"/>
-            <Task name="SSO" build_result="0" update_result="2" update_time="1652254136"/>
-            <Task name="PIODRC" build_result="0" update_result="2" update_time="1652254136"/>
-            <Task name="DEC" build_result="0" update_result="2" update_time="1652254136"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1652296452"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1652296452"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1652296485"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="1652296485"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="1652296485"/>
         </Milestone>
-        <Milestone name="Translate" build_result="2" build_time="1652254136">
-            <Task name="Translate" build_result="2" update_result="0" update_time="1652254136"/>
+        <Milestone name="Translate" build_result="2" build_time="1652296485">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1652296485"/>
         </Milestone>
-        <Report name="Counter_impl1.bgn" last_build_time="1652254154" last_build_size="3670"/>
-        <Report name="Counter_impl1.edi" last_build_time="1652254134" last_build_size="99623"/>
-        <Report name="Counter_impl1.jed" last_build_time="1652254154" last_build_size="1268324"/>
-        <Report name="Counter_impl1.ncd" last_build_time="1652254149" last_build_size="98573"/>
-        <Report name="Counter_impl1.ngd" last_build_time="1652254135" last_build_size="95181"/>
-        <Report name="Counter_impl1.tw1" last_build_time="1652254138" last_build_size="347477"/>
-        <Report name="Counter_impl1.twr" last_build_time="1652254151" last_build_size="393691"/>
-        <Report name="Counter_impl1_map.ncd" last_build_time="1652254136" last_build_size="64913"/>
+        <Report name="Counter_impl1.bgn" last_build_time="1652296513" last_build_size="3667"/>
+        <Report name="Counter_impl1.edi" last_build_time="1652296481" last_build_size="354423"/>
+        <Report name="Counter_impl1.jed" last_build_time="1652296513" last_build_size="1268464"/>
+        <Report name="Counter_impl1.ncd" last_build_time="1652296507" last_build_size="328620"/>
+        <Report name="Counter_impl1.ngd" last_build_time="1652296485" last_build_size="336932"/>
+        <Report name="Counter_impl1.tw1" last_build_time="1652296489" last_build_size="941813"/>
+        <Report name="Counter_impl1.twr" last_build_time="1652296509" last_build_size="1155954"/>
+        <Report name="Counter_impl1_map.ncd" last_build_time="1652296486" last_build_size="212473"/>
     </Strategy>
 </BuildStatus>
+                  

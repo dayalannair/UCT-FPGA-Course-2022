@@ -19,17 +19,14 @@ into a structure which is then outputted.
 module UART_Packets(
   input ipClk,
   input ipReset,
-  // packet to be sent over UART received from registers
   input  UART_PACKET ipTxStream,
-  output reg opTxReady, // ready to send 
-  output opTx,     // connected to output of UART module
+  output reg opTxReady,
+  output opTx,   
   input ipRx,
-  // Received packet from UART sent out to control/registers
   output UART_PACKET opRxStream
 );
 
-reg rst;
-// Receive registers
+//reg rst;
 reg [7:0]rx_src;
 reg [7:0]rx_dest;
 reg [7:0]tx_byte_n;
@@ -89,9 +86,9 @@ UART UART_Inst(
 // Convert packets to stream
 
 always @(posedge ipClk) begin
-  rst <= ipReset;
+  //rst <= ipReset;
 
-  if (rst) begin
+  if (ipReset) begin
     tx_state <= idle;
     tx_packet <= dest;
     opTxReady <= 1'b0;
@@ -129,7 +126,7 @@ always @(posedge ipClk) begin
           // reset UART send line
           //UART_TxSend <= 1'b0;
       
-          if (~UART_TxBusy && ipTxStream.Valid) begin
+          if (~UART_TxBusy) begin
 
             case(tx_packet)
               dest: begin
@@ -158,13 +155,11 @@ always @(posedge ipClk) begin
                         
                       end
                       else if (tx_byte_length != 0) begin
-                        // send data byte 2, if any
                         UART_TxData <= ipTxStream.Data;
                         opTxReady <= 1'b1;
                         tx_byte_length <= tx_byte_length - 1'b1;
                       end
                       else begin
-                        //UART_TxData <= valid
                         tx_state <= idle;
                       end
                 end

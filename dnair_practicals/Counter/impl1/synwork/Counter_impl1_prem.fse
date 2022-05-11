@@ -1,54 +1,72 @@
 
-fsm_encoding {8510514} sequential
+fsm_encoding {11510516} sequential
 
-fsm_state_encoding {8510514} off {00}
+fsm_state_encoding {11510516} off {00}
 
-fsm_state_encoding {8510514} on {01}
+fsm_state_encoding {11510516} on {01}
 
-fsm_state_encoding {8510514} start {10}
+fsm_state_encoding {11510516} start {10}
 
-fsm_registers {8510514} {rx_state[1]}  {rx_state[0]} 
+fsm_registers {11510516} {rx_state[1]}  {rx_state[0]} 
 
-fsm_encoding {8510515} sequential
+fsm_encoding {11510517} sequential
 
-fsm_state_encoding {8510515} off {00}
+fsm_state_encoding {11510517} off {00}
 
-fsm_state_encoding {8510515} on {01}
+fsm_state_encoding {11510517} on {01}
 
-fsm_state_encoding {8510515} start {10}
+fsm_state_encoding {11510517} start {10}
 
-fsm_state_encoding {8510515} stop {11}
+fsm_state_encoding {11510517} stop {11}
 
-fsm_registers {8510515} {tx_state[1]}  {tx_state[0]} 
+fsm_registers {11510517} {tx_state[1]}  {tx_state[0]} 
 
-fsm_encoding {7910913} sequential
+fsm_encoding {10880884} sequential
 
-fsm_state_encoding {7910913} idle {0}
+fsm_state_encoding {10880884} idle {0}
 
-fsm_state_encoding {7910913} on {1}
+fsm_state_encoding {10880884} on {1}
 
-fsm_registers {7910913} {tx_state[0]} 
+fsm_registers {10880884} {tx_state[0]} 
 
-fsm_encoding {7910912} sequential
+fsm_encoding {10880885} sequential
 
-fsm_state_encoding {7910912} src {00}
+fsm_state_encoding {10880885} idle {0}
 
-fsm_state_encoding {7910912} dest {01}
+fsm_state_encoding {10880885} on {1}
 
-fsm_state_encoding {7910912} lgth {10}
+fsm_registers {10880885} {rx_state[0]} 
 
-fsm_state_encoding {7910912} data {11}
+fsm_encoding {10880882} sequential
 
-fsm_registers {7910912} {rx_packet[1]}  {rx_packet[0]} 
+fsm_state_encoding {10880882} src {00}
 
-fsm_encoding {7910911} sequential
+fsm_state_encoding {10880882} dest {01}
 
-fsm_state_encoding {7910911} src {00}
+fsm_state_encoding {10880882} lgth {10}
 
-fsm_state_encoding {7910911} dest {01}
+fsm_state_encoding {10880882} data {11}
 
-fsm_state_encoding {7910911} lgth {10}
+fsm_registers {10880882} {tx_packet[1]}  {tx_packet[0]} 
 
-fsm_state_encoding {7910911} data {11}
+fsm_encoding {10880883} sequential
 
-fsm_registers {7910911} {tx_packet[1]}  {tx_packet[0]} 
+fsm_state_encoding {10880883} src {00}
+
+fsm_state_encoding {10880883} dest {01}
+
+fsm_state_encoding {10880883} lgth {10}
+
+fsm_state_encoding {10880883} data {11}
+
+fsm_registers {10880883} {rx_packet[1]}  {rx_packet[0]} 
+
+fsm_encoding {9270271} sequential
+
+fsm_state_encoding {9270271} idle {00}
+
+fsm_state_encoding {9270271} read {01}
+
+fsm_state_encoding {9270271} write {10}
+
+fsm_registers {9270271} {state[1]}  {state[0]} 

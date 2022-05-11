@@ -8,6 +8,18 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oc
 Top level modules:
 	UART_wrapper
 
+} {} {}} {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v} {2 {vlog -work work -sv -stats=none {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v}
+** Note: (vlog-1901) OptionFile "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation/vlog.opt" not found. Ignored.
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+** Warning: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v(15): (vlog-13314) Defaulting port 'ipRdRegisters' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+-- Compiling package Registers_v_unit
+-- Importing package Structures
+-- Compiling module Registers
+** Warning: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Registers.v(15): (vlog-13314) Defaulting port 'ipRdRegisters' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+
+Top level modules:
+	Registers
+
 } {} {}} {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v} {1 {vlog -work work -sv -stats=none {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART.v}
 ** Note: (vlog-1901) OptionFile "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation/vlog.opt" not found. Ignored.
 Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
@@ -24,14 +36,24 @@ Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oc
 Top level modules:
 	--none--
 
+} {} {}} {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_wrapper_TB.v} {1 {vlog -work work -sv -stats=none {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/UART_wrapper_TB.v}
+** Note: (vlog-1901) OptionFile "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation/vlog.opt" not found. Ignored.
+Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
+-- Compiling package UART_wrapper_TB_v_unit
+-- Importing package Structures
+-- Compiling module UART_Wrapper_TB
+
+Top level modules:
+	UART_Wrapper_TB
+
 } {} {}} {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v} {2 {vlog -work work -sv -stats=none {C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v}
 ** Note: (vlog-1901) OptionFile "C:/Users/Dayalan Nair/OneDrive - University of Cape Town/LATTICE/Simulation/vlog.opt" not found. Ignored.
 Model Technology ModelSim - Lattice FPGA Edition vlog 2020.3 Compiler 2020.10 Oct 14 2020
-** Warning: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v(10): (vlog-13314) Defaulting port 'ipRxPkt' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v(5): (vlog-13314) Defaulting port 'ipRxPkt' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 -- Compiling package Control_v_unit
 -- Importing package Structures
 -- Compiling module Control
-** Warning: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v(10): (vlog-13314) Defaulting port 'ipRxPkt' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+** Warning: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practicals/Counter/Control.v(5): (vlog-13314) Defaulting port 'ipRxPkt' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 
 Top level modules:
 	Control

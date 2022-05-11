@@ -1,10 +1,10 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing sequential instance opTxReady (in view: work.UART_Packets(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 @N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|There are no possible illegal states for state machine tx_state[3:0] (in view: work.UART(verilog)); safe FSM implementation is not required.
-@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|There are no possible illegal states for state machine tx_state[1:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
-@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|There are no possible illegal states for state machine rx_packet[3:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
-@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|There are no possible illegal states for state machine tx_packet[3:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
-@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Packet_echo_top 
+@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":88:0:88:5|There are no possible illegal states for state machine tx_state[1:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":88:0:88:5|There are no possible illegal states for state machine rx_state[1:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":88:0:88:5|There are no possible illegal states for state machine tx_packet[3:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
+@N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":88:0:88:5|There are no possible illegal states for state machine rx_packet[3:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
+@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist UART_wrapper 
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.

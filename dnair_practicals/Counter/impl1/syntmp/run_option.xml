@@ -3,7 +3,7 @@
   Synopsys, Inc.
   Version Q-2020.03L-SP1
   Project file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\syntmp\run_option.xml
-  Written on Wed May 11 09:28:45 2022
+  Written on Wed May 11 21:14:30 2022
 
 
 --> 
@@ -11,7 +11,7 @@
      <option name="project_name" display_name="Project Name">proj_1</option>
      <option name="device_name" display_name="Device Name">impl1: Lattice XP2 : LFXP2_5E</option>
      <option name="impl_name" display_name="Implementation Name">impl1</option>
-     <option name="top_module" display_name="Top Module">Packet_echo_top</option>
+     <option name="top_module" display_name="Top Module">UART_wrapper</option>
      <option name="pipe" display_name="Pipelining">1</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>

@@ -1,36 +1,55 @@
 ---------------------------------------------------
-Report for cell Packet_echo_top
-   Instance path: Packet_echo_top
+Report for cell UART_wrapper
+   Instance path: UART_wrapper
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      65.00        100.0
-                                 IOLGC	       3.00        100.0
-                                  LUT4	      71.00        100.0
-                                 IOREG	          3        100.0
-                                 IOBUF	         12        100.0
-                                PFUREG	         54        100.0
-                                RIPPLE	         22        100.0
+                                  SLIC	     240.00        100.0
+                                 IOLGC	       2.00        100.0
+                                  LUT4	     213.00        100.0
+                                 IOREG	          2        100.0
+                                 IOBUF	         16        100.0
+                                PFUREG	        284        100.0
+                                RIPPLE	         52        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          UART_Packets	          1        96.2
+                          UART_Packets	          1        50.6
+                             Registers	          1        10.8
+                               Control	          1        30.4
+---------------------------------------------------
+Report for cell Registers
+   Instance path: UART_wrapper/register
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      26.00        10.8
+                                  LUT4	      16.00         7.5
+                                PFUREG	         40        14.1
+---------------------------------------------------
+Report for cell Control
+   Instance path: UART_wrapper/control
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      73.00        30.4
+                                  LUT4	      59.00        27.7
+                                PFUREG	         94        33.1
+                                RIPPLE	          6        11.5
 ---------------------------------------------------
 Report for cell UART_Packets
-   Instance path: Packet_echo_top/PACKETISER
+   Instance path: UART_wrapper/packetiser
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      62.50        96.2
-                                  LUT4	      69.00        97.2
-                                PFUREG	         52        96.3
-                                RIPPLE	         22        100.0
+                                  SLIC	     121.50        50.6
+                                  LUT4	     135.00        63.4
+                                PFUREG	        118        41.5
+                                RIPPLE	         29        55.8
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                  UART	          1        68.2
+                                  UART	          1        22.8
 ---------------------------------------------------
 Report for cell UART
-   Instance path: Packet_echo_top/PACKETISER/UART_Inst
+   Instance path: UART_wrapper/packetiser/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      44.33        68.2
-                                  LUT4	      43.00        60.6
-                                PFUREG	         40        74.1
-                                RIPPLE	         17        77.3
+                                  SLIC	      54.83        22.8
+                                  LUT4	      59.00        27.7
+                                PFUREG	         49        17.3
+                                RIPPLE	         19        36.5

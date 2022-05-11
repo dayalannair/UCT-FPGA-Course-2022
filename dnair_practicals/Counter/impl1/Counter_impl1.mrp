@@ -1,5 +1,5 @@
 
-       Lattice Mapping Report File for Design Module 'Packet_echo_top'
+         Lattice Mapping Report File for Design Module 'UART_wrapper'
 
 
 Design Information
@@ -17,24 +17,24 @@ Target Vendor:  LATTICE
 Target Device:  LFXP2-5ETQFP144
 Target Performance:   5
 Mapper:  mg5a00,  version:  Diamond (64-bit) 3.12.0.240.2
-Mapped on:  05/11/22  09:28:56
+Mapped on:  05/11/22  21:14:45
 
 Design Summary
 --------------
 
-   Number of registers:     57 out of  3864 (1%)
-      PFU registers:           54 out of  3564 (2%)
-      PIO registers:            3 out of   300 (1%)
-   Number of SLICEs:        65 out of  2376 (3%)
-      SLICEs as Logic/ROM:     65 out of  2376 (3%)
+   Number of registers:    286 out of  3864 (7%)
+      PFU registers:          284 out of  3564 (8%)
+      PIO registers:            2 out of   300 (1%)
+   Number of SLICEs:       240 out of  2376 (10%)
+      SLICEs as Logic/ROM:    240 out of  2376 (10%)
       SLICEs as RAM:            0 out of   405 (0%)
-      SLICEs as Carry:         22 out of  2376 (1%)
-   Number of LUT4s:        115 out of  4752 (2%)
-      Number used as logic LUTs:         71
+      SLICEs as Carry:         52 out of  2376 (2%)
+   Number of LUT4s:        317 out of  4752 (7%)
+      Number used as logic LUTs:        213
       Number used as distributed RAM:     0
-      Number used as ripple logic:       44
+      Number used as ripple logic:      104
       Number used as shift registers:     0
-   Number of PIO sites used: 12 out of 100 (12%)
+   Number of PIO sites used: 16 out of 100 (16%)
    Number of PIO FIXEDDELAY:    0
    Number of DQSDLLs:  0 out of 2 (0%)
    Number of PLLs:  0 out of 2 (0%)
@@ -66,7 +66,7 @@ Design Summary
 
 
 
-Design:  Packet_echo_top                               Date:  05/11/22  09:28:56
+Design:  UART_wrapper                                  Date:  05/11/22  21:14:45
 
 Design Summary (cont)
 ---------------------
@@ -74,83 +74,77 @@ Design Summary (cont)
    --------------------------------
    Number of Used DSP Sites:  0 out of 24 (0 %)
    Number of clocks:  1
-     Net ipClk_c: 39 loads, 39 rising, 0 falling (Driver: PIO ipClk )
-   Number of Clock Enables:  4
+     Net ipClk_c: 165 loads, 165 rising, 0 falling (Driver: PIO ipClk )
+   Number of Clock Enables:  22
      Net un1_clk_cnt_0_sqmuxa_i_i: 1 loads, 0 LSLICEs
-     Net PACKETISER/UART_Inst/opRxValid_RNO: 1 loads, 1 LSLICEs
-     Net PACKETISER/UART_Inst/N_49_i: 5 loads, 5 LSLICEs
-     Net PACKETISER/UART_Inst/un1_rst_2_i: 4 loads, 4 LSLICEs
-   Number of LSRs:  5
-     Net opRxStream.Valid_Q: 2 loads, 1 LSLICEs
-     Net opLED_c[1]: 2 loads, 1 LSLICEs
-     Net PACKETISER/UART_Inst/rx_state_0_sqmuxa: 11 loads, 11 LSLICEs
-     Net PACKETISER/rx_state[0]: 6 loads, 6 LSLICEs
-     Net PACKETISER/fb: 1 loads, 1 LSLICEs
+     Net control.rst: 3 loads, 3 LSLICEs
+     Net register/N_109: 4 loads, 4 LSLICEs
+     Net control/opAddress_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net control/N_20_i: 12 loads, 12 LSLICEs
+     Net control/N_57_i: 16 loads, 16 LSLICEs
+     Net control/state_0_sqmuxa: 4 loads, 4 LSLICEs
+     Net control/N_21: 4 loads, 4 LSLICEs
+     Net packetiser/un1_ipReset_4_i: 8 loads, 8 LSLICEs
+     Net packetiser/opTxReady_0_sqmuxa_i: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/un1_rst_2_i: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/opRxValid_RNO: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/un1_rst_4_0_a2_0dup: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/opTxBusy_en_0: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/N_5_i: 5 loads, 5 LSLICEs
+     Net ipnReset_c: 2 loads, 2 LSLICEs
+     Net packetiser/Data_1_sqmuxa_2: 4 loads, 4 LSLICEs
+     Net packetiser/rx_packet_4_sqmuxa: 2 loads, 2 LSLICEs
+     Net packetiser/tx_byte_lengthe: 5 loads, 5 LSLICEs
+     Net packetiser/rx_packet_3_sqmuxa: 4 loads, 4 LSLICEs
+     Net packetiser/rx_packet_2_sqmuxa: 4 loads, 4 LSLICEs
+     Net packetiser/tx_packet_0_sqmuxa_1: 4 loads, 4 LSLICEs
+   Number of LSRs:  11
+     Net control.rst: 19 loads, 18 LSLICEs
+     Net register/un1_ipAddress_inv_i: 12 loads, 12 LSLICEs
+     Net control/state_RNIPPPG[1]: 3 loads, 3 LSLICEs
+     Net control/state_0_sqmuxa_0_o2_RNIBF0S: 3 loads, 3 LSLICEs
+     Net control/wr_byte_cnt_7[2]: 1 loads, 1 LSLICEs
+     Net packetiser/tx_state_RNIRONQ[0]: 4 loads, 4 LSLICEs
+     Net packetiser/UART_Inst/un1_rst_4_0_a2_0_a3_0dup: 2 loads, 2 LSLICEs
+     Net packetiser/UART_Inst/un1_tx_cnt_6_s_3_0_S0: 1 loads, 1 LSLICEs
+     Net packetiser/UART_Inst/rx_state_0_sqmuxa: 11 loads, 11 LSLICEs
+     Net ipnReset_c: 18 loads, 18 LSLICEs
+     Net packetiser/rx_len_0_sqmuxa: 5 loads, 5 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net opLED_c[1]: 31 loads
-     Net PACKETISER/UART_Inst/N_81: 18 loads
-     Net PACKETISER/rx_packet_2_sqmuxa: 17 loads
-     Net PACKETISER/UART_Inst/N_116: 13 loads
-     Net PACKETISER/UART_Inst/rx_state_0_sqmuxa: 11 loads
-     Net PACKETISER/UART_Inst/un1_rx_state_0_sqmuxa: 11 loads
-     Net PACKETISER/UART_Inst/VCC: 11 loads
-     Net PACKETISER/rx_state[0]: 10 loads
-     Net PACKETISER/UART_Inst/rx_cnt_2_sqmuxa_0_a3_1: 9 loads
-     Net PACKETISER/UART_Inst/rx_state[0]: 9 loads
+     Net control.rst: 58 loads
+     Net ipnReset_c: 35 loads
+     Net VCC: 32 loads
+     Net packetiser/UART_Inst/VCC: 27 loads
+     Net packetiser/tx_state[0]: 24 loads
+     Net control/rd_byte_cnt[0]: 22 loads
+     Net control/state[0]: 20 loads
+     Net packetiser/UART_Inst/tx_state[0]: 20 loads
+     Net packetiser/rx_packet_4_sqmuxa: 19 loads
+     Net control/N_57_i: 16 loads
 
 
 
 
-   Number of warnings:  8
-   Number of errors:    0
-     
-
-Design Errors/Warnings
-----------------------
-
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(28): Semantic error in "LOCATE COMP "ipButtons[0]"
-     SITE "54" ;": COMP "ipButtons[0]" cannot be found in design. This
-     preference has been disabled.
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(29): Semantic error in "IOBUF PORT "ipButtons[0]"
-     IO_TYPE=LVCMOS33 ;": Port "ipButtons[0]" does not exist in the design. This
-     preference has been disabled.
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(30): Semantic error in "IOBUF PORT "ipButtons[1]"
-     IO_TYPE=LVCMOS33 ;": Port "ipButtons[1]" does not exist in the design. This
-     preference has been disabled.
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(31): Semantic error in "IOBUF PORT "ipButtons[2]"
-     IO_TYPE=LVCMOS33 ;": Port "ipButtons[2]" does not exist in the design. This
-     preference has been disabled.
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
 
                                     Page 2
 
 
 
 
-Design:  Packet_echo_top                               Date:  05/11/22  09:28:56
+Design:  UART_wrapper                                  Date:  05/11/22  21:14:45
 
-Design Errors/Warnings (cont)
------------------------------
-     ls/Counter/Counter.lpf(32): Semantic error in "IOBUF PORT "ipButtons[3]"
-     IO_TYPE=LVCMOS33 ;": Port "ipButtons[3]" does not exist in the design. This
-     preference has been disabled.
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(33): Semantic error in "LOCATE COMP "ipButtons[1]"
-     SITE "53" ;": COMP "ipButtons[1]" cannot be found in design. This
-     preference has been disabled.
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(34): Semantic error in "LOCATE COMP "ipButtons[2]"
-     SITE "52" ;": COMP "ipButtons[2]" cannot be found in design. This
-     preference has been disabled.
-WARNING - map: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_practica
-     ls/Counter/Counter.lpf(35): Semantic error in "LOCATE COMP "ipButtons[3]"
-     SITE "50" ;": COMP "ipButtons[3]" cannot be found in design. This
-     preference has been disabled.
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
 
 IO (PIO) Attributes
 -------------------
@@ -159,11 +153,9 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         | FIXEDDELAY |
 |                     |           |  IO_TYPE  | Register   |            |
 +---------------------+-----------+-----------+------------+------------+
-| opLED[0]            | OUTPUT    | LVCMOS33  |            |            |
+| opUART_Tx           | OUTPUT    | LVCMOS33  | OUT        |            |
 +---------------------+-----------+-----------+------------+------------+
 | ipClk               | INPUT     | LVCMOS33  |            |            |
-+---------------------+-----------+-----------+------------+------------+
-| opUART_Tx           | OUTPUT    | LVCMOS33  | OUT        |            |
 +---------------------+-----------+-----------+------------+------------+
 | opLED[7]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
@@ -179,79 +171,138 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+------------+
 | opLED[1]            | OUTPUT    | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
+| opLED[0]            | OUTPUT    | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipButtons[3]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipButtons[2]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipButtons[1]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| ipButtons[0]        | INPUT     | LVCMOS33  |            |            |
++---------------------+-----------+-----------+------------+------------+
 | ipUART_Rx           | INPUT     | LVCMOS33  | IN         |            |
 +---------------------+-----------+-----------+------------+------------+
-| ipnReset            | INPUT     | LVCMOS33  | IN         |            |
+| ipnReset            | INPUT     | LVCMOS33  |            |            |
 +---------------------+-----------+-----------+------------+------------+
 
 Removed logic
 -------------
 
-Block VCC undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal PACKETISER/rx_state_i[0] was merged into signal PACKETISER/rx_state[0]
-Signal un1_PACKETISER_i[0] was merged into signal opRxStream.Valid_Q
-Signal VCC undriven or does not drive anything - clipped.
+Block register/GND undriven or does not drive anything - clipped.
+Block register/VCC undriven or does not drive anything - clipped.
 
                                     Page 3
 
 
 
 
-Design:  Packet_echo_top                               Date:  05/11/22  09:28:56
+Design:  UART_wrapper                                  Date:  05/11/22  21:14:45
 
 Removed logic (cont)
 --------------------
-Signal PACKETISER/rx_len_7_s_7_0_S1 undriven or does not drive anything -
+Signal control/rst_i was merged into signal control.rst
+Signal un3_clk_cnt_s_31_0_S1 undriven or does not drive anything - clipped.
+Signal un3_clk_cnt_s_31_0_COUT undriven or does not drive anything - clipped.
+Signal packetiser/rx_len_8_cry_0_0_S1 undriven or does not drive anything -
      clipped.
-Signal PACKETISER/rx_len_7_s_7_0_COUT undriven or does not drive anything -
+Signal packetiser/rx_len_8_cry_0_0_S0 undriven or does not drive anything -
      clipped.
-Signal PACKETISER/UART_Inst/clk_cnt_cry_0_S0[0] undriven or does not drive
-     anything - clipped.
-Signal PACKETISER/UART_Inst/N_1 undriven or does not drive anything - clipped.
-Signal PACKETISER/UART_Inst/clk_cnt_cry_0_COUT[7] undriven or does not drive
-     anything - clipped.
-Signal PACKETISER/UART_Inst/un1_clk_cnt2_11_cry_0_0_S1 undriven or does not
+Signal packetiser/N_1 undriven or does not drive anything - clipped.
+Signal packetiser/rx_len_8_s_7_0_S1 undriven or does not drive anything -
+     clipped.
+Signal packetiser/rx_len_8_s_7_0_COUT undriven or does not drive anything -
+     clipped.
+Signal packetiser/tx_byte_length_cry_0_S0[0] undriven or does not drive anything
+     - clipped.
+Signal packetiser/N_2 undriven or does not drive anything - clipped.
+Signal packetiser/tx_byte_length_s_0_S1[7] undriven or does not drive anything -
+     clipped.
+Signal packetiser/tx_byte_length_s_0_COUT[7] undriven or does not drive anything
+     - clipped.
+Signal packetiser/UART_Inst/un1_tx_cnt_6_cry_0dup_0_S1 undriven or does not
      drive anything - clipped.
-Signal PACKETISER/UART_Inst/un1_clk_cnt2_11_cry_0_0_S0 undriven or does not
+Signal packetiser/UART_Inst/un1_tx_cnt_6_cry_0dup_0_S0 undriven or does not
      drive anything - clipped.
-Signal PACKETISER/UART_Inst/N_2 undriven or does not drive anything - clipped.
-Signal PACKETISER/UART_Inst/un1_clk_cnt2_11_s_9_0_S1 undriven or does not drive
-     anything - clipped.
-Signal PACKETISER/UART_Inst/un1_clk_cnt2_11_s_9_0_COUT undriven or does not
+Signal packetiser/UART_Inst/N_1 undriven or does not drive anything - clipped.
+Signal packetiser/UART_Inst/un1_tx_cnt_6_cry_1dup_0_COUT undriven or does not
      drive anything - clipped.
-Signal PACKETISER/UART_Inst/un1_tx_cnt_6_cry_0_0_S1 undriven or does not drive
+Signal packetiser/UART_Inst/clk_cnt_cry_0_S0[0] undriven or does not drive
      anything - clipped.
-Signal PACKETISER/UART_Inst/un1_tx_cnt_6_cry_0_0_S0 undriven or does not drive
+Signal packetiser/UART_Inst/N_2 undriven or does not drive anything - clipped.
+Signal packetiser/UART_Inst/clk_cnt_cry_0_COUT[7] undriven or does not drive
      anything - clipped.
-Signal PACKETISER/UART_Inst/N_3 undriven or does not drive anything - clipped.
-Signal PACKETISER/UART_Inst/un1_tx_cnt_6_s_3_0_S1 undriven or does not drive
+Signal packetiser/UART_Inst/un1_clk_cnt2_11_cry_0_0_S1 undriven or does not
+     drive anything - clipped.
+Signal packetiser/UART_Inst/un1_clk_cnt2_11_cry_0_0_S0 undriven or does not
+     drive anything - clipped.
+Signal packetiser/UART_Inst/N_3 undriven or does not drive anything - clipped.
+Signal packetiser/UART_Inst/un1_clk_cnt2_11_s_9_0_S1 undriven or does not drive
      anything - clipped.
-Signal PACKETISER/UART_Inst/un1_tx_cnt_6_s_3_0_COUT undriven or does not drive
+Signal packetiser/UART_Inst/un1_clk_cnt2_11_s_9_0_COUT undriven or does not
+     drive anything - clipped.
+Signal packetiser/UART_Inst/un1_tx_cnt_6_cry_0_0_S1 undriven or does not drive
      anything - clipped.
-Signal PACKETISER/UART_Inst/un1_rx_cnt_6_cry_0_0_S1 undriven or does not drive
+Signal packetiser/UART_Inst/un1_tx_cnt_6_cry_0_0_S0 undriven or does not drive
      anything - clipped.
-Signal PACKETISER/UART_Inst/un1_rx_cnt_6_cry_0_0_S0 undriven or does not drive
+Signal packetiser/UART_Inst/N_4 undriven or does not drive anything - clipped.
+Signal packetiser/UART_Inst/un1_tx_cnt_6_cry_1_0_S1 undriven or does not drive
      anything - clipped.
-Signal PACKETISER/UART_Inst/N_4 undriven or does not drive anything - clipped.
-Signal PACKETISER/UART_Inst/un1_rx_cnt_6_s_3_0_S1 undriven or does not drive
+Signal packetiser/UART_Inst/un1_tx_cnt_6_cry_1_0_S0 undriven or does not drive
      anything - clipped.
-Signal PACKETISER/UART_Inst/un1_rx_cnt_6_s_3_0_COUT undriven or does not drive
+Signal packetiser/UART_Inst/un1_tx_cnt_6_s_3_0_S1 undriven or does not drive
      anything - clipped.
-Signal PACKETISER/rx_len_7_cry_0_0_S1 undriven or does not drive anything -
+Signal packetiser/UART_Inst/un1_tx_cnt_6_s_3_0_COUT undriven or does not drive
+     anything - clipped.
+Signal packetiser/UART_Inst/un1_rx_cnt_6_cry_0_0_S1 undriven or does not drive
+     anything - clipped.
+Signal packetiser/UART_Inst/un1_rx_cnt_6_cry_0_0_S0 undriven or does not drive
+
+                                    Page 4
+
+
+
+
+Design:  UART_wrapper                                  Date:  05/11/22  21:14:45
+
+Removed logic (cont)
+--------------------
+     anything - clipped.
+Signal packetiser/UART_Inst/N_5 undriven or does not drive anything - clipped.
+Signal packetiser/UART_Inst/un1_rx_cnt_6_s_3_0_S1 undriven or does not drive
+     anything - clipped.
+Signal packetiser/UART_Inst/un1_rx_cnt_6_s_3_0_COUT undriven or does not drive
+     anything - clipped.
+Signal control/un1_wr_byte_cnt_2_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal control/un1_wr_byte_cnt_2_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal control/N_1 undriven or does not drive anything - clipped.
+Signal control/un1_wr_byte_cnt_2_s_3_0_S1 undriven or does not drive anything -
      clipped.
-Signal PACKETISER/rx_len_7_cry_0_0_S0 undriven or does not drive anything -
+Signal control/un1_wr_byte_cnt_2_s_3_0_COUT undriven or does not drive anything
+     - clipped.
+Signal control/un1_rd_byte_cnt_4_cry_0_0_S1 undriven or does not drive anything
+     - clipped.
+Signal control/un1_rd_byte_cnt_4_cry_0_0_S0 undriven or does not drive anything
+     - clipped.
+Signal control/N_2 undriven or does not drive anything - clipped.
+Signal control/un1_rd_byte_cnt_4_s_3_0_S1 undriven or does not drive anything -
      clipped.
-Signal PACKETISER/N_1 undriven or does not drive anything - clipped.
-Block PACKETISER/rx_state_RNIB2O4[0] was optimized away.
-Block PACKETISER/opRxStream.Valid_RNIC4Q7 was optimized away.
+Signal control/un1_rd_byte_cnt_4_s_3_0_COUT undriven or does not drive anything
+     - clipped.
+Signal un3_clk_cnt_cry_0_0_S1 undriven or does not drive anything - clipped.
+Signal un3_clk_cnt_cry_0_0_S0 undriven or does not drive anything - clipped.
+Signal N_1 undriven or does not drive anything - clipped.
+Block control/rst_RNI8DEA was optimized away.
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 59 MB
+   Peak Memory Usage: 61 MB
         
 
 
@@ -259,7 +310,22 @@ Run Time and Memory Usage
 
 
 
-                                    Page 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 5
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

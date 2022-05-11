@@ -1,8 +1,8 @@
 i ipClk
 m 0 0
-u 34 128
-p {p:ipClk}{t:opLED_1[1:0].C}
-e ckid0_0 {t:opLED_1[1:0].C} dff
+u 49 292
+p {p:ipClk}{t:clk_cnt[31:0].C}
+e ckid0_0 {t:clk_cnt[31:0].C} sdffr
 c ckid0_0 {p:ipClk} port Unsupported/too complex instance on clock path
 l 0 0 0 0 0
 r 0 0 0 0 0 0 0 0

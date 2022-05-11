@@ -3,9 +3,8 @@ module UART_Wrapper_TB;
 
 reg ipClk = 0;
 always #10 ipClk <= ~ipClk;
-
-
 reg ipReset = 1;
+
 initial begin
   @(posedge ipClk);
   @(posedge ipClk);

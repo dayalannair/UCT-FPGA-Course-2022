@@ -18,14 +18,10 @@ module UART_wrapper(
   output [7:0]opLED
 );
 
-wire rst = ~ipnReset;
-
-// Control-packetiser connections
 UART_PACKET cpTxPacket;
 UART_PACKET cpRxPacket;
 wire cpTxReady;
 
-// control-register connections
 wire crWrEnable;
 wire[7:0] crAddress;
 wire[31:0] crWrData;
@@ -39,7 +35,7 @@ reg [31:0] clk_cnt;
 
 UART_Packets packetiser(
   .ipClk (ipClk),
-  .ipReset (rst),
+  .ipReset (~ipnReset),
   .ipTxStream (cpTxPacket), // packet to send from control
   .opRxStream (cpRxPacket), // received packet to control
   .opTxReady (cpTxReady), 
@@ -49,7 +45,7 @@ UART_Packets packetiser(
 
 Control control(
    .ipClk (ipClk),
-  .ipReset (rst),
+  .ipReset (~ipnReset),
   .ipRxPkt (cpRxPacket),
   .opTxPkt (cpTxPacket), //output of control is input of packetiser
   .opAddress (crAddress),
@@ -61,7 +57,7 @@ Control control(
 
 Registers register(
   .ipClk (ipClk),
-  .ipReset (rst),
+  .ipReset (~ipnReset),
   .ipButtons (ipButtons),
   .clk_cnt (clk_cnt),  
   .ipRdRegisters (RdRegisters),
@@ -72,7 +68,7 @@ Registers register(
   .ipWrEnable (crWrEnable)
 );
 always @(posedge ipClk)begin
-  if (rst) clk_cnt <= 0;
+  if (~ipnReset) clk_cnt <= 0;
   else clk_cnt <= clk_cnt + 1'b1;
 end
 endmodule
