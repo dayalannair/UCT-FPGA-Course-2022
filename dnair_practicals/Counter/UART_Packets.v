@@ -89,7 +89,7 @@ UART UART_Inst(
 // Convert packets to stream
 
 always @(posedge ipClk) begin
-  rst<= ipReset;
+  rst <= ipReset;
 
   if (rst) begin
     tx_state <= idle;
@@ -176,7 +176,6 @@ always @(posedge ipClk) begin
         end
           default:;
   endcase
-  end
 //------------------------------------------------------------------------------
 //                            RX Stream Packetiser
 //------------------------------------------------------------------------------
@@ -228,5 +227,6 @@ always @(posedge ipClk) begin
 //------------------------------------------------------------------------------
     default:;
   endcase
+  end
 end
 endmodule

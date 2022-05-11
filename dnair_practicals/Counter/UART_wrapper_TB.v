@@ -1,3 +1,4 @@
+import Structures::*;
 module UART_Wrapper_TB;
 
 reg ipClk = 0;
@@ -12,64 +13,88 @@ initial begin
   ipReset <= 0;
 end
 
-reg  [7:0]ipTxData;
-reg       ipTxSend;
-wire      opTxBusy;
-wire      opTx;
+UART_PACKET PC_TxPacket;
+UART_PACKET PC_RxPacket;
+reg opTxReady;
+wire DUT_ipRx;
+wire DUT_opTx;
+reg[7:0] opLED;
+reg[3:0] ipButtons;
 
-integer TxBit;
+UART_wrapper DUT(
+  .ipClk (ipClk),
+  .ipnReset (~ipReset),
+  .ipUART_Rx (DUT_ipRx),
+  .opUART_Tx (DUT_opTx),
+  .opLED (opLED),
+  .ipButtons (ipButtons)
+);
 
-reg[7:0] sync = 8'h55;
-reg[7:0] destination = 8'h7A;
-reg[7:0] source = 8'h2C;
-reg[7:0] length = 8'h04;
-reg[7:0] data = 8'd24;
-
-
-// instance
-module top_v2(
-  input ipClk,
-  input ipReset,
-  input ipRx,
-  output opRx
+UART_Packets PC(
+  .ipClk (ipClk),
+  .ipReset (ipReset),
+  .ipTxStream (PC_TxPacket), // packet to send from control
+  .opRxStream (PC_RxPacket), // received packet to control
+  .opTxReady (opTxReady), 
+  .opTx (DUT_ipRx), 
+  .ipRx (DUT_opTx)
 );
 
 
+integer i; 
+reg[7:0] source = 8'h2C;
 initial begin
-    TxPacket.Valid <= 1'b0;
 
-    TxPacket.Destination <= destination;
-    TxPacket.Source <= source;
-    TxPacket.Length <= length;
-    TxPacket.Data <= data;
-    data <= data + 1'b1;
+//------------------- READ REGISTERS ----------------------------------  
+    opTxReady <= 1;
+    PC_TxPacket.Valid <= 1'b0;
+    // Destination = read
+    PC_TxPacket.Destination <= 8'h00;
+    // Source address - PC
+    PC_TxPacket.Source <= source;
+    PC_TxPacket.Length <= 8'h01;
+    // Read LED registers - Address 8'h02
+    PC_TxPacket.Data <= 8'h02;
+
     @(negedge ipReset);
     @(posedge ipClk);
+    // set PC packet valid once out of reset state
+    PC_TxPacket.Valid <= 1'b1;
+    PC_TxPacket.SoP <= 1'b1;
     @(posedge ipClk);
-
-    // posedge on Tx ready means packetiser set up to receive
-    if(!opTxReady) @(posedge opTxReady); 
+    PC_TxPacket.Valid <= 1'b0;
+    PC_TxPacket.SoP <= 1'b0;
     @(posedge ipClk);
-    // send first byte packet
-    TxPacket.Valid <= 1'b1;
-    TxPacket.SoP <= 1'b1;
+    //@(posedge opTxReady);
+    @(negedge PC_TxPacket.Valid);
 
-    // wait for packetiser to be busy
-    @(negedge opTxReady); 
+    // ---------------------- WRITE REGISTERS ----------------------------
 
-    // TxPacket.Valid <= 1'b0;
-    TxPacket.SoP <= 1'b0;
-    @(posedge ipClk);
+    // opTxReady <= 1;
+    // PC_TxPacket.Valid <= 1'b0;
+    // PC_TxPacket.Destination <= 8'h01; // write
+    // PC_TxPacket.Source <= source;
+    // PC_TxPacket.Length <= length;
+    // PC_TxPacket.Data <= data; // address to read
 
-    // send next 3 byte packets
- if(!opTxReady) @(posedge opTxReady); 
-    for (i = 0; i < 10; i++) begin
-        //if(!opTxReady) @(posedge opTxReady); 
-        data <= data + 1'b1;
-        TxPacket.Data <= data;
-        TxPacket.Valid <= 1'b1;
-        @(negedge opTxReady); 
-        TxPacket.Valid <= 1'b0;
-    end
+    // @(negedge ipReset);
+    // //opWrRegisters.LEDs <= 32'h8E9A;
+    // @(posedge ipClk);
+    // @(posedge ipClk);
+
+    // PC_TxPacket.Valid <= 1'b1;
+    // @(posedge ipClk);
+    // PC_TxPacket.Data <= 8'd50;
+    // @(posedge ipClk);
+    // PC_TxPacket.Data <= 8'd210;
+    // @(posedge ipClk);
+    // PC_TxPacket.Data <= 8'd89;
+    // @(posedge ipClk);
+    // PC_TxPacket.Data <= 8'd50;
+    // @(posedge ipClk);
+    // PC_TxPacket.Valid <= 1'b0;
+    // //@(posedge opTxReady);
+    // //@(negedge opTxPacket.Valid);
 
 end
+endmodule

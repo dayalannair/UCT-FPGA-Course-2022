@@ -1,55 +1,36 @@
 ---------------------------------------------------
-Report for cell UART_wrapper
-   Instance path: UART_wrapper
+Report for cell Packet_echo_top
+   Instance path: Packet_echo_top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     186.00        100.0
+                                  SLIC	      65.00        100.0
                                  IOLGC	       3.00        100.0
-                                  LUT4	     183.00        100.0
+                                  LUT4	      71.00        100.0
                                  IOREG	          3        100.0
-                                 IOBUF	         16        100.0
-                                PFUREG	        204        100.0
-                                RIPPLE	         35        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	         54        100.0
+                                RIPPLE	         22        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                          UART_Packets	          1        65.9
-                             Registers	          1         5.6
-                               Control	          1        28.4
----------------------------------------------------
-Report for cell Registers
-   Instance path: UART_wrapper/register
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      10.50         5.6
-                                  LUT4	      12.00         6.6
-                                PFUREG	         16         7.8
----------------------------------------------------
-Report for cell Control
-   Instance path: UART_wrapper/control
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      52.83        28.4
-                                  LUT4	      34.00        18.6
-                                PFUREG	         70        34.3
-                                RIPPLE	          6        17.1
+                          UART_Packets	          1        96.2
 ---------------------------------------------------
 Report for cell UART_Packets
-   Instance path: UART_wrapper/packetiser
+   Instance path: Packet_echo_top/PACKETISER
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	     122.67        65.9
-                                  LUT4	     137.00        74.9
-                                PFUREG	        118        57.8
-                                RIPPLE	         29        82.9
+                                  SLIC	      62.50        96.2
+                                  LUT4	      69.00        97.2
+                                PFUREG	         52        96.3
+                                RIPPLE	         22        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
-                                  UART	          1        29.2
+                                  UART	          1        68.2
 ---------------------------------------------------
 Report for cell UART
-   Instance path: UART_wrapper/packetiser/UART_Inst
+   Instance path: Packet_echo_top/PACKETISER/UART_Inst
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      54.25        29.2
-                                  LUT4	      60.00        32.8
-                                PFUREG	         49        24.0
-                                RIPPLE	         19        54.3
+                                  SLIC	      44.33        68.2
+                                  LUT4	      43.00        60.6
+                                PFUREG	         40        74.1
+                                RIPPLE	         17        77.3

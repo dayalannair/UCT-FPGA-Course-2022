@@ -26,10 +26,11 @@ if not s.isOpen():
 		print("Com9 is not open \n")
 		exit()
 for n in range(500):
-	print(Read(s, Buttons))
-	Time = Read(s, ClockTicks)
-	#print("Writing to LEDS...\n")
+	# print(Read(s, Buttons))
+	# Time = Read(s, ClockTicks)
+	# #print("Writing to LEDS...\n")
 	Write(s, LEDs, 36)
+	print(s.readline(8))
 
 	#print(Time)
 	sys.stdout.flush()

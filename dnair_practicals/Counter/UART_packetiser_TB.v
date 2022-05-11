@@ -43,6 +43,9 @@ UART_Packets packetiser(
 
 // send data packet and monitor what is sent back -- check opTx
 initial begin
+
+  // Send packet over UART
+  //---------------------------------------------------------------
     TxPacket.Valid <= 1'b0;
 
     TxPacket.Destination <= destination;
@@ -78,6 +81,10 @@ initial begin
         @(negedge opTxReady); 
         TxPacket.Valid <= 1'b0;
     end
+//------------------------------------------------
+// Receive packet over UART
+
+
 
 end
 

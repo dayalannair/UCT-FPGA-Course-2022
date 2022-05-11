@@ -1,4 +1,4 @@
-# Wed May 11 08:44:27 2022
+# Wed May 11 09:28:48 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -36,8 +36,9 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 141MB)
 
+@N: BN362 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|Removing sequential instance opTxReady (in view: work.UART_Packets(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 Encoding state machine rx_state[2:0] (in view: work.UART(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 00
@@ -69,24 +70,19 @@ original code -> new code
    00000000000000000000000000000010 -> 10
    00000000000000000000000000000011 -> 11
 @N: MO225 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":91:0:91:5|There are no possible illegal states for state machine tx_packet[3:0] (in view: work.UART_Packets(verilog)); safe FSM implementation is not required.
-Encoding state machine state[2:0] (in view: work.Control(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 00
-   00000000000000000000000000000001 -> 01
-   00000000000000000000000000000010 -> 10
 
 Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 173MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 173MB peak: 174MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 173MB peak: 174MB)
 
-@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist UART_wrapper 
+@N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist Packet_echo_top 
 
 Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
@@ -98,7 +94,7 @@ Clock Summary
           Start     Requested     Requested     Clock        Clock                Clock
 Level     Clock     Frequency     Period        Type         Group                Load 
 ---------------------------------------------------------------------------------------
-0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     214  
+0 -       ipClk     50.0 MHz      20.000        declared     default_clkgroup     128  
 =======================================================================================
 
 
@@ -109,7 +105,7 @@ Clock Load Summary
           Clock     Source          Clock Pin        Non-clock Pin     Non-clock Pin
 Clock     Load      Pin             Seq Example      Seq Example       Comb Example 
 ------------------------------------------------------------------------------------
-ipClk     214       ipClk(port)     clk_cnt[0].C     -                 -            
+ipClk     128       ipClk(port)     opLED_1[4].C     -                 -            
 ====================================================================================
 
 ICG Latch Removal Summary:
@@ -123,14 +119,14 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 214 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 128 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-@KP:ckid0_0       ipClk               port                   214        clk_cnt[0]     
+@KP:ckid0_0       ipClk               port                   128        opLED_1[1:0]   
 =======================================================================================
 
 
@@ -142,17 +138,17 @@ Finished Pre Mapping Phase.
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 @W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\Counter_impl1_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 176MB peak: 176MB)
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 90MB peak: 176MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 89MB peak: 175MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Wed May 11 08:44:30 2022
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed May 11 09:28:50 2022
 
 ###########################################################]

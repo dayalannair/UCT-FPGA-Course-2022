@@ -10,7 +10,7 @@ module Registers(
   input               ipClk,
   input               ipReset,
   input[3:0]          ipButtons,
-  input               clk_cnt,
+  input[31:0]         clk_cnt,
 
   input  RD_REGISTERS ipRdRegisters, 
   output WR_REGISTERS opWrRegisters,

@@ -2,17 +2,17 @@
 <BaliProject version="3.2" title="Counter" device="LFXP2-5E-5TN144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options VerilogStandard="System Verilog" def_top="UART_wrapper" top="UART_wrapper"/>
+        <Options VerilogStandard="System Verilog" def_top="Packet_echo_top" top="Packet_echo_top"/>
         <Source name="Structures.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="UART_wrapper.v" type="Verilog" type_short="Verilog">
-            <Options top_module="UART_wrapper"/>
-        </Source>
-        <Source name="Registers.v" type="Verilog" type_short="Verilog">
+        <Source name="UART_wrapper.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
-        <Source name="Control.v" type="Verilog" type_short="Verilog">
+        <Source name="Registers.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="Control.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="UART_Packets.v" type="Verilog" type_short="Verilog">
@@ -26,6 +26,9 @@
         </Source>
         <Source name="UART_echo_top.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
+        </Source>
+        <Source name="Packet_echo_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Packet_echo_top"/>
         </Source>
         <Source name="counter.fdc" type="Synplify Design Constraints File" type_short="SDC">
             <Options/>

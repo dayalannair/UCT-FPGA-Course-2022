@@ -1,11 +1,12 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Wed May 11 08:44:58 2022 *
-NOTE DESIGN NAME: UART_wrapper *
+NOTE DATE CREATED: Wed May 11 09:29:14 2022 *
+NOTE DESIGN NAME: Packet_echo_top *
 NOTE DEVICE NAME: LFXP2-5E-5TQFP144 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS opUART_Tx : 109 : out *
+NOTE PINS opLED[0] : 46 : out *
 NOTE PINS ipClk : 21 : in *
+NOTE PINS opUART_Tx : 109 : out *
 NOTE PINS opLED[7] : 37 : out *
 NOTE PINS opLED[6] : 38 : out *
 NOTE PINS opLED[5] : 39 : out *
@@ -13,11 +14,6 @@ NOTE PINS opLED[4] : 40 : out *
 NOTE PINS opLED[3] : 43 : out *
 NOTE PINS opLED[2] : 44 : out *
 NOTE PINS opLED[1] : 45 : out *
-NOTE PINS opLED[0] : 46 : out *
-NOTE PINS ipButtons[3] : 50 : in *
-NOTE PINS ipButtons[2] : 52 : in *
-NOTE PINS ipButtons[1] : 53 : in *
-NOTE PINS ipButtons[0] : 54 : in *
 NOTE PINS ipUART_Rx : 110 : in *
 NOTE PINS ipnReset : 19 : in *
 NOTE CONFIGURATION MODE: NONE *
