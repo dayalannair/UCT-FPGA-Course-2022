@@ -126,7 +126,7 @@ always @(posedge ipClk) begin
           // reset UART send line
           //UART_TxSend <= 1'b0;
       
-          if (~UART_TxBusy) begin
+          if (~UART_TxBusy) begin // removed if (pkt.valid) gate
 
             case(tx_packet)
               dest: begin
