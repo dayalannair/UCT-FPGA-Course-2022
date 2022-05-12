@@ -15,7 +15,7 @@ module UART_wrapper(
   input ipUART_Rx,
   input[3:0] ipButtons,
   output reg opUART_Tx,
-  output [7:0]opLED
+  output[7:0] opLED
 );
 
 UART_PACKET cpTxPacket;
@@ -65,7 +65,8 @@ Registers register(
   .opRdData (crRdData),
   .ipAddress (crAddress),
   .ipWrData (crWrData),
-  .ipWrEnable (crWrEnable)
+  .ipWrEnable (crWrEnable),
+  .opLED (opLED)
 );
 always @(posedge ipClk)begin
   if (~ipnReset) clk_cnt <= 0;

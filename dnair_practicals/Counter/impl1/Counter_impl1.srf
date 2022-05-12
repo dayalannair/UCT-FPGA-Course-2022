@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: DAYALAN-YOGA910
 
-# Wed May 11 21:14:30 2022
+# Thu May 12 09:04:30 2022
 
 #Implementation: impl1
 
@@ -59,7 +59,8 @@ Synopsys Verilog Compiler, Version comp202003synp2, Build 182R, Built Oct 29 202
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v" (library work)
 @I::"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
+File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v changed - recompiling
+File C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v changed - recompiling
 Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.fdep@N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":1:8:1:17|Synthesizing module Structures in library work.
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v":10:0:10:5|Synthesizing module work_C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v_unit in library work.
 Selecting top level module UART_wrapper
@@ -102,8 +103,8 @@ Error reading file dependency information in file C:\Users\Dayalan Nair\Desktop\
 @A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":5:14:5:23|*Unassigned bits of RdRegisters.ClockTicks[31:0] are referenced and tied to 0 -- simulation mismatch possible.
 @A: CL153 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Structures.v":6:14:6:20|*Unassigned bits of RdRegisters.Buttons[3:0] are referenced and tied to 0 -- simulation mismatch possible.
 Running optimization stage 2 on Registers .......
-@W: CL246 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":19:22:19:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.
-@N: CL159 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":15:22:15:34|Input ipRdRegisters is unused.
+@W: CL246 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":20:22:20:29|Input port bits 31 to 8 of ipWrData[31:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL159 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":16:22:16:34|Input ipRdRegisters is unused.
 Running optimization stage 2 on Control .......
 @N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":27:0:27:5|Trying to extract state machine for register state.
 Extracted state machine for register state
@@ -165,12 +166,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 101MB peak: 110MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 98MB peak: 110MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed May 11 21:14:33 2022
+# Thu May 12 09:04:33 2022
 
 ###########################################################]
 ###########################################################[
@@ -197,7 +198,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed May 11 21:14:33 2022
+# Thu May 12 09:04:33 2022
 
 ###########################################################]
 
@@ -207,12 +208,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 29MB peak: 29MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 23MB peak: 23MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Wed May 11 21:14:33 2022
+# Thu May 12 09:04:33 2022
 
 ###########################################################]
 ###########################################################[
@@ -240,12 +241,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed May 11 21:14:34 2022
+# Thu May 12 09:04:34 2022
 
 ###########################################################]
-Premap Report
-
-# Wed May 11 21:14:34 2022
+# Thu May 12 09:04:34 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -277,14 +276,22 @@ See clock summary report "C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dna
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 129MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 127MB peak: 129MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 140MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 142MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 140MB peak: 141MB)
 
+Fixing fake multiple drivers on net opLED[0].
+Fixing fake multiple drivers on net opLED[1].
+Fixing fake multiple drivers on net opLED[2].
+Fixing fake multiple drivers on net opLED[3].
+Fixing fake multiple drivers on net opLED[4].
+Fixing fake multiple drivers on net opLED[5].
+Fixing fake multiple drivers on net opLED[6].
+Fixing fake multiple drivers on net opLED[7].
 Encoding state machine rx_state[2:0] (in view: work.UART(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 00
@@ -330,17 +337,17 @@ original code -> new code
 Starting clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 174MB peak: 174MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 @N: FX1184 |Applying syn_allowed_resources blockrams=9 on top level netlist UART_wrapper 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 175MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
 
@@ -391,7 +398,7 @@ Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample I
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 Finished Pre Mapping Phase.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 174MB peak: 174MB)
 
 
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
@@ -402,15 +409,13 @@ Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 94MB peak: 177MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 93MB peak: 176MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Wed May 11 21:14:37 2022
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Thu May 12 09:04:37 2022
 
 ###########################################################]
-Map & Optimize Report
-
-# Wed May 11 21:14:37 2022
+# Thu May 12 09:04:37 2022
 
 
 Copyright (C) 1994-2020 Synopsys, Inc.
@@ -466,7 +471,7 @@ Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00
 
 Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 175MB peak: 175MB)
 
-@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Removing instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Removing instance register.Reset because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: BN132 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Removing instance packetiser.UART_Inst.rst because it is equivalent to instance control.rst. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
 Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
@@ -478,7 +483,7 @@ Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register packetiser.UART_Inst.tx_cnt[0] which prevents the register from being packed into DSP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Found false-path constraint on register packetiser.UART_Inst.rx_cnt[0] which prevents the register from being packed into DSP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\control.v":27:0:27:5|Found false-path constraint on register control.rd_byte_cnt[0] which prevents the register from being packed into DSP
-@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_wrapper.v":70:0:70:5|Found false-path constraint on register clk_cnt[0] which prevents the register from being packed into DSP
+@W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_wrapper.v":71:0:71:5|Found false-path constraint on register clk_cnt[0] which prevents the register from being packed into DSP
 @W: FX527 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart_packets.v":88:0:88:5|Found false-path constraint on register packetiser.rx_len[0] which prevents the register from being packed into DSP
 
 Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 177MB)
@@ -487,10 +492,10 @@ Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elaps
 Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 177MB peak: 178MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 178MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 178MB peak: 178MB)
+Finished preparing to map (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 177MB peak: 178MB)
 
 
 Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
@@ -502,20 +507,20 @@ Pass		 CPU time		Worst Slack		Luts / Registers
 Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 181MB peak: 181MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_7_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_6_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_5_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_4_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_3_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_2_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_1_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
-@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":29:0:29:5|Boundary register register.opWrRegisters\.LEDs_0_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_7_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_6_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_5_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_4_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_3_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_2_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_1_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\registers.v":31:0:31:5|Boundary register register.opWrRegisters\.LEDs_0_.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 @A: BN291 :"c:\users\dayalan nair\desktop\uct-fpga-course-2022\dnair_practicals\counter\uart.v":51:0:51:5|Boundary register packetiser.UART_Inst.opTx.fb (in view: work.UART_wrapper(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
 
 Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 181MB peak: 181MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 144MB peak: 182MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 146MB peak: 182MB)
 
 Writing Analyst data base C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\impl1\synwork\Counter_impl1_m.srm
 
@@ -534,7 +539,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Wed May 11 21:14:42 2022
+# Timing report written on Thu May 12 09:04:42 2022
 #
 
 
@@ -735,9 +740,9 @@ VHI:            5
 VLO:            5
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 67MB peak: 187MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 68MB peak: 187MB)
 
 Process took 0h:00m:05s realtime, 0h:00m:05s cputime
-# Wed May 11 21:14:42 2022
+# Thu May 12 09:04:42 2022
 
 ###########################################################]

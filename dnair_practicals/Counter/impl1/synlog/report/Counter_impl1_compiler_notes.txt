@@ -24,7 +24,7 @@
 @N: CL189 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":27:0:27:5|Register bit opTxPkt.Source[7] is always 0.
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":9:7:9:15|Synthesizing module Registers in library work.
 @N: CG364 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_wrapper.v":12:7:12:18|Synthesizing module UART_wrapper in library work.
-@N: CL159 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":15:22:15:34|Input ipRdRegisters is unused.
+@N: CL159 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Registers.v":16:22:16:34|Input ipRdRegisters is unused.
 @N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\Control.v":27:0:27:5|Trying to extract state machine for register state.
 @N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":88:0:88:5|Trying to extract state machine for register tx_packet.
 @N: CL201 :"C:\Users\Dayalan Nair\Desktop\UCT-FPGA-Course-2022\dnair_practicals\Counter\UART_Packets.v":88:0:88:5|Trying to extract state machine for register rx_packet.

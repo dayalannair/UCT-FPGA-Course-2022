@@ -15,26 +15,35 @@ def Write(s, Address, Data):
 
 def Read(s, Address):
 	s.write(struct.pack('<BBBBB', 0x55, 0x00, 0xAA, 0x01, Address))
-	return struct.unpack_from('<I', s.read(9), offset=5)[0]
+	# unpack data with format little endian, unsigned integer (4 byte) from buffer s.read(9) starting at
+	# position 5
+	# s.read() blocks until number of bytes is read
+	return struct.unpack_from('<I', s.read(8), offset=4)[0]
 #-------------------------------------------------------------------------------
 
 s = serial.Serial()
 s.port='COM9' 
 s.baudrate=115200
+print("Opening COM9...\n")
 s.open()
 if not s.isOpen():
 		print("Com9 is not open \n")
 		exit()
-for n in range(500):
-	# print(Read(s, Buttons))
-	# Time = Read(s, ClockTicks)
-	# #print("Writing to LEDS...\n")
-	Write(s, LEDs, 36)
-	print(s.readline(8))
+print("Starting program...\n")
+try:
+	for n in range(500):
+		#print(Read(s, Buttons))
+		#Time = Read(s, ClockTicks)
+		#print("Writing to LEDS...\n")
+		Write(s, LEDs, 7)
+		#print(s.readline(8))
+		print(Read(s, LEDs))
+		#print(Time)
+		sys.stdout.flush()
+		time.sleep(0.5)
 
-	#print(Time)
-	sys.stdout.flush()
-	time.sleep(0.02)
+except KeyboardInterrupt:
+    print('Hello user you have pressed ctrl-c button.')
 
 # try:
 	

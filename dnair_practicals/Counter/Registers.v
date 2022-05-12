@@ -11,6 +11,7 @@ module Registers(
   input               ipReset,
   input[3:0]          ipButtons,
   input[31:0]         clk_cnt,
+  output[7:0]         opLED,
 
   input  RD_REGISTERS ipRdRegisters, 
   output WR_REGISTERS opWrRegisters,
@@ -25,6 +26,7 @@ module Registers(
 reg Reset;
 assign ipRdRegisters.Buttons = ipButtons;
 assign ipRdRegisters.ClockTicks = clk_cnt;
+assign opLED = opWrRegisters.LEDs;
 //reg[3:0] buttons;
 always @(posedge ipClk) begin
   
