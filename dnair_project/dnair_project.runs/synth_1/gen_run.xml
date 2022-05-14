@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1652519115">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1652528209">
   <File Type="PA-TCL" Name="UART_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="UART_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="UART_wrapper_reports.tcl"/>

@@ -29,8 +29,6 @@ wire[31:0] crRdData;
 
 WR_REGISTERS WrRegisters;
 RD_REGISTERS RdRegisters;
-
-assign opLED = WrRegisters.LEDs;
 reg [31:0] clk_cnt;
 
 UART_Packets packetiser(

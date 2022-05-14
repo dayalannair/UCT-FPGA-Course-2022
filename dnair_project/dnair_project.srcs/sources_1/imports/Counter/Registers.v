@@ -26,7 +26,7 @@ module Registers(
 reg Reset;
 assign ipRdRegisters.Buttons = ipButtons;
 assign ipRdRegisters.ClockTicks = clk_cnt;
-assign opLED = opWrRegisters.LEDs[15:0];
+assign opLED = opWrRegisters.LEDs;
 //reg[3:0] buttons;
 always @(posedge ipClk) begin
   
@@ -46,7 +46,7 @@ always @(posedge ipClk) begin
 
   end else if(ipWrEnable) begin
     case(ipAddress)
-      8'h02: opWrRegisters.LEDs <= ipWrData;
+      8'h02: opWrRegisters.LEDs <= ipWrData[15:0];
       default:;
     endcase
   end

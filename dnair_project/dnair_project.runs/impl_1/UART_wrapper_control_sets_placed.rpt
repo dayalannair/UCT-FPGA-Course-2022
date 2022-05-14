@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sat May 14 11:06:48 2022
+| Date         : Sat May 14 13:38:23 2022
 | Host         : TRISERVERi7 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file UART_wrapper_control_sets_placed.rpt
 | Design       : UART_wrapper
@@ -76,23 +76,23 @@ Table of Contents
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/FSM_sequential_tx_packet_reg[0] | packetiser/UART_Inst/tx_state_reg[0]_0   |                1 |              1 |         1.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/opTx_i_1_n_0                    | packetiser/UART_Inst/rst_reg_0           |                1 |              1 |         1.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/clk_cnt2[9]_i_2_n_0             | packetiser/UART_Inst/clk_cnt2[9]_i_1_n_0 |                2 |              3 |         1.50 |
+|  ipClk_IBUF_BUFG | packetiser/UART_Inst/FSM_sequential_tx_packet_reg[0] |                                          |                1 |              4 |         4.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/FSM_sequential_rx_state_reg     |                                          |                3 |              4 |         1.33 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/FSM_sequential_rx_state_reg     | packetiser/rx_len[5]_i_1_n_0             |                1 |              4 |         4.00 |
-|  ipClk_IBUF_BUFG | packetiser/UART_Inst/FSM_sequential_tx_packet_reg[0] |                                          |                1 |              4 |         4.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/rx_cnt[3]_i_1_n_0               |                                          |                1 |              4 |         4.00 |
-|  ipClk_IBUF_BUFG | packetiser/UART_Inst/rx_packet_reg[0]_1[0]           |                                          |                1 |              4 |         4.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/tx_state_reg[1]                 |                                          |                1 |              4 |         4.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/tx_state_reg[1]                 | packetiser/UART_TxData[7]_i_1_n_0        |                1 |              4 |         4.00 |
-|  ipClk_IBUF_BUFG | control/wr_byte_cnt[3]_i_1_n_0                       | packetiser/UART_Inst/rst_reg_0           |                2 |              4 |         2.00 |
+|  ipClk_IBUF_BUFG | packetiser/UART_Inst/rx_packet_reg[0]_1[0]           |                                          |                1 |              4 |         4.00 |
 |  ipClk_IBUF_BUFG | control/rd_byte_cnt[3]_i_1_n_0                       | packetiser/UART_Inst/rst_reg_0           |                1 |              4 |         4.00 |
+|  ipClk_IBUF_BUFG | control/wr_byte_cnt[3]_i_1_n_0                       | packetiser/UART_Inst/rst_reg_0           |                2 |              4 |         2.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/clk_cnt2[9]_i_2_n_0             |                                          |                1 |              5 |         5.00 |
 |  ipClk_IBUF_BUFG |                                                      | packetiser/UART_Inst/rst_reg_0           |                4 |              7 |         1.75 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/clk_cnt[9]_i_2_n_0              | packetiser/UART_Inst/clk_cnt[9]_i_1_n_0  |                2 |              7 |         3.50 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/opRxData[7]_i_1_n_0             |                                          |                1 |              8 |         8.00 |
-|  ipClk_IBUF_BUFG | packetiser/UART_Inst/rst_reg_1[0]                    |                                          |                2 |              8 |         4.00 |
-|  ipClk_IBUF_BUFG | packetiser/UART_Inst/rx_packet_reg[0]_0[0]           |                                          |                1 |              8 |         8.00 |
-|  ipClk_IBUF_BUFG | packetiser/UART_Inst/E[0]                            |                                          |                1 |              8 |         8.00 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/rx_packet_reg[0][0]             |                                          |                1 |              8 |         8.00 |
+|  ipClk_IBUF_BUFG | packetiser/UART_Inst/E[0]                            |                                          |                1 |              8 |         8.00 |
+|  ipClk_IBUF_BUFG | packetiser/UART_Inst/rx_packet_reg[0]_0[0]           |                                          |                1 |              8 |         8.00 |
+|  ipClk_IBUF_BUFG | packetiser/UART_Inst/rst_reg_1[0]                    |                                          |                2 |              8 |         4.00 |
 |  ipClk_IBUF_BUFG | packetiser/data_cache[7]_i_1_n_0                     |                                          |                2 |              8 |         4.00 |
 |  ipClk_IBUF_BUFG | control/opTxPkt[Data][7]_i_1_n_0                     |                                          |                2 |              8 |         4.00 |
 |  ipClk_IBUF_BUFG |                                                      | control/opAddress_reg[1]_0[0]            |                2 |             11 |         5.50 |
@@ -100,8 +100,8 @@ Table of Contents
 |  ipClk_IBUF_BUFG |                                                      | control/opAddress_reg[0]_0               |                3 |             16 |         5.33 |
 |  ipClk_IBUF_BUFG | packetiser/UART_Inst/opRxStream_reg[Valid][0]        |                                          |                3 |             16 |         5.33 |
 |  ipClk_IBUF_BUFG |                                                      |                                          |               12 |             23 |         1.92 |
-|  ipClk_IBUF_BUFG | control/opWrData[7]_i_1_n_0                          |                                          |                2 |             24 |        12.00 |
 |  ipClk_IBUF_BUFG | control/rd_data[31]_i_1_n_0                          | packetiser/UART_Inst/rst_reg_0           |                4 |             24 |         6.00 |
+|  ipClk_IBUF_BUFG | control/opWrData[7]_i_1_n_0                          |                                          |                2 |             24 |        12.00 |
 |  ipClk_IBUF_BUFG | control/E[0]                                         | packetiser/UART_Inst/rst_reg_0           |                7 |             32 |         4.57 |
 |  ipClk_IBUF_BUFG |                                                      | packetiser/UART_Inst/ipnReset            |               10 |             40 |         4.00 |
 +------------------+------------------------------------------------------+------------------------------------------+------------------+----------------+--------------+
