@@ -16,7 +16,10 @@ To receive data:
 - opRxData is valid during the same clock cycle
 ------------------------------------------------------------------------------*/
 
-module UART(
+module UART #(
+	parameter BAUD_COUNT = 10'd32
+)
+(
   input           ipClk,
   input           ipReset,
 
@@ -30,8 +33,8 @@ module UART(
   output reg      opRxValid  // holds received data 
 );
 
-parameter MAX_BDCOUNT = 10'd433;//10'd867;
-parameter HALF_MAX_BDCOUNT = 10'd110;//10'd433; //Quarter
+// parameter BAUD_COUNT = 10'd433;//10'd867;
+parameter HALF_BAUD_COUNT = BAUD_COUNT/2;//10'd433; //Quarter
 
 reg rst;
 reg rx;
@@ -68,7 +71,7 @@ always @(posedge ipClk) begin
 			off: begin
 					if (ipTxSend) begin
 						tx_cnt <= 4'd8;
-						clk_cnt <= MAX_BDCOUNT;
+						clk_cnt <= BAUD_COUNT;
 						tx_state <= start;
 						opTxBusy <= 1'b1;
 						txData <= ipTxData;
@@ -91,10 +94,10 @@ always @(posedge ipClk) begin
 						opTx <= txData[0]; 
 						txData <= txData>>1;
 						tx_cnt <= tx_cnt - 1'b1;
-						clk_cnt <= MAX_BDCOUNT;
+						clk_cnt <= BAUD_COUNT;
 					end
 					else if ((clk_cnt == 0) && (tx_cnt == 0)) begin
-						clk_cnt <= MAX_BDCOUNT;
+						clk_cnt <= BAUD_COUNT;
 						opTx <= 1'b1;
 						tx_state <= stop;
 
@@ -121,15 +124,15 @@ always @(posedge ipClk) begin
 			off: begin
 					opRxValid <= 1'b0;
 					if (rx == 0) begin
-						clk_cnt2 <= MAX_BDCOUNT+HALF_MAX_BDCOUNT;
+						clk_cnt2 <= BAUD_COUNT+HALF_BAUD_COUNT;
 						rx_cnt <= 4'd8; 
 						rx_state <= start;
 					end
 				end
 
 			start: begin
-						if ((rx == 0) && (clk_cnt2 > HALF_MAX_BDCOUNT)) clk_cnt2 <= clk_cnt2 - 1'b1;
-						else if ((rx == 0) && (clk_cnt2 == HALF_MAX_BDCOUNT)) rx_state <= on;
+						if ((rx == 0) && (clk_cnt2 > HALF_BAUD_COUNT + 1'b1)) clk_cnt2 <= clk_cnt2 - 1'b1;
+						else if ((rx == 0) && (clk_cnt2 == HALF_BAUD_COUNT + 1'b1)) rx_state <= on;
 						else rx_state <= off;
 					end
 	
@@ -137,27 +140,19 @@ always @(posedge ipClk) begin
 					if ((clk_cnt2 == 0) && (rx_cnt != 0)) begin
 						rx_cnt <= rx_cnt - 1'b1;
 						opRxData <= {rx, opRxData[7:1]}; 
-						clk_cnt2 <= MAX_BDCOUNT;
+						clk_cnt2 <= BAUD_COUNT;
 					end
 					else if ((clk_cnt2 == 0) && (rx_cnt == 0)) begin
-						clk_cnt2 <= MAX_BDCOUNT;
+						clk_cnt2 <= BAUD_COUNT;
 						opRxValid <= 1'b1;
 						rx_state <= off;
 					end
 					else clk_cnt2 <= clk_cnt2 - 1'b1;
 				end
-			// stop: begin
-			// 		if ((rx == 1) && (clk_cnt2 != 0)) clk_cnt2 <= clk_cnt2 - 1'b1;
-
-			// 		else if ((rx == 1) && (clk_cnt2 == 0)) begin
-			// 			opRxValid <= 1'b1;
-			// 			rx_state <= off;
-			// 		end
-
-			// 		//if protocol broken, return to off
-			// 		else rx_state <= off;
-			// 	end
-
+//			stop: begin
+//			         if (clk_cnt2 > 0) clk_cnt2 <= clk_cnt2 - 1'b1;
+//			         else rx_state<= off;
+//			     end
 			default: rx_state <= off;
 		endcase
 	end

@@ -3,7 +3,7 @@ module UART_TB;
 //------------------------------------------------------------------------------
 
 reg ipClk = 0;
-always #10 ipClk <= ~ipClk;
+always #5 ipClk <= ~ipClk;
 //------------------------------------------------------------------------------
 
 reg ipReset = 1;
@@ -45,17 +45,17 @@ for (i = 0; i<10; i++) begin
     @(posedge ipClk);
     ipTxSend = 0;
 
-    #4340;
+    #166;
     assert(opTx == 0) else
       $error("Expecting start bit");
 
     for(TxBit = 0; TxBit < 8; TxBit++) begin
-      #8681;
+      #333//#8681;
       assert(opTx == ipTxData[TxBit]) else
         $error("Incorrect data bit");
     end
 
-    #8681;
+    #333;
     assert(opTx == 1) else
       $error("Expecting stop bit");
   end
@@ -83,10 +83,10 @@ for (j = 0; j<10; j++) begin
     //RxData = $urandom_range(0, 255);
     RxData = "0"+ j;
     ipRx = 0;
-    #8681;
+    #333;
     for(RxBit = 0; RxBit < 8; RxBit++) begin
       ipRx = RxData[RxBit];
-      #8681;
+      #333;
     end
     ipRx = 1;
 

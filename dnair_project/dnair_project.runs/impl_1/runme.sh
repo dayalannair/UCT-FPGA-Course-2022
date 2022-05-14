@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1'
+HD_PWD='C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log UART_echo_top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source UART_echo_top.tcl -notrace
+EAStep vivado -log UART_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source UART_wrapper.tcl -notrace
 
 

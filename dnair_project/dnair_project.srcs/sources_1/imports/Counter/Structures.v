@@ -3,11 +3,11 @@ package Structures;
 
 typedef struct{
   logic [31:0]ClockTicks;
-  logic [ 3:0]Buttons;
+  logic [ 4:0]Buttons;
 } RD_REGISTERS;
 
 typedef struct{
-  logic [7:0]LEDs;
+  logic [15:0]LEDs;
 } WR_REGISTERS;
 
 typedef struct{

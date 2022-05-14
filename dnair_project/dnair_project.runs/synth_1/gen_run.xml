@@ -1,37 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1652035654">
-  <File Type="PA-TCL" Name="UART_echo_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="UART_echo_top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="UART_echo_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="UART_echo_top.vds"/>
-  <File Type="RDS-UTIL" Name="UART_echo_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="UART_echo_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="UART_echo_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="UART_echo_top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="UART_echo_top_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1652519115">
+  <File Type="PA-TCL" Name="UART_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="UART_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="UART_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="UART_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="UART_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="UART_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="UART_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="UART_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="UART_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/Counter/UART.v">
-      <FileInfo SFType="SVerilog">
-        <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/UART.v"/>
-        <Attr Name="ImportTime" Val="1651587286"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Counter/UART_echo_top.v">
-      <FileInfo SFType="SVerilog">
-        <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/UART_echo_top.v"/>
-        <Attr Name="ImportTime" Val="1651243188"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/Counter/Structures.v">
       <FileInfo SFType="SVerilog">
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/Structures.v"/>
         <Attr Name="ImportTime" Val="1651298146"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -41,7 +22,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Counter/Control.v">
       <FileInfo SFType="SVerilog">
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/Control.v"/>
         <Attr Name="ImportTime" Val="1651675859"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -51,7 +31,6 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Counter/Registers.v">
       <FileInfo SFType="SVerilog">
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/Registers.v"/>
         <Attr Name="ImportTime" Val="1651492517"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -59,9 +38,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/Counter/UART.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/UART.v"/>
+        <Attr Name="ImportTime" Val="1651587286"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Counter/UART_Packets.v">
       <FileInfo SFType="SVerilog">
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/UART_Packets.v"/>
         <Attr Name="ImportTime" Val="1651851963"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -71,9 +58,18 @@
     </File>
     <File Path="$PSRCDIR/sources_1/imports/Counter/UART_wrapper.v">
       <FileInfo SFType="SVerilog">
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/UART_wrapper.v"/>
         <Attr Name="ImportTime" Val="1651684147"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Counter/UART_echo_top.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../dnair_practicals/Counter/UART_echo_top.v"/>
+        <Attr Name="ImportTime" Val="1651243188"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -105,7 +101,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="UART_echo_top"/>
+      <Option Name="TopModule" Val="UART_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -129,7 +125,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.srcs/sources_1/imports/Counter/Structures.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.srcs/sources_1/imports/Counter/Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.srcs/sources_1/imports/Counter/Registers.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Registers
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.srcs/sources_1/imports/Counter/UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.srcs/sources_1/imports/Counter/UART_Packets.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Packets
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.srcs/sources_1/imports/Counter/UART_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.srcs/sources_1/imports/Counter/UART_wrapper_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_Wrapper_TB

@@ -9,6 +9,9 @@ import Structures::*;
 module Registers(
   input               ipClk,
   input               ipReset,
+  input[4:0]          ipButtons,
+  input[31:0]         clk_cnt,
+  output[15:0]         opLED,
 
   input  RD_REGISTERS ipRdRegisters, 
   output WR_REGISTERS opWrRegisters,
@@ -21,8 +24,12 @@ module Registers(
 //------------------------------------------------------------------------------
 
 reg Reset;
-
+assign ipRdRegisters.Buttons = ipButtons;
+assign ipRdRegisters.ClockTicks = clk_cnt;
+assign opLED = opWrRegisters.LEDs[15:0];
+//reg[3:0] buttons;
 always @(posedge ipClk) begin
+  
   case(ipAddress)
     8'h00  : opRdData <= ipRdRegisters.ClockTicks;
     8'h01  : opRdData <= ipRdRegisters.Buttons;
@@ -34,7 +41,7 @@ always @(posedge ipClk) begin
   Reset <= ipReset;
 
   if(Reset) begin
-    opWrRegisters.LEDs <= 0;
+    opWrRegisters.LEDs <= 0;//32'h8E9A;//0;
   //----------------------------------------------------------------------------
 
   end else if(ipWrEnable) begin

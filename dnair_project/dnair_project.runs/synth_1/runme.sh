@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/synth_1'
+HD_PWD='C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log UART_echo_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UART_echo_top.tcl
+EAStep vivado -log UART_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source UART_wrapper.tcl

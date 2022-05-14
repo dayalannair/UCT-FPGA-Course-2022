@@ -12,19 +12,16 @@ import Structures::*;
 module UART_wrapper(
   input ipClk,
   input ipnReset,
-  input ipRx,
-  output opRx,
-  output [7:0]opLED
+  input ipUART_Rx,
+  input[4:0] ipButtons,
+  output reg opUART_Tx,
+  output[15:0] opLED
 );
 
-wire rst = ~ipnReset;
-
-// Control-packetiser connections
 UART_PACKET cpTxPacket;
 UART_PACKET cpRxPacket;
 wire cpTxReady;
 
-// control-register connections
 wire crWrEnable;
 wire[7:0] crAddress;
 wire[31:0] crWrData;
@@ -34,20 +31,21 @@ WR_REGISTERS WrRegisters;
 RD_REGISTERS RdRegisters;
 
 assign opLED = WrRegisters.LEDs;
+reg [31:0] clk_cnt;
 
 UART_Packets packetiser(
   .ipClk (ipClk),
-  .ipReset (rst),
+  .ipReset (~ipnReset),
   .ipTxStream (cpTxPacket), // packet to send from control
   .opRxStream (cpRxPacket), // received packet to control
   .opTxReady (cpTxReady), 
-  .opTx (opTx), 
-  .ipRx (ipRx)
+  .opTx (opUART_Tx), 
+  .ipRx (ipUART_Rx)
 );
 
 Control control(
    .ipClk (ipClk),
-  .ipReset (rst),
+  .ipReset (~ipnReset),
   .ipRxPkt (cpRxPacket),
   .opTxPkt (cpTxPacket), //output of control is input of packetiser
   .opAddress (crAddress),
@@ -59,13 +57,19 @@ Control control(
 
 Registers register(
   .ipClk (ipClk),
-  .ipReset (rst),
+  .ipReset (~ipnReset),
+  .ipButtons (ipButtons),
+  .clk_cnt (clk_cnt),  
   .ipRdRegisters (RdRegisters),
   .opWrRegisters (WrRegisters),
   .opRdData (crRdData),
   .ipAddress (crAddress),
   .ipWrData (crWrData),
-  .ipWrEnable (crWrEnable)
+  .ipWrEnable (crWrEnable),
+  .opLED (opLED)
 );
-
+always @(posedge ipClk)begin
+  if (~ipnReset) clk_cnt <= 0;
+  else clk_cnt <= clk_cnt + 1'b1;
+end
 endmodule

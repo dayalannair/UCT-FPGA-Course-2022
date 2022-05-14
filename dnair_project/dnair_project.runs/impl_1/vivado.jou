@@ -2,11 +2,11 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun May  8 20:48:26 2022
-# Process ID: 15380
-# Current directory: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1
-# Command line: vivado.exe -log UART_echo_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UART_echo_top.tcl -notrace
-# Log file: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1/UART_echo_top.vdi
-# Journal file: C:/Users/Dayalan Nair/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1\vivado.jou
+# Start of session at: Sat May 14 11:06:13 2022
+# Process ID: 18152
+# Current directory: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1
+# Command line: vivado.exe -log UART_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source UART_wrapper.tcl -notrace
+# Log file: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1/UART_wrapper.vdi
+# Journal file: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source UART_echo_top.tcl -notrace
+source UART_wrapper.tcl -notrace
