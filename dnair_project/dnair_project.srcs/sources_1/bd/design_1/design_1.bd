@@ -1,0 +1,47 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a100tcsg324-1",
+      "gen_directory": "../../../../dnair_project.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.1"
+    },
+    "design_tree": {
+      "axi_fifo_mm_s_0": ""
+    },
+    "components": {
+      "axi_fifo_mm_s_0": {
+        "vlnv": "xilinx.com:ip:axi_fifo_mm_s:4.2",
+        "xci_name": "design_1_axi_fifo_mm_s_0_0",
+        "xci_path": "ip\\design_1_axi_fifo_mm_s_0_0\\design_1_axi_fifo_mm_s_0_0.xci",
+        "inst_hier_path": "axi_fifo_mm_s_0",
+        "parameters": {
+          "C_DATA_INTERFACE_TYPE": {
+            "value": "0"
+          },
+          "C_RX_FIFO_DEPTH": {
+            "value": "4096"
+          },
+          "C_RX_FIFO_PE_THRESHOLD": {
+            "value": "5"
+          },
+          "C_RX_FIFO_PF_THRESHOLD": {
+            "value": "507"
+          },
+          "C_TX_FIFO_DEPTH": {
+            "value": "4096"
+          },
+          "C_TX_FIFO_PE_THRESHOLD": {
+            "value": "5"
+          },
+          "C_TX_FIFO_PF_THRESHOLD": {
+            "value": "507"
+          }
+        }
+      }
+    }
+  }
+}

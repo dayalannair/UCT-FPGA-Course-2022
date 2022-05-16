@@ -2,3 +2,6 @@ Running: xsim.dir/UART_Wrapper_TB_behav/xsimk.exe -simmode gui -wdb UART_Wrapper
 Design successfully loaded
 Design Loading Memory Usage: 6788 KB (Peak: 6788 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7652 KB (Peak: 7652 KB)
+Simulation CPU Usage: 109 ms
