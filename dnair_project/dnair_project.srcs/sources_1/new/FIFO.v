@@ -33,34 +33,26 @@ reg[8:0] wr_addr_ptr;
 reg[8:0] rd_addr_ptr;
 reg[8:0] address;
 
-reg en_a = 1;
+reg en = 1;
 reg wr_en = 0;
 reg[31:0] din_a;
 reg[31:0] bd_cnt;
-
+reg[8:0] N;
 parameter BD_COUNT = 141;
 
 blk_mem_gen BRAM(
   .clka(clk),  
-  .ena(en_a),    
+  .ena(en),    
   .wea(wr_en),    
   .addra(wr_addr_ptr),  
   .dina(ipData),  
   
   .clkb(clk),
-  .enb(en_a), 
+  .enb(en), 
   .addrb(rd_addr_ptr), 
   .dinb(dinb), 
   .doutb(opData)
 );
-
-typedef enum {
-	idle,
-	on,
-	} STATE;
-
-STATE wr_state;
-STATE rd_state;
 
 always @(posedge ipClk) begin
     if (ipReset) begin
@@ -70,40 +62,26 @@ always @(posedge ipClk) begin
         bd_cnt <= BD_COUNT; 
         rd_state <= idle;
         wr_state <= idle;
+        N <= 8'd511;
         
     end
     else begin
-        case(wr_state)
-            idle: begin
-                    if (ipWrEnable) begin
-                        wr_state <= on;
-                        wr_en <= 1; //write data
-                    end
-                    else wr_en <= 0;
-            end
-            on: begin
-                if (!ipWrEnable) wr_state <= idle;
-                else wr_addr_ptr <= wr_addr_ptr + 1'b1;
-            end
-
-        endcase 
-
-        case(rd_state)
-        idle: begin
-                if (ipRead) begin
-                        rd_state <= on;
-
-                end
+        //write first
+        FIFO_Length <= wr_addr_ptr>rd_addr_ptr ? wr_addr_ptr - rd_addr_ptr:wr_addr_ptr+N - rd_addr_ptr;
+        //expect ipWrEnable = packetValid
+        if (ipWrEnable) begin
+            wr_en <= 1;
+            wr_addr_ptr <= wr_addr_ptr + 1'b1;
         end
-        on: begin
-            
-                if (bd_cnt != 0) bd_cnt <= bd_cnt + 1'b1;
-                else begin
-                    rd_addr_ptr <= rd_addr_ptr + 1'b1;
-                    bd_cnt <= BD_COUNT;
-                end
+        else wr_en <= 0;
+
+        if (bd_cnt != 0) bd_cnt <= bd_cnt + 1'b1;
+        else begin
+            // data put on line at 44100 sps
+            rd_addr_ptr <= rd_addr_ptr + 1'b1;
+            bd_cnt <= BD_COUNT;
         end
-        endcase
+
     end
 end
 endmodule
