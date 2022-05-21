@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -32,44 +32,62 @@ initial begin
   ipReset <= 0;
 end
 
+wire wren;
+reg[15:0] ipDataFIFO;
+reg[15:0] opDataFIFO; 
+reg[8:0] FIFO_Length;
+UART_PACKET PC_pkt;
+
 FIFO FIFO_Inst(
-
-
-
+  .ipClk (ipClk),
+  .ipReset (ipReset),
+  .ipWrEnable (wren),
+  .FIFO_Length (FIFO_Length),
+  .ipData (ipDataFIFO),
+  .opData (opDataFIFO)
 );
 
-pkt2FIFO FIFO_connector(
+// pkt2FIFO FIFO_connector(
+//  .ipClk (ipClk),
+//   .ipReset (ipReset),
+//   .ipPkt (PC_pkt),
+//   .opData (ipDataFIFO),
+//   .opWrEn (wren)
+// );
 
-
+Control control(
+  .ipClk (ipClk),
+  .ipReset (ipReset),
+  .ipRxPkt (ipRxPacket),
+  .opTxPkt (opTxPacket), //output of control is input of packetiser
+  .opAddress (crAddress),
+  .opWrData (crWrData),
+  .ipRdData (crRdData),
+  .opWrEnable (crWrEnable),
+  .ipTxReady (cpTxReady)
 );
-UART_PACKET Packet;
+
 integer i;
 initial begin
     // ---------------------- WRITE REGISTERS ----------------------------
 
-    opTxReady <= 1;
-    Packet.Valid <= 1'b0;
-    Packet.Destination <= 8'h01; // write
-    Packet.Source <= 8'h04;
-    Packet.Length <= 8'h02;
-    Packet.Data <= 8'h01; // address to read
+    PC_pkt.Valid <= 1'b0;
+    //dest and src not nb. only data from packet to be used 
+    PC_pkt.Destination <= 8'h01;
+    PC_pkt.Source <= 8'h04;
+    PC_pkt.Length <= 8'h02;
+    PC_pkt.Data <= 8'h01; // address to read
 
     @(negedge ipReset);
     @(posedge ipClk);
     @(posedge ipClk);
 
-    for i
-    Packet.Valid <= 1'b1;
-    @(posedge ipClk);
-    Packet.Data <= 8'd50;
-    @(posedge ipClk);
-    Packet.Data <= 8'd210;
-    @(posedge ipClk);
-    Packet.Data <= 8'd89;
-    @(posedge ipClk);
-    Packet.Data <= 8'd50;
-    @(posedge ipClk);
-    Packet.Valid <= 1'b0;
+    for (i =0;i<1000; i++) begin
+      PC_pkt.Valid <= 1'b1;
+      @(posedge ipClk);
+      PC_pkt.Data <= 16'h110A + i;
+    end
+    PC_pkt.Valid <= 1'b0;
     //@(posedge opTxReady);
     //@(negedge opTxPacket.Valid);
 end

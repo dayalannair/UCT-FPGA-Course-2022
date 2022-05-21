@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -23,8 +23,8 @@ module pkt2FIFO(
     input ipClk,
     input ipReset,
     input  UART_PACKET ipPkt,
-    input [15:0] opData,
-    input opWrEn
+    output reg [15:0] opData,
+    output reg opWrEn
     );
 
     always @(posedge ipClk) begin
@@ -39,7 +39,4 @@ module pkt2FIFO(
             else opWrEn <= 0;
         end
     end
-
-
-
 endmodule
