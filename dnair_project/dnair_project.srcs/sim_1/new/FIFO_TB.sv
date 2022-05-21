@@ -58,13 +58,13 @@ FIFO FIFO_Inst(
 Control control(
   .ipClk (ipClk),
   .ipReset (ipReset),
-  .ipRxPkt (ipRxPacket),
-  .opTxPkt (opTxPacket), //output of control is input of packetiser
-  .opAddress (crAddress),
-  .opWrData (crWrData),
-  .ipRdData (crRdData),
-  .opWrEnable (crWrEnable),
-  .ipTxReady (cpTxReady)
+  .ipRxPkt (PC_pkt),
+  //.opTxPkt (PC_pkt), //output of control is input of packetiser
+  //.opAddress (crAddress),
+  .opWrData (ipDataFIFO),// should truncate
+  //.ipRdData (crRdData), // np need
+  .opWrEnable (wren)
+  //.ipTxReady (cpTxReady)
 );
 
 integer i;
@@ -84,10 +84,9 @@ initial begin
 
     for (i =0;i<1000; i++) begin
       PC_pkt.Valid <= 1'b1;
-      @(posedge ipClk);
       PC_pkt.Data <= 16'h110A + i;
     end
-    PC_pkt.Valid <= 1'b0;
+    //PC_pkt.Valid <= 1'b0;
     //@(posedge opTxReady);
     //@(negedge opTxPacket.Valid);
 end

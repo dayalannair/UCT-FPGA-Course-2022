@@ -12,19 +12,32 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="6.025565001 ms"></ZoomEndTime>
-      <Cursor1Time time="0.251065208 ms"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="81.601 ns"></ZoomEndTime>
+      <Cursor1Time time="45.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="146"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="2" />
+   <WVObjectSize size="6" />
+   <wvobject fp_name="group51" type="group">
+      <obj_property name="label">Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/FIFO_TB/control/opWrData" type="array">
+         <obj_property name="ElementShortName">opWrData[31:0]</obj_property>
+         <obj_property name="ObjectShortName">opWrData[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/FIFO_TB/control/ipRxPkt" type="array">
+         <obj_property name="ElementShortName">ipRxPkt</obj_property>
+         <obj_property name="ObjectShortName">ipRxPkt</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
    <wvobject fp_name="group23" type="group">
       <obj_property name="label">FIFO</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/FIFO_TB/FIFO_Inst/FIFO_Length" type="array">
          <obj_property name="ElementShortName">FIFO_Length[8:0]</obj_property>
          <obj_property name="ObjectShortName">FIFO_Length[8:0]</obj_property>
@@ -47,6 +60,10 @@
          <obj_property name="ObjectShortName">rd_addr_ptr[8:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
+      <wvobject fp_name="/FIFO_TB/FIFO_Inst/ipWrEnable" type="logic">
+         <obj_property name="ElementShortName">ipWrEnable</obj_property>
+         <obj_property name="ObjectShortName">ipWrEnable</obj_property>
+      </wvobject>
       <wvobject fp_name="/FIFO_TB/FIFO_Inst/bd_cnt" type="array">
          <obj_property name="ElementShortName">bd_cnt[15:0]</obj_property>
          <obj_property name="ObjectShortName">bd_cnt[15:0]</obj_property>
@@ -55,8 +72,22 @@
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
    </wvobject>
-   <wvobject fp_name="group24" type="group">
-      <obj_property name="label">FIFO Connector</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
+   <wvobject fp_name="/FIFO_TB/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIFO_TB/PC_pkt" type="array">
+      <obj_property name="ElementShortName">PC_pkt</obj_property>
+      <obj_property name="ObjectShortName">PC_pkt</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIFO_TB/control/state" type="array">
+      <obj_property name="ElementShortName">state[31:0]</obj_property>
+      <obj_property name="ObjectShortName">state[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/FIFO_TB/ipReset" type="logic">
+      <obj_property name="ElementShortName">ipReset</obj_property>
+      <obj_property name="ObjectShortName">ipReset</obj_property>
    </wvobject>
 </wave_config>
