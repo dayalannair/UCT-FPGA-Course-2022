@@ -11,7 +11,7 @@ v_max = 230*1000/3600;
 fd_max = speed2dop(2*v_max,lambda);
 fb_max = fr_max+fd_max;
 %fs = max(2*fb_max,bw);
-fs = 200e3; % kills range est
+fs = 256e3; % kills range est
 rng(2012);
 
 waveform = phased.FMCWWaveform('SweepTime',tm,'SweepBandwidth',bw, ...
@@ -85,7 +85,7 @@ end
 %% FFT
 XR = fft(xr);
 XR_ABS_SHIFT = fftshift(abs(XR));
-f = f_ax(200, fs);
+f = f_ax(256, fs);
 %%
 v_est = dop2speed(-15000,lambda)/2
 %% Plots

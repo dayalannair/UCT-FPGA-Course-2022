@@ -1,0 +1,2 @@
+rom_data_Q.v,verilog,xil_defaultlib,../../../../dnair_project.gen/sources_1/ip/rom_data_Q/sim/rom_data_Q.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

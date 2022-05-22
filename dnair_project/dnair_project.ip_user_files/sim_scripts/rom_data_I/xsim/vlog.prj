@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../dnair_project.gen/sources_1/ip/rom_data_I/sim/rom_data_I.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

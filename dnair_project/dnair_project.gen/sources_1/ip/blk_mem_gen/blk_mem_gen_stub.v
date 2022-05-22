@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-// Date        : Sat May 21 09:56:20 2022
+// Date        : Sun May 22 19:09:49 2022
 // Host        : TRISERVERi7 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/blk_mem_gen/blk_mem_gen_stub.v
@@ -15,14 +15,14 @@
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "blk_mem_gen_v8_4_4,Vivado 2021.1" *)
 module blk_mem_gen(clka, ena, wea, addra, dina, clkb, enb, addrb, doutb)
-/* synthesis syn_black_box black_box_pad_pin="clka,ena,wea[0:0],addra[8:0],dina[15:0],clkb,enb,addrb[8:0],doutb[15:0]" */;
+/* synthesis syn_black_box black_box_pad_pin="clka,ena,wea[0:0],addra[7:0],dina[62:0],clkb,enb,addrb[7:0],doutb[62:0]" */;
   input clka;
   input ena;
   input [0:0]wea;
-  input [8:0]addra;
-  input [15:0]dina;
+  input [7:0]addra;
+  input [62:0]dina;
   input clkb;
   input enb;
-  input [8:0]addrb;
-  output [15:0]doutb;
+  input [7:0]addrb;
+  output [62:0]doutb;
 endmodule
