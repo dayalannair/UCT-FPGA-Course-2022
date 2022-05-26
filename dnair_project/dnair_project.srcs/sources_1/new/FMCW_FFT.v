@@ -128,6 +128,7 @@ module FMCW_FFT(
                         Q_addr <= 0;
                         s_axis_data_tvalid <= 0;
                         m_axis_data_tready <= 0;
+                        opValid <= 0;
                     end
                 end
                 1'b1: begin
@@ -141,6 +142,7 @@ module FMCW_FFT(
                     end
                     if (m_axis_data_tvalid) begin
                         opData <= m_axis_data_tdata;
+                        opValid <= 1;
                         wr_data <= m_axis_data_tdata;
                         wr_addr <= wr_addr + 1'b1;
                     end

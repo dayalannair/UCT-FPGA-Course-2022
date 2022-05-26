@@ -44,11 +44,32 @@ FMCW_FFT DUT(
     .opData (opData),
     .opValid (opValid)
 );
-
+integer count;
+integer fd_Re;
+integer fd_Im;
 initial begin
-    ipEnable <= 1;
+  count = 0;
+  fd_Re = $fopen("FFT_out_Re.txt", "w");  
+  fd_Im = $fopen("FFT_out_Im.txt", "w");  
+  ipEnable = 1;
 end
 
+always@(posedge ipClk) begin
+  
+  if (opValid) begin
+    count <= count + 1;
+    $fwrite(fd_Im,opData[63:32]);
+    $fwrite(fd_Re,opData[31:0]);
+    $fwrite(fd_Re, "\n");
+    $fwrite(fd_Im, "\n");
+  end
+  if (count == 512) begin
+    $display("end");
+    $fclose(fd_Re);
+    $fclose(fd_Im);
+  end
+
+end
 
 
 endmodule
