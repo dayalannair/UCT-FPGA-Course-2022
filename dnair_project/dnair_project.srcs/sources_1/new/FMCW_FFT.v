@@ -35,7 +35,7 @@ module FMCW_FFT(
 
     reg[15:0] s_axis_config_tdata;
     wire s_axis_config_tready;
-    wire s_axis_config_tvalid;
+    reg s_axis_config_tvalid;
 
     wire[63:0] m_axis_data_tdata;
     wire m_axis_data_tlast;
@@ -111,6 +111,10 @@ module FMCW_FFT(
             I_addr <= 0;
             Q_addr <= 0;
             wr_addr <= 0;
+
+            s_axis_config_tvalid <= 0;
+            s_axis_config_tdata <= 0;
+
             s_axis_data_tvalid <= 0;
             m_axis_data_tready <= 0;
             state <= 0;
