@@ -1,10 +1,10 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-// Date        : Sun May 22 15:39:06 2022
+// Date        : Fri May 27 19:36:14 2022
 // Host        : TRISERVERi7 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/axi4_stream_fft/axi4_stream_fft_stub.v
+//               c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/axi4_stream_fft/axi4_stream_fft_stub.v
 // Design      : axi4_stream_fft
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7a100tcsg324-1
@@ -20,16 +20,16 @@ module axi4_stream_fft(aclk, s_axis_config_tdata,
   m_axis_data_tready, m_axis_data_tlast, event_frame_started, event_tlast_unexpected, 
   event_tlast_missing, event_status_channel_halt, event_data_in_channel_halt, 
   event_data_out_channel_halt)
-/* synthesis syn_black_box black_box_pad_pin="aclk,s_axis_config_tdata[15:0],s_axis_config_tvalid,s_axis_config_tready,s_axis_data_tdata[63:0],s_axis_data_tvalid,s_axis_data_tready,s_axis_data_tlast,m_axis_data_tdata[63:0],m_axis_data_tvalid,m_axis_data_tready,m_axis_data_tlast,event_frame_started,event_tlast_unexpected,event_tlast_missing,event_status_channel_halt,event_data_in_channel_halt,event_data_out_channel_halt" */;
+/* synthesis syn_black_box black_box_pad_pin="aclk,s_axis_config_tdata[7:0],s_axis_config_tvalid,s_axis_config_tready,s_axis_data_tdata[63:0],s_axis_data_tvalid,s_axis_data_tready,s_axis_data_tlast,m_axis_data_tdata[95:0],m_axis_data_tvalid,m_axis_data_tready,m_axis_data_tlast,event_frame_started,event_tlast_unexpected,event_tlast_missing,event_status_channel_halt,event_data_in_channel_halt,event_data_out_channel_halt" */;
   input aclk;
-  input [15:0]s_axis_config_tdata;
+  input [7:0]s_axis_config_tdata;
   input s_axis_config_tvalid;
   output s_axis_config_tready;
   input [63:0]s_axis_data_tdata;
   input s_axis_data_tvalid;
   output s_axis_data_tready;
   input s_axis_data_tlast;
-  output [63:0]m_axis_data_tdata;
+  output [95:0]m_axis_data_tdata;
   output m_axis_data_tvalid;
   input m_axis_data_tready;
   output m_axis_data_tlast;

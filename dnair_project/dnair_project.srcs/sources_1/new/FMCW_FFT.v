@@ -33,7 +33,7 @@ module FMCW_FFT(
     wire s_axis_data_tready;
     reg s_axis_data_tvalid; // tell FFT data is valid
 
-    reg[15:0] s_axis_config_tdata;
+    reg[7:0] s_axis_config_tdata;
     wire s_axis_config_tready;
     reg s_axis_config_tvalid;
 

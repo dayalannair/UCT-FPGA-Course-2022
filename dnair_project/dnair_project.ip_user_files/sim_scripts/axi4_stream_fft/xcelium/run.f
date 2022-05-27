@@ -1,9 +1,3 @@
--makelib xcelium_lib/xpm -sv \
-  "C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
--endlib
--makelib xcelium_lib/xpm \
-  "C:/Xilinx/Vivado/2021.1/data/ip/xpm/xpm_VCOMP.vhd" \
--endlib
 -makelib xcelium_lib/xbip_utils_v3_0_10 \
   "../../../ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" \
 -endlib
@@ -51,8 +45,5 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../../dnair_project.gen/sources_1/ip/axi4_stream_fft/sim/axi4_stream_fft.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  glbl.v
 -endlib
 

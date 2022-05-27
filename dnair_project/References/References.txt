@@ -1,0 +1,3 @@
+Not useful --> https://www.youtube.com/watch?v=R-msBFn6r88
+
+https://www.allaboutcircuits.com/technical-articles/xilinx-fft-ip-core-fast-fourier-transform-software-walkthrough/

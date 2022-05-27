@@ -13,12 +13,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="94.637 ns"></ZoomEndTime>
-      <Cursor1Time time="35.000 ns"></Cursor1Time>
+      <ZoomEndTime time="3,835.001 ns"></ZoomEndTime>
+      <Cursor1Time time="893.705 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="146"></NameColumnWidth>
-      <ValueColumnWidth column_width="62"></ValueColumnWidth>
+      <NameColumnWidth column_width="138"></NameColumnWidth>
+      <ValueColumnWidth column_width="123"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="2" />
    <wvobject fp_name="group26" type="group">
@@ -69,6 +69,21 @@
       <wvobject fp_name="/FMCW_FFT_TB/DUT/OUTPUT/dina" type="array">
          <obj_property name="ElementShortName">dina[62:0]</obj_property>
          <obj_property name="ObjectShortName">dina[62:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/FMCW_FFT_TB/DUT/FFT/m_axis_data_tvalid" type="logic">
+         <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/FMCW_FFT_TB/DUT/FFT/m_axis_data_tready" type="logic">
+         <obj_property name="ElementShortName">m_axis_data_tready</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/FMCW_FFT_TB/DUT/FFT/m_axis_data_tlast" type="logic">
+         <obj_property name="ElementShortName">m_axis_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tlast</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>
