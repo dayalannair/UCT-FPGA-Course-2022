@@ -34,7 +34,7 @@ end
 
 reg ipEnable;
 wire opValid;
-wire[63:0] opData;
+wire[31:0] opData;
 
 
 FMCW_FFT DUT(
@@ -58,8 +58,9 @@ always@(posedge ipClk) begin
   
   if (opValid) begin
     count <= count + 1;
-    $fwrite(fd_Im,opData[63:32]);
-    $fwrite(fd_Re,opData[31:0]);
+	// 12 bit data
+    $fwrite(fd_Im,opData[27:16]);
+    $fwrite(fd_Re,opData[11:0]);
     $fwrite(fd_Re, "\n");
     $fwrite(fd_Im, "\n");
   end

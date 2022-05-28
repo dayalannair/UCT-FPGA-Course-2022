@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_Q_synth_1'
+HD_PWD='C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_Q_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

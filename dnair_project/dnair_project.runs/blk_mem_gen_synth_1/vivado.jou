@@ -2,11 +2,11 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun May 22 19:08:40 2022
-# Process ID: 5276
-# Current directory: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/blk_mem_gen_synth_1
+# Start of session at: Sat May 28 09:25:43 2022
+# Process ID: 8660
+# Current directory: C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/blk_mem_gen_synth_1
 # Command line: vivado.exe -log blk_mem_gen.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen.tcl
-# Log file: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/blk_mem_gen_synth_1/blk_mem_gen.vds
-# Journal file: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/blk_mem_gen_synth_1\vivado.jou
+# Log file: C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/blk_mem_gen_synth_1/blk_mem_gen.vds
+# Journal file: C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/blk_mem_gen_synth_1\vivado.jou
 #-----------------------------------------------------------
 source blk_mem_gen.tcl -notrace

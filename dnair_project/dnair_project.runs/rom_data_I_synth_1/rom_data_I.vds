@@ -2,12 +2,12 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Sun May 22 18:56:20 2022
-# Process ID: 8340
-# Current directory: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1
+# Start of session at: Sat May 28 08:46:27 2022
+# Process ID: 12644
+# Current directory: C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1
 # Command line: vivado.exe -log rom_data_I.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rom_data_I.tcl
-# Log file: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/rom_data_I.vds
-# Journal file: C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1\vivado.jou
+# Log file: C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/rom_data_I.vds
+# Journal file: C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1\vivado.jou
 #-----------------------------------------------------------
 source rom_data_I.tcl -notrace
 Command: synth_design -top rom_data_I -part xc7a100tcsg324-1 -mode out_of_context
@@ -17,11 +17,11 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16036
+INFO: [Synth 8-7075] Helper process launched with PID 4384
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1135.660 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1134.398 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'rom_data_I' [c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/synth/rom_data_I.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'rom_data_I' [c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/synth/rom_data_I.vhd:68]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
@@ -51,8 +51,8 @@ INFO: [Synth 8-638] synthesizing module 'rom_data_I' [c:/Users/Dayalan/Desktop/U
 	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
 	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
-	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_WIDTH_A bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 12 - type: integer 
 	Parameter C_WRITE_DEPTH_A bound to: 256 - type: integer 
 	Parameter C_READ_DEPTH_A bound to: 256 - type: integer 
 	Parameter C_ADDRA_WIDTH bound to: 8 - type: integer 
@@ -65,8 +65,8 @@ INFO: [Synth 8-638] synthesizing module 'rom_data_I' [c:/Users/Dayalan/Desktop/U
 	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
 	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
 	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
-	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
-	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_WIDTH_B bound to: 12 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 12 - type: integer 
 	Parameter C_WRITE_DEPTH_B bound to: 256 - type: integer 
 	Parameter C_READ_DEPTH_B bound to: 256 - type: integer 
 	Parameter C_ADDRB_WIDTH bound to: 8 - type: integer 
@@ -96,58 +96,58 @@ INFO: [Synth 8-638] synthesizing module 'rom_data_I' [c:/Users/Dayalan/Desktop/U
 	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
 	Parameter C_COUNT_36K_BRAM bound to: 0 - type: string 
 	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
-	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     3.375199 mW - type: string 
-INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/synth/rom_data_I.vhd:232]
-INFO: [Synth 8-256] done synthesizing module 'rom_data_I' (9#1) [c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/synth/rom_data_I.vhd:68]
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     2.5432 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/synth/rom_data_I.vhd:232]
+INFO: [Synth 8-256] done synthesizing module 'rom_data_I' (9#1) [c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/synth/rom_data_I.vhd:68]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished RTL Elaboration : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1258.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1258.250 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/rom_data_I_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [c:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/rom_data_I_ooc.xdc] for cell 'U0'
-Parsing XDC File [C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/dont_touch.xdc]
+Parsing XDC File [c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/rom_data_I_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/rom_data_I_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1258.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1258.250 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1258.383 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1258.250 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Constraint Validation : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:45 ; elapsed = 00:00:49 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -169,25 +169,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -205,37 +205,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -254,29 +254,29 @@ Report Cell Usage:
 |1     |RAMB18E1 |     1|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:08 . Memory (MB): peak = 1258.383 ; gain = 122.723
-Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:12 . Memory (MB): peak = 1258.383 ; gain = 122.723
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:01:06 . Memory (MB): peak = 1258.250 ; gain = 123.852
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1258.250 ; gain = 123.852
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1258.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1258.250 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1258.383 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1258.250 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: b2ee8fa4
+Synth Design complete, checksum: a5036cb7
 INFO: [Common 17-83] Releasing license: Synthesis
 19 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1258.383 ; gain = 122.723
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/rom_data_I.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP rom_data_I, cache-ID = df5cd842ea878f3e
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:23 . Memory (MB): peak = 1258.250 ; gain = 123.852
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/rom_data_I.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP rom_data_I, cache-ID = 55ffdd83045bca83
 INFO: [Coretcl 2-1174] Renamed 6 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Dayalan/Desktop/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/rom_data_I.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.runs/rom_data_I_synth_1/rom_data_I.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file rom_data_I_utilization_synth.rpt -pb rom_data_I_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun May 22 18:57:48 2022...
+INFO: [Common 17-206] Exiting Vivado at Sat May 28 08:47:59 2022...

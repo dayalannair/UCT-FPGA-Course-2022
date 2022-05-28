@@ -22,12 +22,12 @@ module FMCW_FFT(
     input ipClk,
     input ipReset,
     input ipEnable,
-    output reg[63:0] opData,
+    output reg[31:0] opData,
     output reg opValid
     );
     
-    reg[31:0] input_sweep [255:0];
-    reg[63:0] s_axis_data_tdata;
+    reg[31:0] s_axis_data_tdata;
+    reg[3:0] PAD = 4'b0000;
 
     wire s_axis_data_tlast; // not needed?
     wire s_axis_data_tready;
@@ -37,7 +37,7 @@ module FMCW_FFT(
     wire s_axis_config_tready;
     reg s_axis_config_tvalid;
 
-    wire[63:0] m_axis_data_tdata;
+    wire[47:0] m_axis_data_tdata;
     wire m_axis_data_tlast;
     reg m_axis_data_tready; // tell FFT we are ready to receive
     wire m_axis_data_tvalid;
@@ -64,8 +64,8 @@ module FMCW_FFT(
     reg[7:0] Q_addr;
     reg I_en;
     reg Q_en;
-    wire[31:0] I_sample;
-    wire[31:0] Q_sample;
+    wire[11:0] I_sample;
+    wire[11:0] Q_sample;
 
     // read-only
     rom_data_I I_input(
@@ -85,7 +85,7 @@ module FMCW_FFT(
     reg en;
     reg wr_en;
     reg[7:0] wr_addr;
-    reg[63:0] wr_data;
+    reg[31:0] wr_data;
     // write-only
     blk_mem_gen OUTPUT(
         .clka(ipClk),  
@@ -116,6 +116,7 @@ module FMCW_FFT(
             s_axis_config_tdata <= 0;
 
             s_axis_data_tvalid <= 0;
+            s_axis_data_tdata <= 0;
             m_axis_data_tready <= 0;
             state <= 0;
         end
@@ -127,6 +128,7 @@ module FMCW_FFT(
                         I_addr <= 0;
                         Q_addr <= 0;
                         s_axis_data_tvalid <= 0;
+                        s_axis_data_tdata <= 0;
                         m_axis_data_tready <= 0;
                         opValid <= 0;
                     end
@@ -136,12 +138,12 @@ module FMCW_FFT(
                     m_axis_data_tready <= 1'b1;
 
                     if (s_axis_data_tready) begin
-                        s_axis_data_tdata <= {I_sample, Q_sample};
+                        s_axis_data_tdata <= {PAD, Q_sample, PAD, I_sample};
                         I_addr <= I_addr + 1'b1;
                         Q_addr <= Q_addr + 1'b1;
                     end
                     if (m_axis_data_tvalid) begin
-                        opData <= m_axis_data_tdata;
+                        opData <= m_axis_data_tdata[31:0];
                         opValid <= 1;
                         wr_data <= m_axis_data_tdata;
                         wr_addr <= wr_addr + 1'b1;

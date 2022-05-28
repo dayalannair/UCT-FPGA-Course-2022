@@ -58,7 +58,7 @@ rom_data_Q your_instance_name (
   .clka(clka),    // input wire clka
   .ena(ena),      // input wire ena
   .addra(addra),  // input wire [7 : 0] addra
-  .douta(douta)  // output wire [31 : 0] douta
+  .douta(douta)  // output wire [11 : 0] douta
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

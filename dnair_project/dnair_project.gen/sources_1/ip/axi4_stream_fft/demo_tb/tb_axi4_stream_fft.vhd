@@ -98,13 +98,13 @@ architecture tb of tb_axi4_stream_fft is
   -- Data slave channel signals
   signal s_axis_data_tvalid          : std_logic := '0';  -- payload is valid
   signal s_axis_data_tready          : std_logic := '1';  -- slave is ready
-  signal s_axis_data_tdata           : std_logic_vector(63 downto 0) := (others => '0');  -- data payload
+  signal s_axis_data_tdata           : std_logic_vector(31 downto 0) := (others => '0');  -- data payload
   signal s_axis_data_tlast           : std_logic := '0';  -- indicates end of packet
 
   -- Data master channel signals
   signal m_axis_data_tvalid          : std_logic := '0';  -- payload is valid
   signal m_axis_data_tready          : std_logic := '1';  -- slave is ready
-  signal m_axis_data_tdata           : std_logic_vector(95 downto 0) := (others => '0');  -- data payload
+  signal m_axis_data_tdata           : std_logic_vector(47 downto 0) := (others => '0');  -- data payload
   signal m_axis_data_tlast           : std_logic := '0';  -- indicates end of packet
 
   -- Event signals
@@ -126,18 +126,18 @@ architecture tb of tb_axi4_stream_fft is
   signal s_axis_config_tdata_fwd_inv      : std_logic                    := '0';              -- forward or inverse
 
   -- Data slave channel alias signals
-  signal s_axis_data_tdata_re             : std_logic_vector(31 downto 0) := (others => '0');  -- real data
-  signal s_axis_data_tdata_im             : std_logic_vector(31 downto 0) := (others => '0');  -- imaginary data
+  signal s_axis_data_tdata_re             : std_logic_vector(11 downto 0) := (others => '0');  -- real data
+  signal s_axis_data_tdata_im             : std_logic_vector(11 downto 0) := (others => '0');  -- imaginary data
 
   -- Data master channel alias signals
-  signal m_axis_data_tdata_re             : std_logic_vector(40 downto 0) := (others => '0');  -- real data
-  signal m_axis_data_tdata_im             : std_logic_vector(40 downto 0) := (others => '0');  -- imaginary data
+  signal m_axis_data_tdata_re             : std_logic_vector(20 downto 0) := (others => '0');  -- real data
+  signal m_axis_data_tdata_im             : std_logic_vector(20 downto 0) := (others => '0');  -- imaginary data
 
   -----------------------------------------------------------------------
   -- Constants, types and functions to create input data
   -----------------------------------------------------------------------
 
-  constant IP_WIDTH    : integer := 32;
+  constant IP_WIDTH    : integer := 12;
   constant MAX_SAMPLES : integer := 2**8;  -- maximum number of samples in a frame
   type T_IP_SAMPLE is record
     re : std_logic_vector(IP_WIDTH-1 downto 0);
@@ -160,7 +160,7 @@ architecture tb of tb_axi4_stream_fft is
     variable im_real : real;
     variable re_int : integer;
     variable im_int : integer;
-    constant DATA_WIDTH : integer := 30;
+    constant DATA_WIDTH : integer := 10;
   begin
     for i in 0 to MAX_SAMPLES-1 loop
       theta   := real(i) / real(MAX_SAMPLES) * 2.6 * 2.0 * MATH_PI;
@@ -256,7 +256,7 @@ begin
     -- data is the data value to drive on the tdata signal
     -- last is the bit value to drive on the tlast signal
     -- valid_mode defines how to drive TVALID: 0 = TVALID always high, 1 = TVALID low occasionally
-    procedure drive_sample ( data       : std_logic_vector(63 downto 0);
+    procedure drive_sample ( data       : std_logic_vector(31 downto 0);
                              last       : std_logic;
                              valid_mode : integer := 0 ) is
     begin
@@ -291,15 +291,17 @@ begin
                             valid_mode   : integer := 0 ) is
       variable samples : integer;
       variable index   : integer;
-      variable sample_data : std_logic_vector(63 downto 0);
+      variable sample_data : std_logic_vector(31 downto 0);
       variable sample_last : std_logic;
     begin
       samples := data'length;
       index  := 0;
       while index < data'length loop
         -- Look up sample data in data table, construct TDATA value
-        sample_data(31 downto 0)  := data(index).re;                  -- real data
-        sample_data(63 downto 32) := data(index).im;                  -- imaginary data
+        sample_data(11 downto 0)  := data(index).re;                  -- real data
+        sample_data(15 downto 12) := (others => data(index).re(11));  -- sign-extend
+        sample_data(27 downto 16) := data(index).im;                  -- imaginary data
+        sample_data(31 downto 28) := (others => data(index).im(11));  -- sign-extend
         -- Construct TLAST's value
         index := index + 1;
         if index >= data'length then
@@ -490,8 +492,8 @@ begin
         -- Record output data such that it can be used as input data
         index := op_sample;
         -- Truncate output data to match input data width
-        op_data(index).re <= m_axis_data_tdata(40 downto 9);
-        op_data(index).im <= m_axis_data_tdata(88 downto 57);
+        op_data(index).re <= m_axis_data_tdata(20 downto 9);
+        op_data(index).im <= m_axis_data_tdata(44 downto 33);
         -- Increment output sample counter
         if m_axis_data_tlast = '1' then  -- end of output frame: reset sample counter and increment frame counter
           op_sample <= 0;
@@ -514,7 +516,7 @@ begin
     -- Previous values of data master channel signals
     variable m_data_tvalid_prev : std_logic := '0';
     variable m_data_tready_prev : std_logic := '0';
-    variable m_data_tdata_prev  : std_logic_vector(95 downto 0) := (others => '0');
+    variable m_data_tdata_prev  : std_logic_vector(47 downto 0) := (others => '0');
   begin
 
     -- Check outputs T_STROBE time after rising edge of clock
@@ -562,12 +564,12 @@ begin
   s_axis_config_tdata_fwd_inv    <= s_axis_config_tdata(0);
 
   -- Data slave channel alias signals
-  s_axis_data_tdata_re           <= s_axis_data_tdata(31 downto 0);
-  s_axis_data_tdata_im           <= s_axis_data_tdata(63 downto 32);
+  s_axis_data_tdata_re           <= s_axis_data_tdata(11 downto 0);
+  s_axis_data_tdata_im           <= s_axis_data_tdata(27 downto 16);
 
   -- Data master channel alias signals
-  m_axis_data_tdata_re           <= m_axis_data_tdata(40 downto 0);
-  m_axis_data_tdata_im           <= m_axis_data_tdata(88 downto 48);
+  m_axis_data_tdata_re           <= m_axis_data_tdata(20 downto 0);
+  m_axis_data_tdata_im           <= m_axis_data_tdata(44 downto 24);
 
 end tb;
 
