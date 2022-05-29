@@ -138,13 +138,17 @@ module FMCW_FFT(
                     m_axis_data_tready <= 1'b1;
 
                     if (s_axis_data_tready) begin
+                        // FFT engine ready, provide input data
                         s_axis_data_tdata <= {PAD, Q_sample, PAD, I_sample};
+                        // increment sample address
                         I_addr <= I_addr + 1'b1;
                         Q_addr <= Q_addr + 1'b1;
                     end
                     if (m_axis_data_tvalid) begin
+                        // Output FFT data
                         opData <= m_axis_data_tdata[31:0];
                         opValid <= 1;
+                        // write data to RAM
                         wr_data <= m_axis_data_tdata;
                         wr_addr <= wr_addr + 1'b1;
                     end
