@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../../dnair_project.gen/sources_1/ip/axi_stream_fifo/sim/axi_stream_fifo.vhd" \
-
-nosort
