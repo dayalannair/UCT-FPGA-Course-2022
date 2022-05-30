@@ -1,8 +1,8 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/blk_mem_gen/sim/blk_mem_gen.v" \
-"c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_Q/sim/rom_data_Q.v" \
-"c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/rom_data_I/sim/rom_data_I.v" \
+"../../../../dnair_project.gen/sources_1/ip/blk_mem_gen/sim/blk_mem_gen.v" \
+"../../../../dnair_project.gen/sources_1/ip/rom_data_Q/sim/rom_data_Q.v" \
+"../../../../dnair_project.gen/sources_1/ip/rom_data_I/sim/rom_data_I.v" \
 "../../../../dnair_project.srcs/sources_1/new/FMCW_FFT.v" \
 "../../../../dnair_project.srcs/sim_1/new/FMCW_FFT_TB.v" \
 
