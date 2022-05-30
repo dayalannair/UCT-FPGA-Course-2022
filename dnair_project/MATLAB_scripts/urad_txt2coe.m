@@ -1,5 +1,7 @@
-I = readtable('IQ_data_previous/I.txt','Delimiter' ,' ');
-Q = readtable('IQ_data_previous/Q.txt','Delimiter' ,' ');
+I = readtable('IQ_data_previous/I_trolley_test.txt','Delimiter' ,' ');
+Q = readtable('IQ_data_previous/Q_trolley_test.txt','Delimiter' ,' ');
+
+% IQ_tbl = readtable('IQ_data_previous/IQ_real_portion.txt','Delimiter' ,' ');
 
 fid_I = fopen('I.coe', 'w');
 fid_Q = fopen('Q.coe', 'w');
@@ -10,19 +12,27 @@ fprintf(fid_I,'memory_initialization_vector=\n');
 fprintf(fid_Q,'memory_initialization_radix=16;\n');
 fprintf(fid_Q,'memory_initialization_vector=\n');
 
-I_row = table2array(I(1,1:200));
+% Code for case when IQ data in one text file:
+% I_row = table2array(IQ_tbl(:,1:400));
+% fprintf(fid_I, "%x,\n", I_row(1:end)');
+% 
+% Q_row = table2array(IQ_tbl(:,401:800));
+% fprintf(fid_Q, "%x,\n", Q_row(1:end)');
+
+
+I_row = table2array(I(120,1:200));
 fprintf(fid_I, "%x,\n", I_row(1:end)');
 
-Q_row = table2array(Q(1,1:200));
+Q_row = table2array(Q(120,1:200));
 fprintf(fid_Q, "%x,\n", Q_row(1:end)');
 %% Generate chirp wave
 IQ = fft(I_row + 1i*Q_row);
 close all
 figure
-tiledlayout(3,1)
+tiledlayout(2,1)
 nexttile
 plot(I_row)
-nexttile
+hold on
 plot(Q_row)
 nexttile
 plot(fftshift(abs(IQ)))

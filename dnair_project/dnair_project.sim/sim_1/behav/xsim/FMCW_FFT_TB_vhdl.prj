@@ -1,6 +1,6 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../dnair_project.gen/sources_1/ip/axi4_stream_fft/sim/axi4_stream_fft.vhd" \
+"c:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/dnair_project.gen/sources_1/ip/axi4_stream_fft/sim/axi4_stream_fft.vhd" \
 
 # Do not sort compile order
 nosort

@@ -1,0 +1,16 @@
+format longg
+Re_tab = readtable('FFT_out_Re.txt','Delimiter' ,'\n', 'BinaryType','int32');
+Im_tab = readtable('FFT_out_Im.txt','Delimiter' ,'\n', 'BinaryType','int32');
+%%
+
+Re = table2array(Re_tab);
+Im = table2array(Im_tab);
+
+FFT_mag = sqrt(Re.^2 + Im.^2);
+
+%%
+Fs = 200e3;
+f = f_ax(513, Fs);
+close all
+figure
+plot(f, FFT_mag);

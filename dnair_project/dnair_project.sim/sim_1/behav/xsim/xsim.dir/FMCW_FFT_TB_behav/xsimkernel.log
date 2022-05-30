@@ -2,3 +2,6 @@ Running: xsim.dir/FMCW_FFT_TB_behav/xsimk.exe -simmode gui -wdb FMCW_FFT_TB_beha
 Design successfully loaded
 Design Loading Memory Usage: 23132 KB (Peak: 23132 KB)
 Design Loading CPU Usage: 124 ms
+Simulation completed
+Simulation Memory Usage: 27992 KB (Peak: 27992 KB)
+Simulation CPU Usage: 14687 ms

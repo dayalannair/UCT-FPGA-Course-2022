@@ -80,3 +80,5 @@ source FMCW_FFT_TB.tcl
 restart
 run all
 save_wave_config {C:/Users/Dayalan/Music/UCT-FPGA-Course-2022/dnair_project/FMCW_FFT_TB_behav.wcfg}
+restart
+relaunch_sim
